@@ -20,11 +20,23 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/include
 )
 
-set(PROJECT_SOURCES
-    form/calculator.ui
+set(HEADERS
+    include/calculator.h
+)
+
+set(SOURCES
     source/main.cpp
     source/calculator.cpp
-    include/calculator.h
+)
+
+set(FORMS
+    form/calculator.ui
+)
+
+set(PROJECT_SOURCES
+    ${FORMS}
+    ${SOURCES}
+    ${HEADERS}
 )
 
 qt_add_executable(SmartCalc_v2_0

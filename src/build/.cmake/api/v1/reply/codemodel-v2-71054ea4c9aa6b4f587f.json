@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SmartCalc_v2.0",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "SmartCalc_v2_0::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SmartCalc_v2_0-Debug-1e194b3eb450f5bb847d.json",
+					"name" : "SmartCalc_v2_0",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SmartCalc_v2_0_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SmartCalc_v2_0_autogen-Debug-a8d0842afaf99508f60e.json",
+					"name" : "SmartCalc_v2_0_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/build",
+		"source" : "/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
