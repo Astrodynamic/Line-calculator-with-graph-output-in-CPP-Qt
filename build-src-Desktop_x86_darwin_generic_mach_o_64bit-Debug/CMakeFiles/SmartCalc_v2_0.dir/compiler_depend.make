@@ -606,7 +606,25 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: /Users/werewolf/Documents
   /usr/local/include/QtCore/qlocale.h \
   /usr/local/include/QtCore/qvariant.h \
   /usr/local/include/QtGui/qguiapplication_platform.h \
+  /usr/local/include/QtWidgets/QGridLayout \
+  /usr/local/lib/QtWidgets.framework/Headers/qgridlayout.h \
+  /usr/local/include/QtWidgets/qlayout.h \
+  /usr/local/include/QtWidgets/qlayoutitem.h \
+  /usr/local/include/QtWidgets/qboxlayout.h \
+  /usr/local/include/QtWidgets/qgridlayout.h \
+  /usr/local/include/QtWidgets/QLabel \
+  /usr/local/lib/QtWidgets.framework/Headers/qlabel.h \
+  /usr/local/include/QtWidgets/qframe.h \
+  /usr/local/include/QtGui/qpicture.h \
+  /usr/local/include/QtCore/qiodevice.h \
+  /usr/local/include/QtGui/qtextdocument.h \
+  /usr/local/include/QtCore/qurl.h \
   /usr/local/include/QtWidgets/QMainWindow \
+  /usr/local/include/QtWidgets/QPushButton \
+  /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /usr/local/include/QtWidgets/qabstractbutton.h \
+  /usr/local/include/QtWidgets/QVBoxLayout \
+  /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h \
   /usr/local/include/QtWidgets/QWidget \
   /usr/local/lib/QtWidgets.framework/Headers/qwidget.h
 
@@ -924,6 +942,20 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: /Users/werewolf/Documents/gitla
 
 /usr/local/lib/QtWidgets.framework/Headers/QApplication:
 
+/usr/local/include/QtWidgets/QPushButton:
+
+/usr/local/include/QtCore/qurl.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qlabel.h:
+
+/usr/local/include/QtWidgets/QLabel:
+
+/usr/local/include/QtWidgets/qframe.h:
+
+/usr/local/include/QtWidgets/qboxlayout.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qgridlayout.h:
+
 /usr/local/include/QtCore/qlocale.h:
 
 /usr/local/include/QtGui/qinputmethod.h:
@@ -994,9 +1026,13 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /usr/local/include/QtCore/qscopeguard.h:
 
+/usr/local/include/QtGui/qpicture.h:
+
 /usr/local/include/QtCore/qmetatype.h:
 
 /usr/local/include/QtCore/qscopedpointer.h:
+
+/usr/local/include/QtWidgets/qlayoutitem.h:
 
 /usr/local/include/QtCore/qstringmatcher.h:
 
@@ -1021,6 +1057,8 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 /usr/local/include/QtCore/qanystringview.h:
 
 /usr/local/include/QtCore/qstringalgorithms.h:
+
+/usr/local/include/QtCore/qiodevice.h:
 
 /usr/local/include/QtCore/qstringliteral.h:
 
@@ -1139,6 +1177,8 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/i386/signal.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cassert:
+
+/usr/local/include/QtWidgets/qabstractbutton.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_mach_port_t.h:
 
@@ -1300,7 +1340,13 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_uint8_t.h:
 
+/usr/local/include/QtWidgets/qlayout.h:
+
+/usr/local/include/QtWidgets/QGridLayout:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__memory/allocator_traits.h:
+
+/usr/local/include/QtWidgets/QVBoxLayout:
 
 /usr/local/include/QtCore/qsize.h:
 
@@ -1332,6 +1378,8 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 
 /usr/local/include/QtCore/qgenericatomic.h:
 
+/usr/local/include/QtWidgets/qgridlayout.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/i386/types.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdlib.h:
@@ -1360,6 +1408,8 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_sigaltstack.h:
 
+/usr/local/include/QtGui/qtextdocument.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__undef_macros:
 
 /usr/local/include/QtGui/qfontmetrics.h:
@@ -1373,6 +1423,8 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/ctype.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_types/_wctype_t.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_wint_t.h:
 
@@ -1483,6 +1535,8 @@ SmartCalc_v2_0_autogen/mocs_compilation.cpp:
 /usr/local/include/QtCore/qatomic.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_int8_t.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h:
 
 /usr/local/include/QtGui/qfontinfo.h:
 

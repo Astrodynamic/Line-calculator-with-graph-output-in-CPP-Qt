@@ -607,15 +607,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o
  /usr/local/lib/QtGui.framework/Headers/qinputmethod.h
  /usr/local/lib/QtCore.framework/Headers/qlocale.h
  /usr/local/lib/QtGui.framework/Headers/qguiapplication_platform.h
- /usr/local/lib/QtWidgets.framework/Headers/QMenuBar
- /usr/local/lib/QtWidgets.framework/Headers/qmenubar.h
- /usr/local/lib/QtWidgets.framework/Headers/qmenu.h
- /usr/local/lib/QtGui.framework/Headers/qaction.h
- /usr/local/lib/QtWidgets.framework/Headers/QPushButton
- /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h
- /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h
- /usr/local/lib/QtWidgets.framework/Headers/QStatusBar
- /usr/local/lib/QtWidgets.framework/Headers/qstatusbar.h
  /usr/local/lib/QtWidgets.framework/Headers/QWidget
 
 CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o

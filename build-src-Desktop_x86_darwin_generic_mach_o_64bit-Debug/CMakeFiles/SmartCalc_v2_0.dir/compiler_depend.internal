@@ -608,7 +608,25 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o
  /usr/local/include/QtCore/qlocale.h
  /usr/local/include/QtCore/qvariant.h
  /usr/local/include/QtGui/qguiapplication_platform.h
+ /usr/local/include/QtWidgets/QGridLayout
+ /usr/local/lib/QtWidgets.framework/Headers/qgridlayout.h
+ /usr/local/include/QtWidgets/qlayout.h
+ /usr/local/include/QtWidgets/qlayoutitem.h
+ /usr/local/include/QtWidgets/qboxlayout.h
+ /usr/local/include/QtWidgets/qgridlayout.h
+ /usr/local/include/QtWidgets/QLabel
+ /usr/local/lib/QtWidgets.framework/Headers/qlabel.h
+ /usr/local/include/QtWidgets/qframe.h
+ /usr/local/include/QtGui/qpicture.h
+ /usr/local/include/QtCore/qiodevice.h
+ /usr/local/include/QtGui/qtextdocument.h
+ /usr/local/include/QtCore/qurl.h
  /usr/local/include/QtWidgets/QMainWindow
+ /usr/local/include/QtWidgets/QPushButton
+ /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h
+ /usr/local/include/QtWidgets/qabstractbutton.h
+ /usr/local/include/QtWidgets/QVBoxLayout
+ /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h
  /usr/local/include/QtWidgets/QWidget
  /usr/local/lib/QtWidgets.framework/Headers/qwidget.h
 

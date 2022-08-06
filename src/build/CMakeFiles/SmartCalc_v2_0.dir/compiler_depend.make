@@ -605,15 +605,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: ../source/calculator.cpp 
   /usr/local/lib/QtGui.framework/Headers/qinputmethod.h \
   /usr/local/lib/QtCore.framework/Headers/qlocale.h \
   /usr/local/lib/QtGui.framework/Headers/qguiapplication_platform.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QMenuBar \
-  /usr/local/lib/QtWidgets.framework/Headers/qmenubar.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qmenu.h \
-  /usr/local/lib/QtGui.framework/Headers/qaction.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QPushButton \
-  /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QStatusBar \
-  /usr/local/lib/QtWidgets.framework/Headers/qstatusbar.h \
   /usr/local/lib/QtWidgets.framework/Headers/QWidget
 
 CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: ../source/main.cpp \
@@ -928,10 +919,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: ../source/main.cpp \
   /usr/local/lib/QtGui.framework/Headers/qicon.h
 
 
-/usr/local/lib/QtGui.framework/Headers/qaction.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qmenubar.h:
-
 /usr/local/lib/QtCore.framework/Headers/qlocale.h:
 
 /usr/local/lib/QtGui.framework/Headers/qinputmethod.h:
@@ -939,8 +926,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: ../source/main.cpp \
 /usr/local/lib/QtGui.framework/Headers/qguiapplication.h:
 
 /usr/local/lib/QtCore.framework/Headers/qnativeinterface.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/QPushButton:
 
 /usr/local/lib/QtCore.framework/Headers/qcoreapplication.h:
 
@@ -963,8 +948,6 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 /usr/local/lib/QtWidgets.framework/Headers/qsizepolicy.h:
 
 /usr/local/lib/QtGui.framework/Headers/qfontmetrics.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h:
 
 /usr/local/lib/QtCore.framework/Headers/qsharedpointer_impl.h:
 
@@ -1028,8 +1011,6 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__string:
 
-/usr/local/lib/QtWidgets.framework/Headers/QMenuBar:
-
 /usr/local/lib/QtCore.framework/Headers/qdebug.h:
 
 /usr/local/lib/QtCore.framework/Headers/qsharedpointer.h:
@@ -1067,8 +1048,6 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 /usr/local/lib/QtCore.framework/Headers/qnamespace.h:
 
 /usr/local/lib/QtGui.framework/Headers/qwindowdefs.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h:
 
 /usr/local/lib/QtGui.framework/Headers/qrgba64.h:
 
@@ -1177,8 +1156,6 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/i386/_limits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/limits.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qmenu.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/limits.h:
 
@@ -1322,8 +1299,6 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/string.h:
 
-/usr/local/lib/QtWidgets.framework/Headers/QStatusBar:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_pid_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/mach/machine/_structs.h:
@@ -1371,8 +1346,6 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_sigaltstack.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__undef_macros:
-
-/usr/local/lib/QtWidgets.framework/Headers/qstatusbar.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_mbstate_t.h:
 
