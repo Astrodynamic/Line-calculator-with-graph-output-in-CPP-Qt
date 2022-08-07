@@ -30,7 +30,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 38,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
@@ -54,7 +54,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 43,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
@@ -105,14 +105,14 @@
 			"includes" : 
 			[
 				{
-					"path" : "/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/build-src-Desktop_x86_darwin_generic_mach_o_64bit-Debug"
+					"path" : "/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/build"
 				},
 				{
 					"path" : "/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src"
 				},
 				{
 					"backtrace" : 0,
-					"path" : "/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/build-src-Desktop_x86_darwin_generic_mach_o_64bit-Debug/SmartCalc_v2_0_autogen/include"
+					"path" : "/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/build/SmartCalc_v2_0_autogen/include"
 				},
 				{
 					"backtrace" : 7,
@@ -132,11 +132,6 @@
 					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "/usr/local/share/qt/mkspecs/macx-clang"
-				},
-				{
-					"backtrace" : 6,
-					"isSystem" : true,
-					"path" : "/usr/local/include"
 				},
 				{
 					"backtrace" : 5,
@@ -173,7 +168,8 @@
 			[
 				0,
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -196,10 +192,6 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-Wl,-rpath,/usr/local/lib",
-				"role" : "libraries"
 			},
 			{
 				"backtrace" : 5,
@@ -269,7 +261,8 @@
 			[
 				0,
 				2,
-				3
+				3,
+				4
 			]
 		},
 		{
@@ -283,8 +276,9 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				4,
-				5
+				5,
+				6,
+				7
 			]
 		}
 	],
@@ -294,7 +288,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/build-src-Desktop_x86_darwin_generic_mach_o_64bit-Debug/SmartCalc_v2_0_autogen/mocs_compilation.cpp",
+			"path" : "build/SmartCalc_v2_0_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -316,13 +310,24 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "include/calculator.h",
+			"compileGroupIndex" : 0,
+			"path" : "source/calculation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "include/calculator.hpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "include/calculation.hpp",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/build-src-Desktop_x86_darwin_generic_mach_o_64bit-Debug/SmartCalc_v2_0_autogen/include/form/ui_calculator.h",
+			"path" : "build/SmartCalc_v2_0_autogen/include/form/ui_calculator.h",
 			"sourceGroupIndex" : 2
 		}
 	],

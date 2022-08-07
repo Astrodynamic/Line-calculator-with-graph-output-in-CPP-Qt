@@ -316,7 +316,7 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "include/calculator.h",
+			"path" : "include/calculator.hpp",
 			"sourceGroupIndex" : 2
 		},
 		{

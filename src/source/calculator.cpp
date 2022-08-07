@@ -1,6 +1,6 @@
-#include "calculator.h"
+#include "calculator.hpp"
 
-#include "./ui_calculator.h"
+#include "ui_calculator.h"
 
 Calculator::Calculator(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::Calculator) {

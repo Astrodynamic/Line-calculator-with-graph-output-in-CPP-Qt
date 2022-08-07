@@ -1,5 +1,5 @@
-#ifndef CALCULATOR_H
-#define CALCULATOR_H
+#ifndef CALCULATOR_HPP
+#define CALCULATOR_HPP
 
 #include <QMainWindow>
 
@@ -19,4 +19,4 @@ class Calculator : public QMainWindow {
  private:
   Ui::Calculator *ui;
 };
-#endif  // CALCULATOR_H
+#endif  // CALCULATOR_HPP

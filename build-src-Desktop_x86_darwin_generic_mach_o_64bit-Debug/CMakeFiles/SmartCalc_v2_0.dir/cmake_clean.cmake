@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "SmartCalc_v2_0_autogen"
   "CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o"
+  "CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o.d"
   "CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o"
   "CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o.d"
   "CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o"

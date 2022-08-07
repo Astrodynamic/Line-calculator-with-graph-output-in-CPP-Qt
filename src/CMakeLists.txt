@@ -21,12 +21,14 @@ include_directories(
 )
 
 set(HEADERS
-    include/calculator.h
+    include/calculator.hpp
+    include/calculation.hpp
 )
 
 set(SOURCES
     source/main.cpp
     source/calculator.cpp
+    source/calculation.cpp
 )
 
 set(FORMS

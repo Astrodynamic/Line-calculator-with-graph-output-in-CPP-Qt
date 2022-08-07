@@ -166,6 +166,30 @@ SmartCalc_v2_0_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.s
 .PHONY : SmartCalc_v2_0_autogen/mocs_compilation.cpp.s
 
+source/calculation.o: source/calculation.cpp.o
+.PHONY : source/calculation.o
+
+# target to build an object file
+source/calculation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o
+.PHONY : source/calculation.cpp.o
+
+source/calculation.i: source/calculation.cpp.i
+.PHONY : source/calculation.i
+
+# target to preprocess a source file
+source/calculation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.i
+.PHONY : source/calculation.cpp.i
+
+source/calculation.s: source/calculation.cpp.s
+.PHONY : source/calculation.s
+
+# target to generate assembly for a file
+source/calculation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.s
+.PHONY : source/calculation.cpp.s
+
 source/calculator.o: source/calculator.cpp.o
 .PHONY : source/calculator.o
 
@@ -227,6 +251,9 @@ help:
 	@echo "... SmartCalc_v2_0_autogen/mocs_compilation.o"
 	@echo "... SmartCalc_v2_0_autogen/mocs_compilation.i"
 	@echo "... SmartCalc_v2_0_autogen/mocs_compilation.s"
+	@echo "... source/calculation.o"
+	@echo "... source/calculation.i"
+	@echo "... source/calculation.s"
 	@echo "... source/calculator.o"
 	@echo "... source/calculator.i"
 	@echo "... source/calculator.s"

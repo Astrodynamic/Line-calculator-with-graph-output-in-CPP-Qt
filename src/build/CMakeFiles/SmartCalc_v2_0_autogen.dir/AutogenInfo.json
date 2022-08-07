@@ -289,7 +289,13 @@
 	"HEADERS" : 
 	[
 		[
-			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculator.h",
+			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculation.hpp",
+			"MU",
+			"6YEA5652QU/moc_calculation.cpp",
+			null
+		],
+		[
+			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculator.hpp",
 			"MU",
 			"6YEA5652QU/moc_calculator.cpp",
 			null
@@ -348,6 +354,11 @@
 	"SETTINGS_FILE" : "/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/build/CMakeFiles/SmartCalc_v2_0_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculation.cpp",
+			"MU",
+			null
+		],
 		[
 			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculator.cpp",
 			"MU",
