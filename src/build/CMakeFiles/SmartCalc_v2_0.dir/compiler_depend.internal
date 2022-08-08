@@ -297,9 +297,9 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o
 CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o
  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculation.cpp
  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculation.hpp
- /usr/local/lib/QtCore.framework/Headers/QString
- /usr/local/lib/QtCore.framework/Headers/qstring.h
- /usr/local/lib/QtCore.framework/Headers/qchar.h
+ /usr/local/lib/QtCore.framework/Headers/QMap
+ /usr/local/lib/QtCore.framework/Headers/qmap.h
+ /usr/local/lib/QtCore.framework/Headers/qiterator.h
  /usr/local/lib/QtCore.framework/Headers/qglobal.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/type_traits
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__config
@@ -490,16 +490,20 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/math.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/math.h
  /usr/local/lib/QtCore.framework/Headers/qversiontagging.h
+ /usr/local/lib/QtCore.framework/Headers/qlist.h
+ /usr/local/lib/QtCore.framework/Headers/qarraydatapointer.h
+ /usr/local/lib/QtCore.framework/Headers/qarraydataops.h
+ /usr/local/lib/QtCore.framework/Headers/qarraydata.h
+ /usr/local/lib/QtCore.framework/Headers/qpair.h
+ /usr/local/lib/QtCore.framework/Headers/qcontainertools_impl.h
+ /usr/local/lib/QtCore.framework/Headers/qnamespace.h
+ /usr/local/lib/QtCore.framework/Headers/qtmetamacros.h
+ /usr/local/lib/QtCore.framework/Headers/qhashfunctions.h
+ /usr/local/lib/QtCore.framework/Headers/qstring.h
+ /usr/local/lib/QtCore.framework/Headers/qchar.h
  /usr/local/lib/QtCore.framework/Headers/qstringview.h
  /usr/local/lib/QtCore.framework/Headers/qbytearray.h
  /usr/local/lib/QtCore.framework/Headers/qrefcount.h
- /usr/local/lib/QtCore.framework/Headers/qnamespace.h
- /usr/local/lib/QtCore.framework/Headers/qtmetamacros.h
- /usr/local/lib/QtCore.framework/Headers/qarraydata.h
- /usr/local/lib/QtCore.framework/Headers/qpair.h
- /usr/local/lib/QtCore.framework/Headers/qarraydatapointer.h
- /usr/local/lib/QtCore.framework/Headers/qarraydataops.h
- /usr/local/lib/QtCore.framework/Headers/qcontainertools_impl.h
  /usr/local/lib/QtCore.framework/Headers/qbytearrayalgorithms.h
  /usr/local/lib/QtCore.framework/Headers/qbytearrayview.h
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/string
@@ -517,6 +521,21 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o
  /usr/local/lib/QtCore.framework/Headers/qanystringview.h
  /usr/local/lib/QtCore.framework/Headers/qutf8stringview.h
  /usr/local/lib/QtCore.framework/Headers/qstringtokenizer.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/numeric
+ /usr/local/lib/QtCore.framework/Headers/qbytearraylist.h
+ /usr/local/lib/QtCore.framework/Headers/qstringlist.h
+ /usr/local/lib/QtCore.framework/Headers/qalgorithms.h
+ /usr/local/lib/QtCore.framework/Headers/qstringmatcher.h
+ /usr/local/lib/QtCore.framework/Headers/qshareddata.h
+ /usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/map
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__tree
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__node_handle
+ /usr/local/lib/QtCore.framework/Headers/QStack
+ /usr/local/lib/QtCore.framework/Headers/qstack.h
+ /usr/local/lib/QtCore.framework/Headers/QString
+ /usr/local/lib/QtCore.framework/Headers/QVector
+ /usr/local/lib/QtCore.framework/Headers/qvector.h
 
 CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o
  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculator.cpp

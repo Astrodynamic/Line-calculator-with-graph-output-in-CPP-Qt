@@ -295,9 +295,9 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o: Sma
 
 CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o: ../source/calculation.cpp \
   ../include/calculation.hpp \
-  /usr/local/lib/QtCore.framework/Headers/QString \
-  /usr/local/lib/QtCore.framework/Headers/qstring.h \
-  /usr/local/lib/QtCore.framework/Headers/qchar.h \
+  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtCore.framework/Headers/qmap.h \
+  /usr/local/lib/QtCore.framework/Headers/qiterator.h \
   /usr/local/lib/QtCore.framework/Headers/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__config \
@@ -488,16 +488,20 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o: ../source/calculation.cp
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/math.h \
   /usr/local/lib/QtCore.framework/Headers/qversiontagging.h \
+  /usr/local/lib/QtCore.framework/Headers/qlist.h \
+  /usr/local/lib/QtCore.framework/Headers/qarraydatapointer.h \
+  /usr/local/lib/QtCore.framework/Headers/qarraydataops.h \
+  /usr/local/lib/QtCore.framework/Headers/qarraydata.h \
+  /usr/local/lib/QtCore.framework/Headers/qpair.h \
+  /usr/local/lib/QtCore.framework/Headers/qcontainertools_impl.h \
+  /usr/local/lib/QtCore.framework/Headers/qnamespace.h \
+  /usr/local/lib/QtCore.framework/Headers/qtmetamacros.h \
+  /usr/local/lib/QtCore.framework/Headers/qhashfunctions.h \
+  /usr/local/lib/QtCore.framework/Headers/qstring.h \
+  /usr/local/lib/QtCore.framework/Headers/qchar.h \
   /usr/local/lib/QtCore.framework/Headers/qstringview.h \
   /usr/local/lib/QtCore.framework/Headers/qbytearray.h \
   /usr/local/lib/QtCore.framework/Headers/qrefcount.h \
-  /usr/local/lib/QtCore.framework/Headers/qnamespace.h \
-  /usr/local/lib/QtCore.framework/Headers/qtmetamacros.h \
-  /usr/local/lib/QtCore.framework/Headers/qarraydata.h \
-  /usr/local/lib/QtCore.framework/Headers/qpair.h \
-  /usr/local/lib/QtCore.framework/Headers/qarraydatapointer.h \
-  /usr/local/lib/QtCore.framework/Headers/qarraydataops.h \
-  /usr/local/lib/QtCore.framework/Headers/qcontainertools_impl.h \
   /usr/local/lib/QtCore.framework/Headers/qbytearrayalgorithms.h \
   /usr/local/lib/QtCore.framework/Headers/qbytearrayview.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/string \
@@ -514,7 +518,22 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o: ../source/calculation.cp
   /usr/local/lib/QtCore.framework/Headers/qstringalgorithms.h \
   /usr/local/lib/QtCore.framework/Headers/qanystringview.h \
   /usr/local/lib/QtCore.framework/Headers/qutf8stringview.h \
-  /usr/local/lib/QtCore.framework/Headers/qstringtokenizer.h
+  /usr/local/lib/QtCore.framework/Headers/qstringtokenizer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/numeric \
+  /usr/local/lib/QtCore.framework/Headers/qbytearraylist.h \
+  /usr/local/lib/QtCore.framework/Headers/qstringlist.h \
+  /usr/local/lib/QtCore.framework/Headers/qalgorithms.h \
+  /usr/local/lib/QtCore.framework/Headers/qstringmatcher.h \
+  /usr/local/lib/QtCore.framework/Headers/qshareddata.h \
+  /usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__tree \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__node_handle \
+  /usr/local/lib/QtCore.framework/Headers/QStack \
+  /usr/local/lib/QtCore.framework/Headers/qstack.h \
+  /usr/local/lib/QtCore.framework/Headers/QString \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h
 
 CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: ../source/calculator.cpp \
   ../include/calculator.hpp \
@@ -1190,11 +1209,17 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: ../source/main.cpp \
 
 /usr/local/lib/QtCore.framework/Headers/qtextstream.h:
 
-/usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h:
-
 /usr/local/lib/QtCore.framework/Headers/QVariant:
 
 SmartCalc_v2_0_autogen/include/ui_calculator.h:
+
+/usr/local/lib/QtCore.framework/Headers/qvector.h:
+
+/usr/local/lib/QtCore.framework/Headers/QVector:
+
+/usr/local/lib/QtCore.framework/Headers/qstack.h:
+
+/usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h:
 
 ../include/calculation.hpp:
 
@@ -1319,6 +1344,8 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 /usr/local/lib/QtGui.framework/Headers/qrgba64.h:
 
 /usr/local/lib/QtGui.framework/Headers/qtgui-config.h:
+
+/usr/local/lib/QtCore.framework/Headers/QStack:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cmath:
 
@@ -1595,6 +1622,8 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/variant:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int16_t.h:
+
+/usr/local/lib/QtCore.framework/Headers/QMap:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_int64_t.h:
 
