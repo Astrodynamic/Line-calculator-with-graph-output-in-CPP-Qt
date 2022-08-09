@@ -5,45 +5,52 @@
 #include <QStack>
 #include <QString>
 #include <QVector>
+#include <cmath>
 #include <functional>
 #include <variant>
-#include <cmath>
 
 class Calculation {
  private:
-  QVector<std::variant<QChar, double>> m_rpn;
+  enum class f_prt_t { DEFAULT, L_PR, M_PR, H_PR, UNARY, FUNC };
 
-  enum class e_priority_t {DEFAULT, L_PR, M_PR, H_PR, UNARY, FUNC};
-
+  using fcast_1arg = double (*)(double);
+  using fcast_2arg = double (*)(double, double);
   using fp_1arg = std::function<double(double)>;
   using fp_2arg = std::function<double(double, double)>;
   using fp_variant = std::variant<fp_1arg, fp_2arg, nullptr_t>;
+  using fun_ptr_t = const QMap<QChar, QPair<f_prt_t, fp_variant>>;
 
-  QMap<QChar, QPair<e_priority_t, fp_variant>> m_fun_ptr {
-      {'(', {e_priority_t::DEFAULT, nullptr}},
-      {'+', {e_priority_t::L_PR, [](double lhs, double rhs) -> double {return lhs + rhs;}}},
-      {'-', {e_priority_t::L_PR, [](double lhs, double rhs) -> double {return lhs - rhs;}}},
-      {'*', {e_priority_t::M_PR, [](double lhs, double rhs) -> double {return lhs * rhs;}}},
-      {'/', {e_priority_t::M_PR, [](double lhs, double rhs) -> double {return lhs / rhs;}}},
-      {'A', {e_priority_t::M_PR, (double(*)(double, double))&std::fmod}},
-      {'^', {e_priority_t::H_PR, (double(*)(double, double))&std::pow}},
-      {'B', {e_priority_t::UNARY, nullptr}},
-      {'C', {e_priority_t::UNARY, [](double src) -> double {return -src;}}},
-      {'D', {e_priority_t::FUNC, (double(*)(double))&std::cos}},
-      {'E', {e_priority_t::FUNC, (double(*)(double))&std::sin}},
-      {'F', {e_priority_t::FUNC, (double(*)(double))&std::tan}},
-      {'G', {e_priority_t::FUNC, (double(*)(double))&std::acos}},
-      {'H', {e_priority_t::FUNC, (double(*)(double))&std::asin}},
-      {'I', {e_priority_t::FUNC, (double(*)(double))&std::atan}},
-      {'J', {e_priority_t::FUNC, (double(*)(double))&std::sqrt}},
-      {'K', {e_priority_t::FUNC, (double(*)(double))&std::log}},
-      {'L', {e_priority_t::FUNC, (double(*)(double))&std::log10}}
-      };
+#define lamdas_f1arg(SIGN) [](double src) -> double { return SIGN(src); }
+#define lamdas_f2arg(SIGN) [](double lhs, double rhs) -> double { return lhs SIGN rhs; }
+
+  static fun_ptr_t m_fun_ptr;
+
+  QVector<std::variant<QChar, double>> m_rpn;
 
  public:
   Calculation();
-  
+
   void create_exp(QString& infix);
 };
+
+Calculation::fun_ptr_t Calculation::m_fun_ptr = {
+    {'(', {f_prt_t::DEFAULT, nullptr}},
+    {'+', {f_prt_t::L_PR, lamdas_f2arg(+)}},
+    {'-', {f_prt_t::L_PR, lamdas_f2arg(-)}},
+    {'*', {f_prt_t::M_PR, lamdas_f2arg(*)}},
+    {'/', {f_prt_t::M_PR, lamdas_f2arg(/)}},
+    {'A', {f_prt_t::M_PR, (fcast_2arg)&std::fmod}},
+    {'^', {f_prt_t::H_PR, (fcast_2arg)&std::pow}},
+    {'B', {f_prt_t::UNARY, nullptr}},
+    {'C', {f_prt_t::UNARY, lamdas_f1arg(-)}},
+    {'D', {f_prt_t::FUNC, (fcast_1arg)&std::cos}},
+    {'E', {f_prt_t::FUNC, (fcast_1arg)&std::sin}},
+    {'F', {f_prt_t::FUNC, (fcast_1arg)&std::tan}},
+    {'G', {f_prt_t::FUNC, (fcast_1arg)&std::acos}},
+    {'H', {f_prt_t::FUNC, (fcast_1arg)&std::asin}},
+    {'I', {f_prt_t::FUNC, (fcast_1arg)&std::atan}},
+    {'J', {f_prt_t::FUNC, (fcast_1arg)&std::sqrt}},
+    {'K', {f_prt_t::FUNC, (fcast_1arg)&std::log}},
+    {'L', {f_prt_t::FUNC, (fcast_1arg)&std::log10}}};
 
 #endif  // SRC_INCLUDE_CALCULATION_HPP_
