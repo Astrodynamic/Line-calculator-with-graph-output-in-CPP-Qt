@@ -291,7 +291,16 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o: Sma
   /usr/local/lib/QtGui.framework/Headers/qbitmap.h \
   /usr/local/lib/QtGui.framework/Headers/qkeysequence.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /usr/local/lib/QtGui.framework/Headers/qicon.h
+  /usr/local/lib/QtGui.framework/Headers/qicon.h \
+  ../include/calculation.hpp \
+  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtCore.framework/Headers/qmap.h \
+  /usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h \
+  /usr/local/lib/QtCore.framework/Headers/QStack \
+  /usr/local/lib/QtCore.framework/Headers/qstack.h \
+  /usr/local/lib/QtCore.framework/Headers/QString \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h
 
 CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o: ../source/calculation.cpp \
   ../include/calculation.hpp \
@@ -825,11 +834,18 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: ../source/calculator.cpp 
   /usr/local/lib/QtGui.framework/Headers/qkeysequence.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h \
   /usr/local/lib/QtGui.framework/Headers/qicon.h \
+  ../include/calculation.hpp \
+  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtCore.framework/Headers/qmap.h \
+  /usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h \
+  /usr/local/lib/QtCore.framework/Headers/QStack \
+  /usr/local/lib/QtCore.framework/Headers/qstack.h \
+  /usr/local/lib/QtCore.framework/Headers/QString \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h \
   SmartCalc_v2_0_autogen/include/ui_calculator.h \
   /usr/local/lib/QtCore.framework/Headers/QVariant \
   /usr/local/lib/QtCore.framework/Headers/qvariant.h \
-  /usr/local/lib/QtCore.framework/Headers/qmap.h \
-  /usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h \
   /usr/local/lib/QtCore.framework/Headers/qhash.h \
   /usr/local/lib/QtCore.framework/Headers/qdebug.h \
   /usr/local/lib/QtCore.framework/Headers/qtextstream.h \
@@ -1174,7 +1190,14 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: ../source/main.cpp \
   /usr/local/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /usr/local/lib/QtGui.framework/Headers/qkeysequence.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /usr/local/lib/QtGui.framework/Headers/qicon.h
+  /usr/local/lib/QtGui.framework/Headers/qicon.h \
+  ../include/calculation.hpp \
+  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtCore.framework/Headers/QStack \
+  /usr/local/lib/QtCore.framework/Headers/qstack.h \
+  /usr/local/lib/QtCore.framework/Headers/QString \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h
 
 
 /usr/local/lib/QtWidgets.framework/Headers/QVBoxLayout:

@@ -79,6 +79,11 @@
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
  mdp:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/stdarg.h
+ mdp:/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculation.hpp
+ mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/QMap
+ mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/QStack
+ mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/QString
+ mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/QVector
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qanystringview.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qarraydata.h
@@ -109,6 +114,7 @@
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qline.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qlist.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qlogging.h
+ mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qmap.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qmargins.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qmath.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qmetacontainer.h
@@ -127,9 +133,11 @@
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qshareddata.h
+ mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qshareddata_impl.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qsharedpointer.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qsharedpointer_impl.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qsize.h
+ mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qstack.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qstring.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qstringalgorithms.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qstringlist.h
@@ -145,6 +153,7 @@
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h
+ mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qvector.h
  mdp:/usr/local/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qbitmap.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qbrush.h

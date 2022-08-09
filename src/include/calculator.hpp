@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "calculation.hpp"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Calculator;
