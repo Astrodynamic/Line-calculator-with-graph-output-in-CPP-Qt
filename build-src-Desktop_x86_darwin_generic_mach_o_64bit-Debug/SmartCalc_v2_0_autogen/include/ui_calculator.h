@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
@@ -25,43 +26,44 @@ class Ui_Calculator
 public:
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
-    QLabel *label;
+    QLabel *display;
     QGridLayout *gridLayout;
-    QPushButton *pushButton_17;
-    QPushButton *pushButton_10;
-    QPushButton *pushButton_28;
-    QPushButton *pushButton_27;
-    QPushButton *pushButton_14;
-    QPushButton *pushButton_30;
-    QPushButton *pushButton_29;
-    QPushButton *pushButton_23;
-    QPushButton *pushButton_31;
-    QPushButton *pushButton_13;
-    QPushButton *pushButton_20;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_18;
-    QPushButton *pushButton_34;
-    QPushButton *pushButton_35;
-    QPushButton *pushButton_22;
-    QPushButton *pushButton_9;
-    QPushButton *pushButton_26;
-    QPushButton *pushButton_16;
-    QPushButton *pushButton_15;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_32;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_7;
-    QPushButton *pushButton_5;
-    QPushButton *pushButton_33;
-    QPushButton *pushButton_6;
-    QPushButton *pushButton_21;
-    QPushButton *pushButton_8;
-    QPushButton *pushButton_11;
-    QPushButton *pushButton_24;
-    QPushButton *pushButton_12;
-    QPushButton *pushButton_25;
-    QPushButton *pushButton;
-    QPushButton *pushButton_19;
+    QPushButton *btn_1;
+    QPushButton *btn_6;
+    QPushButton *btn_asin;
+    QPushButton *btn_acos;
+    QPushButton *btn_oparenth;
+    QPushButton *btn_exp;
+    QPushButton *btn_atan;
+    QPushButton *btn_log;
+    QPushButton *btn_mod;
+    QPushButton *btn_8;
+    QPushButton *btn_4;
+    QPushButton *btn_mul;
+    QPushButton *btn_7;
+    QPushButton *btn_pi;
+    QPushButton *btn_e;
+    QPushButton *btn_ln;
+    QPushButton *btn_cparenth;
+    QPushButton *btn_tan;
+    QPushButton *btn_0;
+    QPushButton *btn_5;
+    QPushButton *btn_div;
+    QPushButton *btn_function;
+    QPushButton *btn_sub;
+    QPushButton *btn_3;
+    QPushButton *btn_sum;
+    QPushButton *btn_x;
+    QPushButton *btn_E;
+    QPushButton *btn_sqrt;
+    QPushButton *btn_9;
+    QPushButton *btn_dot;
+    QPushButton *btn_cos;
+    QPushButton *btn_2;
+    QPushButton *btn_sin;
+    QPushButton *btn_equal;
+    QPushButton *btn_clean;
+    QButtonGroup *btn_print_group;
 
     void setupUi(QMainWindow *Calculator)
     {
@@ -86,46 +88,49 @@ public:
         centralwidget->setMaximumSize(QSize(530, 220));
         verticalLayout = new QVBoxLayout(centralwidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        label = new QLabel(centralwidget);
-        label->setObjectName(QString::fromUtf8("label"));
+        display = new QLabel(centralwidget);
+        display->setObjectName(QString::fromUtf8("display"));
         QSizePolicy sizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
-        label->setSizePolicy(sizePolicy);
-        label->setMinimumSize(QSize(0, 35));
-        label->setMaximumSize(QSize(16777215, 35));
-        label->setCursor(QCursor(Qt::ForbiddenCursor));
-        label->setStyleSheet(QString::fromUtf8("QLabel {\n"
+        sizePolicy.setHeightForWidth(display->sizePolicy().hasHeightForWidth());
+        display->setSizePolicy(sizePolicy);
+        display->setMinimumSize(QSize(0, 35));
+        display->setMaximumSize(QSize(16777215, 35));
+        display->setCursor(QCursor(Qt::ForbiddenCursor));
+        display->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	border: 1px solid rgb(107, 107, 107);\n"
 "	background-color: rgb(49, 49, 49);\n"
 "	border-radius: 3px;\n"
 "}"));
-        label->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        label->setIndent(5);
+        display->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        display->setIndent(5);
 
-        verticalLayout->addWidget(label);
+        verticalLayout->addWidget(display);
 
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(0);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setSizeConstraint(QLayout::SetMinAndMaxSize);
-        pushButton_17 = new QPushButton(centralwidget);
-        pushButton_17->setObjectName(QString::fromUtf8("pushButton_17"));
+        btn_1 = new QPushButton(centralwidget);
+        btn_print_group = new QButtonGroup(Calculator);
+        btn_print_group->setObjectName(QString::fromUtf8("btn_print_group"));
+        btn_print_group->addButton(btn_1);
+        btn_1->setObjectName(QString::fromUtf8("btn_1"));
         QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(pushButton_17->sizePolicy().hasHeightForWidth());
-        pushButton_17->setSizePolicy(sizePolicy1);
-        pushButton_17->setMinimumSize(QSize(70, 35));
-        pushButton_17->setMaximumSize(QSize(70, 70));
+        sizePolicy1.setHeightForWidth(btn_1->sizePolicy().hasHeightForWidth());
+        btn_1->setSizePolicy(sizePolicy1);
+        btn_1->setMinimumSize(QSize(70, 35));
+        btn_1->setMaximumSize(QSize(70, 70));
         QFont font1;
         font1.setFamilies({QString::fromUtf8("Arial")});
         font1.setPointSize(10);
-        pushButton_17->setFont(font1);
-        pushButton_17->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_17->setLayoutDirection(Qt::LeftToRight);
-        pushButton_17->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_1->setFont(font1);
+        btn_1->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_1->setLayoutDirection(Qt::LeftToRight);
+        btn_1->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -138,18 +143,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_17, 4, 3, 1, 1);
+        gridLayout->addWidget(btn_1, 4, 3, 1, 1);
 
-        pushButton_10 = new QPushButton(centralwidget);
-        pushButton_10->setObjectName(QString::fromUtf8("pushButton_10"));
-        sizePolicy1.setHeightForWidth(pushButton_10->sizePolicy().hasHeightForWidth());
-        pushButton_10->setSizePolicy(sizePolicy1);
-        pushButton_10->setMinimumSize(QSize(70, 35));
-        pushButton_10->setMaximumSize(QSize(70, 70));
-        pushButton_10->setFont(font1);
-        pushButton_10->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_10->setLayoutDirection(Qt::LeftToRight);
-        pushButton_10->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_6 = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_6);
+        btn_6->setObjectName(QString::fromUtf8("btn_6"));
+        sizePolicy1.setHeightForWidth(btn_6->sizePolicy().hasHeightForWidth());
+        btn_6->setSizePolicy(sizePolicy1);
+        btn_6->setMinimumSize(QSize(70, 35));
+        btn_6->setMaximumSize(QSize(70, 70));
+        btn_6->setFont(font1);
+        btn_6->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_6->setLayoutDirection(Qt::LeftToRight);
+        btn_6->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -162,18 +168,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_10, 3, 5, 1, 1);
+        gridLayout->addWidget(btn_6, 3, 5, 1, 1);
 
-        pushButton_28 = new QPushButton(centralwidget);
-        pushButton_28->setObjectName(QString::fromUtf8("pushButton_28"));
-        sizePolicy1.setHeightForWidth(pushButton_28->sizePolicy().hasHeightForWidth());
-        pushButton_28->setSizePolicy(sizePolicy1);
-        pushButton_28->setMinimumSize(QSize(70, 35));
-        pushButton_28->setMaximumSize(QSize(70, 70));
-        pushButton_28->setFont(font1);
-        pushButton_28->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_28->setLayoutDirection(Qt::LeftToRight);
-        pushButton_28->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_asin = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_asin);
+        btn_asin->setObjectName(QString::fromUtf8("btn_asin"));
+        sizePolicy1.setHeightForWidth(btn_asin->sizePolicy().hasHeightForWidth());
+        btn_asin->setSizePolicy(sizePolicy1);
+        btn_asin->setMinimumSize(QSize(70, 35));
+        btn_asin->setMaximumSize(QSize(70, 70));
+        btn_asin->setFont(font1);
+        btn_asin->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_asin->setLayoutDirection(Qt::LeftToRight);
+        btn_asin->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -186,18 +193,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_28, 4, 0, 1, 1);
+        gridLayout->addWidget(btn_asin, 4, 0, 1, 1);
 
-        pushButton_27 = new QPushButton(centralwidget);
-        pushButton_27->setObjectName(QString::fromUtf8("pushButton_27"));
-        sizePolicy1.setHeightForWidth(pushButton_27->sizePolicy().hasHeightForWidth());
-        pushButton_27->setSizePolicy(sizePolicy1);
-        pushButton_27->setMinimumSize(QSize(70, 35));
-        pushButton_27->setMaximumSize(QSize(70, 70));
-        pushButton_27->setFont(font1);
-        pushButton_27->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_27->setLayoutDirection(Qt::LeftToRight);
-        pushButton_27->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_acos = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_acos);
+        btn_acos->setObjectName(QString::fromUtf8("btn_acos"));
+        sizePolicy1.setHeightForWidth(btn_acos->sizePolicy().hasHeightForWidth());
+        btn_acos->setSizePolicy(sizePolicy1);
+        btn_acos->setMinimumSize(QSize(70, 35));
+        btn_acos->setMaximumSize(QSize(70, 70));
+        btn_acos->setFont(font1);
+        btn_acos->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_acos->setLayoutDirection(Qt::LeftToRight);
+        btn_acos->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -210,18 +218,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_27, 3, 0, 1, 1);
+        gridLayout->addWidget(btn_acos, 3, 0, 1, 1);
 
-        pushButton_14 = new QPushButton(centralwidget);
-        pushButton_14->setObjectName(QString::fromUtf8("pushButton_14"));
-        sizePolicy1.setHeightForWidth(pushButton_14->sizePolicy().hasHeightForWidth());
-        pushButton_14->setSizePolicy(sizePolicy1);
-        pushButton_14->setMinimumSize(QSize(70, 35));
-        pushButton_14->setMaximumSize(QSize(70, 70));
-        pushButton_14->setFont(font1);
-        pushButton_14->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_14->setLayoutDirection(Qt::LeftToRight);
-        pushButton_14->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_oparenth = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_oparenth);
+        btn_oparenth->setObjectName(QString::fromUtf8("btn_oparenth"));
+        sizePolicy1.setHeightForWidth(btn_oparenth->sizePolicy().hasHeightForWidth());
+        btn_oparenth->setSizePolicy(sizePolicy1);
+        btn_oparenth->setMinimumSize(QSize(70, 35));
+        btn_oparenth->setMaximumSize(QSize(70, 70));
+        btn_oparenth->setFont(font1);
+        btn_oparenth->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_oparenth->setLayoutDirection(Qt::LeftToRight);
+        btn_oparenth->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -234,18 +243,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_14, 0, 4, 1, 1);
+        gridLayout->addWidget(btn_oparenth, 0, 4, 1, 1);
 
-        pushButton_30 = new QPushButton(centralwidget);
-        pushButton_30->setObjectName(QString::fromUtf8("pushButton_30"));
-        sizePolicy1.setHeightForWidth(pushButton_30->sizePolicy().hasHeightForWidth());
-        pushButton_30->setSizePolicy(sizePolicy1);
-        pushButton_30->setMinimumSize(QSize(70, 35));
-        pushButton_30->setMaximumSize(QSize(70, 70));
-        pushButton_30->setFont(font1);
-        pushButton_30->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_30->setLayoutDirection(Qt::LeftToRight);
-        pushButton_30->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_exp = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_exp);
+        btn_exp->setObjectName(QString::fromUtf8("btn_exp"));
+        sizePolicy1.setHeightForWidth(btn_exp->sizePolicy().hasHeightForWidth());
+        btn_exp->setSizePolicy(sizePolicy1);
+        btn_exp->setMinimumSize(QSize(70, 35));
+        btn_exp->setMaximumSize(QSize(70, 70));
+        btn_exp->setFont(font1);
+        btn_exp->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_exp->setLayoutDirection(Qt::LeftToRight);
+        btn_exp->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -258,18 +268,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_30, 0, 2, 1, 1);
+        gridLayout->addWidget(btn_exp, 0, 2, 1, 1);
 
-        pushButton_29 = new QPushButton(centralwidget);
-        pushButton_29->setObjectName(QString::fromUtf8("pushButton_29"));
-        sizePolicy1.setHeightForWidth(pushButton_29->sizePolicy().hasHeightForWidth());
-        pushButton_29->setSizePolicy(sizePolicy1);
-        pushButton_29->setMinimumSize(QSize(70, 35));
-        pushButton_29->setMaximumSize(QSize(70, 70));
-        pushButton_29->setFont(font1);
-        pushButton_29->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_29->setLayoutDirection(Qt::LeftToRight);
-        pushButton_29->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_atan = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_atan);
+        btn_atan->setObjectName(QString::fromUtf8("btn_atan"));
+        sizePolicy1.setHeightForWidth(btn_atan->sizePolicy().hasHeightForWidth());
+        btn_atan->setSizePolicy(sizePolicy1);
+        btn_atan->setMinimumSize(QSize(70, 35));
+        btn_atan->setMaximumSize(QSize(70, 70));
+        btn_atan->setFont(font1);
+        btn_atan->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_atan->setLayoutDirection(Qt::LeftToRight);
+        btn_atan->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -282,18 +293,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_29, 5, 0, 1, 1);
+        gridLayout->addWidget(btn_atan, 5, 0, 1, 1);
 
-        pushButton_23 = new QPushButton(centralwidget);
-        pushButton_23->setObjectName(QString::fromUtf8("pushButton_23"));
-        sizePolicy1.setHeightForWidth(pushButton_23->sizePolicy().hasHeightForWidth());
-        pushButton_23->setSizePolicy(sizePolicy1);
-        pushButton_23->setMinimumSize(QSize(70, 35));
-        pushButton_23->setMaximumSize(QSize(70, 70));
-        pushButton_23->setFont(font1);
-        pushButton_23->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_23->setLayoutDirection(Qt::LeftToRight);
-        pushButton_23->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_log = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_log);
+        btn_log->setObjectName(QString::fromUtf8("btn_log"));
+        sizePolicy1.setHeightForWidth(btn_log->sizePolicy().hasHeightForWidth());
+        btn_log->setSizePolicy(sizePolicy1);
+        btn_log->setMinimumSize(QSize(70, 35));
+        btn_log->setMaximumSize(QSize(70, 70));
+        btn_log->setFont(font1);
+        btn_log->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_log->setLayoutDirection(Qt::LeftToRight);
+        btn_log->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -306,18 +318,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_23, 5, 2, 1, 1);
+        gridLayout->addWidget(btn_log, 5, 2, 1, 1);
 
-        pushButton_31 = new QPushButton(centralwidget);
-        pushButton_31->setObjectName(QString::fromUtf8("pushButton_31"));
-        sizePolicy1.setHeightForWidth(pushButton_31->sizePolicy().hasHeightForWidth());
-        pushButton_31->setSizePolicy(sizePolicy1);
-        pushButton_31->setMinimumSize(QSize(70, 35));
-        pushButton_31->setMaximumSize(QSize(70, 70));
-        pushButton_31->setFont(font1);
-        pushButton_31->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_31->setLayoutDirection(Qt::LeftToRight);
-        pushButton_31->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_mod = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_mod);
+        btn_mod->setObjectName(QString::fromUtf8("btn_mod"));
+        sizePolicy1.setHeightForWidth(btn_mod->sizePolicy().hasHeightForWidth());
+        btn_mod->setSizePolicy(sizePolicy1);
+        btn_mod->setMinimumSize(QSize(70, 35));
+        btn_mod->setMaximumSize(QSize(70, 70));
+        btn_mod->setFont(font1);
+        btn_mod->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_mod->setLayoutDirection(Qt::LeftToRight);
+        btn_mod->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -330,18 +343,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_31, 1, 2, 1, 1);
+        gridLayout->addWidget(btn_mod, 1, 2, 1, 1);
 
-        pushButton_13 = new QPushButton(centralwidget);
-        pushButton_13->setObjectName(QString::fromUtf8("pushButton_13"));
-        sizePolicy1.setHeightForWidth(pushButton_13->sizePolicy().hasHeightForWidth());
-        pushButton_13->setSizePolicy(sizePolicy1);
-        pushButton_13->setMinimumSize(QSize(70, 35));
-        pushButton_13->setMaximumSize(QSize(70, 70));
-        pushButton_13->setFont(font1);
-        pushButton_13->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_13->setLayoutDirection(Qt::LeftToRight);
-        pushButton_13->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_8 = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_8);
+        btn_8->setObjectName(QString::fromUtf8("btn_8"));
+        sizePolicy1.setHeightForWidth(btn_8->sizePolicy().hasHeightForWidth());
+        btn_8->setSizePolicy(sizePolicy1);
+        btn_8->setMinimumSize(QSize(70, 35));
+        btn_8->setMaximumSize(QSize(70, 70));
+        btn_8->setFont(font1);
+        btn_8->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_8->setLayoutDirection(Qt::LeftToRight);
+        btn_8->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -354,18 +368,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_13, 1, 4, 1, 1);
+        gridLayout->addWidget(btn_8, 1, 4, 1, 1);
 
-        pushButton_20 = new QPushButton(centralwidget);
-        pushButton_20->setObjectName(QString::fromUtf8("pushButton_20"));
-        sizePolicy1.setHeightForWidth(pushButton_20->sizePolicy().hasHeightForWidth());
-        pushButton_20->setSizePolicy(sizePolicy1);
-        pushButton_20->setMinimumSize(QSize(70, 35));
-        pushButton_20->setMaximumSize(QSize(70, 70));
-        pushButton_20->setFont(font1);
-        pushButton_20->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_20->setLayoutDirection(Qt::LeftToRight);
-        pushButton_20->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_4 = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_4);
+        btn_4->setObjectName(QString::fromUtf8("btn_4"));
+        sizePolicy1.setHeightForWidth(btn_4->sizePolicy().hasHeightForWidth());
+        btn_4->setSizePolicy(sizePolicy1);
+        btn_4->setMinimumSize(QSize(70, 35));
+        btn_4->setMaximumSize(QSize(70, 70));
+        btn_4->setFont(font1);
+        btn_4->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_4->setLayoutDirection(Qt::LeftToRight);
+        btn_4->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -378,18 +393,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_20, 3, 3, 1, 1);
+        gridLayout->addWidget(btn_4, 3, 3, 1, 1);
 
-        pushButton_3 = new QPushButton(centralwidget);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        sizePolicy1.setHeightForWidth(pushButton_3->sizePolicy().hasHeightForWidth());
-        pushButton_3->setSizePolicy(sizePolicy1);
-        pushButton_3->setMinimumSize(QSize(70, 35));
-        pushButton_3->setMaximumSize(QSize(70, 70));
-        pushButton_3->setFont(font1);
-        pushButton_3->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_3->setLayoutDirection(Qt::LeftToRight);
-        pushButton_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_mul = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_mul);
+        btn_mul->setObjectName(QString::fromUtf8("btn_mul"));
+        sizePolicy1.setHeightForWidth(btn_mul->sizePolicy().hasHeightForWidth());
+        btn_mul->setSizePolicy(sizePolicy1);
+        btn_mul->setMinimumSize(QSize(70, 35));
+        btn_mul->setMaximumSize(QSize(70, 70));
+        btn_mul->setFont(font1);
+        btn_mul->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_mul->setLayoutDirection(Qt::LeftToRight);
+        btn_mul->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(222, 179, 60), stop:1 rgb(237, 176, 53));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -403,18 +419,19 @@ public:
 "	color: rgb(105, 105, 105);\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_3, 1, 6, 1, 1);
+        gridLayout->addWidget(btn_mul, 1, 6, 1, 1);
 
-        pushButton_18 = new QPushButton(centralwidget);
-        pushButton_18->setObjectName(QString::fromUtf8("pushButton_18"));
-        sizePolicy1.setHeightForWidth(pushButton_18->sizePolicy().hasHeightForWidth());
-        pushButton_18->setSizePolicy(sizePolicy1);
-        pushButton_18->setMinimumSize(QSize(70, 35));
-        pushButton_18->setMaximumSize(QSize(70, 70));
-        pushButton_18->setFont(font1);
-        pushButton_18->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_18->setLayoutDirection(Qt::LeftToRight);
-        pushButton_18->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_7 = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_7);
+        btn_7->setObjectName(QString::fromUtf8("btn_7"));
+        sizePolicy1.setHeightForWidth(btn_7->sizePolicy().hasHeightForWidth());
+        btn_7->setSizePolicy(sizePolicy1);
+        btn_7->setMinimumSize(QSize(70, 35));
+        btn_7->setMaximumSize(QSize(70, 70));
+        btn_7->setFont(font1);
+        btn_7->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_7->setLayoutDirection(Qt::LeftToRight);
+        btn_7->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -427,18 +444,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_18, 1, 3, 1, 1);
+        gridLayout->addWidget(btn_7, 1, 3, 1, 1);
 
-        pushButton_34 = new QPushButton(centralwidget);
-        pushButton_34->setObjectName(QString::fromUtf8("pushButton_34"));
-        sizePolicy1.setHeightForWidth(pushButton_34->sizePolicy().hasHeightForWidth());
-        pushButton_34->setSizePolicy(sizePolicy1);
-        pushButton_34->setMinimumSize(QSize(70, 35));
-        pushButton_34->setMaximumSize(QSize(70, 70));
-        pushButton_34->setFont(font1);
-        pushButton_34->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_34->setLayoutDirection(Qt::LeftToRight);
-        pushButton_34->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_pi = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_pi);
+        btn_pi->setObjectName(QString::fromUtf8("btn_pi"));
+        sizePolicy1.setHeightForWidth(btn_pi->sizePolicy().hasHeightForWidth());
+        btn_pi->setSizePolicy(sizePolicy1);
+        btn_pi->setMinimumSize(QSize(70, 35));
+        btn_pi->setMaximumSize(QSize(70, 70));
+        btn_pi->setFont(font1);
+        btn_pi->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_pi->setLayoutDirection(Qt::LeftToRight);
+        btn_pi->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -451,18 +469,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_34, 1, 0, 1, 1);
+        gridLayout->addWidget(btn_pi, 1, 0, 1, 1);
 
-        pushButton_35 = new QPushButton(centralwidget);
-        pushButton_35->setObjectName(QString::fromUtf8("pushButton_35"));
-        sizePolicy1.setHeightForWidth(pushButton_35->sizePolicy().hasHeightForWidth());
-        pushButton_35->setSizePolicy(sizePolicy1);
-        pushButton_35->setMinimumSize(QSize(70, 35));
-        pushButton_35->setMaximumSize(QSize(70, 70));
-        pushButton_35->setFont(font1);
-        pushButton_35->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_35->setLayoutDirection(Qt::LeftToRight);
-        pushButton_35->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_e = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_e);
+        btn_e->setObjectName(QString::fromUtf8("btn_e"));
+        sizePolicy1.setHeightForWidth(btn_e->sizePolicy().hasHeightForWidth());
+        btn_e->setSizePolicy(sizePolicy1);
+        btn_e->setMinimumSize(QSize(70, 35));
+        btn_e->setMaximumSize(QSize(70, 70));
+        btn_e->setFont(font1);
+        btn_e->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_e->setLayoutDirection(Qt::LeftToRight);
+        btn_e->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -475,18 +494,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_35, 1, 1, 1, 1);
+        gridLayout->addWidget(btn_e, 1, 1, 1, 1);
 
-        pushButton_22 = new QPushButton(centralwidget);
-        pushButton_22->setObjectName(QString::fromUtf8("pushButton_22"));
-        sizePolicy1.setHeightForWidth(pushButton_22->sizePolicy().hasHeightForWidth());
-        pushButton_22->setSizePolicy(sizePolicy1);
-        pushButton_22->setMinimumSize(QSize(70, 35));
-        pushButton_22->setMaximumSize(QSize(70, 70));
-        pushButton_22->setFont(font1);
-        pushButton_22->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_22->setLayoutDirection(Qt::LeftToRight);
-        pushButton_22->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_ln = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_ln);
+        btn_ln->setObjectName(QString::fromUtf8("btn_ln"));
+        sizePolicy1.setHeightForWidth(btn_ln->sizePolicy().hasHeightForWidth());
+        btn_ln->setSizePolicy(sizePolicy1);
+        btn_ln->setMinimumSize(QSize(70, 35));
+        btn_ln->setMaximumSize(QSize(70, 70));
+        btn_ln->setFont(font1);
+        btn_ln->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_ln->setLayoutDirection(Qt::LeftToRight);
+        btn_ln->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -499,18 +519,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_22, 4, 2, 1, 1);
+        gridLayout->addWidget(btn_ln, 4, 2, 1, 1);
 
-        pushButton_9 = new QPushButton(centralwidget);
-        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
-        sizePolicy1.setHeightForWidth(pushButton_9->sizePolicy().hasHeightForWidth());
-        pushButton_9->setSizePolicy(sizePolicy1);
-        pushButton_9->setMinimumSize(QSize(70, 35));
-        pushButton_9->setMaximumSize(QSize(70, 70));
-        pushButton_9->setFont(font1);
-        pushButton_9->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_9->setLayoutDirection(Qt::LeftToRight);
-        pushButton_9->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_cparenth = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_cparenth);
+        btn_cparenth->setObjectName(QString::fromUtf8("btn_cparenth"));
+        sizePolicy1.setHeightForWidth(btn_cparenth->sizePolicy().hasHeightForWidth());
+        btn_cparenth->setSizePolicy(sizePolicy1);
+        btn_cparenth->setMinimumSize(QSize(70, 35));
+        btn_cparenth->setMaximumSize(QSize(70, 70));
+        btn_cparenth->setFont(font1);
+        btn_cparenth->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_cparenth->setLayoutDirection(Qt::LeftToRight);
+        btn_cparenth->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -523,18 +544,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_9, 0, 5, 1, 1);
+        gridLayout->addWidget(btn_cparenth, 0, 5, 1, 1);
 
-        pushButton_26 = new QPushButton(centralwidget);
-        pushButton_26->setObjectName(QString::fromUtf8("pushButton_26"));
-        sizePolicy1.setHeightForWidth(pushButton_26->sizePolicy().hasHeightForWidth());
-        pushButton_26->setSizePolicy(sizePolicy1);
-        pushButton_26->setMinimumSize(QSize(70, 35));
-        pushButton_26->setMaximumSize(QSize(70, 70));
-        pushButton_26->setFont(font1);
-        pushButton_26->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_26->setLayoutDirection(Qt::LeftToRight);
-        pushButton_26->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_tan = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_tan);
+        btn_tan->setObjectName(QString::fromUtf8("btn_tan"));
+        sizePolicy1.setHeightForWidth(btn_tan->sizePolicy().hasHeightForWidth());
+        btn_tan->setSizePolicy(sizePolicy1);
+        btn_tan->setMinimumSize(QSize(70, 35));
+        btn_tan->setMaximumSize(QSize(70, 70));
+        btn_tan->setFont(font1);
+        btn_tan->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_tan->setLayoutDirection(Qt::LeftToRight);
+        btn_tan->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -547,18 +569,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_26, 5, 1, 1, 1);
+        gridLayout->addWidget(btn_tan, 5, 1, 1, 1);
 
-        pushButton_16 = new QPushButton(centralwidget);
-        pushButton_16->setObjectName(QString::fromUtf8("pushButton_16"));
-        sizePolicy1.setHeightForWidth(pushButton_16->sizePolicy().hasHeightForWidth());
-        pushButton_16->setSizePolicy(sizePolicy1);
-        pushButton_16->setMinimumSize(QSize(70, 35));
-        pushButton_16->setMaximumSize(QSize(70, 70));
-        pushButton_16->setFont(font1);
-        pushButton_16->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_16->setLayoutDirection(Qt::LeftToRight);
-        pushButton_16->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_0 = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_0);
+        btn_0->setObjectName(QString::fromUtf8("btn_0"));
+        sizePolicy1.setHeightForWidth(btn_0->sizePolicy().hasHeightForWidth());
+        btn_0->setSizePolicy(sizePolicy1);
+        btn_0->setMinimumSize(QSize(70, 35));
+        btn_0->setMaximumSize(QSize(70, 70));
+        btn_0->setFont(font1);
+        btn_0->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_0->setLayoutDirection(Qt::LeftToRight);
+        btn_0->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -571,18 +594,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_16, 5, 3, 1, 1);
+        gridLayout->addWidget(btn_0, 5, 3, 1, 1);
 
-        pushButton_15 = new QPushButton(centralwidget);
-        pushButton_15->setObjectName(QString::fromUtf8("pushButton_15"));
-        sizePolicy1.setHeightForWidth(pushButton_15->sizePolicy().hasHeightForWidth());
-        pushButton_15->setSizePolicy(sizePolicy1);
-        pushButton_15->setMinimumSize(QSize(70, 35));
-        pushButton_15->setMaximumSize(QSize(70, 70));
-        pushButton_15->setFont(font1);
-        pushButton_15->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_15->setLayoutDirection(Qt::LeftToRight);
-        pushButton_15->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_5 = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_5);
+        btn_5->setObjectName(QString::fromUtf8("btn_5"));
+        sizePolicy1.setHeightForWidth(btn_5->sizePolicy().hasHeightForWidth());
+        btn_5->setSizePolicy(sizePolicy1);
+        btn_5->setMinimumSize(QSize(70, 35));
+        btn_5->setMaximumSize(QSize(70, 70));
+        btn_5->setFont(font1);
+        btn_5->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_5->setLayoutDirection(Qt::LeftToRight);
+        btn_5->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -595,18 +619,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_15, 3, 4, 1, 1);
+        gridLayout->addWidget(btn_5, 3, 4, 1, 1);
 
-        pushButton_2 = new QPushButton(centralwidget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        sizePolicy1.setHeightForWidth(pushButton_2->sizePolicy().hasHeightForWidth());
-        pushButton_2->setSizePolicy(sizePolicy1);
-        pushButton_2->setMinimumSize(QSize(70, 35));
-        pushButton_2->setMaximumSize(QSize(70, 70));
-        pushButton_2->setFont(font1);
-        pushButton_2->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_2->setLayoutDirection(Qt::LeftToRight);
-        pushButton_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_div = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_div);
+        btn_div->setObjectName(QString::fromUtf8("btn_div"));
+        sizePolicy1.setHeightForWidth(btn_div->sizePolicy().hasHeightForWidth());
+        btn_div->setSizePolicy(sizePolicy1);
+        btn_div->setMinimumSize(QSize(70, 35));
+        btn_div->setMaximumSize(QSize(70, 70));
+        btn_div->setFont(font1);
+        btn_div->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_div->setLayoutDirection(Qt::LeftToRight);
+        btn_div->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(222, 179, 60), stop:1 rgb(237, 176, 53));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -620,18 +645,18 @@ public:
 "	color: rgb(105, 105, 105);\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_2, 0, 6, 1, 1);
+        gridLayout->addWidget(btn_div, 0, 6, 1, 1);
 
-        pushButton_32 = new QPushButton(centralwidget);
-        pushButton_32->setObjectName(QString::fromUtf8("pushButton_32"));
-        sizePolicy1.setHeightForWidth(pushButton_32->sizePolicy().hasHeightForWidth());
-        pushButton_32->setSizePolicy(sizePolicy1);
-        pushButton_32->setMinimumSize(QSize(70, 35));
-        pushButton_32->setMaximumSize(QSize(70, 70));
-        pushButton_32->setFont(font1);
-        pushButton_32->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_32->setLayoutDirection(Qt::LeftToRight);
-        pushButton_32->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_function = new QPushButton(centralwidget);
+        btn_function->setObjectName(QString::fromUtf8("btn_function"));
+        sizePolicy1.setHeightForWidth(btn_function->sizePolicy().hasHeightForWidth());
+        btn_function->setSizePolicy(sizePolicy1);
+        btn_function->setMinimumSize(QSize(70, 35));
+        btn_function->setMaximumSize(QSize(70, 70));
+        btn_function->setFont(font1);
+        btn_function->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_function->setLayoutDirection(Qt::LeftToRight);
+        btn_function->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -644,18 +669,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_32, 0, 0, 1, 1);
+        gridLayout->addWidget(btn_function, 0, 0, 1, 1);
 
-        pushButton_4 = new QPushButton(centralwidget);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        sizePolicy1.setHeightForWidth(pushButton_4->sizePolicy().hasHeightForWidth());
-        pushButton_4->setSizePolicy(sizePolicy1);
-        pushButton_4->setMinimumSize(QSize(70, 35));
-        pushButton_4->setMaximumSize(QSize(70, 70));
-        pushButton_4->setFont(font1);
-        pushButton_4->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_4->setLayoutDirection(Qt::LeftToRight);
-        pushButton_4->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_sub = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_sub);
+        btn_sub->setObjectName(QString::fromUtf8("btn_sub"));
+        sizePolicy1.setHeightForWidth(btn_sub->sizePolicy().hasHeightForWidth());
+        btn_sub->setSizePolicy(sizePolicy1);
+        btn_sub->setMinimumSize(QSize(70, 35));
+        btn_sub->setMaximumSize(QSize(70, 70));
+        btn_sub->setFont(font1);
+        btn_sub->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_sub->setLayoutDirection(Qt::LeftToRight);
+        btn_sub->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(222, 179, 60), stop:1 rgb(237, 176, 53));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -669,18 +695,19 @@ public:
 "	color: rgb(105, 105, 105);\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_4, 3, 6, 1, 1);
+        gridLayout->addWidget(btn_sub, 3, 6, 1, 1);
 
-        pushButton_7 = new QPushButton(centralwidget);
-        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
-        sizePolicy1.setHeightForWidth(pushButton_7->sizePolicy().hasHeightForWidth());
-        pushButton_7->setSizePolicy(sizePolicy1);
-        pushButton_7->setMinimumSize(QSize(70, 35));
-        pushButton_7->setMaximumSize(QSize(70, 70));
-        pushButton_7->setFont(font1);
-        pushButton_7->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_7->setLayoutDirection(Qt::LeftToRight);
-        pushButton_7->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_3 = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_3);
+        btn_3->setObjectName(QString::fromUtf8("btn_3"));
+        sizePolicy1.setHeightForWidth(btn_3->sizePolicy().hasHeightForWidth());
+        btn_3->setSizePolicy(sizePolicy1);
+        btn_3->setMinimumSize(QSize(70, 35));
+        btn_3->setMaximumSize(QSize(70, 70));
+        btn_3->setFont(font1);
+        btn_3->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_3->setLayoutDirection(Qt::LeftToRight);
+        btn_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -693,18 +720,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_7, 4, 5, 1, 1);
+        gridLayout->addWidget(btn_3, 4, 5, 1, 1);
 
-        pushButton_5 = new QPushButton(centralwidget);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        sizePolicy1.setHeightForWidth(pushButton_5->sizePolicy().hasHeightForWidth());
-        pushButton_5->setSizePolicy(sizePolicy1);
-        pushButton_5->setMinimumSize(QSize(70, 35));
-        pushButton_5->setMaximumSize(QSize(70, 70));
-        pushButton_5->setFont(font1);
-        pushButton_5->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_5->setLayoutDirection(Qt::LeftToRight);
-        pushButton_5->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_sum = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_sum);
+        btn_sum->setObjectName(QString::fromUtf8("btn_sum"));
+        sizePolicy1.setHeightForWidth(btn_sum->sizePolicy().hasHeightForWidth());
+        btn_sum->setSizePolicy(sizePolicy1);
+        btn_sum->setMinimumSize(QSize(70, 35));
+        btn_sum->setMaximumSize(QSize(70, 70));
+        btn_sum->setFont(font1);
+        btn_sum->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_sum->setLayoutDirection(Qt::LeftToRight);
+        btn_sum->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(222, 179, 60), stop:1 rgb(237, 176, 53));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -718,18 +746,19 @@ public:
 "	color: rgb(105, 105, 105);\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_5, 4, 6, 1, 1);
+        gridLayout->addWidget(btn_sum, 4, 6, 1, 1);
 
-        pushButton_33 = new QPushButton(centralwidget);
-        pushButton_33->setObjectName(QString::fromUtf8("pushButton_33"));
-        sizePolicy1.setHeightForWidth(pushButton_33->sizePolicy().hasHeightForWidth());
-        pushButton_33->setSizePolicy(sizePolicy1);
-        pushButton_33->setMinimumSize(QSize(70, 35));
-        pushButton_33->setMaximumSize(QSize(70, 70));
-        pushButton_33->setFont(font1);
-        pushButton_33->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_33->setLayoutDirection(Qt::LeftToRight);
-        pushButton_33->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_x = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_x);
+        btn_x->setObjectName(QString::fromUtf8("btn_x"));
+        sizePolicy1.setHeightForWidth(btn_x->sizePolicy().hasHeightForWidth());
+        btn_x->setSizePolicy(sizePolicy1);
+        btn_x->setMinimumSize(QSize(70, 35));
+        btn_x->setMaximumSize(QSize(70, 70));
+        btn_x->setFont(font1);
+        btn_x->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_x->setLayoutDirection(Qt::LeftToRight);
+        btn_x->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -742,18 +771,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_33, 0, 1, 1, 1);
+        gridLayout->addWidget(btn_x, 0, 1, 1, 1);
 
-        pushButton_6 = new QPushButton(centralwidget);
-        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
-        sizePolicy1.setHeightForWidth(pushButton_6->sizePolicy().hasHeightForWidth());
-        pushButton_6->setSizePolicy(sizePolicy1);
-        pushButton_6->setMinimumSize(QSize(70, 35));
-        pushButton_6->setMaximumSize(QSize(70, 70));
-        pushButton_6->setFont(font1);
-        pushButton_6->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_6->setLayoutDirection(Qt::LeftToRight);
-        pushButton_6->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_E = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_E);
+        btn_E->setObjectName(QString::fromUtf8("btn_E"));
+        sizePolicy1.setHeightForWidth(btn_E->sizePolicy().hasHeightForWidth());
+        btn_E->setSizePolicy(sizePolicy1);
+        btn_E->setMinimumSize(QSize(70, 35));
+        btn_E->setMaximumSize(QSize(70, 70));
+        btn_E->setFont(font1);
+        btn_E->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_E->setLayoutDirection(Qt::LeftToRight);
+        btn_E->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -766,18 +796,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_6, 5, 5, 1, 1);
+        gridLayout->addWidget(btn_E, 5, 5, 1, 1);
 
-        pushButton_21 = new QPushButton(centralwidget);
-        pushButton_21->setObjectName(QString::fromUtf8("pushButton_21"));
-        sizePolicy1.setHeightForWidth(pushButton_21->sizePolicy().hasHeightForWidth());
-        pushButton_21->setSizePolicy(sizePolicy1);
-        pushButton_21->setMinimumSize(QSize(70, 35));
-        pushButton_21->setMaximumSize(QSize(70, 70));
-        pushButton_21->setFont(font1);
-        pushButton_21->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_21->setLayoutDirection(Qt::LeftToRight);
-        pushButton_21->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_sqrt = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_sqrt);
+        btn_sqrt->setObjectName(QString::fromUtf8("btn_sqrt"));
+        sizePolicy1.setHeightForWidth(btn_sqrt->sizePolicy().hasHeightForWidth());
+        btn_sqrt->setSizePolicy(sizePolicy1);
+        btn_sqrt->setMinimumSize(QSize(70, 35));
+        btn_sqrt->setMaximumSize(QSize(70, 70));
+        btn_sqrt->setFont(font1);
+        btn_sqrt->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_sqrt->setLayoutDirection(Qt::LeftToRight);
+        btn_sqrt->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -790,18 +821,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_21, 3, 2, 1, 1);
+        gridLayout->addWidget(btn_sqrt, 3, 2, 1, 1);
 
-        pushButton_8 = new QPushButton(centralwidget);
-        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
-        sizePolicy1.setHeightForWidth(pushButton_8->sizePolicy().hasHeightForWidth());
-        pushButton_8->setSizePolicy(sizePolicy1);
-        pushButton_8->setMinimumSize(QSize(70, 35));
-        pushButton_8->setMaximumSize(QSize(70, 70));
-        pushButton_8->setFont(font1);
-        pushButton_8->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_8->setLayoutDirection(Qt::LeftToRight);
-        pushButton_8->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_9 = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_9);
+        btn_9->setObjectName(QString::fromUtf8("btn_9"));
+        sizePolicy1.setHeightForWidth(btn_9->sizePolicy().hasHeightForWidth());
+        btn_9->setSizePolicy(sizePolicy1);
+        btn_9->setMinimumSize(QSize(70, 35));
+        btn_9->setMaximumSize(QSize(70, 70));
+        btn_9->setFont(font1);
+        btn_9->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_9->setLayoutDirection(Qt::LeftToRight);
+        btn_9->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -814,18 +846,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_8, 1, 5, 1, 1);
+        gridLayout->addWidget(btn_9, 1, 5, 1, 1);
 
-        pushButton_11 = new QPushButton(centralwidget);
-        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
-        sizePolicy1.setHeightForWidth(pushButton_11->sizePolicy().hasHeightForWidth());
-        pushButton_11->setSizePolicy(sizePolicy1);
-        pushButton_11->setMinimumSize(QSize(70, 35));
-        pushButton_11->setMaximumSize(QSize(70, 70));
-        pushButton_11->setFont(font1);
-        pushButton_11->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_11->setLayoutDirection(Qt::LeftToRight);
-        pushButton_11->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_dot = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_dot);
+        btn_dot->setObjectName(QString::fromUtf8("btn_dot"));
+        sizePolicy1.setHeightForWidth(btn_dot->sizePolicy().hasHeightForWidth());
+        btn_dot->setSizePolicy(sizePolicy1);
+        btn_dot->setMinimumSize(QSize(70, 35));
+        btn_dot->setMaximumSize(QSize(70, 70));
+        btn_dot->setFont(font1);
+        btn_dot->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_dot->setLayoutDirection(Qt::LeftToRight);
+        btn_dot->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -838,18 +871,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_11, 5, 4, 1, 1);
+        gridLayout->addWidget(btn_dot, 5, 4, 1, 1);
 
-        pushButton_24 = new QPushButton(centralwidget);
-        pushButton_24->setObjectName(QString::fromUtf8("pushButton_24"));
-        sizePolicy1.setHeightForWidth(pushButton_24->sizePolicy().hasHeightForWidth());
-        pushButton_24->setSizePolicy(sizePolicy1);
-        pushButton_24->setMinimumSize(QSize(70, 35));
-        pushButton_24->setMaximumSize(QSize(70, 70));
-        pushButton_24->setFont(font1);
-        pushButton_24->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_24->setLayoutDirection(Qt::LeftToRight);
-        pushButton_24->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_cos = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_cos);
+        btn_cos->setObjectName(QString::fromUtf8("btn_cos"));
+        sizePolicy1.setHeightForWidth(btn_cos->sizePolicy().hasHeightForWidth());
+        btn_cos->setSizePolicy(sizePolicy1);
+        btn_cos->setMinimumSize(QSize(70, 35));
+        btn_cos->setMaximumSize(QSize(70, 70));
+        btn_cos->setFont(font1);
+        btn_cos->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_cos->setLayoutDirection(Qt::LeftToRight);
+        btn_cos->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -862,18 +896,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_24, 3, 1, 1, 1);
+        gridLayout->addWidget(btn_cos, 3, 1, 1, 1);
 
-        pushButton_12 = new QPushButton(centralwidget);
-        pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
-        sizePolicy1.setHeightForWidth(pushButton_12->sizePolicy().hasHeightForWidth());
-        pushButton_12->setSizePolicy(sizePolicy1);
-        pushButton_12->setMinimumSize(QSize(70, 35));
-        pushButton_12->setMaximumSize(QSize(70, 70));
-        pushButton_12->setFont(font1);
-        pushButton_12->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_12->setLayoutDirection(Qt::LeftToRight);
-        pushButton_12->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_2 = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_2);
+        btn_2->setObjectName(QString::fromUtf8("btn_2"));
+        sizePolicy1.setHeightForWidth(btn_2->sizePolicy().hasHeightForWidth());
+        btn_2->setSizePolicy(sizePolicy1);
+        btn_2->setMinimumSize(QSize(70, 35));
+        btn_2->setMaximumSize(QSize(70, 70));
+        btn_2->setFont(font1);
+        btn_2->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_2->setLayoutDirection(Qt::LeftToRight);
+        btn_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -886,18 +921,19 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_12, 4, 4, 1, 1);
+        gridLayout->addWidget(btn_2, 4, 4, 1, 1);
 
-        pushButton_25 = new QPushButton(centralwidget);
-        pushButton_25->setObjectName(QString::fromUtf8("pushButton_25"));
-        sizePolicy1.setHeightForWidth(pushButton_25->sizePolicy().hasHeightForWidth());
-        pushButton_25->setSizePolicy(sizePolicy1);
-        pushButton_25->setMinimumSize(QSize(70, 35));
-        pushButton_25->setMaximumSize(QSize(70, 70));
-        pushButton_25->setFont(font1);
-        pushButton_25->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_25->setLayoutDirection(Qt::LeftToRight);
-        pushButton_25->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_sin = new QPushButton(centralwidget);
+        btn_print_group->addButton(btn_sin);
+        btn_sin->setObjectName(QString::fromUtf8("btn_sin"));
+        sizePolicy1.setHeightForWidth(btn_sin->sizePolicy().hasHeightForWidth());
+        btn_sin->setSizePolicy(sizePolicy1);
+        btn_sin->setMinimumSize(QSize(70, 35));
+        btn_sin->setMaximumSize(QSize(70, 70));
+        btn_sin->setFont(font1);
+        btn_sin->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_sin->setLayoutDirection(Qt::LeftToRight);
+        btn_sin->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(101, 101, 101), stop:1 rgb(129, 129, 129));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -910,18 +946,18 @@ public:
 "	border: 1px solid black;\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_25, 4, 1, 1, 1);
+        gridLayout->addWidget(btn_sin, 4, 1, 1, 1);
 
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        sizePolicy1.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
-        pushButton->setSizePolicy(sizePolicy1);
-        pushButton->setMinimumSize(QSize(70, 35));
-        pushButton->setMaximumSize(QSize(70, 70));
-        pushButton->setFont(font1);
-        pushButton->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton->setLayoutDirection(Qt::LeftToRight);
-        pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_equal = new QPushButton(centralwidget);
+        btn_equal->setObjectName(QString::fromUtf8("btn_equal"));
+        sizePolicy1.setHeightForWidth(btn_equal->sizePolicy().hasHeightForWidth());
+        btn_equal->setSizePolicy(sizePolicy1);
+        btn_equal->setMinimumSize(QSize(70, 35));
+        btn_equal->setMaximumSize(QSize(70, 70));
+        btn_equal->setFont(font1);
+        btn_equal->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_equal->setLayoutDirection(Qt::LeftToRight);
+        btn_equal->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(222, 179, 60), stop:1 rgb(237, 176, 53));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -935,18 +971,18 @@ public:
 "	color: rgb(105, 105, 105);\n"
 "}"));
 
-        gridLayout->addWidget(pushButton, 5, 6, 1, 1);
+        gridLayout->addWidget(btn_equal, 5, 6, 1, 1);
 
-        pushButton_19 = new QPushButton(centralwidget);
-        pushButton_19->setObjectName(QString::fromUtf8("pushButton_19"));
-        sizePolicy1.setHeightForWidth(pushButton_19->sizePolicy().hasHeightForWidth());
-        pushButton_19->setSizePolicy(sizePolicy1);
-        pushButton_19->setMinimumSize(QSize(70, 35));
-        pushButton_19->setMaximumSize(QSize(70, 70));
-        pushButton_19->setFont(font1);
-        pushButton_19->setCursor(QCursor(Qt::OpenHandCursor));
-        pushButton_19->setLayoutDirection(Qt::LeftToRight);
-        pushButton_19->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        btn_clean = new QPushButton(centralwidget);
+        btn_clean->setObjectName(QString::fromUtf8("btn_clean"));
+        sizePolicy1.setHeightForWidth(btn_clean->sizePolicy().hasHeightForWidth());
+        btn_clean->setSizePolicy(sizePolicy1);
+        btn_clean->setMinimumSize(QSize(70, 35));
+        btn_clean->setMaximumSize(QSize(70, 70));
+        btn_clean->setFont(font1);
+        btn_clean->setCursor(QCursor(Qt::OpenHandCursor));
+        btn_clean->setLayoutDirection(Qt::LeftToRight);
+        btn_clean->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(222, 179, 60), stop:1 rgb(237, 176, 53));\n"
 "	border: 1px solid grey;\n"
 "	border-radius: 5px;\n"
@@ -960,7 +996,7 @@ public:
 "	color: rgb(105, 105, 105);\n"
 "}"));
 
-        gridLayout->addWidget(pushButton_19, 0, 3, 1, 1);
+        gridLayout->addWidget(btn_clean, 0, 3, 1, 1);
 
 
         verticalLayout->addLayout(gridLayout);
@@ -975,42 +1011,42 @@ public:
     void retranslateUi(QMainWindow *Calculator)
     {
         Calculator->setWindowTitle(QCoreApplication::translate("Calculator", "Calculator", nullptr));
-        label->setText(QCoreApplication::translate("Calculator", "0", nullptr));
-        pushButton_17->setText(QCoreApplication::translate("Calculator", "1", nullptr));
-        pushButton_10->setText(QCoreApplication::translate("Calculator", "6", nullptr));
-        pushButton_28->setText(QCoreApplication::translate("Calculator", "asin", nullptr));
-        pushButton_27->setText(QCoreApplication::translate("Calculator", "acos", nullptr));
-        pushButton_14->setText(QCoreApplication::translate("Calculator", "(", nullptr));
-        pushButton_30->setText(QCoreApplication::translate("Calculator", "^", nullptr));
-        pushButton_29->setText(QCoreApplication::translate("Calculator", "atan", nullptr));
-        pushButton_23->setText(QCoreApplication::translate("Calculator", "log", nullptr));
-        pushButton_31->setText(QCoreApplication::translate("Calculator", "mod", nullptr));
-        pushButton_13->setText(QCoreApplication::translate("Calculator", "8", nullptr));
-        pushButton_20->setText(QCoreApplication::translate("Calculator", "4", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("Calculator", "*", nullptr));
-        pushButton_18->setText(QCoreApplication::translate("Calculator", "7", nullptr));
-        pushButton_34->setText(QCoreApplication::translate("Calculator", "\317\200", nullptr));
-        pushButton_35->setText(QCoreApplication::translate("Calculator", "e", nullptr));
-        pushButton_22->setText(QCoreApplication::translate("Calculator", "ln", nullptr));
-        pushButton_9->setText(QCoreApplication::translate("Calculator", ")", nullptr));
-        pushButton_26->setText(QCoreApplication::translate("Calculator", "tan", nullptr));
-        pushButton_16->setText(QCoreApplication::translate("Calculator", "0", nullptr));
-        pushButton_15->setText(QCoreApplication::translate("Calculator", "5", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Calculator", "/", nullptr));
-        pushButton_32->setText(QCoreApplication::translate("Calculator", "\306\222", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("Calculator", "-", nullptr));
-        pushButton_7->setText(QCoreApplication::translate("Calculator", "3", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("Calculator", "+", nullptr));
-        pushButton_33->setText(QCoreApplication::translate("Calculator", "x", nullptr));
-        pushButton_6->setText(QCoreApplication::translate("Calculator", "E", nullptr));
-        pushButton_21->setText(QCoreApplication::translate("Calculator", "sqrt", nullptr));
-        pushButton_8->setText(QCoreApplication::translate("Calculator", "9", nullptr));
-        pushButton_11->setText(QCoreApplication::translate("Calculator", ".", nullptr));
-        pushButton_24->setText(QCoreApplication::translate("Calculator", "cos", nullptr));
-        pushButton_12->setText(QCoreApplication::translate("Calculator", "2", nullptr));
-        pushButton_25->setText(QCoreApplication::translate("Calculator", "sin", nullptr));
-        pushButton->setText(QCoreApplication::translate("Calculator", "=", nullptr));
-        pushButton_19->setText(QCoreApplication::translate("Calculator", "AC", nullptr));
+        display->setText(QString());
+        btn_1->setText(QCoreApplication::translate("Calculator", "1", nullptr));
+        btn_6->setText(QCoreApplication::translate("Calculator", "6", nullptr));
+        btn_asin->setText(QCoreApplication::translate("Calculator", "asin", nullptr));
+        btn_acos->setText(QCoreApplication::translate("Calculator", "acos", nullptr));
+        btn_oparenth->setText(QCoreApplication::translate("Calculator", "(", nullptr));
+        btn_exp->setText(QCoreApplication::translate("Calculator", "^", nullptr));
+        btn_atan->setText(QCoreApplication::translate("Calculator", "atan", nullptr));
+        btn_log->setText(QCoreApplication::translate("Calculator", "log", nullptr));
+        btn_mod->setText(QCoreApplication::translate("Calculator", "mod", nullptr));
+        btn_8->setText(QCoreApplication::translate("Calculator", "8", nullptr));
+        btn_4->setText(QCoreApplication::translate("Calculator", "4", nullptr));
+        btn_mul->setText(QCoreApplication::translate("Calculator", "*", nullptr));
+        btn_7->setText(QCoreApplication::translate("Calculator", "7", nullptr));
+        btn_pi->setText(QCoreApplication::translate("Calculator", "\317\200", nullptr));
+        btn_e->setText(QCoreApplication::translate("Calculator", "e", nullptr));
+        btn_ln->setText(QCoreApplication::translate("Calculator", "ln", nullptr));
+        btn_cparenth->setText(QCoreApplication::translate("Calculator", ")", nullptr));
+        btn_tan->setText(QCoreApplication::translate("Calculator", "tan", nullptr));
+        btn_0->setText(QCoreApplication::translate("Calculator", "0", nullptr));
+        btn_5->setText(QCoreApplication::translate("Calculator", "5", nullptr));
+        btn_div->setText(QCoreApplication::translate("Calculator", "/", nullptr));
+        btn_function->setText(QCoreApplication::translate("Calculator", "\306\222", nullptr));
+        btn_sub->setText(QCoreApplication::translate("Calculator", "-", nullptr));
+        btn_3->setText(QCoreApplication::translate("Calculator", "3", nullptr));
+        btn_sum->setText(QCoreApplication::translate("Calculator", "+", nullptr));
+        btn_x->setText(QCoreApplication::translate("Calculator", "x", nullptr));
+        btn_E->setText(QCoreApplication::translate("Calculator", "E", nullptr));
+        btn_sqrt->setText(QCoreApplication::translate("Calculator", "sqrt", nullptr));
+        btn_9->setText(QCoreApplication::translate("Calculator", "9", nullptr));
+        btn_dot->setText(QCoreApplication::translate("Calculator", ".", nullptr));
+        btn_cos->setText(QCoreApplication::translate("Calculator", "cos", nullptr));
+        btn_2->setText(QCoreApplication::translate("Calculator", "2", nullptr));
+        btn_sin->setText(QCoreApplication::translate("Calculator", "sin", nullptr));
+        btn_equal->setText(QCoreApplication::translate("Calculator", "=", nullptr));
+        btn_clean->setText(QCoreApplication::translate("Calculator", "AC", nullptr));
     } // retranslateUi
 
 };

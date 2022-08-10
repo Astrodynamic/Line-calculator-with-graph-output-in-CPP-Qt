@@ -1,29 +1,46 @@
 #include "calculation.hpp"
 
 Calculation::fun_ptr_t Calculation::m_fun_ptr = {
-    {'(', {f_prt_t::DEFAULT, nullptr}},
-    {'+', {f_prt_t::L_PR, lamdas_f2arg(+)}},
-    {'-', {f_prt_t::L_PR, lamdas_f2arg(-)}},
-    {'*', {f_prt_t::M_PR, lamdas_f2arg(*)}},
-    {'/', {f_prt_t::M_PR, lamdas_f2arg(/)}},
-    {'A', {f_prt_t::M_PR, (fcast_2arg)&std::fmod}},
-    {'^', {f_prt_t::H_PR, (fcast_2arg)&std::pow}},
-    {'B', {f_prt_t::UNARY, nullptr}},
-    {'C', {f_prt_t::UNARY, lamdas_f1arg(-)}},
-    {'D', {f_prt_t::FUNC, (fcast_1arg)&std::cos}},
-    {'E', {f_prt_t::FUNC, (fcast_1arg)&std::sin}},
-    {'F', {f_prt_t::FUNC, (fcast_1arg)&std::tan}},
-    {'G', {f_prt_t::FUNC, (fcast_1arg)&std::acos}},
-    {'H', {f_prt_t::FUNC, (fcast_1arg)&std::asin}},
-    {'I', {f_prt_t::FUNC, (fcast_1arg)&std::atan}},
-    {'J', {f_prt_t::FUNC, (fcast_1arg)&std::sqrt}},
-    {'K', {f_prt_t::FUNC, (fcast_1arg)&std::log}},
-    {'L', {f_prt_t::FUNC, (fcast_1arg)&std::log10}}};
+    {{'(', "("}, {f_prt_t::DEFAULT, nullptr}},
+    {{'+', "+"}, {f_prt_t::L_PR, lamdas_f2arg(+)}},
+    {{'-', "-"}, {f_prt_t::L_PR, lamdas_f2arg(-)}},
+    {{'*', "*"}, {f_prt_t::M_PR, lamdas_f2arg(*)}},
+    {{'/', "/"}, {f_prt_t::M_PR, lamdas_f2arg(/)}},
+    {{'A', "mod"}, {f_prt_t::M_PR, (fcast_2arg)&std::fmod}},
+    {{'^', "^"}, {f_prt_t::H_PR, (fcast_2arg)&std::pow}},
+    {{'B', "B"}, {f_prt_t::UNARY, nullptr}},
+    {{'C', "C"}, {f_prt_t::UNARY, lamdas_f1arg(-)}},
+    {{'D', "acos"}, {f_prt_t::FUNC, (fcast_1arg)&std::acos}},
+    {{'E', "asin"}, {f_prt_t::FUNC, (fcast_1arg)&std::asin}},
+    {{'F', "atan"}, {f_prt_t::FUNC, (fcast_1arg)&std::atan}},
+    {{'G', "cos"}, {f_prt_t::FUNC, (fcast_1arg)&std::cos}},
+    {{'H', "sin"}, {f_prt_t::FUNC, (fcast_1arg)&std::sin}},
+    {{'I', "tan"}, {f_prt_t::FUNC, (fcast_1arg)&std::tan}},
+    {{'J', "sqrt"}, {f_prt_t::FUNC, (fcast_1arg)&std::sqrt}},
+    {{'K', "ln"}, {f_prt_t::FUNC, (fcast_1arg)&std::log}},
+    {{'L', "log"}, {f_prt_t::FUNC, (fcast_1arg)&std::log10}}};
 
 Calculation::Calculation() {}
 
-void Calculation::load_expration(const QString& infix) {
-  QStack<QChar> stack;
+void Calculation::expression_load(QString infix) {
+  if (true) {
+    expression_up(infix);
+    qDebug() << infix;
+    QStack<QChar> stack;
+  }
+}
 
-  
+void Calculation::expression_up(QString& infix) {
+  for (auto it = m_fun_ptr.begin(); it != m_fun_ptr.end(); ++it) {
+    infix.replace(it.key().second, it.key().first);
+  }
+  static const QHash<QRegularExpression, QString> rgx_table{
+      {QRegularExpression("([+\\-*\\/^\\(A])([\\+])"), "\\1B"},
+      {QRegularExpression("([+\\-*\\/^\\(A])([\\-])"), "\\1C"},
+      {QRegularExpression("^[\\+]"), "B"},
+      {QRegularExpression("^[\\-]"), "C"},
+  };
+  for (auto it = rgx_table.begin(); it != rgx_table.end(); ++it) {
+    infix.replace(it.key(), it.value());
+  }
 }

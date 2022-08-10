@@ -2,6 +2,7 @@
 #define SRC_INCLUDE_CALCULATION_HPP_
 
 #include <QMap>
+#include <QRegularExpression>
 #include <QStack>
 #include <QString>
 #include <QVector>
@@ -21,7 +22,7 @@ class Calculation {
   using fp_1arg = std::function<double(double)>;
   using fp_2arg = std::function<double(double, double)>;
   using fp_variant = std::variant<fp_1arg, fp_2arg, nullptr_t>;
-  using fun_ptr_t = const QMap<QChar, QPair<f_prt_t, fp_variant>>;
+  using fun_ptr_t = const QMap<QPair<QChar, QString>, QPair<f_prt_t, fp_variant>>;
 
   static fun_ptr_t m_fun_ptr;
 
@@ -30,7 +31,10 @@ class Calculation {
  public:
   Calculation();
 
-  void load_expration(const QString& infix);
+  void expression_load(QString infix);
+
+ private:
+  void expression_up(QString& infix);
 };
 
 #endif  // SRC_INCLUDE_CALCULATION_HPP_

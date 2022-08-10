@@ -291,13 +291,25 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o: Sma
   /usr/local/include/QtGui/qbitmap.h \
   /usr/local/include/QtGui/qkeysequence.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
-  /usr/local/include/QtGui/qicon.h
+  /usr/local/include/QtGui/qicon.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QAbstractButton \
+  /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculation.hpp \
+  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtCore.framework/Headers/qmap.h \
+  /usr/local/include/QtCore/qshareddata_impl.h \
+  /usr/local/lib/QtCore.framework/Headers/QStack \
+  /usr/local/lib/QtCore.framework/Headers/qstack.h \
+  /usr/local/lib/QtCore.framework/Headers/QString \
+  /usr/local/lib/QtCore.framework/Headers/qstring.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h
 
 CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o: /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculation.cpp \
   /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculation.hpp \
-  /usr/local/lib/QtCore.framework/Headers/QString \
-  /usr/local/lib/QtCore.framework/Headers/qstring.h \
-  /usr/local/include/QtCore/qchar.h \
+  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtCore.framework/Headers/qmap.h \
+  /usr/local/include/QtCore/qiterator.h \
   /usr/local/include/QtCore/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__config \
@@ -488,16 +500,20 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o: /Users/werewolf/Document
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/math.h \
   /usr/local/include/QtCore/qversiontagging.h \
+  /usr/local/include/QtCore/qlist.h \
+  /usr/local/include/QtCore/qarraydatapointer.h \
+  /usr/local/include/QtCore/qarraydataops.h \
+  /usr/local/include/QtCore/qarraydata.h \
+  /usr/local/include/QtCore/qpair.h \
+  /usr/local/include/QtCore/qcontainertools_impl.h \
+  /usr/local/include/QtCore/qnamespace.h \
+  /usr/local/include/QtCore/qtmetamacros.h \
+  /usr/local/include/QtCore/qhashfunctions.h \
+  /usr/local/include/QtCore/qstring.h \
+  /usr/local/include/QtCore/qchar.h \
   /usr/local/include/QtCore/qstringview.h \
   /usr/local/include/QtCore/qbytearray.h \
   /usr/local/include/QtCore/qrefcount.h \
-  /usr/local/include/QtCore/qnamespace.h \
-  /usr/local/include/QtCore/qtmetamacros.h \
-  /usr/local/include/QtCore/qarraydata.h \
-  /usr/local/include/QtCore/qpair.h \
-  /usr/local/include/QtCore/qarraydatapointer.h \
-  /usr/local/include/QtCore/qarraydataops.h \
-  /usr/local/include/QtCore/qcontainertools_impl.h \
   /usr/local/include/QtCore/qbytearrayalgorithms.h \
   /usr/local/include/QtCore/qbytearrayview.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/string \
@@ -514,7 +530,23 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o: /Users/werewolf/Document
   /usr/local/include/QtCore/qstringalgorithms.h \
   /usr/local/include/QtCore/qanystringview.h \
   /usr/local/include/QtCore/qutf8stringview.h \
-  /usr/local/include/QtCore/qstringtokenizer.h
+  /usr/local/include/QtCore/qstringtokenizer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/numeric \
+  /usr/local/include/QtCore/qbytearraylist.h \
+  /usr/local/include/QtCore/qstringlist.h \
+  /usr/local/include/QtCore/qalgorithms.h \
+  /usr/local/include/QtCore/qstringmatcher.h \
+  /usr/local/include/QtCore/qshareddata.h \
+  /usr/local/include/QtCore/qshareddata_impl.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__tree \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__node_handle \
+  /usr/local/lib/QtCore.framework/Headers/QStack \
+  /usr/local/lib/QtCore.framework/Headers/qstack.h \
+  /usr/local/lib/QtCore.framework/Headers/QString \
+  /usr/local/lib/QtCore.framework/Headers/qstring.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h
 
 CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculator.cpp \
   /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculator.hpp \
@@ -806,11 +838,22 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: /Users/werewolf/Documents
   /usr/local/include/QtGui/qkeysequence.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
   /usr/local/include/QtGui/qicon.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QAbstractButton \
+  /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculation.hpp \
+  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtCore.framework/Headers/qmap.h \
+  /usr/local/include/QtCore/qshareddata_impl.h \
+  /usr/local/lib/QtCore.framework/Headers/QStack \
+  /usr/local/lib/QtCore.framework/Headers/qstack.h \
+  /usr/local/lib/QtCore.framework/Headers/QString \
+  /usr/local/lib/QtCore.framework/Headers/qstring.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h \
   SmartCalc_v2_0_autogen/include/ui_calculator.h \
   /usr/local/include/QtCore/QVariant \
   /usr/local/lib/QtCore.framework/Headers/qvariant.h \
   /usr/local/include/QtCore/qmap.h \
-  /usr/local/include/QtCore/qshareddata_impl.h \
   /usr/local/include/QtCore/qhash.h \
   /usr/local/include/QtCore/qdebug.h \
   /usr/local/include/QtCore/qtextstream.h \
@@ -829,6 +872,8 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: /Users/werewolf/Documents
   /usr/local/include/QtCore/qlocale.h \
   /usr/local/include/QtCore/qvariant.h \
   /usr/local/include/QtGui/qguiapplication_platform.h \
+  /usr/local/include/QtWidgets/QButtonGroup \
+  /usr/local/lib/QtWidgets.framework/Headers/qbuttongroup.h \
   /usr/local/include/QtWidgets/QGridLayout \
   /usr/local/lib/QtWidgets.framework/Headers/qgridlayout.h \
   /usr/local/include/QtWidgets/qlayout.h \
@@ -1160,7 +1205,18 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: /Users/werewolf/Documents/gitla
   /usr/local/include/QtWidgets/qsizepolicy.h \
   /usr/local/include/QtGui/qkeysequence.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
-  /usr/local/include/QtGui/qicon.h
+  /usr/local/include/QtGui/qicon.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QAbstractButton \
+  /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculation.hpp \
+  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtCore.framework/Headers/qmap.h \
+  /usr/local/lib/QtCore.framework/Headers/QStack \
+  /usr/local/lib/QtCore.framework/Headers/qstack.h \
+  /usr/local/lib/QtCore.framework/Headers/QString \
+  /usr/local/lib/QtCore.framework/Headers/qstring.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h
 
 
 /usr/local/lib/QtWidgets.framework/Headers/QApplication:
@@ -1178,6 +1234,8 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: /Users/werewolf/Documents/gitla
 /usr/local/include/QtWidgets/qboxlayout.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qgridlayout.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qbuttongroup.h:
 
 /usr/local/include/QtCore/qlocale.h:
 
@@ -1201,19 +1259,25 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: /Users/werewolf/Documents/gitla
 
 /usr/local/include/QtCore/qhash.h:
 
-/usr/local/include/QtCore/qshareddata_impl.h:
-
 /usr/local/include/QtCore/qmap.h:
 
 SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculator.cpp:
 
+/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculation.cpp:
+
+/usr/local/lib/QtCore.framework/Headers/qvector.h:
+
+/usr/local/lib/QtCore.framework/Headers/QVector:
+
 /usr/local/lib/QtCore.framework/Headers/qstring.h:
+
+/usr/local/include/QtCore/qshareddata_impl.h:
 
 /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculation.hpp:
 
-/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculation.cpp:
+/usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h:
 
 /usr/local/include/QtGui/qicon.h:
 
@@ -1242,6 +1306,8 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 /usr/local/include/QtGui/qcolor.h:
 
 /usr/local/include/QtCore/qpoint.h:
+
+/usr/local/lib/QtCore.framework/Headers/qstack.h:
 
 /usr/local/include/QtGui/qpaintdevice.h:
 
@@ -1291,6 +1357,8 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /usr/local/include/QtCore/qanystringview.h:
 
+/usr/local/lib/QtWidgets.framework/Headers/QAbstractButton:
+
 /usr/local/include/QtCore/qstringalgorithms.h:
 
 /usr/local/include/QtCore/qiodevice.h:
@@ -1304,6 +1372,8 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cwchar:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__string:
+
+/usr/local/lib/QtCore.framework/Headers/qmap.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/string_view:
 
@@ -1352,6 +1422,8 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/optional:
 
 /usr/local/include/QtCore/qversiontagging.h:
+
+/usr/local/lib/QtCore.framework/Headers/QStack:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cmath:
 
@@ -1448,6 +1520,8 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/utility:
 
 /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculator.hpp:
+
+/usr/local/include/QtWidgets/QButtonGroup:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/errno.h:
 
@@ -1628,6 +1702,8 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 /usr/local/include/QtCore/qcontainertools_impl.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_u_int16_t.h:
+
+/usr/local/lib/QtCore.framework/Headers/QMap:
 
 /usr/local/include/QtCore/qstringtokenizer.h:
 
