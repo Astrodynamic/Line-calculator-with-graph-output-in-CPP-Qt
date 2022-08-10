@@ -23,10 +23,12 @@ Calculation::fun_ptr_t Calculation::m_fun_ptr = {
 Calculation::Calculation() {}
 
 void Calculation::expression_load(QString infix) {
-  if (true) {
+  if (expression_validate(infix)) {
     expression_up(infix);
     qDebug() << infix;
     QStack<QChar> stack;
+  } else {
+    qDebug() << "NO";
   }
 }
 
@@ -43,4 +45,19 @@ void Calculation::expression_up(QString& infix) {
   for (auto it = rgx_table.begin(); it != rgx_table.end(); ++it) {
     infix.replace(it.key(), it.value());
   }
+}
+
+bool Calculation::expression_validate(QString& infix) {
+  QVector<QRegularExpression> regex{
+    QRegularExpression(".(?<![+\\-*\\/^(.]|mod|\\d)(\\d)"),
+    QRegularExpression("(?<![)x]|\\d)([\\*\\/^]|mod)")
+  };
+  bool check = true;
+  for (auto it : regex) {
+    if (infix.contains(it)) {
+      check = false;
+      break;
+    }
+  }
+  return check;
 }

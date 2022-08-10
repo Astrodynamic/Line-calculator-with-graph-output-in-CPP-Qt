@@ -35,6 +35,7 @@ class Calculation {
 
  private:
   void expression_up(QString& infix);
+  bool expression_validate(QString& infix);
 };
 
 #endif  // SRC_INCLUDE_CALCULATION_HPP_

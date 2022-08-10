@@ -298,6 +298,16 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o: Sma
   /usr/local/lib/QtCore.framework/Headers/QMap \
   /usr/local/lib/QtCore.framework/Headers/qmap.h \
   /usr/local/include/QtCore/qshareddata_impl.h \
+  /usr/local/lib/QtCore.framework/Headers/QRegularExpression \
+  /usr/local/lib/QtCore.framework/Headers/qregularexpression.h \
+  /usr/local/include/QtCore/qvariant.h \
+  /usr/local/include/QtCore/qmap.h \
+  /usr/local/include/QtCore/qhash.h \
+  /usr/local/include/QtCore/qdebug.h \
+  /usr/local/include/QtCore/qtextstream.h \
+  /usr/local/include/QtCore/qstringconverter.h \
+  /usr/local/include/QtCore/qset.h \
+  /usr/local/include/QtCore/qcontiguouscache.h \
   /usr/local/lib/QtCore.framework/Headers/QStack \
   /usr/local/lib/QtCore.framework/Headers/qstack.h \
   /usr/local/lib/QtCore.framework/Headers/QString \
@@ -541,6 +551,39 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o: /Users/werewolf/Document
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/map \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__tree \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__node_handle \
+  /usr/local/lib/QtCore.framework/Headers/QRegularExpression \
+  /usr/local/lib/QtCore.framework/Headers/qregularexpression.h \
+  /usr/local/include/QtCore/qvariant.h \
+  /usr/local/include/QtCore/qmetatype.h \
+  /usr/local/include/QtCore/qcompare.h \
+  /usr/local/include/QtCore/qvarlengtharray.h \
+  /usr/local/include/QtCore/qscopeguard.h \
+  /usr/local/include/QtCore/qdatastream.h \
+  /usr/local/include/QtCore/qscopedpointer.h \
+  /usr/local/include/QtCore/qiodevicebase.h \
+  /usr/local/include/QtCore/qiterable.h \
+  /usr/local/include/QtCore/qmetacontainer.h \
+  /usr/local/include/QtCore/qcontainerinfo.h \
+  /usr/local/include/QtCore/qtaggedpointer.h \
+  /usr/local/include/QtCore/qmath.h \
+  /usr/local/include/QtCore/qobjectdefs.h \
+  /usr/local/include/QtCore/qobjectdefs_impl.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/vector \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bit_reference \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__split_buffer \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/list \
+  /usr/local/include/QtCore/qmap.h \
+  /usr/local/include/QtCore/qhash.h \
+  /usr/local/include/QtCore/qobject.h \
+  /usr/local/include/QtCore/qobject_impl.h \
+  /usr/local/include/QtCore/qbindingstorage.h \
+  /usr/local/include/QtCore/qdebug.h \
+  /usr/local/include/QtCore/qtextstream.h \
+  /usr/local/include/QtCore/qstringconverter.h \
+  /usr/local/include/QtCore/qset.h \
+  /usr/local/include/QtCore/qcontiguouscache.h \
+  /usr/local/include/QtCore/qsharedpointer.h \
+  /usr/local/include/QtCore/qsharedpointer_impl.h \
   /usr/local/lib/QtCore.framework/Headers/QStack \
   /usr/local/lib/QtCore.framework/Headers/qstack.h \
   /usr/local/lib/QtCore.framework/Headers/QString \
@@ -844,6 +887,16 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: /Users/werewolf/Documents
   /usr/local/lib/QtCore.framework/Headers/QMap \
   /usr/local/lib/QtCore.framework/Headers/qmap.h \
   /usr/local/include/QtCore/qshareddata_impl.h \
+  /usr/local/lib/QtCore.framework/Headers/QRegularExpression \
+  /usr/local/lib/QtCore.framework/Headers/qregularexpression.h \
+  /usr/local/include/QtCore/qvariant.h \
+  /usr/local/include/QtCore/qmap.h \
+  /usr/local/include/QtCore/qhash.h \
+  /usr/local/include/QtCore/qdebug.h \
+  /usr/local/include/QtCore/qtextstream.h \
+  /usr/local/include/QtCore/qstringconverter.h \
+  /usr/local/include/QtCore/qset.h \
+  /usr/local/include/QtCore/qcontiguouscache.h \
   /usr/local/lib/QtCore.framework/Headers/QStack \
   /usr/local/lib/QtCore.framework/Headers/qstack.h \
   /usr/local/lib/QtCore.framework/Headers/QString \
@@ -853,13 +906,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: /Users/werewolf/Documents
   SmartCalc_v2_0_autogen/include/ui_calculator.h \
   /usr/local/include/QtCore/QVariant \
   /usr/local/lib/QtCore.framework/Headers/qvariant.h \
-  /usr/local/include/QtCore/qmap.h \
-  /usr/local/include/QtCore/qhash.h \
-  /usr/local/include/QtCore/qdebug.h \
-  /usr/local/include/QtCore/qtextstream.h \
-  /usr/local/include/QtCore/qstringconverter.h \
-  /usr/local/include/QtCore/qset.h \
-  /usr/local/include/QtCore/qcontiguouscache.h \
   /usr/local/include/QtWidgets/QApplication \
   /usr/local/lib/QtWidgets.framework/Headers/qapplication.h \
   /usr/local/include/QtCore/qcoreapplication.h \
@@ -870,7 +916,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: /Users/werewolf/Documents
   /usr/local/include/QtGui/qguiapplication.h \
   /usr/local/include/QtGui/qinputmethod.h \
   /usr/local/include/QtCore/qlocale.h \
-  /usr/local/include/QtCore/qvariant.h \
   /usr/local/include/QtGui/qguiapplication_platform.h \
   /usr/local/include/QtWidgets/QButtonGroup \
   /usr/local/lib/QtWidgets.framework/Headers/qbuttongroup.h \
@@ -1211,6 +1256,8 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: /Users/werewolf/Documents/gitla
   /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculation.hpp \
   /usr/local/lib/QtCore.framework/Headers/QMap \
   /usr/local/lib/QtCore.framework/Headers/qmap.h \
+  /usr/local/lib/QtCore.framework/Headers/QRegularExpression \
+  /usr/local/lib/QtCore.framework/Headers/qregularexpression.h \
   /usr/local/lib/QtCore.framework/Headers/QStack \
   /usr/local/lib/QtCore.framework/Headers/qstack.h \
   /usr/local/lib/QtCore.framework/Headers/QString \
@@ -1245,6 +1292,18 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: /Users/werewolf/Documents/gitla
 
 /usr/local/include/QtCore/qnativeinterface.h:
 
+SmartCalc_v2_0_autogen/include/ui_calculator.h:
+
+/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculator.cpp:
+
+/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculation.cpp:
+
+/usr/local/lib/QtCore.framework/Headers/qvector.h:
+
+/usr/local/lib/QtCore.framework/Headers/QVector:
+
+/usr/local/lib/QtCore.framework/Headers/qstring.h:
+
 /usr/local/include/QtWidgets/QWidget:
 
 /usr/local/include/QtCore/qcontiguouscache.h:
@@ -1261,17 +1320,7 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: /Users/werewolf/Documents/gitla
 
 /usr/local/include/QtCore/qmap.h:
 
-SmartCalc_v2_0_autogen/include/ui_calculator.h:
-
-/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculator.cpp:
-
-/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculation.cpp:
-
-/usr/local/lib/QtCore.framework/Headers/qvector.h:
-
-/usr/local/lib/QtCore.framework/Headers/QVector:
-
-/usr/local/lib/QtCore.framework/Headers/qstring.h:
+/usr/local/lib/QtCore.framework/Headers/qregularexpression.h:
 
 /usr/local/include/QtCore/qshareddata_impl.h:
 
@@ -1336,6 +1385,8 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 /usr/local/include/QtWidgets/qlayoutitem.h:
 
 /usr/local/include/QtCore/qstringmatcher.h:
+
+/usr/local/lib/QtCore.framework/Headers/QRegularExpression:
 
 /usr/local/include/QtCore/qalgorithms.h:
 

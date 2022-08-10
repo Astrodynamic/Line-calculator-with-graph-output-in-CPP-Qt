@@ -21,4 +21,3 @@ void Calculator::on_btn_equal_clicked() {
   Calculation kk;
   kk.expression_load(ui->display->text());
 }
-
