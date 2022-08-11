@@ -25,8 +25,15 @@ Calculation::Calculation() {}
 void Calculation::expression_load(QString infix) {
   if (expression_validate(infix)) {
     expression_up(infix);
-    qDebug() << infix;
     QStack<QChar> stack;
+    for (size_t i = 0; i < infix.size(); ++i) {
+      if (infix[i] == 'x') {
+        m_rpn.push_back(infix[i]);
+      } else if (infix[i].isDigit()) {
+        
+       
+      }
+    }
   } else {
     qDebug() << "NO";
   }
@@ -52,13 +59,34 @@ bool Calculation::expression_validate(QString& infix) {
       QRegularExpression(".(?<![+\\-*\\/^(.]|mod|\\d)(\\d)"),
       QRegularExpression("(?<![)x]|\\d)([\\*\\/^]|mod)"),
       QRegularExpression("(?<![)x]|\\d)([+\\-\\*\\/^]|mod)([+-])"),
-      QRegularExpression("(?<![)x+\\-\\*\\/^]|\\d|mod)([+-])")};
-  bool check = true;
-  for (auto it : regex) {
-    if (infix.contains(it)) {
-      check = false;
-      break;
+      QRegularExpression("(?<![())x+\\-\\*\\/^]|\\d|mod)([+-])"),
+      QRegularExpression(".(?<![+\\-*\\/^(a]|mod)(a?(cos|sin|tan)|sqrt|ln)"),
+      QRegularExpression(".(?<![+\\-*\\/^(sntgd])[(]"),
+      QRegularExpression("(?<!\\d|[)]|x)[)]"),
+      QRegularExpression("\\d*?[.]\\d*?[.]\\d*?"),
+      QRegularExpression(".(?<!\\d|[\\)x])$")};
+  bool flag = brackets_validate(infix);
+  if (flag == true) {
+    for (auto it : regex) {
+      if (infix.contains(it)) {
+        flag = false;
+        break;
+      }
     }
   }
-  return check;
+  return flag;
+}
+
+bool Calculation::brackets_validate(QString& infix) {
+  int count = 0;
+  for (auto it : infix) {
+    if (it == '(') {
+      ++count;
+    } else if (it == ')') {
+      if(--count < 0) {
+        break;
+      }
+    }
+  }
+  return !count;
 }

@@ -9,6 +9,7 @@
 #include <cmath>
 #include <functional>
 #include <variant>
+#include <string>
 
 #define lamdas_f1arg(SIGN) [](double src) -> double { return SIGN(src); }
 #define lamdas_f2arg(SIGN) [](double lhs, double rhs) -> double { return lhs SIGN rhs; }
@@ -36,6 +37,7 @@ class Calculation {
  private:
   void expression_up(QString& infix);
   bool expression_validate(QString& infix);
+  bool brackets_validate(QString& infix);
 };
 
 #endif  // SRC_INCLUDE_CALCULATION_HPP_
