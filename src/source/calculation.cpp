@@ -30,8 +30,14 @@ void Calculation::expression_load(QString infix) {
       if (infix[i] == 'x') {
         m_rpn.push_back(infix[i]);
       } else if (infix[i].isDigit()) {
-        
-       
+        static const QRegularExpression regex("\\d+[.]\\d(E[+-]\\d+)?");
+        QRegularExpressionMatch match = regex.match(infix, i);
+        if (match.capturedStart(0) == i) {
+          m_rpn.push_back(match.captured(0).toDouble());
+          i += match.capturedLength() - 1;
+        }
+      } else if (is_function(infix[i])) {
+        qDebug() << "YES";
       }
     }
   } else {
@@ -83,10 +89,20 @@ bool Calculation::brackets_validate(QString& infix) {
     if (it == '(') {
       ++count;
     } else if (it == ')') {
-      if(--count < 0) {
+      if (--count < 0) {
         break;
       }
     }
   }
   return !count;
+}
+
+bool Calculation::is_function(QChar& lexem) {
+  bool flag = false;
+  if (m_fun_ptr.contains(lexem)) {
+    if (m_fun_ptr.value(lexem).second.first == f_prt_t::FUNC) {
+      flag = true;
+    }
+  }
+  return flag;
 }

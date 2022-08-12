@@ -38,6 +38,7 @@ class Calculation {
   void expression_up(QString& infix);
   bool expression_validate(QString& infix);
   bool brackets_validate(QString& infix);
+  bool is_function(QChar & lexem);
 };
 
 #endif  // SRC_INCLUDE_CALCULATION_HPP_
