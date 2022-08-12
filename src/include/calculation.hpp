@@ -8,15 +8,23 @@
 #include <QVector>
 #include <cmath>
 #include <functional>
-#include <variant>
 #include <string>
+#include <variant>
 
 #define lamdas_f1arg(SIGN) [](double src) -> double { return SIGN(src); }
-#define lamdas_f2arg(SIGN) [](double lhs, double rhs) -> double { return lhs SIGN rhs; }
+#define lamdas_f2arg(SIGN) [](double lhs, double rhs) -> double { return rhs SIGN lhs; }
 
 class Calculation {
  private:
-  enum class f_prt_t { DEFAULT, L_PR, M_PR, H_PR, UNARY, FUNC };
+  template <class... Ts>
+  struct overloaded : Ts... {
+    using Ts::operator()...;
+  };
+
+  template <class... Ts>
+  overloaded(Ts...) -> overloaded<Ts...>;
+
+  enum class f_prt_t { DEFAULT, L_PR, M_PR, H_PR, UNARY, FUNC, ALL };
 
   using fcast_1arg = double (*)(double);
   using fcast_2arg = double (*)(double, double);
@@ -33,12 +41,17 @@ class Calculation {
   Calculation();
 
   void expression_load(QString infix);
+  double calculation(double x = 0);
 
  private:
   void expression_up(QString& infix);
   bool expression_validate(QString& infix);
   bool brackets_validate(QString& infix);
-  bool is_function(QChar & lexem);
+  bool is_function(QChar& lexem);
+  bool is_operation(QChar& lexem);
+  const f_prt_t get_priority(QChar& lexem);
+  bool is_priority_le(QChar& lhs, QChar& rhs);
+  void qstrtod(QString& src, size_t& ind);
 };
 
 #endif  // SRC_INCLUDE_CALCULATION_HPP_

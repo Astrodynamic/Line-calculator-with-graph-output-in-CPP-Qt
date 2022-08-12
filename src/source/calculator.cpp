@@ -20,4 +20,5 @@ void Calculator::on_btn_clean_clicked() {
 void Calculator::on_btn_equal_clicked() {
   Calculation kk;
   kk.expression_load(ui->display->text());
+  qDebug() << kk.calculation();
 }

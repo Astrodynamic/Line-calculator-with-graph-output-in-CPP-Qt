@@ -30,19 +30,51 @@ void Calculation::expression_load(QString infix) {
       if (infix[i] == 'x') {
         m_rpn.push_back(infix[i]);
       } else if (infix[i].isDigit()) {
-        static const QRegularExpression regex("\\d+[.]\\d(E[+-]\\d+)?");
-        QRegularExpressionMatch match = regex.match(infix, i);
-        if (match.capturedStart(0) == i) {
-          m_rpn.push_back(match.captured(0).toDouble());
-          i += match.capturedLength() - 1;
-        }
+        qstrtod(infix, i);
       } else if (is_function(infix[i])) {
-        qDebug() << "YES";
+        stack.push(infix[i]);
+      } else if (is_operation(infix[i])) {
+        while (!stack.isEmpty() && is_operation(stack.top()) &&
+               is_priority_le(infix[i], stack.top())) {
+          m_rpn.push_back(stack.pop());
+        }
+        stack.push(infix[i]);
+      } else if (infix[i] == '(') {
+        stack.push(infix[i]);
+      } else if (infix[i] == ')') {
+        while (stack.top() != '(') {
+          m_rpn.push_back(stack.pop());
+        }
+        stack.pop();
+        if (!stack.isEmpty() && is_function(stack.top())) {
+          m_rpn.push_back(stack.pop());
+        }
       }
+    }
+    while (!stack.isEmpty()) {
+      m_rpn.push_back(stack.pop());
     }
   } else {
     qDebug() << "NO";
   }
+}
+
+double Calculation::calculation(double x) {
+  QStack<double> stack;
+  for (auto it : m_rpn) {
+    std::visit(overloaded{[&](QChar& arg) {
+      if (arg == 'x') {
+        stack.push(x);
+      } else {
+        std::visit(overloaded{
+          [&](fp_1arg fn) { stack.push(fn(stack.pop())); },
+          [&](fp_2arg fn) { stack.push(fn(stack.pop(), stack.pop())); },
+          [](auto fn) {}
+        }, m_fun_ptr.value(arg).second.second);
+      }
+    }, [&](double& arg) { stack.push(arg); }}, it);
+  }
+  return stack.pop();
 }
 
 void Calculation::expression_up(QString& infix) {
@@ -100,9 +132,41 @@ bool Calculation::brackets_validate(QString& infix) {
 bool Calculation::is_function(QChar& lexem) {
   bool flag = false;
   if (m_fun_ptr.contains(lexem)) {
-    if (m_fun_ptr.value(lexem).second.first == f_prt_t::FUNC) {
+    if (get_priority(lexem) == f_prt_t::FUNC) {
       flag = true;
     }
   }
   return flag;
+}
+
+bool Calculation::is_operation(QChar& lexem) {
+  bool flag = false;
+  if (m_fun_ptr.contains(lexem)) {
+    if (get_priority(lexem) > f_prt_t::DEFAULT &&
+        get_priority(lexem) < f_prt_t::FUNC) {
+      flag = true;
+    }
+  }
+  return flag;
+}
+
+const Calculation::f_prt_t Calculation::get_priority(QChar& lexem) {
+  return m_fun_ptr.value(lexem).second.first;
+}
+
+bool Calculation::is_priority_le(QChar& lhs, QChar& rhs) {
+  bool flag = false;
+  if (get_priority(lhs) <= get_priority(rhs)) {
+    flag = true;
+  }
+  return flag;
+}
+
+void Calculation::qstrtod(QString& src, size_t& ind) {
+  static const QRegularExpression regex("\\d+([.]\\d+(E[+-]\\d+)?)?");
+  QRegularExpressionMatch match = regex.match(src, ind);
+  if (match.capturedStart(0) == ind) {
+    m_rpn.push_back(match.captured(0).toDouble());
+    ind += (match.capturedLength() - 1);
+  }
 }
