@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>530</width>
-    <height>220</height>
+    <height>240</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>530</width>
-    <height>220</height>
+    <height>240</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>530</width>
-    <height>220</height>
+    <height>240</height>
    </size>
   </property>
   <property name="font">
@@ -1998,6 +1998,25 @@ QPushButton:pressed  {
      </layout>
     </item>
    </layout>
+  </widget>
+  <widget class="QStatusBar" name="status_bar">
+   <property name="minimumSize">
+    <size>
+     <width>530</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>530</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QStatusBar {
+	background-color: rgb(215, 215, 215);
+}</string>
+   </property>
   </widget>
  </widget>
  <resources/>

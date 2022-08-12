@@ -23,7 +23,7 @@ Calculation::fun_ptr_t Calculation::m_fun_ptr = {
 Calculation::Calculation() {}
 
 void Calculation::expression_load(QString infix) {
-  m_rpn
+  m_rpn.clear();
   if (expression_validate(infix)) {
     expression_up(infix);
     QStack<QChar> stack;
@@ -167,7 +167,7 @@ bool Calculation::is_priority_le(QChar& lhs, QChar& rhs) {
 }
 
 void Calculation::qstrtod(QString& src, size_t& ind) {
-  static const QRegularExpression regex("\\d+([.]\\d+(E[+-]\\d+)?)?");
+  static const QRegularExpression regex("\\d+(([.]\\d+)?(E[+-]\\d+)?)?");
   QRegularExpressionMatch match = regex.match(src, ind);
   if (match.capturedStart(0) == ind) {
     m_rpn.push_back(match.captured(0).toDouble());

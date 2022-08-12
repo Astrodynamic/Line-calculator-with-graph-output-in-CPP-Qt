@@ -16,6 +16,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -63,15 +64,16 @@ public:
     QPushButton *btn_sin;
     QPushButton *btn_equal;
     QPushButton *btn_clean;
+    QStatusBar *statusBar;
     QButtonGroup *btn_print_group;
 
     void setupUi(QMainWindow *Calculator)
     {
         if (Calculator->objectName().isEmpty())
             Calculator->setObjectName(QString::fromUtf8("Calculator"));
-        Calculator->resize(530, 220);
-        Calculator->setMinimumSize(QSize(530, 220));
-        Calculator->setMaximumSize(QSize(530, 220));
+        Calculator->resize(530, 240);
+        Calculator->setMinimumSize(QSize(530, 240));
+        Calculator->setMaximumSize(QSize(530, 240));
         QFont font;
         font.setFamilies({QString::fromUtf8("Arial")});
         font.setPointSize(12);
@@ -1002,6 +1004,11 @@ public:
         verticalLayout->addLayout(gridLayout);
 
         Calculator->setCentralWidget(centralwidget);
+        statusBar = new QStatusBar(Calculator);
+        statusBar->setObjectName(QString::fromUtf8("statusBar"));
+        statusBar->setMinimumSize(QSize(530, 20));
+        statusBar->setMaximumSize(QSize(530, 20));
+        Calculator->setStatusBar(statusBar);
 
         retranslateUi(Calculator);
 

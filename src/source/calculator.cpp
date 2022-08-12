@@ -20,6 +20,11 @@ void Calculator::on_btn_clean_clicked() {
 void Calculator::on_btn_equal_clicked() {
   model.expression_load(ui->display->text());
   if (!model.is_empty()) {
-    qDebug() << model.calculation();
+    ui->status_bar->messageChanged(ui->display->text());
+    if (ui->display->text().contains('x')) {
+      ui->display->setText(QString::number(model.calculation(), 'g', 15));
+    } else {
+      ui->display->setText(QString::number(model.calculation(), 'g', 15));
+    }
   }
 }
