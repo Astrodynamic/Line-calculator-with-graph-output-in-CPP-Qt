@@ -23,12 +23,17 @@ Calculation::fun_ptr_t Calculation::m_fun_ptr = {
 Calculation::Calculation() {}
 
 void Calculation::expression_load(QString infix) {
+  m_rpn
   if (expression_validate(infix)) {
     expression_up(infix);
     QStack<QChar> stack;
     for (size_t i = 0; i < infix.size(); ++i) {
       if (infix[i] == 'x') {
         m_rpn.push_back(infix[i]);
+      } else if (infix[i] == 'p') {
+        m_rpn.push_back(M_PI);
+      } else if (infix[i] == 'e') {
+        m_rpn.push_back(M_E);
       } else if (infix[i].isDigit()) {
         qstrtod(infix, i);
       } else if (is_function(infix[i])) {
@@ -54,8 +59,6 @@ void Calculation::expression_load(QString infix) {
     while (!stack.isEmpty()) {
       m_rpn.push_back(stack.pop());
     }
-  } else {
-    qDebug() << "NO";
   }
 }
 
@@ -95,14 +98,15 @@ void Calculation::expression_up(QString& infix) {
 bool Calculation::expression_validate(QString& infix) {
   QVector<QRegularExpression> regex{
       QRegularExpression(".(?<![+\\-*\\/^(.]|mod|\\d)(\\d)"),
-      QRegularExpression("(?<![)x]|\\d)([\\*\\/^]|mod)"),
-      QRegularExpression("(?<![)x]|\\d)([+\\-\\*\\/^]|mod)([+-])"),
-      QRegularExpression("(?<![())x+\\-\\*\\/^]|\\d|mod)([+-])"),
+      QRegularExpression("(?<![)xpe]|\\d)([\\*\\/^]|mod)"),
+      QRegularExpression("(?<![)xpe]|\\d)([+\\-\\*\\/^]|mod)([+-])"),
+      QRegularExpression("(?<![())xpe+\\-\\*\\/^E]|\\d|mod)([+-])"),
       QRegularExpression(".(?<![+\\-*\\/^(a]|mod)(a?(cos|sin|tan)|sqrt|ln)"),
       QRegularExpression(".(?<![+\\-*\\/^(sntgd])[(]"),
-      QRegularExpression("(?<!\\d|[)]|x)[)]"),
+      QRegularExpression("(?<!\\d|[)]|xpe)[)]"),
       QRegularExpression("\\d*?[.]\\d*?[.]\\d*?"),
-      QRegularExpression(".(?<!\\d|[\\)x])$")};
+      QRegularExpression(".(?<!\\d|[\\)xpe])$"),
+      QRegularExpression("(?<!\\d)E")};
   bool flag = brackets_validate(infix);
   if (flag == true) {
     for (auto it : regex) {
@@ -169,4 +173,8 @@ void Calculation::qstrtod(QString& src, size_t& ind) {
     m_rpn.push_back(match.captured(0).toDouble());
     ind += (match.capturedLength() - 1);
   }
+}
+
+bool Calculation::is_empty() {
+  return m_rpn.empty();
 }

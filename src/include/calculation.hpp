@@ -42,6 +42,7 @@ class Calculation {
 
   void expression_load(QString infix);
   double calculation(double x = 0);
+  bool is_empty();
 
  private:
   void expression_up(QString& infix);

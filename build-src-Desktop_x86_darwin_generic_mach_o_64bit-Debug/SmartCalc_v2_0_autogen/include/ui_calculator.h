@@ -1025,7 +1025,7 @@ public:
         btn_4->setText(QCoreApplication::translate("Calculator", "4", nullptr));
         btn_mul->setText(QCoreApplication::translate("Calculator", "*", nullptr));
         btn_7->setText(QCoreApplication::translate("Calculator", "7", nullptr));
-        btn_pi->setText(QCoreApplication::translate("Calculator", "\317\200", nullptr));
+        btn_pi->setText(QCoreApplication::translate("Calculator", "p", nullptr));
         btn_e->setText(QCoreApplication::translate("Calculator", "e", nullptr));
         btn_ln->setText(QCoreApplication::translate("Calculator", "ln", nullptr));
         btn_cparenth->setText(QCoreApplication::translate("Calculator", ")", nullptr));

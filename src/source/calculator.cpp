@@ -18,7 +18,8 @@ void Calculator::on_btn_clean_clicked() {
 }
 
 void Calculator::on_btn_equal_clicked() {
-  Calculation kk;
-  kk.expression_load(ui->display->text());
-  qDebug() << kk.calculation();
+  model.expression_load(ui->display->text());
+  if (!model.is_empty()) {
+    qDebug() << model.calculation();
+  }
 }

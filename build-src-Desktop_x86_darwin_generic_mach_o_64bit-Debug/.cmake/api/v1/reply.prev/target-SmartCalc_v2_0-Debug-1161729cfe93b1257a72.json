@@ -30,7 +30,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 42,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
@@ -54,7 +54,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 47,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
@@ -173,7 +173,8 @@
 			[
 				0,
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -269,7 +270,8 @@
 			[
 				0,
 				2,
-				3
+				3,
+				4
 			]
 		},
 		{
@@ -283,8 +285,9 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				4,
-				5
+				5,
+				6,
+				7
 			]
 		}
 	],
@@ -316,7 +319,18 @@
 		},
 		{
 			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "source/calculation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
 			"path" : "include/calculator.hpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "include/calculation.hpp",
 			"sourceGroupIndex" : 2
 		},
 		{

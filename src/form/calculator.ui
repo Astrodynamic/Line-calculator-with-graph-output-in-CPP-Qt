@@ -858,7 +858,7 @@ QPushButton:pressed  {
 }</string>
         </property>
         <property name="text">
-         <string>π</string>
+         <string>p</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">btn_print_group</string>

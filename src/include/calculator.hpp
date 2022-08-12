@@ -27,5 +27,6 @@ private slots:
 
 private:
   Ui::Calculator *ui;
+  Calculation model;
 };
 #endif  // CALCULATOR_HPP
