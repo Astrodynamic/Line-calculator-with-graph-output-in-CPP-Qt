@@ -21,6 +21,9 @@ class Calculator : public QMainWindow {
   Calculator(QWidget *parent = nullptr);
   ~Calculator();
 
+ public slots:
+  void update_graph(double x_min, double x_max, double step);
+
  private slots:
   void print_lexeme(QAbstractButton *btn);
   void on_btn_clean_clicked();
@@ -32,4 +35,5 @@ private:
   Calculation *model;
   Graph *graph;
 };
+
 #endif  // CALCULATOR_HPP

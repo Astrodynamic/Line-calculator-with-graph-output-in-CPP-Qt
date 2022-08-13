@@ -2,15 +2,20 @@
 
 #include "ui_calculator.h"
 
-Calculator::Calculator(QWidget* parent) : QMainWindow(parent), ui(new Ui::Calculator), model(new Calculation), graph(new Graph()) {
+Calculator::Calculator(QWidget* parent) : QMainWindow(parent), ui(new Ui::Calculator), model(new Calculation), graph(new Graph) {
   ui->setupUi(this);
   connect(ui->btn_print_group, SIGNAL(buttonClicked(QAbstractButton*)), this, SLOT(print_lexeme(QAbstractButton*)));
+  connect(graph, &Graph::update_data, this, &Calculator::update_graph);
 }
 
 Calculator::~Calculator() {
   delete ui;
   delete model;
   delete graph;
+}
+
+void Calculator::update_graph(double x_min, double x_max, double step) {
+  graph->load_data(model->calculation(x_min, x_max, step));
 }
 
 void Calculator::print_lexeme(QAbstractButton* btn) {
