@@ -1,8 +1,9 @@
 #ifndef CALCULATOR_HPP
 #define CALCULATOR_HPP
 
-#include <QMainWindow>
 #include <QAbstractButton>
+#include <QInputDialog>
+#include <QMainWindow>
 
 #include "calculation.hpp"
 
@@ -19,14 +20,14 @@ class Calculator : public QMainWindow {
   Calculator(QWidget *parent = nullptr);
   ~Calculator();
 
-
-private slots:
-  void print_lexeme(QAbstractButton* btn);
+ private slots:
+  void print_lexeme(QAbstractButton *btn);
   void on_btn_clean_clicked();
   void on_btn_equal_clicked();
+  void on_btn_function_clicked();
 
 private:
   Ui::Calculator *ui;
-  Calculation model;
+  Calculation *model;
 };
 #endif  // CALCULATOR_HPP

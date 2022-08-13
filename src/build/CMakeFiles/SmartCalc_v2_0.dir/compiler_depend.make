@@ -164,8 +164,8 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o: Sma
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/cassert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/assert.h \
   ../include/calculator.hpp \
-  /usr/local/lib/QtWidgets.framework/Headers/QMainWindow \
-  /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QAbstractButton \
+  /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
   /usr/local/lib/QtGui.framework/Headers/qtguiglobal.h \
   /usr/local/lib/QtCore.framework/Headers/qglobal.h \
@@ -200,13 +200,11 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o: Sma
   /usr/local/lib/QtCore.framework/Headers/qversiontagging.h \
   /usr/local/lib/QtGui.framework/Headers/qtgui-config.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qwidget.h \
-  /usr/local/lib/QtGui.framework/Headers/qwindowdefs.h \
-  /usr/local/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /usr/local/lib/QtGui.framework/Headers/qicon.h \
+  /usr/local/lib/QtCore.framework/Headers/qsize.h \
   /usr/local/lib/QtCore.framework/Headers/qnamespace.h \
   /usr/local/lib/QtCore.framework/Headers/qtmetamacros.h \
-  /usr/local/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
-  /usr/local/lib/QtCore.framework/Headers/qobject.h \
+  /usr/local/lib/QtCore.framework/Headers/qhashfunctions.h \
   /usr/local/lib/QtCore.framework/Headers/qstring.h \
   /usr/local/lib/QtCore.framework/Headers/qchar.h \
   /usr/local/lib/QtCore.framework/Headers/qstringview.h \
@@ -234,14 +232,28 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o: Sma
   /usr/local/lib/QtCore.framework/Headers/qanystringview.h \
   /usr/local/lib/QtCore.framework/Headers/qutf8stringview.h \
   /usr/local/lib/QtCore.framework/Headers/qstringtokenizer.h \
-  /usr/local/lib/QtCore.framework/Headers/qlist.h \
-  /usr/local/lib/QtCore.framework/Headers/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/numeric \
+  /usr/local/lib/QtCore.framework/Headers/qmargins.h \
+  /usr/local/lib/QtCore.framework/Headers/qlist.h \
   /usr/local/lib/QtCore.framework/Headers/qiterator.h \
   /usr/local/lib/QtCore.framework/Headers/qbytearraylist.h \
   /usr/local/lib/QtCore.framework/Headers/qstringlist.h \
   /usr/local/lib/QtCore.framework/Headers/qalgorithms.h \
   /usr/local/lib/QtCore.framework/Headers/qstringmatcher.h \
+  /usr/local/lib/QtGui.framework/Headers/qpixmap.h \
+  /usr/local/lib/QtGui.framework/Headers/qpaintdevice.h \
+  /usr/local/lib/QtGui.framework/Headers/qwindowdefs.h \
+  /usr/local/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /usr/local/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /usr/local/lib/QtCore.framework/Headers/qrect.h \
+  /usr/local/lib/QtCore.framework/Headers/qpoint.h \
+  /usr/local/lib/QtGui.framework/Headers/qcolor.h \
+  /usr/local/lib/QtGui.framework/Headers/qrgb.h \
+  /usr/local/lib/QtGui.framework/Headers/qrgba64.h \
+  /usr/local/lib/QtCore.framework/Headers/qsharedpointer.h \
+  /usr/local/lib/QtCore.framework/Headers/qshareddata.h \
+  /usr/local/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
+  /usr/local/lib/QtCore.framework/Headers/qobject.h \
   /usr/local/lib/QtCore.framework/Headers/qscopedpointer.h \
   /usr/local/lib/QtCore.framework/Headers/qmetatype.h \
   /usr/local/lib/QtCore.framework/Headers/qcompare.h \
@@ -263,50 +275,47 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o: Sma
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__node_handle \
   /usr/local/lib/QtCore.framework/Headers/qobject_impl.h \
   /usr/local/lib/QtCore.framework/Headers/qbindingstorage.h \
-  /usr/local/lib/QtCore.framework/Headers/qmargins.h \
-  /usr/local/lib/QtGui.framework/Headers/qpaintdevice.h \
-  /usr/local/lib/QtCore.framework/Headers/qrect.h \
-  /usr/local/lib/QtCore.framework/Headers/qsize.h \
-  /usr/local/lib/QtCore.framework/Headers/qpoint.h \
-  /usr/local/lib/QtGui.framework/Headers/qpalette.h \
-  /usr/local/lib/QtGui.framework/Headers/qcolor.h \
-  /usr/local/lib/QtGui.framework/Headers/qrgb.h \
-  /usr/local/lib/QtGui.framework/Headers/qrgba64.h \
-  /usr/local/lib/QtGui.framework/Headers/qbrush.h \
   /usr/local/lib/QtGui.framework/Headers/qimage.h \
   /usr/local/lib/QtGui.framework/Headers/qpixelformat.h \
   /usr/local/lib/QtGui.framework/Headers/qtransform.h \
   /usr/local/lib/QtGui.framework/Headers/qpolygon.h \
   /usr/local/lib/QtGui.framework/Headers/qregion.h \
   /usr/local/lib/QtCore.framework/Headers/qline.h \
-  /usr/local/lib/QtGui.framework/Headers/qpixmap.h \
-  /usr/local/lib/QtCore.framework/Headers/qsharedpointer.h \
-  /usr/local/lib/QtCore.framework/Headers/qshareddata.h \
-  /usr/local/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
+  /usr/local/lib/QtGui.framework/Headers/qkeysequence.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qwidget.h \
+  /usr/local/lib/QtGui.framework/Headers/qpalette.h \
+  /usr/local/lib/QtGui.framework/Headers/qbrush.h \
   /usr/local/lib/QtGui.framework/Headers/qfont.h \
   /usr/local/lib/QtGui.framework/Headers/qfontmetrics.h \
   /usr/local/lib/QtGui.framework/Headers/qfontinfo.h \
   /usr/local/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /usr/local/lib/QtGui.framework/Headers/qcursor.h \
   /usr/local/lib/QtGui.framework/Headers/qbitmap.h \
-  /usr/local/lib/QtGui.framework/Headers/qkeysequence.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /usr/local/lib/QtGui.framework/Headers/qicon.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QAbstractButton \
-  /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
-  ../include/calculation.hpp \
-  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtWidgets.framework/Headers/QInputDialog \
+  /usr/local/lib/QtWidgets.framework/Headers/qinputdialog.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qlineedit.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qframe.h \
+  /usr/local/lib/QtGui.framework/Headers/qtextcursor.h \
+  /usr/local/lib/QtGui.framework/Headers/qtextformat.h \
+  /usr/local/lib/QtGui.framework/Headers/qpen.h \
+  /usr/local/lib/QtGui.framework/Headers/qtextoption.h \
+  /usr/local/lib/QtCore.framework/Headers/qvariant.h \
   /usr/local/lib/QtCore.framework/Headers/qmap.h \
   /usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h \
-  /usr/local/lib/QtCore.framework/Headers/QRegularExpression \
-  /usr/local/lib/QtCore.framework/Headers/qregularexpression.h \
-  /usr/local/lib/QtCore.framework/Headers/qvariant.h \
   /usr/local/lib/QtCore.framework/Headers/qhash.h \
   /usr/local/lib/QtCore.framework/Headers/qdebug.h \
   /usr/local/lib/QtCore.framework/Headers/qtextstream.h \
   /usr/local/lib/QtCore.framework/Headers/qstringconverter.h \
   /usr/local/lib/QtCore.framework/Headers/qset.h \
   /usr/local/lib/QtCore.framework/Headers/qcontiguouscache.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qdialog.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QMainWindow \
+  /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h \
+  ../include/calculation.hpp \
+  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtCore.framework/Headers/QRegularExpression \
+  /usr/local/lib/QtCore.framework/Headers/qregularexpression.h \
   /usr/local/lib/QtCore.framework/Headers/QStack \
   /usr/local/lib/QtCore.framework/Headers/qstack.h \
   /usr/local/lib/QtCore.framework/Headers/QString \
@@ -589,8 +598,8 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o: ../source/calculation.cp
 
 CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: ../source/calculator.cpp \
   ../include/calculator.hpp \
-  /usr/local/lib/QtWidgets.framework/Headers/QMainWindow \
-  /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QAbstractButton \
+  /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
   /usr/local/lib/QtGui.framework/Headers/qtguiglobal.h \
   /usr/local/lib/QtCore.framework/Headers/qglobal.h \
@@ -785,13 +794,11 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: ../source/calculator.cpp 
   /usr/local/lib/QtCore.framework/Headers/qversiontagging.h \
   /usr/local/lib/QtGui.framework/Headers/qtgui-config.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qwidget.h \
-  /usr/local/lib/QtGui.framework/Headers/qwindowdefs.h \
-  /usr/local/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /usr/local/lib/QtGui.framework/Headers/qicon.h \
+  /usr/local/lib/QtCore.framework/Headers/qsize.h \
   /usr/local/lib/QtCore.framework/Headers/qnamespace.h \
   /usr/local/lib/QtCore.framework/Headers/qtmetamacros.h \
-  /usr/local/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
-  /usr/local/lib/QtCore.framework/Headers/qobject.h \
+  /usr/local/lib/QtCore.framework/Headers/qhashfunctions.h \
   /usr/local/lib/QtCore.framework/Headers/qstring.h \
   /usr/local/lib/QtCore.framework/Headers/qchar.h \
   /usr/local/lib/QtCore.framework/Headers/qstringview.h \
@@ -819,14 +826,28 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: ../source/calculator.cpp 
   /usr/local/lib/QtCore.framework/Headers/qanystringview.h \
   /usr/local/lib/QtCore.framework/Headers/qutf8stringview.h \
   /usr/local/lib/QtCore.framework/Headers/qstringtokenizer.h \
-  /usr/local/lib/QtCore.framework/Headers/qlist.h \
-  /usr/local/lib/QtCore.framework/Headers/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/numeric \
+  /usr/local/lib/QtCore.framework/Headers/qmargins.h \
+  /usr/local/lib/QtCore.framework/Headers/qlist.h \
   /usr/local/lib/QtCore.framework/Headers/qiterator.h \
   /usr/local/lib/QtCore.framework/Headers/qbytearraylist.h \
   /usr/local/lib/QtCore.framework/Headers/qstringlist.h \
   /usr/local/lib/QtCore.framework/Headers/qalgorithms.h \
   /usr/local/lib/QtCore.framework/Headers/qstringmatcher.h \
+  /usr/local/lib/QtGui.framework/Headers/qpixmap.h \
+  /usr/local/lib/QtGui.framework/Headers/qpaintdevice.h \
+  /usr/local/lib/QtGui.framework/Headers/qwindowdefs.h \
+  /usr/local/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /usr/local/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /usr/local/lib/QtCore.framework/Headers/qrect.h \
+  /usr/local/lib/QtCore.framework/Headers/qpoint.h \
+  /usr/local/lib/QtGui.framework/Headers/qcolor.h \
+  /usr/local/lib/QtGui.framework/Headers/qrgb.h \
+  /usr/local/lib/QtGui.framework/Headers/qrgba64.h \
+  /usr/local/lib/QtCore.framework/Headers/qsharedpointer.h \
+  /usr/local/lib/QtCore.framework/Headers/qshareddata.h \
+  /usr/local/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
+  /usr/local/lib/QtCore.framework/Headers/qobject.h \
   /usr/local/lib/QtCore.framework/Headers/qscopedpointer.h \
   /usr/local/lib/QtCore.framework/Headers/qmetatype.h \
   /usr/local/lib/QtCore.framework/Headers/qcompare.h \
@@ -848,56 +869,55 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: ../source/calculator.cpp 
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__node_handle \
   /usr/local/lib/QtCore.framework/Headers/qobject_impl.h \
   /usr/local/lib/QtCore.framework/Headers/qbindingstorage.h \
-  /usr/local/lib/QtCore.framework/Headers/qmargins.h \
-  /usr/local/lib/QtGui.framework/Headers/qpaintdevice.h \
-  /usr/local/lib/QtCore.framework/Headers/qrect.h \
-  /usr/local/lib/QtCore.framework/Headers/qsize.h \
-  /usr/local/lib/QtCore.framework/Headers/qpoint.h \
-  /usr/local/lib/QtGui.framework/Headers/qpalette.h \
-  /usr/local/lib/QtGui.framework/Headers/qcolor.h \
-  /usr/local/lib/QtGui.framework/Headers/qrgb.h \
-  /usr/local/lib/QtGui.framework/Headers/qrgba64.h \
-  /usr/local/lib/QtGui.framework/Headers/qbrush.h \
   /usr/local/lib/QtGui.framework/Headers/qimage.h \
   /usr/local/lib/QtGui.framework/Headers/qpixelformat.h \
   /usr/local/lib/QtGui.framework/Headers/qtransform.h \
   /usr/local/lib/QtGui.framework/Headers/qpolygon.h \
   /usr/local/lib/QtGui.framework/Headers/qregion.h \
   /usr/local/lib/QtCore.framework/Headers/qline.h \
-  /usr/local/lib/QtGui.framework/Headers/qpixmap.h \
-  /usr/local/lib/QtCore.framework/Headers/qsharedpointer.h \
-  /usr/local/lib/QtCore.framework/Headers/qshareddata.h \
-  /usr/local/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
+  /usr/local/lib/QtGui.framework/Headers/qkeysequence.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qwidget.h \
+  /usr/local/lib/QtGui.framework/Headers/qpalette.h \
+  /usr/local/lib/QtGui.framework/Headers/qbrush.h \
   /usr/local/lib/QtGui.framework/Headers/qfont.h \
   /usr/local/lib/QtGui.framework/Headers/qfontmetrics.h \
   /usr/local/lib/QtGui.framework/Headers/qfontinfo.h \
   /usr/local/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /usr/local/lib/QtGui.framework/Headers/qcursor.h \
   /usr/local/lib/QtGui.framework/Headers/qbitmap.h \
-  /usr/local/lib/QtGui.framework/Headers/qkeysequence.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /usr/local/lib/QtGui.framework/Headers/qicon.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QAbstractButton \
-  /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
-  ../include/calculation.hpp \
-  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtWidgets.framework/Headers/QInputDialog \
+  /usr/local/lib/QtWidgets.framework/Headers/qinputdialog.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qlineedit.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qframe.h \
+  /usr/local/lib/QtGui.framework/Headers/qtextcursor.h \
+  /usr/local/lib/QtGui.framework/Headers/qtextformat.h \
+  /usr/local/lib/QtGui.framework/Headers/qpen.h \
+  /usr/local/lib/QtGui.framework/Headers/qtextoption.h \
+  /usr/local/lib/QtCore.framework/Headers/qvariant.h \
   /usr/local/lib/QtCore.framework/Headers/qmap.h \
   /usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h \
-  /usr/local/lib/QtCore.framework/Headers/QRegularExpression \
-  /usr/local/lib/QtCore.framework/Headers/qregularexpression.h \
-  /usr/local/lib/QtCore.framework/Headers/qvariant.h \
   /usr/local/lib/QtCore.framework/Headers/qhash.h \
   /usr/local/lib/QtCore.framework/Headers/qdebug.h \
   /usr/local/lib/QtCore.framework/Headers/qtextstream.h \
   /usr/local/lib/QtCore.framework/Headers/qstringconverter.h \
   /usr/local/lib/QtCore.framework/Headers/qset.h \
   /usr/local/lib/QtCore.framework/Headers/qcontiguouscache.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qdialog.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QMainWindow \
+  /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h \
+  ../include/calculation.hpp \
+  /usr/local/lib/QtCore.framework/Headers/QMap \
+  /usr/local/lib/QtCore.framework/Headers/QRegularExpression \
+  /usr/local/lib/QtCore.framework/Headers/qregularexpression.h \
   /usr/local/lib/QtCore.framework/Headers/QStack \
   /usr/local/lib/QtCore.framework/Headers/qstack.h \
   /usr/local/lib/QtCore.framework/Headers/QString \
   /usr/local/lib/QtCore.framework/Headers/QVector \
   /usr/local/lib/QtCore.framework/Headers/qvector.h \
   SmartCalc_v2_0_autogen/include/ui_calculator.h \
+  /usr/local/lib/QtCore.framework/Headers/QLocale \
+  /usr/local/lib/QtCore.framework/Headers/qlocale.h \
   /usr/local/lib/QtCore.framework/Headers/QVariant \
   /usr/local/lib/QtWidgets.framework/Headers/QApplication \
   /usr/local/lib/QtWidgets.framework/Headers/qapplication.h \
@@ -908,7 +928,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: ../source/calculator.cpp 
   /usr/local/lib/QtCore.framework/Headers/qcoreapplication_platform.h \
   /usr/local/lib/QtGui.framework/Headers/qguiapplication.h \
   /usr/local/lib/QtGui.framework/Headers/qinputmethod.h \
-  /usr/local/lib/QtCore.framework/Headers/qlocale.h \
   /usr/local/lib/QtGui.framework/Headers/qguiapplication_platform.h \
   /usr/local/lib/QtWidgets.framework/Headers/QButtonGroup \
   /usr/local/lib/QtWidgets.framework/Headers/qbuttongroup.h \
@@ -919,13 +938,14 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: ../source/calculator.cpp 
   /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h \
   /usr/local/lib/QtWidgets.framework/Headers/QLabel \
   /usr/local/lib/QtWidgets.framework/Headers/qlabel.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qframe.h \
   /usr/local/lib/QtGui.framework/Headers/qpicture.h \
   /usr/local/lib/QtCore.framework/Headers/qiodevice.h \
   /usr/local/lib/QtGui.framework/Headers/qtextdocument.h \
   /usr/local/lib/QtCore.framework/Headers/qurl.h \
   /usr/local/lib/QtWidgets.framework/Headers/QPushButton \
   /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QStatusBar \
+  /usr/local/lib/QtWidgets.framework/Headers/qstatusbar.h \
   /usr/local/lib/QtWidgets.framework/Headers/QVBoxLayout \
   /usr/local/lib/QtWidgets.framework/Headers/QWidget
 
@@ -1227,8 +1247,10 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: ../source/main.cpp \
   /usr/local/lib/QtCore.framework/Headers/qvariant.h \
   /usr/local/lib/QtGui.framework/Headers/qguiapplication_platform.h \
   ../include/calculator.hpp \
-  /usr/local/lib/QtWidgets.framework/Headers/QMainWindow \
-  /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QAbstractButton \
+  /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  /usr/local/lib/QtGui.framework/Headers/qicon.h \
+  /usr/local/lib/QtGui.framework/Headers/qkeysequence.h \
   /usr/local/lib/QtWidgets.framework/Headers/qwidget.h \
   /usr/local/lib/QtGui.framework/Headers/qpalette.h \
   /usr/local/lib/QtGui.framework/Headers/qbrush.h \
@@ -1236,11 +1258,18 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: ../source/main.cpp \
   /usr/local/lib/QtGui.framework/Headers/qfontmetrics.h \
   /usr/local/lib/QtGui.framework/Headers/qfontinfo.h \
   /usr/local/lib/QtWidgets.framework/Headers/qsizepolicy.h \
-  /usr/local/lib/QtGui.framework/Headers/qkeysequence.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QInputDialog \
+  /usr/local/lib/QtWidgets.framework/Headers/qinputdialog.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qlineedit.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qframe.h \
+  /usr/local/lib/QtGui.framework/Headers/qtextcursor.h \
+  /usr/local/lib/QtGui.framework/Headers/qtextformat.h \
+  /usr/local/lib/QtGui.framework/Headers/qpen.h \
+  /usr/local/lib/QtGui.framework/Headers/qtextoption.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qdialog.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QMainWindow \
+  /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /usr/local/lib/QtGui.framework/Headers/qicon.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QAbstractButton \
-  /usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h \
   ../include/calculation.hpp \
   /usr/local/lib/QtCore.framework/Headers/QMap \
   /usr/local/lib/QtCore.framework/Headers/QRegularExpression \
@@ -1256,10 +1285,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: ../source/main.cpp \
 
 /usr/local/lib/QtGui.framework/Headers/qtextdocument.h:
 
-/usr/local/lib/QtGui.framework/Headers/qpicture.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qframe.h:
-
 /usr/local/lib/QtWidgets.framework/Headers/qlabel.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qlayout.h:
@@ -1267,10 +1292,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: ../source/main.cpp \
 /usr/local/lib/QtWidgets.framework/Headers/qgridlayout.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qbuttongroup.h:
-
-/usr/local/lib/QtCore.framework/Headers/qlocale.h:
-
-/usr/local/lib/QtGui.framework/Headers/qinputmethod.h:
 
 /usr/local/lib/QtGui.framework/Headers/qguiapplication.h:
 
@@ -1284,6 +1305,8 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: ../source/main.cpp \
 
 /usr/local/lib/QtCore.framework/Headers/QVariant:
 
+/usr/local/lib/QtCore.framework/Headers/QLocale:
+
 SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /usr/local/lib/QtCore.framework/Headers/qvector.h:
@@ -1292,35 +1315,41 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /usr/local/lib/QtCore.framework/Headers/qstack.h:
 
-/usr/local/lib/QtCore.framework/Headers/qcontiguouscache.h:
-
-/usr/local/lib/QtCore.framework/Headers/qtextstream.h:
-
 /usr/local/lib/QtCore.framework/Headers/qregularexpression.h:
 
 /usr/local/lib/QtCore.framework/Headers/QRegularExpression:
 
-/usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h:
-
 ../include/calculation.hpp:
 
-/usr/local/lib/QtWidgets.framework/Headers/QAbstractButton:
-
 /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qdialog.h:
+
+/usr/local/lib/QtCore.framework/Headers/qcontiguouscache.h:
+
+/usr/local/lib/QtCore.framework/Headers/qtextstream.h:
+
+/usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h:
+
+/usr/local/lib/QtGui.framework/Headers/qpicture.h:
+
+/usr/local/lib/QtGui.framework/Headers/qtextoption.h:
+
+/usr/local/lib/QtCore.framework/Headers/qlocale.h:
+
+/usr/local/lib/QtGui.framework/Headers/qtextcursor.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qframe.h:
+
+/usr/local/lib/QtGui.framework/Headers/qinputmethod.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qinputdialog.h:
 
 /usr/local/lib/QtGui.framework/Headers/qcursor.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qsizepolicy.h:
 
 /usr/local/lib/QtGui.framework/Headers/qfontmetrics.h:
-
-/usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h:
-
-/usr/local/lib/QtCore.framework/Headers/qsharedpointer_impl.h:
-
-/usr/local/lib/QtCore.framework/Headers/qshareddata.h:
-
-/usr/local/lib/QtGui.framework/Headers/qpixmap.h:
 
 /usr/local/lib/QtGui.framework/Headers/qregion.h:
 
@@ -1329,12 +1358,6 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 /usr/local/lib/QtGui.framework/Headers/qpixelformat.h:
 
 /usr/local/lib/QtGui.framework/Headers/qimage.h:
-
-/usr/local/lib/QtGui.framework/Headers/qcolor.h:
-
-/usr/local/lib/QtCore.framework/Headers/qpoint.h:
-
-/usr/local/lib/QtGui.framework/Headers/qpaintdevice.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/list:
 
@@ -1354,17 +1377,33 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /usr/local/lib/QtCore.framework/Headers/qdatastream.h:
 
-/usr/local/lib/QtCore.framework/Headers/qsize.h:
-
-/usr/local/lib/QtCore.framework/Headers/qscopeguard.h:
-
 /usr/local/lib/QtCore.framework/Headers/qvarlengtharray.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h:
+
+/usr/local/lib/QtCore.framework/Headers/qsharedpointer_impl.h:
+
+/usr/local/lib/QtCore.framework/Headers/qshareddata.h:
+
+/usr/local/lib/QtGui.framework/Headers/qcolor.h:
+
+/usr/local/lib/QtCore.framework/Headers/qpoint.h:
+
+/usr/local/lib/QtGui.framework/Headers/qwindowdefs.h:
+
+/usr/local/lib/QtGui.framework/Headers/qpaintdevice.h:
+
+/usr/local/lib/QtGui.framework/Headers/qpixmap.h:
 
 /usr/local/lib/QtCore.framework/Headers/qalgorithms.h:
 
 /usr/local/lib/QtCore.framework/Headers/qstringlist.h:
 
 /usr/local/lib/QtCore.framework/Headers/qbytearraylist.h:
+
+/usr/local/lib/QtCore.framework/Headers/qobjectdefs_impl.h:
+
+/usr/local/lib/QtCore.framework/Headers/qiterator.h:
 
 /usr/local/lib/QtCore.framework/Headers/qlist.h:
 
@@ -1384,15 +1423,17 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /usr/local/lib/QtCore.framework/Headers/qdebug.h:
 
-/usr/local/lib/QtCore.framework/Headers/qsharedpointer.h:
-
 /usr/local/lib/QtGui.framework/Headers/qbrush.h:
+
+/usr/local/lib/QtCore.framework/Headers/qsharedpointer.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/string:
 
 /usr/local/lib/QtCore.framework/Headers/qbytearrayview.h:
 
 /usr/local/lib/QtCore.framework/Headers/qbytearrayalgorithms.h:
+
+/usr/local/lib/QtGui.framework/Headers/qpen.h:
 
 /usr/local/lib/QtCore.framework/Headers/qcontainertools_impl.h:
 
@@ -1412,21 +1453,13 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /usr/local/lib/QtCore.framework/Headers/qstring.h:
 
-/usr/local/lib/QtCore.framework/Headers/qiterator.h:
-
-/usr/local/lib/QtCore.framework/Headers/qobjectdefs_impl.h:
-
 /usr/local/lib/QtCore.framework/Headers/qtmetamacros.h:
 
 /usr/local/lib/QtCore.framework/Headers/qnamespace.h:
 
-/usr/local/lib/QtGui.framework/Headers/qwindowdefs.h:
+/usr/local/lib/QtCore.framework/Headers/qscopeguard.h:
 
-/usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h:
-
-/usr/local/lib/QtGui.framework/Headers/qrgba64.h:
-
-/usr/local/lib/QtGui.framework/Headers/qtgui-config.h:
+/usr/local/lib/QtCore.framework/Headers/qsize.h:
 
 /usr/local/lib/QtCore.framework/Headers/QStack:
 
@@ -1458,13 +1491,19 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /usr/local/lib/QtCore.framework/Headers/qtypeinfo.h:
 
-/usr/local/lib/QtCore.framework/Headers/qmargins.h:
-
 /usr/local/lib/QtWidgets.framework/Headers/QMainWindow:
+
+/usr/local/lib/QtCore.framework/Headers/qmargins.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bits:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bit:
+
+/usr/local/lib/QtGui.framework/Headers/qrgba64.h:
+
+/usr/local/lib/QtGui.framework/Headers/qtgui-config.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qabstractbutton.h:
 
 /usr/local/lib/QtCore.framework/Headers/qmap.h:
 
@@ -1480,6 +1519,8 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h:
 
+/usr/local/lib/QtWidgets.framework/Headers/QAbstractButton:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_null.h:
 
 SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
@@ -1489,6 +1530,8 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/AvailabilityMacros.h:
 
 ../include/calculator.hpp:
+
+/usr/local/lib/QtWidgets.framework/Headers/QInputDialog:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/assert.h:
 
@@ -1676,13 +1719,15 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/string.h:
 
+/usr/local/lib/QtWidgets.framework/Headers/QStatusBar:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_pid_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/mach/machine/_structs.h:
 
-/usr/local/lib/QtGui.framework/Headers/qpalette.h:
-
 /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h:
+
+/usr/local/lib/QtGui.framework/Headers/qpalette.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/signal.h:
 
@@ -1714,9 +1759,9 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/time.h:
 
-/usr/local/lib/QtGui.framework/Headers/qicon.h:
-
 /usr/local/lib/QtCore.framework/Headers/qobjectdefs.h:
+
+/usr/local/lib/QtGui.framework/Headers/qicon.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/alloca.h:
 
@@ -1725,6 +1770,8 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_sigaltstack.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__undef_macros:
+
+/usr/local/lib/QtWidgets.framework/Headers/qstatusbar.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_mbstate_t.h:
 
@@ -1747,6 +1794,8 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_calculator.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_wchar_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_errno_t.h:
+
+/usr/local/lib/QtGui.framework/Headers/qtextformat.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/_wctype.h:
 
@@ -1897,6 +1946,8 @@ SmartCalc_v2_0_autogen/mocs_compilation.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__memory/pointer_traits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/machine/_types.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qlineedit.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/typeinfo:
 

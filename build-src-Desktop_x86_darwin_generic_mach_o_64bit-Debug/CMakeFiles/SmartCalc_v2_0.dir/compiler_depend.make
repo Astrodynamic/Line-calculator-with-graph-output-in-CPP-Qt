@@ -904,6 +904,8 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: /Users/werewolf/Documents
   /usr/local/lib/QtCore.framework/Headers/QVector \
   /usr/local/lib/QtCore.framework/Headers/qvector.h \
   SmartCalc_v2_0_autogen/include/ui_calculator.h \
+  /usr/local/include/QtCore/QLocale \
+  /usr/local/lib/QtCore.framework/Headers/qlocale.h \
   /usr/local/include/QtCore/QVariant \
   /usr/local/lib/QtCore.framework/Headers/qvariant.h \
   /usr/local/include/QtWidgets/QApplication \
@@ -1294,6 +1296,8 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: /Users/werewolf/Documents/gitla
 
 /usr/local/include/QtCore/qnativeinterface.h:
 
+/usr/local/lib/QtCore.framework/Headers/qlocale.h:
+
 SmartCalc_v2_0_autogen/include/ui_calculator.h:
 
 /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculator.cpp:
@@ -1507,6 +1511,8 @@ SmartCalc_v2_0_autogen/include/ui_calculator.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/initializer_list:
 
 /usr/local/include/QtCore/qcompilerdetection.h:
+
+/usr/local/include/QtCore/QLocale:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__debug:
 

@@ -179,19 +179,28 @@
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qpalette.h
+ mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qpen.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qpixmap.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qpolygon.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qregion.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qrgb.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qrgba64.h
+ mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qtextcursor.h
+ mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qtextformat.h
+ mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qtextoption.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qtransform.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/QAbstractButton
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/QInputDialog
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qdialog.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qframe.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qinputdialog.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qlineedit.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h

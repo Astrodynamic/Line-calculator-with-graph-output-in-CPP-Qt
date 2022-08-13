@@ -907,6 +907,8 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o
  /usr/local/lib/QtCore.framework/Headers/QVector
  /usr/local/lib/QtCore.framework/Headers/qvector.h
  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/build-src-Desktop_x86_darwin_generic_mach_o_64bit-Debug/SmartCalc_v2_0_autogen/include/ui_calculator.h
+ /usr/local/include/QtCore/QLocale
+ /usr/local/lib/QtCore.framework/Headers/qlocale.h
  /usr/local/include/QtCore/QVariant
  /usr/local/lib/QtCore.framework/Headers/qvariant.h
  /usr/local/include/QtWidgets/QApplication

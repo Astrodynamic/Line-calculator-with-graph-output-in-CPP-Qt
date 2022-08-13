@@ -103,7 +103,7 @@ bool Calculation::expression_validate(QString& infix) {
       QRegularExpression("(?<![())xpe+\\-\\*\\/^E]|\\d|mod)([+-])"),
       QRegularExpression(".(?<![+\\-*\\/^(a]|mod)(a?(cos|sin|tan)|sqrt|ln)"),
       QRegularExpression(".(?<![+\\-*\\/^(sntgd])[(]"),
-      QRegularExpression("(?<!\\d|[)]|xpe)[)]"),
+      QRegularExpression("(?<!\\d|[)xpe])[)]"),
       QRegularExpression("\\d*?[.]\\d*?[.]\\d*?"),
       QRegularExpression(".(?<!\\d|[\\)xpe])$"),
       QRegularExpression("(?<!\\d)E")};

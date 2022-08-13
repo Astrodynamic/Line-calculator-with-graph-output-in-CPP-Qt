@@ -9,6 +9,7 @@
 #ifndef UI_CALCULATOR_H
 #define UI_CALCULATOR_H
 
+#include <QtCore/QLocale>
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
@@ -64,16 +65,16 @@ public:
     QPushButton *btn_sin;
     QPushButton *btn_equal;
     QPushButton *btn_clean;
-    QStatusBar *statusBar;
+    QStatusBar *status_bar;
     QButtonGroup *btn_print_group;
 
     void setupUi(QMainWindow *Calculator)
     {
         if (Calculator->objectName().isEmpty())
             Calculator->setObjectName(QString::fromUtf8("Calculator"));
-        Calculator->resize(530, 240);
-        Calculator->setMinimumSize(QSize(530, 240));
-        Calculator->setMaximumSize(QSize(530, 240));
+        Calculator->resize(530, 220);
+        Calculator->setMinimumSize(QSize(530, 220));
+        Calculator->setMaximumSize(QSize(530, 220));
         QFont font;
         font.setFamilies({QString::fromUtf8("Arial")});
         font.setPointSize(12);
@@ -1004,11 +1005,18 @@ public:
         verticalLayout->addLayout(gridLayout);
 
         Calculator->setCentralWidget(centralwidget);
-        statusBar = new QStatusBar(Calculator);
-        statusBar->setObjectName(QString::fromUtf8("statusBar"));
-        statusBar->setMinimumSize(QSize(530, 20));
-        statusBar->setMaximumSize(QSize(530, 20));
-        Calculator->setStatusBar(statusBar);
+        status_bar = new QStatusBar(Calculator);
+        status_bar->setObjectName(QString::fromUtf8("status_bar"));
+        status_bar->setMaximumSize(QSize(16777215, 15));
+        status_bar->setFont(font1);
+        status_bar->setLayoutDirection(Qt::LeftToRight);
+        status_bar->setStyleSheet(QString::fromUtf8("QStatusBar {\n"
+"	background-color: rgb(215, 215, 215);\n"
+"	color: rgb(125, 125, 125);\n"
+"	text-indent: 50px;\n"
+"}"));
+        status_bar->setLocale(QLocale(QLocale::C, QLocale::AnyTerritory));
+        Calculator->setStatusBar(status_bar);
 
         retranslateUi(Calculator);
 
