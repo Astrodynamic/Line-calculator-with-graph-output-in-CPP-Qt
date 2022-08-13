@@ -238,6 +238,30 @@ source/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.s
 .PHONY : source/main.cpp.s
 
+source/qcustomplot.o: source/qcustomplot.cpp.o
+.PHONY : source/qcustomplot.o
+
+# target to build an object file
+source/qcustomplot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/source/qcustomplot.cpp.o
+.PHONY : source/qcustomplot.cpp.o
+
+source/qcustomplot.i: source/qcustomplot.cpp.i
+.PHONY : source/qcustomplot.i
+
+# target to preprocess a source file
+source/qcustomplot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/source/qcustomplot.cpp.i
+.PHONY : source/qcustomplot.cpp.i
+
+source/qcustomplot.s: source/qcustomplot.cpp.s
+.PHONY : source/qcustomplot.s
+
+# target to generate assembly for a file
+source/qcustomplot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/source/qcustomplot.cpp.s
+.PHONY : source/qcustomplot.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -260,6 +284,9 @@ help:
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"
+	@echo "... source/qcustomplot.o"
+	@echo "... source/qcustomplot.i"
+	@echo "... source/qcustomplot.s"
 .PHONY : help
 
 

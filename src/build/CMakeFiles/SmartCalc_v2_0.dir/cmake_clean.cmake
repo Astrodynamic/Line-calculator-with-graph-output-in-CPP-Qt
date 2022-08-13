@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o.d"
   "CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o"
   "CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o.d"
+  "CMakeFiles/SmartCalc_v2_0.dir/source/qcustomplot.cpp.o"
+  "CMakeFiles/SmartCalc_v2_0.dir/source/qcustomplot.cpp.o.d"
   "SmartCalc_v2_0"
   "SmartCalc_v2_0.pdb"
 )

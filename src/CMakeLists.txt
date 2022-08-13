@@ -15,6 +15,7 @@ set(CMAKE_AUTOUIC_SEARCH_PATHS form)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS PrintSupport)
 
 include_directories(
     ${PROJECT_SOURCE_DIR}/include
@@ -23,12 +24,14 @@ include_directories(
 set(HEADERS
     include/calculator.hpp
     include/calculation.hpp
+    include/qcustomplot.hpp
 )
 
 set(SOURCES
     source/main.cpp
     source/calculator.cpp
     source/calculation.cpp
+    source/qcustomplot.cpp
 )
 
 set(FORMS
@@ -47,3 +50,4 @@ qt_add_executable(SmartCalc_v2_0
 )
 
 target_link_libraries(SmartCalc_v2_0 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(SmartCalc_v2_0 PRIVATE Qt6::PrintSupport)
