@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'qcustomplot.h'
+** Meta object code from reading C++ file 'qcustomplot.hpp'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.2.3)
 **
@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../src/include/qcustomplot.h"
+#include "../../../src/include/qcustomplot.hpp"
 #include <QtGui/qtextcursor.h>
 #include <QScreen>
 #include <QtCore/qbytearray.h>
@@ -15,7 +15,7 @@
 #include <QtCore/QSharedPointer>
 #include <QtCore/QList>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'qcustomplot.h' doesn't include <QObject>."
+#error "The header file 'qcustomplot.hpp' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.2.3. It"
 #error "cannot be used with the include files from this version of Qt."

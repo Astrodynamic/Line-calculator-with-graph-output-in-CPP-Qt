@@ -156,9 +156,11 @@ SmartCalc_v2_0: CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o
 SmartCalc_v2_0: CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o
 SmartCalc_v2_0: CMakeFiles/SmartCalc_v2_0.dir/source/qcustomplot.cpp.o
 SmartCalc_v2_0: CMakeFiles/SmartCalc_v2_0.dir/build.make
+SmartCalc_v2_0: /usr/local/lib/QtPrintSupport.framework/Versions/A/QtPrintSupport
 SmartCalc_v2_0: /usr/local/lib/QtWidgets.framework/Versions/A/QtWidgets
 SmartCalc_v2_0: /usr/local/lib/QtGui.framework/Versions/A/QtGui
 SmartCalc_v2_0: /usr/local/lib/QtCore.framework/Versions/A/QtCore
+SmartCalc_v2_0: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libcups.tbd
 SmartCalc_v2_0: CMakeFiles/SmartCalc_v2_0.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/build-src-Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable SmartCalc_v2_0"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SmartCalc_v2_0.dir/link.txt --verbose=$(VERBOSE)

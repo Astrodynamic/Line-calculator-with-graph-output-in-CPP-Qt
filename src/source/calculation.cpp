@@ -96,41 +96,26 @@ void Calculation::expression_up(QString& infix) {
 }
 
 bool Calculation::expression_validate(QString& infix) {
-  QVector<QRegularExpression> regex{
+  static const QVector<QRegularExpression> regex{
       QRegularExpression(".(?<![+\\-*\\/^(.]|mod|\\d)(\\d)"),
       QRegularExpression("(?<![)xpe]|\\d)([\\*\\/^]|mod)"),
       QRegularExpression("(?<![)xpe]|\\d)([+\\-\\*\\/^]|mod)([+-])"),
       QRegularExpression("(?<![())xpe+\\-\\*\\/^E]|\\d|mod)([+-])"),
-      QRegularExpression(".(?<![+\\-*\\/^(a]|mod)(a?(cos|sin|tan)|sqrt|ln)"),
+      QRegularExpression("(?<=^|[-+*\\/^(]|mod)(ln|log|sqrt|a?(cos|sin|tan))(*SKIP)(*F)|(?1)"),
+      QRegularExpression("(\\((?>[^()\n]|(?1))*+\\))(*SKIP)(*F)|[()]"),
       QRegularExpression(".(?<![+\\-*\\/^(sntgd])[(]"),
       QRegularExpression("(?<!\\d|[)xpe])[)]"),
       QRegularExpression("\\d*?[.]\\d*?[.]\\d*?"),
       QRegularExpression(".(?<!\\d|[\\)xpe])$"),
       QRegularExpression("(?<!\\d)E")};
-  bool flag = brackets_validate(infix);
-  if (flag == true) {
-    for (auto it : regex) {
-      if (infix.contains(it)) {
-        flag = false;
-        break;
-      }
+  bool flag = true;
+  for (auto it : regex) {
+    if (infix.contains(it)) {
+      flag = false;
+      break;
     }
   }
   return flag;
-}
-
-bool Calculation::brackets_validate(QString& infix) {
-  int count = 0;
-  for (auto it : infix) {
-    if (it == '(') {
-      ++count;
-    } else if (it == ')') {
-      if (--count < 0) {
-        break;
-      }
-    }
-  }
-  return !count;
 }
 
 bool Calculation::is_function(QChar& lexem) {

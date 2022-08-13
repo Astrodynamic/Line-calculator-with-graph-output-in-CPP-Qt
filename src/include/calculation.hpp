@@ -47,7 +47,6 @@ class Calculation {
  private:
   void expression_up(QString& infix);
   bool expression_validate(QString& infix);
-  bool brackets_validate(QString& infix);
   bool is_function(QChar& lexem);
   bool is_operation(QChar& lexem);
   const f_prt_t get_priority(QChar& lexem);
