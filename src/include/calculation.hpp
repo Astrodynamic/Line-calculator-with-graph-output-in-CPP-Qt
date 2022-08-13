@@ -40,6 +40,7 @@ class Calculation {
  public:
   Calculation();
 
+  QPair<QVector<double>, QVector<double>> calculation(double x_min, double x_max, double step);
   void expression_load(QString infix);
   double calculation(double x = 0);
   bool is_empty();

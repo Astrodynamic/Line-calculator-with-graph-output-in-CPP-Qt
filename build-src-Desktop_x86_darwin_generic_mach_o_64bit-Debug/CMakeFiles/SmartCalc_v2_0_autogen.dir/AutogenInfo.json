@@ -362,6 +362,12 @@
 			null
 		],
 		[
+			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/graph.hpp",
+			"MU",
+			"6YEA5652QU/moc_graph.cpp",
+			null
+		],
+		[
 			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/qcustomplot.hpp",
 			"MU",
 			"6YEA5652QU/moc_qcustomplot.cpp",
@@ -430,6 +436,11 @@
 		],
 		[
 			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculator.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/graph.cpp",
 			"MU",
 			null
 		],

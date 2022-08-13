@@ -2,12 +2,16 @@
 
 #include "ui_calculator.h"
 
-Calculator::Calculator(QWidget* parent) : QMainWindow(parent), ui(new Ui::Calculator), model(new Calculation) {
+Calculator::Calculator(QWidget* parent) : QMainWindow(parent), ui(new Ui::Calculator), model(new Calculation), graph(new Graph()) {
   ui->setupUi(this);
   connect(ui->btn_print_group, SIGNAL(buttonClicked(QAbstractButton*)), this, SLOT(print_lexeme(QAbstractButton*)));
 }
 
-Calculator::~Calculator() { delete ui; }
+Calculator::~Calculator() {
+  delete ui;
+  delete model;
+  delete graph;
+}
 
 void Calculator::print_lexeme(QAbstractButton* btn) {
   ui->display->setText(ui->display->text() + btn->text());
@@ -33,5 +37,5 @@ void Calculator::on_btn_equal_clicked() {
 }
 
 void Calculator::on_btn_function_clicked() {
-
+  graph->show();
 }

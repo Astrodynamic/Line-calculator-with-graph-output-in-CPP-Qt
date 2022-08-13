@@ -6,6 +6,7 @@
 #include <QMainWindow>
 
 #include "calculation.hpp"
+#include "graph.hpp"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -29,5 +30,6 @@ class Calculator : public QMainWindow {
 private:
   Ui::Calculator *ui;
   Calculation *model;
+  Graph *graph;
 };
 #endif  // CALCULATOR_HPP

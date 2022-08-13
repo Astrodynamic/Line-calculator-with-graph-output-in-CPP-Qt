@@ -25,6 +25,7 @@ set(HEADERS
     include/calculator.hpp
     include/calculation.hpp
     include/qcustomplot.hpp
+    include/graph.hpp
 )
 
 set(SOURCES
@@ -32,10 +33,12 @@ set(SOURCES
     source/calculator.cpp
     source/calculation.cpp
     source/qcustomplot.cpp
+    source/graph.cpp
 )
 
 set(FORMS
     form/calculator.ui
+    form/graph.ui
 )
 
 set(PROJECT_SOURCES
