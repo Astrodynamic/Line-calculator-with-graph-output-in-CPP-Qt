@@ -71,7 +71,11 @@ double Calculation::calculation(double x) {
       } else {
         std::visit(overloaded{
           [&](fp_1arg fn) { stack.push(fn(stack.pop())); },
-          [&](fp_2arg fn) { stack.push(fn(stack.pop(), stack.pop())); },
+          [&](fp_2arg fn) {
+            double rhs = stack.pop();
+            double lhs = stack.pop();
+            stack.push(fn(lhs, rhs));
+          },
           [](auto fn) {}
         }, m_fun_ptr.value(arg).second.second);
       }
@@ -111,14 +115,15 @@ bool Calculation::expression_validate(QString& infix) {
       QRegularExpression(".(?<![+\\-*\\/^(.]|mod|\\d)(\\d)"),
       QRegularExpression("(?<![)xpe]|\\d)([\\*\\/^]|mod)"),
       QRegularExpression("(?<![)xpe]|\\d)([+\\-\\*\\/^]|mod)([+-])"),
-      QRegularExpression("(?<![())xpe+\\-\\*\\/^E]|\\d|mod)([+-])"),
+      QRegularExpression(".(?<![())xpe+\\-\\*\\/^E]|\\d|mod)([+-])"),
       QRegularExpression("(?<=^|[-+*\\/^(]|mod)(ln|log|sqrt|a?(cos|sin|tan))(*SKIP)(*F)|(?1)"),
       QRegularExpression("(\\((?>[^()\n]|(?1))*+\\))(*SKIP)(*F)|[()]"),
       QRegularExpression(".(?<![+\\-*\\/^(sntgd])[(]"),
       QRegularExpression("(?<!\\d|[)xpe])[)]"),
       QRegularExpression("\\d*?[.]\\d*?[.]\\d*?"),
       QRegularExpression(".(?<!\\d|[\\)xpe])$"),
-      QRegularExpression("(?<!\\d)E")};
+      QRegularExpression("(?<!\\d)E"),
+      QRegularExpression("nan|inf")};
   bool flag = true;
   for (auto it : regex) {
     if (infix.contains(it)) {

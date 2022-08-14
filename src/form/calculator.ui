@@ -271,6 +271,9 @@ QPushButton:pressed  {
         <property name="text">
          <string>asin</string>
         </property>
+        <property name="shortcut">
+         <string>A, S, I, N</string>
+        </property>
         <attribute name="buttonGroup">
          <string notr="true">btn_print_group</string>
         </attribute>
@@ -324,6 +327,9 @@ QPushButton:pressed  {
         </property>
         <property name="text">
          <string>acos</string>
+        </property>
+        <property name="shortcut">
+         <string>A, C, O, S</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">btn_print_group</string>
@@ -493,6 +499,9 @@ QPushButton:pressed  {
         <property name="text">
          <string>atan</string>
         </property>
+        <property name="shortcut">
+         <string>A, T, A, N</string>
+        </property>
         <attribute name="buttonGroup">
          <string notr="true">btn_print_group</string>
         </attribute>
@@ -546,6 +555,9 @@ QPushButton:pressed  {
         </property>
         <property name="text">
          <string>log</string>
+        </property>
+        <property name="shortcut">
+         <string>L, O, G</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">btn_print_group</string>
@@ -1001,6 +1013,9 @@ QPushButton:pressed  {
         <property name="text">
          <string>ln</string>
         </property>
+        <property name="shortcut">
+         <string>L, N</string>
+        </property>
         <attribute name="buttonGroup">
          <string notr="true">btn_print_group</string>
         </attribute>
@@ -1111,6 +1126,9 @@ QPushButton:pressed  {
         </property>
         <property name="text">
          <string>tan</string>
+        </property>
+        <property name="shortcut">
+         <string>T, A, N</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">btn_print_group</string>
@@ -1337,6 +1355,9 @@ QPushButton:pressed  {
         </property>
         <property name="text">
          <string>ƒ</string>
+        </property>
+        <property name="shortcut">
+         <string>F</string>
         </property>
        </widget>
       </item>
@@ -1676,6 +1697,9 @@ QPushButton:pressed  {
         <property name="text">
          <string>sqrt</string>
         </property>
+        <property name="shortcut">
+         <string>S, Q, R, T</string>
+        </property>
         <attribute name="buttonGroup">
          <string notr="true">btn_print_group</string>
         </attribute>
@@ -1844,6 +1868,9 @@ QPushButton:pressed  {
         <property name="text">
          <string>cos</string>
         </property>
+        <property name="shortcut">
+         <string>C, O, S</string>
+        </property>
         <attribute name="buttonGroup">
          <string notr="true">btn_print_group</string>
         </attribute>
@@ -1954,6 +1981,9 @@ QPushButton:pressed  {
         </property>
         <property name="text">
          <string>sin</string>
+        </property>
+        <property name="shortcut">
+         <string>S, I, N</string>
         </property>
         <attribute name="buttonGroup">
          <string notr="true">btn_print_group</string>

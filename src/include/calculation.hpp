@@ -12,7 +12,7 @@
 #include <variant>
 
 #define lamdas_f1arg(SIGN) [](double src) -> double { return SIGN(src); }
-#define lamdas_f2arg(SIGN) [](double lhs, double rhs) -> double { return rhs SIGN lhs; }
+#define lamdas_f2arg(SIGN) [](double lhs, double rhs) -> double { return lhs SIGN rhs; }
 
 class Calculation {
  private:

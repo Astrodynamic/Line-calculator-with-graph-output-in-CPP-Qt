@@ -23,7 +23,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_Calculator
+class Ui_s21:Calculator
 {
 public:
     QWidget *centralwidget;
@@ -68,24 +68,24 @@ public:
     QStatusBar *status_bar;
     QButtonGroup *btn_print_group;
 
-    void setupUi(QMainWindow *Calculator)
+    void setupUi(QMainWindow *s21_Calculator)
     {
-        if (Calculator->objectName().isEmpty())
-            Calculator->setObjectName(QString::fromUtf8("Calculator"));
-        Calculator->resize(530, 220);
-        Calculator->setMinimumSize(QSize(530, 220));
-        Calculator->setMaximumSize(QSize(530, 220));
+        if (s21_Calculator->objectName().isEmpty())
+            s21_Calculator->setObjectName(QString::fromUtf8("s21_Calculator"));
+        s21_Calculator->resize(530, 220);
+        s21_Calculator->setMinimumSize(QSize(530, 220));
+        s21_Calculator->setMaximumSize(QSize(530, 220));
         QFont font;
         font.setFamilies({QString::fromUtf8("Arial")});
         font.setPointSize(12);
-        Calculator->setFont(font);
-        Calculator->setLayoutDirection(Qt::LeftToRight);
-        Calculator->setAutoFillBackground(false);
-        Calculator->setStyleSheet(QString::fromUtf8("QMainWindow {\n"
+        s21_Calculator->setFont(font);
+        s21_Calculator->setLayoutDirection(Qt::LeftToRight);
+        s21_Calculator->setAutoFillBackground(false);
+        s21_Calculator->setStyleSheet(QString::fromUtf8("QMainWindow {\n"
 "	background-color: rgb(215, 215, 215);\n"
 "}"));
-        Calculator->setDocumentMode(false);
-        centralwidget = new QWidget(Calculator);
+        s21_Calculator->setDocumentMode(false);
+        centralwidget = new QWidget(s21_Calculator);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         centralwidget->setMinimumSize(QSize(530, 220));
         centralwidget->setMaximumSize(QSize(530, 220));
@@ -116,7 +116,7 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setSizeConstraint(QLayout::SetMinAndMaxSize);
         btn_1 = new QPushButton(centralwidget);
-        btn_print_group = new QButtonGroup(Calculator);
+        btn_print_group = new QButtonGroup(s21_Calculator);
         btn_print_group->setObjectName(QString::fromUtf8("btn_print_group"));
         btn_print_group->addButton(btn_1);
         btn_1->setObjectName(QString::fromUtf8("btn_1"));
@@ -1004,8 +1004,8 @@ public:
 
         verticalLayout->addLayout(gridLayout);
 
-        Calculator->setCentralWidget(centralwidget);
-        status_bar = new QStatusBar(Calculator);
+        s21_Calculator->setCentralWidget(centralwidget);
+        status_bar = new QStatusBar(s21_Calculator);
         status_bar->setObjectName(QString::fromUtf8("status_bar"));
         status_bar->setMaximumSize(QSize(16777215, 15));
         status_bar->setFont(font1);
@@ -1016,133 +1016,163 @@ public:
 "	text-indent: 50px;\n"
 "}"));
         status_bar->setLocale(QLocale(QLocale::C, QLocale::AnyTerritory));
-        Calculator->setStatusBar(status_bar);
+        s21_Calculator->setStatusBar(status_bar);
 
-        retranslateUi(Calculator);
+        retranslateUi(s21_Calculator);
 
-        QMetaObject::connectSlotsByName(Calculator);
+        QMetaObject::connectSlotsByName(s21_Calculator);
     } // setupUi
 
-    void retranslateUi(QMainWindow *Calculator)
+    void retranslateUi(QMainWindow *s21_Calculator)
     {
-        Calculator->setWindowTitle(QCoreApplication::translate("Calculator", "Calculator", nullptr));
+        s21_Calculator->setWindowTitle(QCoreApplication::translate("s21:Calculator", "s21:Calculator", nullptr));
         display->setText(QString());
-        btn_1->setText(QCoreApplication::translate("Calculator", "1", nullptr));
+        btn_1->setText(QCoreApplication::translate("s21:Calculator", "1", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_1->setShortcut(QCoreApplication::translate("Calculator", "1", nullptr));
+        btn_1->setShortcut(QCoreApplication::translate("s21:Calculator", "1", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_6->setText(QCoreApplication::translate("Calculator", "6", nullptr));
+        btn_6->setText(QCoreApplication::translate("s21:Calculator", "6", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_6->setShortcut(QCoreApplication::translate("Calculator", "6", nullptr));
+        btn_6->setShortcut(QCoreApplication::translate("s21:Calculator", "6", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_asin->setText(QCoreApplication::translate("Calculator", "asin", nullptr));
-        btn_acos->setText(QCoreApplication::translate("Calculator", "acos", nullptr));
-        btn_oparenth->setText(QCoreApplication::translate("Calculator", "(", nullptr));
+        btn_asin->setText(QCoreApplication::translate("s21:Calculator", "asin", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_oparenth->setShortcut(QCoreApplication::translate("Calculator", "(", nullptr));
+        btn_asin->setShortcut(QCoreApplication::translate("s21:Calculator", "A, S, I, N", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_exp->setText(QCoreApplication::translate("Calculator", "^", nullptr));
+        btn_acos->setText(QCoreApplication::translate("s21:Calculator", "acos", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_exp->setShortcut(QCoreApplication::translate("Calculator", "^", nullptr));
+        btn_acos->setShortcut(QCoreApplication::translate("s21:Calculator", "A, C, O, S", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_atan->setText(QCoreApplication::translate("Calculator", "atan", nullptr));
-        btn_log->setText(QCoreApplication::translate("Calculator", "log", nullptr));
-        btn_mod->setText(QCoreApplication::translate("Calculator", "mod", nullptr));
+        btn_oparenth->setText(QCoreApplication::translate("s21:Calculator", "(", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_mod->setShortcut(QCoreApplication::translate("Calculator", "%", nullptr));
+        btn_oparenth->setShortcut(QCoreApplication::translate("s21:Calculator", "(", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_8->setText(QCoreApplication::translate("Calculator", "8", nullptr));
+        btn_exp->setText(QCoreApplication::translate("s21:Calculator", "^", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_8->setShortcut(QCoreApplication::translate("Calculator", "8", nullptr));
+        btn_exp->setShortcut(QCoreApplication::translate("s21:Calculator", "^", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_4->setText(QCoreApplication::translate("Calculator", "4", nullptr));
+        btn_atan->setText(QCoreApplication::translate("s21:Calculator", "atan", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_4->setShortcut(QCoreApplication::translate("Calculator", "4", nullptr));
+        btn_atan->setShortcut(QCoreApplication::translate("s21:Calculator", "A, T, A, N", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_mul->setText(QCoreApplication::translate("Calculator", "*", nullptr));
+        btn_log->setText(QCoreApplication::translate("s21:Calculator", "log", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_mul->setShortcut(QCoreApplication::translate("Calculator", "*", nullptr));
+        btn_log->setShortcut(QCoreApplication::translate("s21:Calculator", "L, O, G", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_7->setText(QCoreApplication::translate("Calculator", "7", nullptr));
+        btn_mod->setText(QCoreApplication::translate("s21:Calculator", "mod", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_7->setShortcut(QCoreApplication::translate("Calculator", "7", nullptr));
+        btn_mod->setShortcut(QCoreApplication::translate("s21:Calculator", "%", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_pi->setText(QCoreApplication::translate("Calculator", "p", nullptr));
+        btn_8->setText(QCoreApplication::translate("s21:Calculator", "8", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_pi->setShortcut(QCoreApplication::translate("Calculator", "P", nullptr));
+        btn_8->setShortcut(QCoreApplication::translate("s21:Calculator", "8", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_e->setText(QCoreApplication::translate("Calculator", "e", nullptr));
+        btn_4->setText(QCoreApplication::translate("s21:Calculator", "4", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_e->setShortcut(QCoreApplication::translate("Calculator", "E", nullptr));
+        btn_4->setShortcut(QCoreApplication::translate("s21:Calculator", "4", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_ln->setText(QCoreApplication::translate("Calculator", "ln", nullptr));
-        btn_cparenth->setText(QCoreApplication::translate("Calculator", ")", nullptr));
+        btn_mul->setText(QCoreApplication::translate("s21:Calculator", "*", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_cparenth->setShortcut(QCoreApplication::translate("Calculator", ")", nullptr));
+        btn_mul->setShortcut(QCoreApplication::translate("s21:Calculator", "*", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_tan->setText(QCoreApplication::translate("Calculator", "tan", nullptr));
-        btn_0->setText(QCoreApplication::translate("Calculator", "0", nullptr));
+        btn_7->setText(QCoreApplication::translate("s21:Calculator", "7", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_0->setShortcut(QCoreApplication::translate("Calculator", "0", nullptr));
+        btn_7->setShortcut(QCoreApplication::translate("s21:Calculator", "7", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_5->setText(QCoreApplication::translate("Calculator", "5", nullptr));
+        btn_pi->setText(QCoreApplication::translate("s21:Calculator", "p", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_5->setShortcut(QCoreApplication::translate("Calculator", "5", nullptr));
+        btn_pi->setShortcut(QCoreApplication::translate("s21:Calculator", "P", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_div->setText(QCoreApplication::translate("Calculator", "/", nullptr));
+        btn_e->setText(QCoreApplication::translate("s21:Calculator", "e", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_div->setShortcut(QCoreApplication::translate("Calculator", "/", nullptr));
+        btn_e->setShortcut(QCoreApplication::translate("s21:Calculator", "E", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_function->setText(QCoreApplication::translate("Calculator", "\306\222", nullptr));
-        btn_sub->setText(QCoreApplication::translate("Calculator", "-", nullptr));
+        btn_ln->setText(QCoreApplication::translate("s21:Calculator", "ln", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_sub->setShortcut(QCoreApplication::translate("Calculator", "-", nullptr));
+        btn_ln->setShortcut(QCoreApplication::translate("s21:Calculator", "L, N", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_3->setText(QCoreApplication::translate("Calculator", "3", nullptr));
+        btn_cparenth->setText(QCoreApplication::translate("s21:Calculator", ")", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_3->setShortcut(QCoreApplication::translate("Calculator", "3", nullptr));
+        btn_cparenth->setShortcut(QCoreApplication::translate("s21:Calculator", ")", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_sum->setText(QCoreApplication::translate("Calculator", "+", nullptr));
+        btn_tan->setText(QCoreApplication::translate("s21:Calculator", "tan", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_sum->setShortcut(QCoreApplication::translate("Calculator", "+", nullptr));
+        btn_tan->setShortcut(QCoreApplication::translate("s21:Calculator", "T, A, N", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_x->setText(QCoreApplication::translate("Calculator", "x", nullptr));
+        btn_0->setText(QCoreApplication::translate("s21:Calculator", "0", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_x->setShortcut(QCoreApplication::translate("Calculator", "X", nullptr));
+        btn_0->setShortcut(QCoreApplication::translate("s21:Calculator", "0", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_E->setText(QCoreApplication::translate("Calculator", "E", nullptr));
+        btn_5->setText(QCoreApplication::translate("s21:Calculator", "5", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_E->setShortcut(QCoreApplication::translate("Calculator", "Shift+E", nullptr));
+        btn_5->setShortcut(QCoreApplication::translate("s21:Calculator", "5", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_sqrt->setText(QCoreApplication::translate("Calculator", "sqrt", nullptr));
-        btn_9->setText(QCoreApplication::translate("Calculator", "9", nullptr));
+        btn_div->setText(QCoreApplication::translate("s21:Calculator", "/", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_9->setShortcut(QCoreApplication::translate("Calculator", "9", nullptr));
+        btn_div->setShortcut(QCoreApplication::translate("s21:Calculator", "/", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_dot->setText(QCoreApplication::translate("Calculator", ".", nullptr));
+        btn_function->setText(QCoreApplication::translate("s21:Calculator", "\306\222", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_dot->setShortcut(QCoreApplication::translate("Calculator", ".", nullptr));
+        btn_function->setShortcut(QCoreApplication::translate("s21:Calculator", "F", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_cos->setText(QCoreApplication::translate("Calculator", "cos", nullptr));
-        btn_2->setText(QCoreApplication::translate("Calculator", "2", nullptr));
+        btn_sub->setText(QCoreApplication::translate("s21:Calculator", "-", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_2->setShortcut(QCoreApplication::translate("Calculator", "2", nullptr));
+        btn_sub->setShortcut(QCoreApplication::translate("s21:Calculator", "-", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_sin->setText(QCoreApplication::translate("Calculator", "sin", nullptr));
-        btn_equal->setText(QCoreApplication::translate("Calculator", "=", nullptr));
+        btn_3->setText(QCoreApplication::translate("s21:Calculator", "3", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_equal->setShortcut(QCoreApplication::translate("Calculator", "=", nullptr));
+        btn_3->setShortcut(QCoreApplication::translate("s21:Calculator", "3", nullptr));
 #endif // QT_CONFIG(shortcut)
-        btn_clean->setText(QCoreApplication::translate("Calculator", "AC", nullptr));
+        btn_sum->setText(QCoreApplication::translate("s21:Calculator", "+", nullptr));
 #if QT_CONFIG(shortcut)
-        btn_clean->setShortcut(QCoreApplication::translate("Calculator", "Backspace", nullptr));
+        btn_sum->setShortcut(QCoreApplication::translate("s21:Calculator", "+", nullptr));
+#endif // QT_CONFIG(shortcut)
+        btn_x->setText(QCoreApplication::translate("s21:Calculator", "x", nullptr));
+#if QT_CONFIG(shortcut)
+        btn_x->setShortcut(QCoreApplication::translate("s21:Calculator", "X", nullptr));
+#endif // QT_CONFIG(shortcut)
+        btn_E->setText(QCoreApplication::translate("s21:Calculator", "E", nullptr));
+#if QT_CONFIG(shortcut)
+        btn_E->setShortcut(QCoreApplication::translate("s21:Calculator", "Shift+E", nullptr));
+#endif // QT_CONFIG(shortcut)
+        btn_sqrt->setText(QCoreApplication::translate("s21:Calculator", "sqrt", nullptr));
+#if QT_CONFIG(shortcut)
+        btn_sqrt->setShortcut(QCoreApplication::translate("s21:Calculator", "S, Q, R, T", nullptr));
+#endif // QT_CONFIG(shortcut)
+        btn_9->setText(QCoreApplication::translate("s21:Calculator", "9", nullptr));
+#if QT_CONFIG(shortcut)
+        btn_9->setShortcut(QCoreApplication::translate("s21:Calculator", "9", nullptr));
+#endif // QT_CONFIG(shortcut)
+        btn_dot->setText(QCoreApplication::translate("s21:Calculator", ".", nullptr));
+#if QT_CONFIG(shortcut)
+        btn_dot->setShortcut(QCoreApplication::translate("s21:Calculator", ".", nullptr));
+#endif // QT_CONFIG(shortcut)
+        btn_cos->setText(QCoreApplication::translate("s21:Calculator", "cos", nullptr));
+#if QT_CONFIG(shortcut)
+        btn_cos->setShortcut(QCoreApplication::translate("s21:Calculator", "C, O, S", nullptr));
+#endif // QT_CONFIG(shortcut)
+        btn_2->setText(QCoreApplication::translate("s21:Calculator", "2", nullptr));
+#if QT_CONFIG(shortcut)
+        btn_2->setShortcut(QCoreApplication::translate("s21:Calculator", "2", nullptr));
+#endif // QT_CONFIG(shortcut)
+        btn_sin->setText(QCoreApplication::translate("s21:Calculator", "sin", nullptr));
+#if QT_CONFIG(shortcut)
+        btn_sin->setShortcut(QCoreApplication::translate("s21:Calculator", "S, I, N", nullptr));
+#endif // QT_CONFIG(shortcut)
+        btn_equal->setText(QCoreApplication::translate("s21:Calculator", "=", nullptr));
+#if QT_CONFIG(shortcut)
+        btn_equal->setShortcut(QCoreApplication::translate("s21:Calculator", "=", nullptr));
+#endif // QT_CONFIG(shortcut)
+        btn_clean->setText(QCoreApplication::translate("s21:Calculator", "AC", nullptr));
+#if QT_CONFIG(shortcut)
+        btn_clean->setShortcut(QCoreApplication::translate("s21:Calculator", "Backspace", nullptr));
 #endif // QT_CONFIG(shortcut)
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class Calculator: public Ui_Calculator {};
+    class s21:Calculator: public Ui_s21:Calculator {};
 } // namespace Ui
 
 QT_END_NAMESPACE
