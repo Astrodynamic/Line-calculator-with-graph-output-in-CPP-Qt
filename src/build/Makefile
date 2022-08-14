@@ -214,6 +214,30 @@ source/calculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.s
 .PHONY : source/calculator.cpp.s
 
+source/credit.o: source/credit.cpp.o
+.PHONY : source/credit.o
+
+# target to build an object file
+source/credit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/source/credit.cpp.o
+.PHONY : source/credit.cpp.o
+
+source/credit.i: source/credit.cpp.i
+.PHONY : source/credit.i
+
+# target to preprocess a source file
+source/credit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/source/credit.cpp.i
+.PHONY : source/credit.cpp.i
+
+source/credit.s: source/credit.cpp.s
+.PHONY : source/credit.s
+
+# target to generate assembly for a file
+source/credit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc_v2_0.dir/build.make CMakeFiles/SmartCalc_v2_0.dir/source/credit.cpp.s
+.PHONY : source/credit.cpp.s
+
 source/graph.o: source/graph.cpp.o
 .PHONY : source/graph.o
 
@@ -305,6 +329,9 @@ help:
 	@echo "... source/calculator.o"
 	@echo "... source/calculator.i"
 	@echo "... source/calculator.s"
+	@echo "... source/credit.o"
+	@echo "... source/credit.i"
+	@echo "... source/credit.s"
 	@echo "... source/graph.o"
 	@echo "... source/graph.i"
 	@echo "... source/graph.s"

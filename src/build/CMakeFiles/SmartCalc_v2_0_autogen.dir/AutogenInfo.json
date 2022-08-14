@@ -361,6 +361,12 @@
 			null
 		],
 		[
+			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/credit.hpp",
+			"MU",
+			"6YEA5652QU/moc_credit.cpp",
+			null
+		],
+		[
 			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/graph.hpp",
 			"MU",
 			"6YEA5652QU/moc_graph.cpp",
@@ -435,6 +441,11 @@
 		],
 		[
 			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculator.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/credit.cpp",
 			"MU",
 			null
 		],

@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SmartCalc_v2_0.dir/source/calculation.cpp.o.d"
   "CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o"
   "CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o.d"
+  "CMakeFiles/SmartCalc_v2_0.dir/source/credit.cpp.o"
+  "CMakeFiles/SmartCalc_v2_0.dir/source/credit.cpp.o.d"
   "CMakeFiles/SmartCalc_v2_0.dir/source/graph.cpp.o"
   "CMakeFiles/SmartCalc_v2_0.dir/source/graph.cpp.o.d"
   "CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o"
