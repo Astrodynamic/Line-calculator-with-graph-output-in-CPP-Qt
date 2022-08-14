@@ -2,7 +2,7 @@
 
 #include "ui_calculator.h"
 
-Calculator::Calculator(QWidget* parent) : QMainWindow(parent), ui(new Ui::Calculator), model(new Calculation), graph(new Graph) {
+Calculator::Calculator(QWidget* parent) : QMainWindow(parent), ui(new Ui::Calculator), model(new Calculation), graph(new Graph(this)) {
   ui->setupUi(this);
   connect(ui->btn_print_group, SIGNAL(buttonClicked(QAbstractButton*)), this, SLOT(print_lexeme(QAbstractButton*)));
   connect(graph, &Graph::update_data, this, &Calculator::update_graph);
@@ -15,7 +15,15 @@ Calculator::~Calculator() {
 }
 
 void Calculator::update_graph(double x_min, double x_max, double step) {
-  graph->load_data(model->calculation(x_min, x_max, step));
+  if (!ui->display->text().isEmpty()) {
+    model->expression_load(ui->display->text());
+  }
+  if (!model->is_empty()) {
+    graph->load_data(model->calculation(x_min, x_max, step));
+    ui->display->clear();
+  } else {
+    ui->status_bar->showMessage("The expression you entered is invalid", 2000);
+  }
 }
 
 void Calculator::print_lexeme(QAbstractButton* btn) {
