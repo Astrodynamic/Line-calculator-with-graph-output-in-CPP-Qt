@@ -21,29 +21,29 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_Graph_t {
+struct qt_meta_stringdata_s21__Graph_t {
     const uint offsetsAndSize[14];
-    char stringdata0[61];
+    char stringdata0[66];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(offsetof(qt_meta_stringdata_Graph_t, stringdata0) + ofs), len 
-static const qt_meta_stringdata_Graph_t qt_meta_stringdata_Graph = {
+    uint(offsetof(qt_meta_stringdata_s21__Graph_t, stringdata0) + ofs), len 
+static const qt_meta_stringdata_s21__Graph_t qt_meta_stringdata_s21__Graph = {
     {
-QT_MOC_LITERAL(0, 5), // "Graph"
-QT_MOC_LITERAL(6, 11), // "update_data"
-QT_MOC_LITERAL(18, 0), // ""
-QT_MOC_LITERAL(19, 5), // "x_min"
-QT_MOC_LITERAL(25, 5), // "x_max"
-QT_MOC_LITERAL(31, 4), // "step"
-QT_MOC_LITERAL(36, 24) // "on_btn_calculate_clicked"
+QT_MOC_LITERAL(0, 10), // "s21::Graph"
+QT_MOC_LITERAL(11, 11), // "update_data"
+QT_MOC_LITERAL(23, 0), // ""
+QT_MOC_LITERAL(24, 5), // "x_min"
+QT_MOC_LITERAL(30, 5), // "x_max"
+QT_MOC_LITERAL(36, 4), // "step"
+QT_MOC_LITERAL(41, 24) // "on_btn_calculate_clicked"
 
     },
-    "Graph\0update_data\0\0x_min\0x_max\0step\0"
-    "on_btn_calculate_clicked"
+    "s21::Graph\0update_data\0\0x_min\0x_max\0"
+    "step\0on_btn_calculate_clicked"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_Graph[] = {
+static const uint qt_meta_data_s21__Graph[] = {
 
  // content:
       10,       // revision
@@ -71,7 +71,7 @@ static const uint qt_meta_data_Graph[] = {
        0        // eod
 };
 
-void Graph::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void s21::Graph::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         auto *_t = static_cast<Graph *>(_o);
@@ -93,13 +93,13 @@ void Graph::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
     }
 }
 
-const QMetaObject Graph::staticMetaObject = { {
+const QMetaObject s21::Graph::staticMetaObject = { {
     QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_Graph.offsetsAndSize,
-    qt_meta_data_Graph,
+    qt_meta_stringdata_s21__Graph.offsetsAndSize,
+    qt_meta_data_s21__Graph,
     qt_static_metacall,
     nullptr,
-qt_incomplete_metaTypeArray<qt_meta_stringdata_Graph_t
+qt_incomplete_metaTypeArray<qt_meta_stringdata_s21__Graph_t
 , QtPrivate::TypeAndForceComplete<Graph, std::true_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>
 , QtPrivate::TypeAndForceComplete<void, std::false_type>
 
@@ -109,20 +109,20 @@ qt_incomplete_metaTypeArray<qt_meta_stringdata_Graph_t
 } };
 
 
-const QMetaObject *Graph::metaObject() const
+const QMetaObject *s21::Graph::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Graph::qt_metacast(const char *_clname)
+void *s21::Graph::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_Graph.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_s21__Graph.stringdata0))
         return static_cast<void*>(this);
     return QMainWindow::qt_metacast(_clname);
 }
 
-int Graph::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int s21::Graph::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
     if (_id < 0)
@@ -140,7 +140,7 @@ int Graph::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void Graph::update_data(double _t1, double _t2, double _t3)
+void s21::Graph::update_data(double _t1, double _t2, double _t3)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

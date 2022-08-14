@@ -3,10 +3,15 @@
 #include "ui_calculator.h"
 
 namespace s21 {
-Calculator::Calculator(QWidget* parent) : QMainWindow(parent), ui(new Ui::Calculator), model(new s21::Calculation), graph(new s21::Graph(this)) {
+Calculator::Calculator(QWidget* parent)
+    : QMainWindow(parent),
+      ui(new Ui::Calculator),
+      model(new Calculation),
+      graph(new Graph(this)) {
   ui->setupUi(this);
-  connect(ui->btn_print_group, SIGNAL(buttonClicked(QAbstractButton*)), this, SLOT(print_lexeme(QAbstractButton*)));
-  connect(graph, &s21::Graph::update_data, this, &Calculator::update_graph);
+  connect(ui->btn_print_group, SIGNAL(buttonClicked(QAbstractButton*)), this,
+          SLOT(print_lexeme(QAbstractButton*)));
+  connect(graph, &Graph::update_data, this, &Calculator::update_graph);
 }
 
 Calculator::~Calculator() {
@@ -38,9 +43,11 @@ void Calculator::on_btn_equal_clicked() {
   if (!model->is_empty()) {
     if (ui->display->text().contains('x')) {
       bool flag;
-      double t_num = QInputDialog::getDouble(this, tr("Enter value"), tr("Value of the x:"), 0.0, -2147483647, 2147483647, 1, &flag);
+      double t_num = QInputDialog::getDouble(this, tr("Enter value"),
+                                             tr("Value of the x:"), 0.0,
+                                             -2147483647, 2147483647, 1, &flag);
       if (flag) {
-        ui->display->setText( QString::number(model->calculation(t_num), 'g', 15));
+        ui->display->setText(QString::number(model->calculation(t_num), 'g', 15));
       }
     } else {
       ui->display->setText(QString::number(model->calculation(), 'g', 15));
@@ -50,7 +57,5 @@ void Calculator::on_btn_equal_clicked() {
   }
 }
 
-void Calculator::on_btn_function_clicked() {
-  graph->show();
-}
-}
+void Calculator::on_btn_function_clicked() { graph->show(); }
+}  // namespace s21

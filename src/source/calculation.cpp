@@ -180,4 +180,4 @@ void Calculation::qstrtod(QString& src, size_t& ind) {
 bool Calculation::is_empty() {
   return m_rpn.empty();
 }
-}
+}  // namespace s21

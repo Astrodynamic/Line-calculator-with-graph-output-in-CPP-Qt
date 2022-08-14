@@ -55,6 +55,5 @@ class Calculation {
   bool is_priority_le(QChar& lhs, QChar& rhs);
   void qstrtod(QString& src, size_t& ind);
 };
-}
-
+}  // namespace s21
 #endif  // SRC_INCLUDE_CALCULATION_HPP_

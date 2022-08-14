@@ -12,7 +12,7 @@ Graph::Graph(QWidget *parent) : QMainWindow(parent), ui(new Ui::Graph) {
 Graph::~Graph() { delete ui; }
 
 void Graph::load_data(const QPair<QVector<double>, QVector<double>> &data) {
-  XYVector = data;
+  XYVector = std::move(data);
 }
 
 void Graph::on_btn_calculate_clicked() {
@@ -24,4 +24,4 @@ void Graph::on_btn_calculate_clicked() {
   ui->wgt_graph->graph(0)->addData(XYVector.first, XYVector.second);
   ui->wgt_graph->replot();
 }
-}
+}  // namespace s21

@@ -5,7 +5,7 @@
 #include <QVector>
 
 namespace Ui {
-  class Graph;
+class Graph;
 }
 
 namespace s21 {
@@ -30,5 +30,5 @@ class Graph : public QMainWindow {
  private:
   Ui::Graph *ui;
 };
-}
+}  // namespace s21
 #endif  // GRAPH_HPP

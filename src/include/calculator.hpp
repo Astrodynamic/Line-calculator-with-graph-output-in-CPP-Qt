@@ -31,11 +31,10 @@ class Calculator : public QMainWindow {
   void on_btn_equal_clicked();
   void on_btn_function_clicked();
 
-private:
+ private:
   Ui::Calculator *ui;
-  s21::Calculation *model;
-  s21::Graph *graph;
+  Calculation *model;
+  Graph *graph;
 };
-}
-
+}  // namespace s21
 #endif  // CALCULATOR_HPP
