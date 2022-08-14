@@ -14,6 +14,7 @@ class Calculator;
 }
 QT_END_NAMESPACE
 
+namespace s21 {
 class Calculator : public QMainWindow {
   Q_OBJECT
 
@@ -32,8 +33,9 @@ class Calculator : public QMainWindow {
 
 private:
   Ui::Calculator *ui;
-  Calculation *model;
-  Graph *graph;
+  s21::Calculation *model;
+  s21::Graph *graph;
 };
+}
 
 #endif  // CALCULATOR_HPP

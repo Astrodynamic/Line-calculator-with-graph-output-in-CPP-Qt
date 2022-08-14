@@ -14,6 +14,7 @@
 #define lamdas_f1arg(SIGN) [](double src) -> double { return SIGN(src); }
 #define lamdas_f2arg(SIGN) [](double lhs, double rhs) -> double { return lhs SIGN rhs; }
 
+namespace s21 {
 class Calculation {
  private:
   template <class... Ts>
@@ -54,5 +55,6 @@ class Calculation {
   bool is_priority_le(QChar& lhs, QChar& rhs);
   void qstrtod(QString& src, size_t& ind);
 };
+}
 
 #endif  // SRC_INCLUDE_CALCULATION_HPP_

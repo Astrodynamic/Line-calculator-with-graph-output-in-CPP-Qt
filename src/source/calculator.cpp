@@ -2,10 +2,11 @@
 
 #include "ui_calculator.h"
 
-Calculator::Calculator(QWidget* parent) : QMainWindow(parent), ui(new Ui::Calculator), model(new Calculation), graph(new Graph(this)) {
+namespace s21 {
+Calculator::Calculator(QWidget* parent) : QMainWindow(parent), ui(new Ui::Calculator), model(new s21::Calculation), graph(new s21::Graph(this)) {
   ui->setupUi(this);
   connect(ui->btn_print_group, SIGNAL(buttonClicked(QAbstractButton*)), this, SLOT(print_lexeme(QAbstractButton*)));
-  connect(graph, &Graph::update_data, this, &Calculator::update_graph);
+  connect(graph, &s21::Graph::update_data, this, &Calculator::update_graph);
 }
 
 Calculator::~Calculator() {
@@ -51,4 +52,5 @@ void Calculator::on_btn_equal_clicked() {
 
 void Calculator::on_btn_function_clicked() {
   graph->show();
+}
 }
