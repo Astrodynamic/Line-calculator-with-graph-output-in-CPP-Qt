@@ -39,7 +39,7 @@ class Calculation {
   QVector<std::variant<QChar, double>> m_rpn;
 
  public:
-  Calculation();
+  Calculation(){};
 
   QPair<QVector<double>, QVector<double>> calculation(double x_min, double x_max, double step);
   void expression_load(QString infix);

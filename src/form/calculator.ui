@@ -2131,6 +2131,63 @@ QPushButton:pressed  {
     <locale language="C" country="AnyTerritory"/>
    </property>
   </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>530</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_btn_view">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="title">
+     <string>View</string>
+    </property>
+    <property name="separatorsCollapsible">
+     <bool>false</bool>
+    </property>
+    <addaction name="action_basic"/>
+    <addaction name="action_credit"/>
+    <addaction name="action_debit"/>
+   </widget>
+   <addaction name="menu_btn_view"/>
+  </widget>
+  <action name="action_basic">
+   <property name="text">
+    <string>Basic</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_credit">
+   <property name="text">
+    <string>Credit</string>
+   </property>
+  </action>
+  <action name="action_debit">
+   <property name="text">
+    <string>Debit</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

@@ -21,8 +21,6 @@ Calculation::fun_ptr_t Calculation::m_fun_ptr = {
     {'K', {"ln", {f_prt_t::FUNC, (fcast_1arg)&std::log}}},
     {'L', {"log", {f_prt_t::FUNC, (fcast_1arg)&std::log10}}}};
 
-Calculation::Calculation() {}
-
 void Calculation::expression_load(QString infix) {
   m_rpn.clear();
   if (expression_validate(infix)) {

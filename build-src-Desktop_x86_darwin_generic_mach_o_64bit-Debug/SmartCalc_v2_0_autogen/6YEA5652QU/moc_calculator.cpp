@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_s21__Calculator_t {
-    const uint offsetsAndSize[24];
-    char stringdata0[147];
+    const uint offsetsAndSize[30];
+    char stringdata0[226];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_s21__Calculator_t, stringdata0) + ofs), len 
@@ -40,13 +40,19 @@ QT_MOC_LITERAL(60, 16), // "QAbstractButton*"
 QT_MOC_LITERAL(77, 3), // "btn"
 QT_MOC_LITERAL(81, 20), // "on_btn_clean_clicked"
 QT_MOC_LITERAL(102, 20), // "on_btn_equal_clicked"
-QT_MOC_LITERAL(123, 23) // "on_btn_function_clicked"
+QT_MOC_LITERAL(123, 23), // "on_btn_function_clicked"
+QT_MOC_LITERAL(147, 25), // "on_action_basic_triggered"
+QT_MOC_LITERAL(173, 26), // "on_action_credit_triggered"
+QT_MOC_LITERAL(200, 25) // "on_action_debit_triggered"
 
     },
     "s21::Calculator\0update_graph\0\0x_min\0"
     "x_max\0step\0print_lexeme\0QAbstractButton*\0"
     "btn\0on_btn_clean_clicked\0on_btn_equal_clicked\0"
-    "on_btn_function_clicked"
+    "on_btn_function_clicked\0"
+    "on_action_basic_triggered\0"
+    "on_action_credit_triggered\0"
+    "on_action_debit_triggered"
 };
 #undef QT_MOC_LITERAL
 
@@ -56,7 +62,7 @@ static const uint qt_meta_data_s21__Calculator[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -64,15 +70,21 @@ static const uint qt_meta_data_s21__Calculator[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    3,   44,    2, 0x0a,    1 /* Public */,
-       6,    1,   51,    2, 0x08,    5 /* Private */,
-       9,    0,   54,    2, 0x08,    7 /* Private */,
-      10,    0,   55,    2, 0x08,    8 /* Private */,
-      11,    0,   56,    2, 0x08,    9 /* Private */,
+       1,    3,   62,    2, 0x0a,    1 /* Public */,
+       6,    1,   69,    2, 0x08,    5 /* Private */,
+       9,    0,   72,    2, 0x08,    7 /* Private */,
+      10,    0,   73,    2, 0x08,    8 /* Private */,
+      11,    0,   74,    2, 0x08,    9 /* Private */,
+      12,    0,   75,    2, 0x08,   10 /* Private */,
+      13,    0,   76,    2, 0x08,   11 /* Private */,
+      14,    0,   77,    2, 0x08,   12 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Double, QMetaType::Double, QMetaType::Double,    3,    4,    5,
     QMetaType::Void, 0x80000000 | 7,    8,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -91,6 +103,9 @@ void s21::Calculator::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 2: _t->on_btn_clean_clicked(); break;
         case 3: _t->on_btn_equal_clicked(); break;
         case 4: _t->on_btn_function_clicked(); break;
+        case 5: _t->on_action_basic_triggered(); break;
+        case 6: _t->on_action_credit_triggered(); break;
+        case 7: _t->on_action_debit_triggered(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -115,7 +130,7 @@ const QMetaObject s21::Calculator::staticMetaObject = { {
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_s21__Calculator_t
 , QtPrivate::TypeAndForceComplete<Calculator, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QAbstractButton *, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<double, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<QAbstractButton *, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
 
 
 >,
@@ -142,13 +157,13 @@ int s21::Calculator::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 8;
     }
     return _id;
 }

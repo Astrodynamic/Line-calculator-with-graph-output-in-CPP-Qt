@@ -11,11 +11,14 @@
 
 #include <QtCore/QLocale>
 #include <QtCore/QVariant>
+#include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
+#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
@@ -26,6 +29,9 @@ QT_BEGIN_NAMESPACE
 class Ui_Calculator
 {
 public:
+    QAction *action_basic;
+    QAction *action_credit;
+    QAction *action_debit;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QLabel *display;
@@ -66,6 +72,8 @@ public:
     QPushButton *btn_equal;
     QPushButton *btn_clean;
     QStatusBar *status_bar;
+    QMenuBar *menuBar;
+    QMenu *menu_btn_view;
     QButtonGroup *btn_print_group;
 
     void setupUi(QMainWindow *Calculator)
@@ -85,6 +93,13 @@ public:
 "	background-color: rgb(215, 215, 215);\n"
 "}"));
         Calculator->setDocumentMode(false);
+        action_basic = new QAction(Calculator);
+        action_basic->setObjectName(QString::fromUtf8("action_basic"));
+        action_basic->setFont(font);
+        action_credit = new QAction(Calculator);
+        action_credit->setObjectName(QString::fromUtf8("action_credit"));
+        action_debit = new QAction(Calculator);
+        action_debit->setObjectName(QString::fromUtf8("action_debit"));
         centralwidget = new QWidget(Calculator);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         centralwidget->setMinimumSize(QSize(530, 220));
@@ -1017,6 +1032,26 @@ public:
 "}"));
         status_bar->setLocale(QLocale(QLocale::C, QLocale::AnyTerritory));
         Calculator->setStatusBar(status_bar);
+        menuBar = new QMenuBar(Calculator);
+        menuBar->setObjectName(QString::fromUtf8("menuBar"));
+        menuBar->setGeometry(QRect(0, 0, 530, 22));
+        menu_btn_view = new QMenu(menuBar);
+        menu_btn_view->setObjectName(QString::fromUtf8("menu_btn_view"));
+        menu_btn_view->setEnabled(true);
+        QFont font2;
+        font2.setFamilies({QString::fromUtf8("Arial")});
+        font2.setPointSize(12);
+        font2.setBold(false);
+        font2.setUnderline(false);
+        menu_btn_view->setFont(font2);
+        menu_btn_view->setLocale(QLocale(QLocale::English, QLocale::UnitedStates));
+        menu_btn_view->setSeparatorsCollapsible(false);
+        Calculator->setMenuBar(menuBar);
+
+        menuBar->addAction(menu_btn_view->menuAction());
+        menu_btn_view->addAction(action_basic);
+        menu_btn_view->addAction(action_credit);
+        menu_btn_view->addAction(action_debit);
 
         retranslateUi(Calculator);
 
@@ -1026,6 +1061,9 @@ public:
     void retranslateUi(QMainWindow *Calculator)
     {
         Calculator->setWindowTitle(QCoreApplication::translate("Calculator", "Calculator", nullptr));
+        action_basic->setText(QCoreApplication::translate("Calculator", "Basic", nullptr));
+        action_credit->setText(QCoreApplication::translate("Calculator", "Credit", nullptr));
+        action_debit->setText(QCoreApplication::translate("Calculator", "Debit", nullptr));
         display->setText(QString());
         btn_1->setText(QCoreApplication::translate("Calculator", "1", nullptr));
 #if QT_CONFIG(shortcut)
@@ -1167,6 +1205,7 @@ public:
 #if QT_CONFIG(shortcut)
         btn_clean->setShortcut(QCoreApplication::translate("Calculator", "Backspace", nullptr));
 #endif // QT_CONFIG(shortcut)
+        menu_btn_view->setTitle(QCoreApplication::translate("Calculator", "View", nullptr));
     } // retranslateUi
 
 };

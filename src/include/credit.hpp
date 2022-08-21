@@ -2,6 +2,7 @@
 #define CREDIT_HPP
 
 #include <QMainWindow>
+#include <QtMath>
 
 namespace Ui {
 class Credit;
@@ -15,7 +16,10 @@ class Credit : public QMainWindow {
   explicit Credit(QWidget *parent = nullptr);
   ~Credit();
 
- private:
+private slots:
+  void on_btn_calculate_clicked();
+
+private:
   Ui::Credit *ui;
 };
 }  // namespace s21

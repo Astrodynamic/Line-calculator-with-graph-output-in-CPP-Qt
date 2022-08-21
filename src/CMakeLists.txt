@@ -27,6 +27,7 @@ set(HEADERS
     include/qcustomplot.hpp
     include/graph.hpp
     include/credit.hpp
+    include/debit.hpp
 )
 
 set(SOURCES
@@ -36,12 +37,14 @@ set(SOURCES
     source/qcustomplot.cpp
     source/graph.cpp
     source/credit.cpp
+    source/debit.cpp
 )
 
 set(FORMS
     form/calculator.ui
     form/graph.ui
     form/credit.ui
+    form/debit.ui
 )
 
 set(PROJECT_SOURCES

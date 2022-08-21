@@ -7,6 +7,8 @@
 
 #include "calculation.hpp"
 #include "graph.hpp"
+#include "credit.hpp"
+#include "debit.hpp"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -30,11 +32,16 @@ class Calculator : public QMainWindow {
   void on_btn_clean_clicked();
   void on_btn_equal_clicked();
   void on_btn_function_clicked();
+  void on_action_basic_triggered();
+  void on_action_credit_triggered();
+  void on_action_debit_triggered();
 
- private:
+private:
   Ui::Calculator *ui;
   Calculation *model;
   Graph *graph;
+  Credit *credit;
+  Debit *debit;
 };
 }  // namespace s21
 #endif  // CALCULATOR_HPP

@@ -2,12 +2,16 @@
 
 #include "ui_calculator.h"
 
+#include <calculator.hpp>
+
 namespace s21 {
 Calculator::Calculator(QWidget* parent)
     : QMainWindow(parent),
       ui(new Ui::Calculator),
       model(new Calculation),
-      graph(new Graph(this)) {
+      graph(new Graph(this)),
+      credit(new Credit(this)),
+      debit(new Debit(this)) {
   ui->setupUi(this);
   connect(ui->btn_print_group, SIGNAL(buttonClicked(QAbstractButton*)), this,
           SLOT(print_lexeme(QAbstractButton*)));
@@ -18,6 +22,8 @@ Calculator::~Calculator() {
   delete ui;
   delete model;
   delete graph;
+  delete credit;
+  delete debit;
 }
 
 void Calculator::update_graph(double x_min, double x_max, double step) {
@@ -29,7 +35,7 @@ void Calculator::update_graph(double x_min, double x_max, double step) {
     ui->display->clear();
   } else {
     ui->status_bar->showMessage("The expression you entered is invalid", 2000);
-  }
+    }
 }
 
 void Calculator::print_lexeme(QAbstractButton* btn) {
@@ -58,4 +64,28 @@ void Calculator::on_btn_equal_clicked() {
 }
 
 void Calculator::on_btn_function_clicked() { graph->show(); }
+
+
+void Calculator::on_action_basic_triggered() {
+  this->show();
+  credit->hide();
+  debit->hide();
+}
+
+
+void Calculator::on_action_credit_triggered() {
+  this->hide();
+  credit->show();
+  debit->hide();
+  graph->hide();
+}
+
+
+void Calculator::on_action_debit_triggered() {
+  this->hide();
+  credit->hide();
+  debit->show();
+  graph->hide();
+}
+
 }  // namespace s21
