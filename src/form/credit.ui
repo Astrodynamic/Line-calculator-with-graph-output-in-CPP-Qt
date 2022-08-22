@@ -85,7 +85,7 @@
                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                 </property>
                 <property name="minimum">
-                 <number>1</number>
+                 <number>1000</number>
                 </property>
                 <property name="maximum">
                  <number>50000000</number>
@@ -263,7 +263,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Тип ежемесячных плотяжей</string>
+               <string>Тип ежемесячных платяжей</string>
               </property>
              </widget>
             </item>

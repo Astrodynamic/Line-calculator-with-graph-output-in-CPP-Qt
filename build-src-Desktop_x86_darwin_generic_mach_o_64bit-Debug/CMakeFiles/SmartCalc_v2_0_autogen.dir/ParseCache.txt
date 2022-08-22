@@ -276,12 +276,17 @@
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qtransform.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/QAbstractButton
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/QBoxLayout
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/QInputDialog
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qboxlayout.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qdialog.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qframe.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qgridlayout.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qinputdialog.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qlayout.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qlayoutitem.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qlineedit.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h
@@ -1639,8 +1644,8 @@
  uic:ui_calculator.h
 /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/qcustomplot.cpp
 /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/calculation.cpp
-/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/main.cpp
-/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculation.hpp
+/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/debit.cpp
+ uic:ui_debit.h
 /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/debit.hpp
  mmc:Q_OBJECT
  mdp:/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/debit.hpp
@@ -1891,14 +1896,19 @@
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qtransform.h
  mdp:/usr/local/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/QBoxLayout
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qboxlayout.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qgridlayout.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qlayout.h
+ mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qlayoutitem.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/usr/local/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
-/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/debit.cpp
- uic:ui_debit.h
+/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/calculation.hpp
+/Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/main.cpp
 /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/graph.cpp
  uic:ui_graph.h

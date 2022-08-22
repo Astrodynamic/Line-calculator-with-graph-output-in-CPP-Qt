@@ -111,7 +111,7 @@ public:
         spin_sum->setMinimumSize(QSize(100, 0));
         spin_sum->setFont(font);
         spin_sum->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        spin_sum->setMinimum(1);
+        spin_sum->setMinimum(1000);
         spin_sum->setMaximum(50000000);
 
         hlo_sum_spin->addWidget(spin_sum);
@@ -345,7 +345,7 @@ public:
 
         lbl_procent->setText(QCoreApplication::translate("Credit", "\320\237\321\200\320\276\321\206\320\265\320\275\321\202\320\275\320\260\321\217 \321\201\321\202\320\260\320\262\320\272\320\260", nullptr));
         label_5->setText(QCoreApplication::translate("Credit", "%", nullptr));
-        lbl_type->setText(QCoreApplication::translate("Credit", "\320\242\320\270\320\277 \320\265\320\266\320\265\320\274\320\265\321\201\321\217\321\207\320\275\321\213\321\205 \320\277\320\273\320\276\321\202\321\217\320\266\320\265\320\271", nullptr));
+        lbl_type->setText(QCoreApplication::translate("Credit", "\320\242\320\270\320\277 \320\265\320\266\320\265\320\274\320\265\321\201\321\217\321\207\320\275\321\213\321\205 \320\277\320\273\320\260\321\202\321\217\320\266\320\265\320\271", nullptr));
         rdb_anuit->setText(QCoreApplication::translate("Credit", "\320\220\320\275\320\275\321\203\320\270\321\202\320\265\321\202\320\275\321\213\320\265", nullptr));
         rdb_diff->setText(QCoreApplication::translate("Credit", "\320\224\320\270\321\204\321\204\320\265\321\200\320\265\320\275\321\206\320\270\321\200\320\276\320\262\320\260\320\275\320\275\321\213\320\265", nullptr));
         btn_calculate->setText(QCoreApplication::translate("Credit", "\320\240\320\260\321\201\321\201\321\207\320\270\321\202\320\260\321\202\321\214", nullptr));

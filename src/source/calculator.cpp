@@ -2,8 +2,6 @@
 
 #include "ui_calculator.h"
 
-#include <calculator.hpp>
-
 namespace s21 {
 Calculator::Calculator(QWidget* parent)
     : QMainWindow(parent),
@@ -65,13 +63,11 @@ void Calculator::on_btn_equal_clicked() {
 
 void Calculator::on_btn_function_clicked() { graph->show(); }
 
-
 void Calculator::on_action_basic_triggered() {
   this->show();
   credit->hide();
   debit->hide();
 }
-
 
 void Calculator::on_action_credit_triggered() {
   this->hide();
@@ -79,7 +75,6 @@ void Calculator::on_action_credit_triggered() {
   debit->hide();
   graph->hide();
 }
-
 
 void Calculator::on_action_debit_triggered() {
   this->hide();

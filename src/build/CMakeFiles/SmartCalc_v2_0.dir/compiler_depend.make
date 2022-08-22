@@ -323,6 +323,7 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o: Sma
   /usr/local/lib/QtCore.framework/Headers/qvector.h \
   ../include/graph.hpp \
   ../include/credit.hpp \
+  /usr/local/lib/QtCore.framework/Headers/QtMath \
   ../include/debit.hpp \
   SmartCalc_v2_0_autogen/6YEA5652QU/moc_credit.cpp \
   ../include/credit.hpp \
@@ -1464,6 +1465,7 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o: ../source/calculator.cpp 
   /usr/local/lib/QtCore.framework/Headers/qvector.h \
   ../include/graph.hpp \
   ../include/credit.hpp \
+  /usr/local/lib/QtCore.framework/Headers/QtMath \
   ../include/debit.hpp \
   SmartCalc_v2_0_autogen/include/ui_calculator.h \
   /usr/local/lib/QtCore.framework/Headers/QLocale \
@@ -1795,6 +1797,7 @@ CMakeFiles/SmartCalc_v2_0.dir/source/credit.cpp.o: ../source/credit.cpp \
   /usr/local/lib/QtGui.framework/Headers/qkeysequence.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h \
   /usr/local/lib/QtGui.framework/Headers/qicon.h \
+  /usr/local/lib/QtCore.framework/Headers/QtMath \
   SmartCalc_v2_0_autogen/include/ui_credit.h \
   /usr/local/lib/QtCore.framework/Headers/QVariant \
   /usr/local/lib/QtCore.framework/Headers/qvariant.h \
@@ -2144,7 +2147,10 @@ CMakeFiles/SmartCalc_v2_0.dir/source/debit.cpp.o: ../source/debit.cpp \
   /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h \
   /usr/local/lib/QtGui.framework/Headers/qicon.h \
   SmartCalc_v2_0_autogen/include/ui_debit.h \
-  /usr/local/lib/QtCore.framework/Headers/QVariant \
+  /usr/local/lib/QtCore.framework/Headers/QDate \
+  /usr/local/lib/QtCore.framework/Headers/qdatetime.h \
+  /usr/local/lib/QtCore.framework/Headers/qcalendar.h \
+  /usr/local/lib/QtCore.framework/Headers/qlocale.h \
   /usr/local/lib/QtCore.framework/Headers/qvariant.h \
   /usr/local/lib/QtCore.framework/Headers/qmap.h \
   /usr/local/lib/QtCore.framework/Headers/qshareddata_impl.h \
@@ -2154,6 +2160,7 @@ CMakeFiles/SmartCalc_v2_0.dir/source/debit.cpp.o: ../source/debit.cpp \
   /usr/local/lib/QtCore.framework/Headers/qstringconverter.h \
   /usr/local/lib/QtCore.framework/Headers/qset.h \
   /usr/local/lib/QtCore.framework/Headers/qcontiguouscache.h \
+  /usr/local/lib/QtCore.framework/Headers/QVariant \
   /usr/local/lib/QtWidgets.framework/Headers/QApplication \
   /usr/local/lib/QtWidgets.framework/Headers/qapplication.h \
   /usr/local/lib/QtCore.framework/Headers/qcoreapplication.h \
@@ -2163,7 +2170,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/debit.cpp.o: ../source/debit.cpp \
   /usr/local/lib/QtCore.framework/Headers/qcoreapplication_platform.h \
   /usr/local/lib/QtGui.framework/Headers/qguiapplication.h \
   /usr/local/lib/QtGui.framework/Headers/qinputmethod.h \
-  /usr/local/lib/QtCore.framework/Headers/qlocale.h \
   /usr/local/lib/QtGui.framework/Headers/qguiapplication_platform.h \
   /usr/local/lib/QtWidgets.framework/Headers/QCheckBox \
   /usr/local/lib/QtWidgets.framework/Headers/qcheckbox.h \
@@ -2184,17 +2190,24 @@ CMakeFiles/SmartCalc_v2_0.dir/source/debit.cpp.o: ../source/debit.cpp \
   /usr/local/lib/QtCore.framework/Headers/qabstractitemmodel.h \
   /usr/local/lib/QtWidgets.framework/Headers/QDateEdit \
   /usr/local/lib/QtWidgets.framework/Headers/qdatetimeedit.h \
-  /usr/local/lib/QtCore.framework/Headers/qdatetime.h \
-  /usr/local/lib/QtCore.framework/Headers/qcalendar.h \
   /usr/local/lib/QtWidgets.framework/Headers/QDoubleSpinBox \
   /usr/local/lib/QtWidgets.framework/Headers/qspinbox.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QHBoxLayout \
+  /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qlayout.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qlayoutitem.h \
+  /usr/local/lib/QtWidgets.framework/Headers/qgridlayout.h \
   /usr/local/lib/QtWidgets.framework/Headers/QLabel \
   /usr/local/lib/QtWidgets.framework/Headers/qlabel.h \
   /usr/local/lib/QtGui.framework/Headers/qpicture.h \
   /usr/local/lib/QtCore.framework/Headers/qiodevice.h \
   /usr/local/lib/QtGui.framework/Headers/qtextdocument.h \
   /usr/local/lib/QtCore.framework/Headers/qurl.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QPushButton \
+  /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /usr/local/lib/QtWidgets.framework/Headers/QSpacerItem \
   /usr/local/lib/QtWidgets.framework/Headers/QSpinBox \
+  /usr/local/lib/QtWidgets.framework/Headers/QVBoxLayout \
   /usr/local/lib/QtWidgets.framework/Headers/QWidget
 
 CMakeFiles/SmartCalc_v2_0.dir/source/graph.cpp.o: ../source/graph.cpp \
@@ -3388,6 +3401,7 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o: ../source/main.cpp \
   /usr/local/lib/QtCore.framework/Headers/qvector.h \
   ../include/graph.hpp \
   ../include/credit.hpp \
+  /usr/local/lib/QtCore.framework/Headers/QtMath \
   ../include/debit.hpp
 
 CMakeFiles/SmartCalc_v2_0.dir/source/qcustomplot.cpp.o: ../source/qcustomplot.cpp \
@@ -4242,11 +4256,13 @@ CMakeFiles/SmartCalc_v2_0.dir/source/qcustomplot.cpp.o: ../source/qcustomplot.cp
 
 ../source/main.cpp:
 
-/usr/local/lib/QtWidgets.framework/Headers/QSpacerItem:
-
 SmartCalc_v2_0_autogen/include/ui_graph.h:
 
+/usr/local/lib/QtWidgets.framework/Headers/QSpacerItem:
+
 /usr/local/lib/QtWidgets.framework/Headers/QDateEdit:
+
+/usr/local/lib/QtCore.framework/Headers/QDate:
 
 ../source/debit.cpp:
 
@@ -4363,6 +4379,8 @@ SmartCalc_v2_0_autogen/include/ui_credit.h:
 /usr/local/lib/QtWidgets.framework/Headers/qmenubar.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qmenu.h:
+
+/usr/local/lib/QtWidgets.framework/Headers/qmdiarea.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/qlabel.h:
 
@@ -5414,8 +5432,6 @@ SmartCalc_v2_0_autogen/6YEA5652QU/moc_credit.cpp:
 
 /usr/local/lib/QtCore.framework/Headers/qcontainertools_impl.h:
 
-/usr/local/lib/QtWidgets.framework/Headers/qmdiarea.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/os/availability.h:
 
 /usr/local/lib/QtCore.framework/Headers/qbitarray.h:
@@ -5489,6 +5505,8 @@ SmartCalc_v2_0_autogen/mocs_compilation.cpp:
 /usr/local/lib/QtCore.framework/Headers/QPointer:
 
 /usr/local/lib/QtCore.framework/Headers/qglobalstatic.h:
+
+/usr/local/lib/QtCore.framework/Headers/QtMath:
 
 /usr/local/lib/QtCore.framework/Headers/QSizeF:
 
