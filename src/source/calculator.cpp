@@ -1,7 +1,6 @@
 #include "calculator.hpp"
 
 #include "ui_calculator.h"
-
 namespace s21 {
 Calculator::Calculator(QWidget* parent)
     : QMainWindow(parent),
@@ -33,7 +32,7 @@ void Calculator::update_graph(double x_min, double x_max, double step) {
     ui->display->clear();
   } else {
     ui->status_bar->showMessage("The expression you entered is invalid", 2000);
-    }
+  }
 }
 
 void Calculator::print_lexeme(QAbstractButton* btn) {

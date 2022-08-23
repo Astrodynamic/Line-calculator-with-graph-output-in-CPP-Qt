@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include <QBoxLayout>
+#include <QPushButton>
+#include <QHash>
+#include <QDate>
 
 namespace Ui {
 class Debit;
@@ -14,8 +17,10 @@ class Debit : public QMainWindow {
 
 private:
   Ui::Debit *ui;
+  QHash<QPushButton *, QHBoxLayout *> widgets_push;
+  QHash<QPushButton *, QHBoxLayout *> widgets_pull;
 
- public:
+public:
   explicit Debit(QWidget *parent = nullptr);
   ~Debit();
 
@@ -23,10 +28,10 @@ private slots:
   void on_btn_push_clicked();
   void on_btn_pull_clicked();
   void on_btn_calculate_clicked();
-  void delete_items();
+  void remove_widget();
 
 private:
-  void new_form(QString lable, QBoxLayout * layout);
+  void create_new_form(QVBoxLayout * layout, bool is_push);
 };
 }  // namespace s21
 

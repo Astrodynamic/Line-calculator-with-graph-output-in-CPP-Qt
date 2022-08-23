@@ -12,15 +12,15 @@ namespace s21 {
 class Credit : public QMainWindow {
   Q_OBJECT
 
- public:
+private:
+  Ui::Credit *ui;
+
+public:
   explicit Credit(QWidget *parent = nullptr);
   ~Credit();
 
 private slots:
   void on_btn_calculate_clicked();
-
-private:
-  Ui::Credit *ui;
 };
 }  // namespace s21
 

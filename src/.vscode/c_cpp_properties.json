@@ -4,7 +4,7 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/local/Cellar/qt/6.2.3/**"
+                "/usr/local/Cellar/qt/6.2.3/include/**"
             ],
             "defines": [],
             "macFrameworkPath": [],

@@ -335,6 +335,15 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o
  /usr/local/include/QtWidgets/qlayoutitem.h
  /usr/local/include/QtWidgets/qboxlayout.h
  /usr/local/include/QtWidgets/qgridlayout.h
+ /usr/local/lib/QtWidgets.framework/Headers/QPushButton
+ /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h
+ /usr/local/include/QtWidgets/qabstractbutton.h
+ /usr/local/lib/QtCore.framework/Headers/QHash
+ /usr/local/lib/QtCore.framework/Headers/qhash.h
+ /usr/local/lib/QtCore.framework/Headers/QDate
+ /usr/local/lib/QtCore.framework/Headers/qdatetime.h
+ /usr/local/include/QtCore/qcalendar.h
+ /usr/local/include/QtCore/qlocale.h
  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/build-src-Desktop_x86_darwin_generic_mach_o_64bit-Debug/SmartCalc_v2_0_autogen/6YEA5652QU/moc_credit.cpp
  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/credit.hpp
  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/build-src-Desktop_x86_darwin_generic_mach_o_64bit-Debug/SmartCalc_v2_0_autogen/6YEA5652QU/moc_debit.cpp
@@ -346,9 +355,6 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o
  /usr/local/include/QtCore/QCache
  /usr/local/lib/QtCore.framework/Headers/qcache.h
  /usr/local/include/QtCore/QDateTime
- /usr/local/lib/QtCore.framework/Headers/qdatetime.h
- /usr/local/include/QtCore/qcalendar.h
- /usr/local/include/QtCore/qlocale.h
  /usr/local/include/QtCore/QDebug
  /usr/local/lib/QtCore.framework/Headers/qdebug.h
  /usr/local/include/QtCore/QFlags
@@ -560,7 +566,6 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o
  /usr/local/lib/QtCore.framework/Headers/qfuturewatcher.h
  /usr/local/lib/QtCore.framework/Headers/qgenericatomic.h
  /usr/local/lib/QtCore.framework/Headers/qglobalstatic.h
- /usr/local/lib/QtCore.framework/Headers/qhash.h
  /usr/local/lib/QtCore.framework/Headers/qhashfunctions.h
  /usr/local/lib/QtCore.framework/Headers/qidentityproxymodel.h
  /usr/local/include/QtCore/qabstractproxymodel.h
@@ -940,7 +945,6 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o
  /usr/local/lib/QtWidgets.framework/Headers/qbuttongroup.h
  /usr/local/lib/QtWidgets.framework/Headers/qcalendarwidget.h
  /usr/local/lib/QtWidgets.framework/Headers/qcheckbox.h
- /usr/local/include/QtWidgets/qabstractbutton.h
  /usr/local/lib/QtWidgets.framework/Headers/qcolordialog.h
  /usr/local/lib/QtWidgets.framework/Headers/qcolormap.h
  /usr/local/lib/QtWidgets.framework/Headers/qcolumnview.h
@@ -1024,7 +1028,6 @@ CMakeFiles/SmartCalc_v2_0.dir/SmartCalc_v2_0_autogen/mocs_compilation.cpp.o
  /usr/local/lib/QtWidgets.framework/Headers/qprogressdialog.h
  /usr/local/lib/QtWidgets.framework/Headers/qproxystyle.h
  /usr/local/include/QtWidgets/QCommonStyle
- /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h
  /usr/local/lib/QtWidgets.framework/Headers/qradiobutton.h
  /usr/local/lib/QtWidgets.framework/Headers/qrubberband.h
  /usr/local/lib/QtWidgets.framework/Headers/qscrollarea.h
@@ -1709,6 +1712,15 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o
  /usr/local/include/QtWidgets/qlayoutitem.h
  /usr/local/include/QtWidgets/qboxlayout.h
  /usr/local/include/QtWidgets/qgridlayout.h
+ /usr/local/lib/QtWidgets.framework/Headers/QPushButton
+ /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h
+ /usr/local/include/QtWidgets/qabstractbutton.h
+ /usr/local/lib/QtCore.framework/Headers/QHash
+ /usr/local/lib/QtCore.framework/Headers/qhash.h
+ /usr/local/lib/QtCore.framework/Headers/QDate
+ /usr/local/lib/QtCore.framework/Headers/qdatetime.h
+ /usr/local/include/QtCore/qcalendar.h
+ /usr/local/include/QtCore/qlocale.h
  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/build-src-Desktop_x86_darwin_generic_mach_o_64bit-Debug/SmartCalc_v2_0_autogen/include/ui_calculator.h
  /usr/local/include/QtCore/QLocale
  /usr/local/lib/QtCore.framework/Headers/qlocale.h
@@ -1725,7 +1737,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o
  /usr/local/include/QtCore/qcoreapplication_platform.h
  /usr/local/include/QtGui/qguiapplication.h
  /usr/local/include/QtGui/qinputmethod.h
- /usr/local/include/QtCore/qlocale.h
  /usr/local/include/QtGui/qguiapplication_platform.h
  /usr/local/include/QtWidgets/QButtonGroup
  /usr/local/lib/QtWidgets.framework/Headers/qbuttongroup.h
@@ -1745,8 +1756,6 @@ CMakeFiles/SmartCalc_v2_0.dir/source/calculator.cpp.o
  /usr/local/lib/QtWidgets.framework/Headers/qmenubar.h
  /usr/local/include/QtWidgets/qmenu.h
  /usr/local/include/QtWidgets/QPushButton
- /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h
- /usr/local/include/QtWidgets/qabstractbutton.h
  /usr/local/include/QtWidgets/QStatusBar
  /usr/local/lib/QtWidgets.framework/Headers/qstatusbar.h
  /usr/local/include/QtWidgets/QVBoxLayout
@@ -2472,8 +2481,10 @@ CMakeFiles/SmartCalc_v2_0.dir/source/debit.cpp.o
  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/include/debit.hpp
  /usr/local/lib/QtWidgets.framework/Headers/QMainWindow
  /usr/local/lib/QtWidgets.framework/Headers/QBoxLayout
- /usr/local/lib/QtCore.framework/Headers/QList
- /usr/local/lib/QtCore.framework/Headers/qlist.h
+ /usr/local/lib/QtWidgets.framework/Headers/QPushButton
+ /usr/local/lib/QtCore.framework/Headers/QHash
+ /usr/local/lib/QtCore.framework/Headers/qhash.h
+ /usr/local/lib/QtCore.framework/Headers/QDate
 
 CMakeFiles/SmartCalc_v2_0.dir/source/graph.cpp.o
  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/graph.cpp
@@ -3905,6 +3916,14 @@ CMakeFiles/SmartCalc_v2_0.dir/source/main.cpp.o
  /usr/local/include/QtWidgets/qlayoutitem.h
  /usr/local/include/QtWidgets/qboxlayout.h
  /usr/local/include/QtWidgets/qgridlayout.h
+ /usr/local/lib/QtWidgets.framework/Headers/QPushButton
+ /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h
+ /usr/local/include/QtWidgets/qabstractbutton.h
+ /usr/local/lib/QtCore.framework/Headers/QHash
+ /usr/local/lib/QtCore.framework/Headers/qhash.h
+ /usr/local/lib/QtCore.framework/Headers/QDate
+ /usr/local/lib/QtCore.framework/Headers/qdatetime.h
+ /usr/local/include/QtCore/qcalendar.h
 
 CMakeFiles/SmartCalc_v2_0.dir/source/qcustomplot.cpp.o
  /Users/werewolf/Documents/gitlab/CPP3_SmartCalc_v2.0-0/src/source/qcustomplot.cpp

@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_s21__Debit_t {
     const uint offsetsAndSize[12];
-    char stringdata0[90];
+    char stringdata0[91];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_s21__Debit_t, stringdata0) + ofs), len 
@@ -34,12 +34,12 @@ QT_MOC_LITERAL(11, 19), // "on_btn_push_clicked"
 QT_MOC_LITERAL(31, 0), // ""
 QT_MOC_LITERAL(32, 19), // "on_btn_pull_clicked"
 QT_MOC_LITERAL(52, 24), // "on_btn_calculate_clicked"
-QT_MOC_LITERAL(77, 12) // "delete_items"
+QT_MOC_LITERAL(77, 13) // "remove_widget"
 
     },
     "s21::Debit\0on_btn_push_clicked\0\0"
     "on_btn_pull_clicked\0on_btn_calculate_clicked\0"
-    "delete_items"
+    "remove_widget"
 };
 #undef QT_MOC_LITERAL
 
@@ -80,7 +80,7 @@ void s21::Debit::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->on_btn_push_clicked(); break;
         case 1: _t->on_btn_pull_clicked(); break;
         case 2: _t->on_btn_calculate_clicked(); break;
-        case 3: _t->delete_items(); break;
+        case 3: _t->remove_widget(); break;
         default: ;
         }
     }
