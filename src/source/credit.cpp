@@ -10,26 +10,54 @@ Credit::Credit(QWidget *parent) : QMainWindow(parent), ui(new Ui::Credit) {
 Credit::~Credit() { delete ui; }
 
 void Credit::on_btn_calculate_clicked() {
-  double P = ui->spin_percent->value() / 100.0 / 12.0;
-  double S = ui->spin_sum->value();
-  double N = ui->spin_limit->value() * ((ui->cmb_limit->currentIndex() == 0) ? 12 : 1);
-  if (ui->rdb_anuit->isChecked()) {
-    double x = S * (P + P / (qPow(1.0 + P, N) - 1.0));
-    ui->lbl_mon->setText(QString::number(x, 'g', 9));
-    ui->lbl_percent->setText(QString::number(x * N - S, 'g', 9));
-    ui->lbl_total->setText(QString::number(x * N, 'g', 9));
-  } else {
-    double b = S / N;
-    double Sp = 0;
-    for (int i = 0; i < N; ++i) {
-      Sp += b + (S - b * i) * P;
+  double day_rate = ui->spin_percent->value() / 100.0 / 12.0;
+  double loan_amount = ui->spin_sum->value();
+
+  double term = [&]() -> double {
+    double limit = ui->spin_limit->value();
+    if (ui->cmb_limit->currentIndex() == 0) {
+      limit *= 12;
     }
-    QString average = QString::number(b + (S - b * 0) * P, 'g', 9);
-    average += "..." + QString::number(b + (S - b * (N - 1)) * P, 'g', 9);
-    ui->lbl_mon->setText(average);
-    ui->lbl_percent->setText(QString::number(Sp - S, 'g', 9));
-    ui->lbl_total->setText(QString::number(Sp, 'g', 9));
+    return limit;
+  }();
+
+  if (ui->rdb_anuit->isChecked()) {
+    annuity_calculation(day_rate, loan_amount, term);
+  } else {
+    differentiated_calculation(day_rate, loan_amount, term);
   }
+}
+
+void Credit::differentiated_calculation(double &rate, double &loan, double term) {
+  double mon_debt = loan / term;
+  
+  double loan_body = 0.0, loan_rate = 0.0;
+  auto month_loan = [&](int month) {
+    loan_rate = (loan - mon_debt * month) * rate;
+    return mon_debt + loan_rate;
+  };
+
+  for (int month = 0; month < term; ++month) {
+    loan_body += month_loan(month);
+  }
+
+  QString str_loan = QString::number(month_loan(0), 'g', 9);
+  QString end_loan = QString::number(month_loan(term - 1), 'g', 9);
+  ui->lbl_mon->setText(str_loan + "..." + end_loan);
+
+  ui->lbl_percent->setText(QString::number(loan_body - loan, 'g', 9));
+  ui->lbl_total->setText(QString::number(loan_body, 'g', 9));
+}
+
+void Credit::annuity_calculation(double &rate, double &loan, double term) {
+  double mon_pay = loan * (rate + rate / (qPow(1.0 + rate, term) - 1.0));
+  ui->lbl_mon->setText(QString::number(mon_pay, 'g', 9));
+
+  double total_sum = mon_pay * term;
+  ui->lbl_total->setText(QString::number(total_sum, 'g', 9));
+
+  double profit = total_sum - loan;
+  ui->lbl_percent->setText(QString::number(profit, 'g', 9));
 }
 
 }  // namespace s21

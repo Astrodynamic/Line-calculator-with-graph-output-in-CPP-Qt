@@ -14,72 +14,108 @@ void Debit::on_btn_push_clicked() { create_new_form(ui->vlo_push_item, true); }
 void Debit::on_btn_pull_clicked() { create_new_form(ui->vlo_pull_item, false); }
 
 void Debit::on_btn_calculate_clicked() {
-  double S = ui->spn_sum->value();
-  double S1 = S;
-  size_t N = ui->spn_limit->value();
-  double P = ui->spn_percent->value();
-  double R = ui->spn_krate->value();
-  double L = ui->spn_rest->value();
+  double deposit_amount = ui->spn_sum->value();
+  double init_investment = deposit_amount;
+  double key_rate = ui->spn_krate->value();
 
-  QHash<QDate, double> refill;
-  for (auto &&item : widgets_push) {
-    auto t_date = ((QDateEdit *)item->itemAt(2)->widget())->date();
-    auto t_value = ((QDoubleSpinBox *)item->itemAt(3)->widget())->value();
-    refill.insert(t_date, t_value);
-  }
-
-  QHash<QDate, double> withdrawal;
-  for (auto &&item : widgets_pull) {
-    auto t_date = ((QDateEdit *)item->itemAt(2)->widget())->date();
-    auto t_value = ((QDoubleSpinBox *)item->itemAt(3)->widget())->value();
-    withdrawal.insert(t_date, t_value);
-  }
-
-  QDate date = ui->dt_start->date(), end_date = date.addDays(N);
-  if (ui->cmb_limit->currentIndex() == 1) {
-    end_date = date.addMonths(N);
-    N = date.daysTo(end_date);
-  } else if (ui->cmb_limit->currentIndex() == 2) {
-    end_date = date.addYears(N);
-    N = date.daysTo(end_date);
-  }
-
-  double coefficient = (P / date.daysInYear() / 100.0);
-  double percent_day = S * coefficient;
-  double persents = 0.0;
-  for (QDate i = date; i < end_date; i = i.addDays(1)) {
-    persents += percent_day;
-    if (ui->ckb_capital->isChecked()) {
-      S += percent_day;
-      percent_day = S * coefficient;
-    }
-    if (refill.contains(i)) {
-      S += refill.value(i);
-      percent_day = S * coefficient;
-    }
-    if (withdrawal.contains(i)) {
-      if ((withdrawal.value(i) + L) < S) {
-        S -= withdrawal.value(i);
-      }
-      percent_day = S * coefficient;
-    }
-  }
+  double persents = calc_percents(deposit_amount);
 
   ui->lbl_icharg->setText(QString::number(persents, 'g', 9));
 
-  double S0 = 1000000 * R / 100;
-  double taxable_part = ((persents - S0) > 0) ? (persents - S0) : 0;
-  double tax = taxable_part * 0.13;
+  double taxable_part = persents - 10000 * key_rate;
+  double tax = 0.13 * ((taxable_part > 0) ? taxable_part : 0.0);
   ui->lbl_tax->setText(QString::number(tax, 'g', 9));
 
   ui->lbl_latax->setText(QString::number(persents - tax, 'g', 9));
 
-  double Ref = 0.0;
+  double effective_rate = 0.0;
   if (ui->ckb_capital->isChecked()) {
-    Ref = persents / S1 * 365 / N * 100;
+    effective_rate = (persents - tax) / deposit_amount * 100;
   }
-  ui->lbl_erate->setText(QString::number(Ref, 'g', 9));
-  ui->lbl_tsum->setText(QString::number(S, 'g', 9));
+  ui->lbl_erate->setText(QString::number(effective_rate, 'g', 9));
+  ui->lbl_tsum->setText(QString::number(deposit_amount, 'g', 9));
+}
+
+double Debit::calc_percents(double &amount) {
+  QHash<QDate, double> refill;
+  fill_table(refill, widgets_push);
+
+  QHash<QDate, double> withdrawal;
+  fill_table(withdrawal, widgets_pull);
+
+  double min_balance = ui->spn_rest->value();
+  double interest_rate = ui->spn_percent->value();
+
+  QDate str_date = ui->dt_start->date();
+  QDate end_date = calc_end_date(str_date);
+  QDate pay_date = set_payout(str_date, end_date);
+
+  double coefficient = (interest_rate / str_date.daysInYear() / 100.0);
+  double percent_day = amount * coefficient;
+  double period_percent = 0.0;
+
+  double persents = 0.0;
+  for (QDate curr_date = str_date.addDays(1); curr_date <= end_date;
+       curr_date = curr_date.addDays(1)) {
+    persents += percent_day;
+    period_percent += percent_day;
+    if (is_payday(curr_date, pay_date)) {
+      amount += period_percent;
+      period_percent = 0.0;
+      pay_date = set_payout(pay_date, end_date);
+      percent_day = amount * coefficient;
+    }
+    if (refill.contains(curr_date)) {
+      amount += refill.value(curr_date);
+      percent_day = amount * coefficient;
+    }
+    if (withdrawal.contains(curr_date)) {
+      if ((withdrawal.value(curr_date) + min_balance) < amount) {
+        amount -= withdrawal.value(curr_date);
+      }
+      percent_day = amount * coefficient;
+    }
+  }
+  return persents;
+}
+
+bool Debit::is_payday(QDate &date, QDate &pay_day) {
+  return ui->ckb_capital->isChecked() && (date == pay_day);
+}
+
+QDate Debit::set_payout(QDate &str_date, QDate &end_date) {
+  QDate pay_date;
+  switch (ui->cmb_period->currentIndex()) {
+    case 0: pay_date = str_date.addMonths(1); break;
+    case 1: pay_date = str_date.addMonths(3); break;
+    case 2: pay_date = str_date.addYears(1); break;
+    default: pay_date = end_date; break;
+  }
+  return pay_date;
+}
+
+QDate Debit::calc_end_date(QDate &date) {
+  QDate end_date;
+  int term = ui->spn_limit->value();
+  switch (ui->cmb_limit->currentIndex()) {
+    case 0: end_date = date.addDays(term); break;
+    case 1: end_date = date.addMonths(term); break;
+    case 2: end_date = date.addYears(term); break;
+  }
+  return end_date;
+}
+
+void Debit::fill_table(QHash<QDate, double> &table,
+                       QHash<QPushButton *, QHBoxLayout *> &widgets) {
+  for (auto &&item : widgets) {
+    auto t_date = ((QDateEdit *)item->itemAt(2)->widget())->date();
+    auto t_value = ((QDoubleSpinBox *)item->itemAt(3)->widget())->value();
+    if (table.contains(t_date)) {
+      table[t_date] += t_value;
+    } else {
+      table.insert(t_date, t_value);
+    }
+  }
 }
 
 void Debit::remove_widget() {
@@ -133,5 +169,4 @@ void Debit::create_new_form(QVBoxLayout *layout, bool is_push) {
     widgets_pull.insert(del, hlo);
   }
 }
-
 }  // namespace s21

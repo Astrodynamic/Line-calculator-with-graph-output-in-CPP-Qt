@@ -1,5 +1,5 @@
-#ifndef CREDIT_HPP
-#define CREDIT_HPP
+#ifndef SRC_INCLUDE_CREDIT_HPP_
+#define SRC_INCLUDE_CREDIT_HPP_
 
 #include <QMainWindow>
 #include <QtMath>
@@ -12,16 +12,20 @@ namespace s21 {
 class Credit : public QMainWindow {
   Q_OBJECT
 
-private:
+ private:
   Ui::Credit *ui;
 
-public:
+ public:
   explicit Credit(QWidget *parent = nullptr);
   ~Credit();
 
-private slots:
+ private slots:
   void on_btn_calculate_clicked();
+
+ private:
+  void annuity_calculation(double &rate, double &loan, double term);
+  void differentiated_calculation(double &rate, double &loan, double term);
 };
 }  // namespace s21
 
-#endif  // CREDIT_HPP
+#endif  // SRC_INCLUDE_CREDIT_HPP_

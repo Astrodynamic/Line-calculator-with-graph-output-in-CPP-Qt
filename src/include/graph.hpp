@@ -1,5 +1,5 @@
-#ifndef GRAPH_HPP
-#define GRAPH_HPP
+#ifndef SRC_INCLUDE_GRAPH_HPP_
+#define SRC_INCLUDE_GRAPH_HPP_
 
 #include <QMainWindow>
 #include <QVector>
@@ -31,4 +31,4 @@ class Graph : public QMainWindow {
   Ui::Graph *ui;
 };
 }  // namespace s21
-#endif  // GRAPH_HPP
+#endif  // SRC_INCLUDE_GRAPH_HPP_

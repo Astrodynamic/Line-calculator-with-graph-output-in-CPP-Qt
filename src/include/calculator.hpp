@@ -1,5 +1,5 @@
-#ifndef CALCULATOR_HPP
-#define CALCULATOR_HPP
+#ifndef SRC_INCLUDE_CALCULATOR_HPP_
+#define SRC_INCLUDE_CALCULATOR_HPP_
 
 #include <QAbstractButton>
 #include <QInputDialog>
@@ -20,6 +20,13 @@ namespace s21 {
 class Calculator : public QMainWindow {
   Q_OBJECT
 
+ private:
+  Ui::Calculator *ui;
+  Calculation *model;
+  Graph *graph;
+  Credit *credit;
+  Debit *debit;
+
  public:
   Calculator(QWidget *parent = nullptr);
   ~Calculator();
@@ -35,13 +42,6 @@ class Calculator : public QMainWindow {
   void on_action_basic_triggered();
   void on_action_credit_triggered();
   void on_action_debit_triggered();
-
-private:
-  Ui::Calculator *ui;
-  Calculation *model;
-  Graph *graph;
-  Credit *credit;
-  Debit *debit;
 };
 }  // namespace s21
-#endif  // CALCULATOR_HPP
+#endif  // SRC_INCLUDE_CALCULATOR_HPP_

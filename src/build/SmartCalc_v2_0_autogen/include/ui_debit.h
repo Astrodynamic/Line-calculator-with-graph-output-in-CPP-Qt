@@ -54,6 +54,11 @@ public:
     QDoubleSpinBox *spn_percent;
     QLabel *lbl_percent_b;
     QSpacerItem *horizontalSpacer_6;
+    QHBoxLayout *horizontalLayout_5;
+    QLabel *lbl_krate_f;
+    QDoubleSpinBox *spn_krate;
+    QLabel *lbl_krate_b;
+    QSpacerItem *horizontalSpacer_15;
     QHBoxLayout *hlo_period;
     QLabel *lbl_period;
     QComboBox *cmb_period;
@@ -79,6 +84,10 @@ public:
     QWidget *scl_pull_w;
     QVBoxLayout *verticalLayout_8;
     QVBoxLayout *vlo_pull_item;
+    QHBoxLayout *hlo_rest;
+    QLabel *lbl_rest;
+    QDoubleSpinBox *spn_rest;
+    QSpacerItem *horizontalSpacer_16;
     QPushButton *btn_calculate;
     QVBoxLayout *verticalLayout_2;
     QHBoxLayout *hlo_icharg;
@@ -263,6 +272,36 @@ public:
 
         vlo_main->addLayout(hlo_percent);
 
+        horizontalLayout_5 = new QHBoxLayout();
+        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
+        lbl_krate_f = new QLabel(centralwidget);
+        lbl_krate_f->setObjectName(QString::fromUtf8("lbl_krate_f"));
+        lbl_krate_f->setMinimumSize(QSize(250, 0));
+
+        horizontalLayout_5->addWidget(lbl_krate_f);
+
+        spn_krate = new QDoubleSpinBox(centralwidget);
+        spn_krate->setObjectName(QString::fromUtf8("spn_krate"));
+        spn_krate->setMinimumSize(QSize(150, 0));
+        spn_krate->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        spn_krate->setMinimum(0.010000000000000);
+        spn_krate->setValue(8.000000000000000);
+
+        horizontalLayout_5->addWidget(spn_krate);
+
+        lbl_krate_b = new QLabel(centralwidget);
+        lbl_krate_b->setObjectName(QString::fromUtf8("lbl_krate_b"));
+        lbl_krate_b->setMinimumSize(QSize(100, 0));
+
+        horizontalLayout_5->addWidget(lbl_krate_b);
+
+        horizontalSpacer_15 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_15);
+
+
+        vlo_main->addLayout(horizontalLayout_5);
+
         hlo_period = new QHBoxLayout();
         hlo_period->setObjectName(QString::fromUtf8("hlo_period"));
         lbl_period = new QLabel(centralwidget);
@@ -353,7 +392,7 @@ public:
         scroll_push->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         scl_push_w = new QWidget();
         scl_push_w->setObjectName(QString::fromUtf8("scl_push_w"));
-        scl_push_w->setGeometry(QRect(0, 0, 560, 74));
+        scl_push_w->setGeometry(QRect(0, 0, 560, 51));
         sizePolicy.setHeightForWidth(scl_push_w->sizePolicy().hasHeightForWidth());
         scl_push_w->setSizePolicy(sizePolicy);
         verticalLayout_6 = new QVBoxLayout(scl_push_w);
@@ -402,7 +441,7 @@ public:
         scroll_pull->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         scl_pull_w = new QWidget();
         scl_pull_w->setObjectName(QString::fromUtf8("scl_pull_w"));
-        scl_pull_w->setGeometry(QRect(0, 0, 560, 74));
+        scl_pull_w->setGeometry(QRect(0, 0, 560, 51));
         sizePolicy.setHeightForWidth(scl_pull_w->sizePolicy().hasHeightForWidth());
         scl_pull_w->setSizePolicy(sizePolicy);
         verticalLayout_8 = new QVBoxLayout(scl_pull_w);
@@ -417,6 +456,29 @@ public:
         scroll_pull->setWidget(scl_pull_w);
 
         verticalLayout->addWidget(scroll_pull);
+
+        hlo_rest = new QHBoxLayout();
+        hlo_rest->setObjectName(QString::fromUtf8("hlo_rest"));
+        lbl_rest = new QLabel(centralwidget);
+        lbl_rest->setObjectName(QString::fromUtf8("lbl_rest"));
+        lbl_rest->setMinimumSize(QSize(250, 0));
+
+        hlo_rest->addWidget(lbl_rest);
+
+        spn_rest = new QDoubleSpinBox(centralwidget);
+        spn_rest->setObjectName(QString::fromUtf8("spn_rest"));
+        spn_rest->setMinimumSize(QSize(150, 0));
+        spn_rest->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        spn_rest->setMaximum(50000000.000000000000000);
+
+        hlo_rest->addWidget(spn_rest);
+
+        horizontalSpacer_16 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        hlo_rest->addItem(horizontalSpacer_16);
+
+
+        verticalLayout->addLayout(hlo_rest);
 
 
         verticalLayout_3->addLayout(verticalLayout);
@@ -605,6 +667,8 @@ public:
         dt_start->setDisplayFormat(QCoreApplication::translate("Debit", "MM/dd/yyyy", nullptr));
         lbl_percent_f->setText(QCoreApplication::translate("Debit", "\320\237\321\200\320\276\321\206\320\265\320\275\321\202\320\275\320\260\321\217 \321\201\321\202\320\260\320\262\320\272\320\260", nullptr));
         lbl_percent_b->setText(QCoreApplication::translate("Debit", "% \320\263\320\276\320\264\320\276\320\262\321\213\321\205", nullptr));
+        lbl_krate_f->setText(QCoreApplication::translate("Debit", "\320\232\320\273\321\216\321\207\320\265\320\262\320\260\321\217 \321\201\321\202\320\260\320\262\320\272\320\260 \320\246\320\221 \320\240\320\244", nullptr));
+        lbl_krate_b->setText(QCoreApplication::translate("Debit", "%", nullptr));
         lbl_period->setText(QCoreApplication::translate("Debit", "\320\237\320\265\321\200\320\265\320\276\320\264\320\270\321\207\320\275\320\276\321\201\321\202\321\214 \320\262\321\213\320\277\320\273\320\260\321\202", nullptr));
         cmb_period->setItemText(0, QCoreApplication::translate("Debit", "\321\200\320\260\320\267 \320\262 \320\274\320\265\321\201\321\217\321\206", nullptr));
         cmb_period->setItemText(1, QCoreApplication::translate("Debit", "\321\200\320\260\320\267 \320\262 \320\272\320\262\320\260\321\200\321\202\320\260\320\273", nullptr));
@@ -616,6 +680,7 @@ public:
         btn_push->setText(QCoreApplication::translate("Debit", "+ \320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\277\320\276\320\277\320\276\320\273\320\275\320\265\320\275\320\270\320\265", nullptr));
         lbl_withdrawal->setText(QCoreApplication::translate("Debit", "\320\247\320\260\321\201\321\202\320\270\321\207\320\275\321\213\320\265 \321\201\320\275\321\217\321\202\320\270\321\217", nullptr));
         btn_pull->setText(QCoreApplication::translate("Debit", "+ \320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \321\201\320\275\321\217\321\202\320\270\320\265", nullptr));
+        lbl_rest->setText(QCoreApplication::translate("Debit", "\320\235\320\265\321\201\320\275\320\270\320\266\320\260\320\265\320\274\321\213\320\271 \320\276\321\201\321\202\320\260\321\202\320\276\320\272", nullptr));
         btn_calculate->setText(QCoreApplication::translate("Debit", "\320\240\320\260\321\201\321\201\321\207\320\270\321\202\320\260\321\202\321\214", nullptr));
         lbl_icharg_f->setText(QCoreApplication::translate("Debit", "\320\235\320\260\321\207\320\270\321\201\320\273\320\265\320\275\320\275\321\213\320\265 \320\277\321\200\320\276\321\206\320\265\320\275\321\202\321\213", nullptr));
         lbl_icharg->setText(QCoreApplication::translate("Debit", "0", nullptr));
