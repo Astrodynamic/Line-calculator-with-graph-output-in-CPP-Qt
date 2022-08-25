@@ -3,16 +3,13 @@
 #################################################
 
 #     These special targets are called phony     #
-# .PHONY: all dist clean build test style
+.PHONY: dist clean build tests style
 
 #################### Exec file ###################
-EXEC := SmartCalc_v2_0_test
-
-############# Name of static library #############
-SLIB := s21_matrix_oop.a
+EXEC := SmartCalc_v2_0
 
 #################### Test name ###################
-TEST := SmartCalc_v2_0_test
+TEST := SmartCalc_v2_test
 
 # Choosing a compiler and setting the main flags #
 CC := g++
@@ -55,6 +52,8 @@ P_INC := ./include
 P_SRC := ./source
 P_BLD := ./build
 P_TEST := ./tests
+P_TBLD := ./tests/build
+P_COVERAGE := $(P_TBLD)/CMakeFiles/$(TEST).dir
 
 ################# Resource files #################
 CSOURCES :=$(wildcard $(P_SRC)/*.cpp)
@@ -82,7 +81,6 @@ leaks: $(EXEC)
 
 ############ Cleaning up unused files ############
 clean:
-	# -@rm -rf $(EXEC)
 	# -@rm -rf *.o
 	# -@rm -rf *.gch
 	# -@rm -rf *.a
@@ -92,41 +90,25 @@ clean:
 	# -@rm -rf *.info
 	-@rm -rf *.tgz
 
-####### Template for creating object files #######
-%.o : %.cpp
-	$(CC) $(CFLAGS) -c $< -o $@
-
-### Template for creating header object files ###
-%.gch : %.hpp
-	$(CC) $(CFLAGS) -c $< -o $@
-
 ##############  Project archiving   ##############
 dist:
 	tar -czf $(EXEC).tgz ./*
 
-##############   Create exit file   ##############
-$(EXEC): $(CTEST_SRC) $(CTEST_FILES)
-	$(CC) $(CFLAGS) --coverage -o $(EXEC) $< $(LDFLAGS) $(INCLUDE)
-
 ##############         Tests        ##############
-tests: $(EXEC)
-	# ./$(EXEC)
+tests:
+	cmake -S $(P_TEST) -B $(P_TBLD)
+	cmake --build $(P_TBLD)
+	cd $(P_TBLD); ctest
 
 ##############     gcov report      ##############
-lcov: test
-	lcov -t "$(EXEC)" -o $(EXEC).info -c -d .
-	genhtml -o report $(EXEC).info
-
-##############   s21_matrix_oop.a   ##############
-$(SLIB): $(COBJ) $(HOBJ)
-	ar -rvs $(SLIB) $<
+lcov: tests
+	lcov -t "$(TEST)" -o $(TEST).info -c -d $(P_COVERAGE)
+	# genhtml -o report $(TEST).info
 
 ##############     Main Assembly    ##############
 instal:
-	-@mkdir -p $(P_BLD)
-	-@cd $(P_BLD); cmake -DCMAKE_BUILD_TYPE=Release ..
-	-@cd $(P_BLD); cmake ..
-	-@cd $(P_BLD); cmake --build .
+	-@cmake -S . -B $(P_BLD)
+	-@cmake --build $(P_BLD)
 
 ##############       Unistall       ##############
 unistall:
