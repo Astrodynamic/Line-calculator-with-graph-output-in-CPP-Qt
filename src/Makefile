@@ -6,17 +6,18 @@
 # .PHONY: all dist clean build test style
 
 #################### Exec file ###################
-EXEC := SmartCalc_v2_0
+EXEC := SmartCalc_v2_0_test
 
 ############# Name of static library #############
 SLIB := s21_matrix_oop.a
 
 #################### Test name ###################
-TEST := test.cpp
+TEST := SmartCalc_v2_0_test
 
 # Choosing a compiler and setting the main flags #
 CC := g++
 STANDART :=-std=c++17
+INCLUDE := -I ./include
 CFLAGS := -Wall -Werror -Wextra $(STANDART)
 LKFLAGS := -g -fprofile-arcs -ftest-coverage
 
@@ -31,7 +32,7 @@ CPPCHECKFLAG += -q
 # CPPCHECK # - Suppression of directory search errors
 CPPCHECKFLAG += --suppress=missingInclude
 # CPPCHECK # - Explicitly specifying a directory with headers
-CPPCHECKFLAG += -I ./include
+CPPCHECKFLAG += $(INCLUDE)
 # CPPCHECK # - Error suppression of unused functions
 CPPCHECKFLAG += --suppress=unusedFunction
 
@@ -52,17 +53,21 @@ endif
 P_LINT := ../materials/linters
 P_INC := ./include
 P_SRC := ./source
+P_BLD := ./build
+P_TEST := ./tests
 
 ################# Resource files #################
 CSOURCES :=$(wildcard $(P_SRC)/*.cpp)
 CHEADERS :=$(wildcard $(P_INC)/*.hpp)
 LINT_SRC :=$(filter-out $(P_SRC)/qcustomplot.cpp, $(CSOURCES))
 LINT_INC :=$(filter-out $(P_INC)/qcustomplot.hpp, $(CHEADERS))
+CTEST_SRC :=$(wildcard $(P_TEST)/*.cpp)
+CTEST_FILES := $(P_SRC)/calculation.cpp
 COBJ :=$(CSOURCES:.cpp=.o)
 HOBJ :=$(CHEADERS:.hpp=.gch)
 
 ################### Main target ##################
-all: $(SLIB)
+all: instal
 
 ################## Style check ###################
 style:
@@ -77,14 +82,15 @@ leaks: $(EXEC)
 
 ############ Cleaning up unused files ############
 clean:
-	-@rm -rf $(EXEC)
-	-@rm -rf *.o
-	-@rm -rf *.gch
-	-@rm -rf *.a
-	-@rm -rf *.gcno
-	-@rm -rf *.gcda
-	-@rm -rf report
-	-@rm -rf *.info
+	# -@rm -rf $(EXEC)
+	# -@rm -rf *.o
+	# -@rm -rf *.gch
+	# -@rm -rf *.a
+	# -@rm -rf *.gcno
+	# -@rm -rf *.gcda
+	# -@rm -rf report
+	# -@rm -rf *.info
+	-@rm -rf *.tgz
 
 ####### Template for creating object files #######
 %.o : %.cpp
@@ -99,12 +105,12 @@ dist:
 	tar -czf $(EXEC).tgz ./*
 
 ##############   Create exit file   ##############
-$(EXEC): $(CSOURCES)
-	$(CC) $(CFLAGS) --coverage -o $(EXEC) $< $(TEST) $(LDFLAGS)
+$(EXEC): $(CTEST_SRC) $(CTEST_FILES)
+	$(CC) $(CFLAGS) --coverage -o $(EXEC) $< $(LDFLAGS) $(INCLUDE)
 
 ##############         Tests        ##############
-test: $(EXEC)
-	./$(EXEC)
+tests: $(EXEC)
+	# ./$(EXEC)
 
 ##############     gcov report      ##############
 lcov: test
@@ -114,3 +120,14 @@ lcov: test
 ##############   s21_matrix_oop.a   ##############
 $(SLIB): $(COBJ) $(HOBJ)
 	ar -rvs $(SLIB) $<
+
+##############     Main Assembly    ##############
+instal:
+	-@mkdir -p $(P_BLD)
+	-@cd $(P_BLD); cmake -DCMAKE_BUILD_TYPE=Release ..
+	-@cd $(P_BLD); cmake ..
+	-@cd $(P_BLD); cmake --build .
+
+##############       Unistall       ##############
+unistall:
+	-@rm -rf $(P_BLD)
