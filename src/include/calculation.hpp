@@ -39,20 +39,18 @@ class Calculation {
   QVector<std::variant<QChar, double>> m_rpn;
 
  public:
-  Calculation(){};
-
   QPair<QVector<double>, QVector<double>> calculation(double x_min, double x_max, double step);
   void expression_load(QString infix);
   double calculation(double x = 0);
   bool is_empty();
 
  private:
-  void expression_up(QString& infix);
-  bool expression_validate(QString& infix);
-  bool is_function(QChar& lexem);
-  bool is_operation(QChar& lexem);
-  const f_prt_t get_priority(QChar& lexem);
-  bool is_priority_le(QChar& lhs, QChar& rhs);
+  static void expression_up(QString& infix);
+  static bool expression_validate(QString& infix);
+  static bool is_function(QChar& lexem);
+  static bool is_operation(QChar& lexem);
+  static const f_prt_t get_priority(QChar& lexem);
+  static bool is_priority_le(QChar& lhs, QChar& rhs);
   void qstrtod(QString& src, size_t& ind);
 };
 }  // namespace s21

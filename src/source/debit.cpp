@@ -15,7 +15,6 @@ void Debit::on_btn_pull_clicked() { create_new_form(ui->vlo_pull_item, false); }
 
 void Debit::on_btn_calculate_clicked() {
   double deposit_amount = ui->spn_sum->value();
-  double init_investment = deposit_amount;
   double key_rate = ui->spn_krate->value();
 
   double persents = calc_percents(deposit_amount);
@@ -79,11 +78,11 @@ double Debit::calc_percents(double &amount) {
   return persents;
 }
 
-bool Debit::is_payday(QDate &date, QDate &pay_day) {
+bool Debit::is_payday(const QDate &date, const QDate &pay_day) {
   return ui->ckb_capital->isChecked() && (date == pay_day);
 }
 
-QDate Debit::set_payout(QDate &str_date, QDate &end_date) {
+QDate Debit::set_payout(QDate &str_date, const QDate &end_date) {
   QDate pay_date;
   switch (ui->cmb_period->currentIndex()) {
     case 0: pay_date = str_date.addMonths(1); break;

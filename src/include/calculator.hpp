@@ -28,7 +28,7 @@ class Calculator : public QMainWindow {
   Debit *debit;
 
  public:
-  Calculator(QWidget *parent = nullptr);
+  explicit Calculator(QWidget *parent = nullptr);
   ~Calculator();
 
  public slots:

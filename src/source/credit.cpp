@@ -30,7 +30,7 @@ void Credit::on_btn_calculate_clicked() {
 
 void Credit::differentiated_calculation(double &rate, double &loan, double term) {
   double mon_debt = loan / term;
-  
+
   double loan_body = 0.0, loan_rate = 0.0;
   auto month_loan = [&](int month) {
     loan_rate = (loan - mon_debt * month) * rate;
@@ -49,7 +49,7 @@ void Credit::differentiated_calculation(double &rate, double &loan, double term)
   ui->lbl_total->setText(QString::number(loan_body, 'g', 9));
 }
 
-void Credit::annuity_calculation(double &rate, double &loan, double term) {
+void Credit::annuity_calculation(const double &rate, const double &loan, const double term) {
   double mon_pay = loan * (rate + rate / (qPow(1.0 + rate, term) - 1.0));
   ui->lbl_mon->setText(QString::number(mon_pay, 'g', 9));
 

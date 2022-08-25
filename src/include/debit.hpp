@@ -33,8 +33,8 @@ class Debit : public QMainWindow {
  private:
   QDate calc_end_date(QDate &date);
   void create_new_form(QVBoxLayout *layout, bool is_push);
-  QDate set_payout(QDate &str_date, QDate &end_date);
-  bool is_payday(QDate &date, QDate &pay_day);
+  QDate set_payout(QDate &str_date, const QDate &end_date);
+  bool is_payday(const QDate &date, const QDate &pay_day);
   void fill_table(QHash<QDate, double> &table, QHash<QPushButton *, QHBoxLayout *> &widgets);
   double calc_percents(double &amount);
 };

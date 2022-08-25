@@ -23,7 +23,7 @@ class Credit : public QMainWindow {
   void on_btn_calculate_clicked();
 
  private:
-  void annuity_calculation(double &rate, double &loan, double term);
+  void annuity_calculation(const double &rate, const double &loan, const double term);
   void differentiated_calculation(double &rate, double &loan, double term);
 };
 }  // namespace s21

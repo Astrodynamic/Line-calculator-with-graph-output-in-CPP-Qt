@@ -6,7 +6,7 @@
 # .PHONY: all dist clean build test style
 
 #################### Exec file ###################
-EXEC := s21_matrix_oop_test
+EXEC := SmartCalc_v2_0
 
 ############# Name of static library #############
 SLIB := s21_matrix_oop.a
@@ -19,7 +19,22 @@ CC := g++
 STANDART :=-std=c++17
 CFLAGS := -Wall -Werror -Wextra $(STANDART)
 LKFLAGS := -g -fprofile-arcs -ftest-coverage
-CPPCHECKFLAG := --enable=all --language=c++ -$(STANDART) --suppress=missingIncludeSystem
+
+# CPPCHECK # - We connect all the rules for checks
+CPPCHECKFLAG := --enable=all
+# CPPCHECK # - Additional modules to check
+CPPCHECKFLAG += --inconclusive
+# CPPCHECK # - Language and standard indications
+CPPCHECKFLAG += --language=c++ -$(STANDART)
+# CPPCHECK # - Quiet mode
+CPPCHECKFLAG += -q
+# CPPCHECK # - Suppression of directory search errors
+CPPCHECKFLAG += --suppress=missingInclude
+# CPPCHECK # - Explicitly specifying a directory with headers
+CPPCHECKFLAG += -I ./include
+# CPPCHECK # - Error suppression of unused functions
+CPPCHECKFLAG += --suppress=unusedFunction
+
 LDFLAGS := -lgtest
 VFLAG := --leak-check=full --show-leak-kinds=all -s
 TEST_FLAGS = -fprofile-arcs -ftest-coverage
@@ -35,10 +50,14 @@ endif
 
 ##################      Path     #################
 P_LINT := ../materials/linters
+P_INC := ./include
+P_SRC := ./source
 
 ################# Resource files #################
-CSOURCES :=$(wildcard s21*.cpp)
-CHEADERS :=$(wildcard s21*.hpp)
+CSOURCES :=$(wildcard $(P_SRC)/*.cpp)
+CHEADERS :=$(wildcard $(P_INC)/*.hpp)
+LINT_SRC :=$(filter-out $(P_SRC)/qcustomplot.cpp, $(CSOURCES))
+LINT_INC :=$(filter-out $(P_INC)/qcustomplot.hpp, $(CHEADERS))
 COBJ :=$(CSOURCES:.cpp=.o)
 HOBJ :=$(CHEADERS:.hpp=.gch)
 
@@ -48,9 +67,9 @@ all: $(SLIB)
 ################## Style check ###################
 style:
 	-cp $(P_LINT)/CPPLINT.cfg .
-	-python3 $(P_LINT)/cpplint.py *.h *.cpp
+	-python3 $(P_LINT)/cpplint.py $(LINT_INC) $(LINT_SRC)
 	-rm -rf CPPLINT.cfg
-	-cppcheck $(CPPCHECKFLAG) *.h *.cpp
+	-cppcheck $(CPPCHECKFLAG) $(LINT_INC) $(LINT_SRC)
 
 ################## Leaks check ###################
 leaks: $(EXEC)
