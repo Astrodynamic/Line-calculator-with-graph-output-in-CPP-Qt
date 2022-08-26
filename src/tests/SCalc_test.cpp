@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 
 #include "calculation.hpp"
+#include <cmath>
 
 TEST(calculation, add) {
   s21::Calculation calc;
@@ -132,4 +133,58 @@ TEST(calculation, expression_4) {
   s21::Calculation calc;
   calc.expression_load("sqrt(cos(sin(3.14))+3.12)^-5.14E-3");
   ASSERT_NEAR(calc.calculation(), 0.9963678, 1e-6);
+}
+
+TEST(calculation, calculation_5) {
+  s21::Calculation calc;
+  calc.expression_load("(-(-(+(+5))))");
+  ASSERT_NEAR(calc.calculation(), 5, 1e-6);
+}
+
+TEST(calculation, calculation_6) {
+  s21::Calculation calc;
+  calc.expression_load("0^(-1)");
+  ASSERT_DOUBLE_EQ(calc.calculation(), INFINITY);
+}
+
+TEST(calculation, calculation_7) {
+  s21::Calculation calc;
+  calc.expression_load("2^(3+4*5)*(2*2)+2+6/3");
+  ASSERT_NEAR(calc.calculation(), 33554436, 1e-6);
+}
+
+TEST(calculation, calculation_8) {
+  s21::Calculation calc;
+  calc.expression_load("sin(2-1)*2^2+6^2*2");
+  ASSERT_NEAR(calc.calculation(), 75.365883939231579, 1e-6);
+}
+
+TEST(calculation, calculation_9) {
+  s21::Calculation calc;
+  calc.expression_load("(-(-(-5)))*(-(-5))");
+  ASSERT_NEAR(calc.calculation(), -25, 1e-6);
+}
+
+TEST(calculation, calculation_10) {
+  s21::Calculation calc;
+  calc.expression_load("-2^(3+4*5)*(2*2)+2+6/3");
+  ASSERT_NEAR(calc.calculation(), -33554428, 1e-6);
+}
+
+TEST(calculation, calculation_11) {
+  s21::Calculation calc;
+  calc.expression_load("56+21-376+(56-22)-(13+10)+(11+(7-(3+2)))");
+  ASSERT_NEAR(calc.calculation(), -275, 1e-6);
+}
+
+TEST(calculation, calculation_12) {
+  s21::Calculation calc;
+  calc.expression_load("tan(10)*((5-3)*ln(4)-log(8))*2+7");
+  ASSERT_NEAR(calc.calculation(), 9.4242194938376841, 1e-6);
+}
+
+TEST(calculation, calculation_13) {
+  s21::Calculation calc;
+  calc.expression_load("((-(-356.081*4598.63)*803.928*(70.592*(-0.1569))*(-36.1566)))");
+  ASSERT_NEAR(calc.calculation(), 527181836601.876000, 1);
 }
