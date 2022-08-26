@@ -15,16 +15,16 @@
 #define lamdas_f2arg(SIGN) [](double lhs, double rhs) -> double { return lhs SIGN rhs; }
 
 namespace s21 {
+template <class... Ts>
+struct overloaded : Ts... {
+  using Ts::operator()...;
+};
+
+template <class... Ts>
+overloaded(Ts...) -> overloaded<Ts...>;
+  
 class Calculation {
  private:
-  template <class... Ts>
-  struct overloaded : Ts... {
-    using Ts::operator()...;
-  };
-
-  template <class... Ts>
-  overloaded(Ts...) -> overloaded<Ts...>;
-
   enum class f_prt_t { DEFAULT, L_PR, M_PR, H_PR, UNARY, FUNC, ALL };
 
   using fcast_1arg = double (*)(double);

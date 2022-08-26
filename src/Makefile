@@ -1,5 +1,5 @@
 #     These special targets are called phony     #
-.PHONY: dist clean build tests style
+.PHONY: dist clean tests style
 
 #################### Exec file ###################
 EXEC := SmartCalc_v2_0

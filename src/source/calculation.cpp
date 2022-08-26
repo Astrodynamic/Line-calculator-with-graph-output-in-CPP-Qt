@@ -86,7 +86,7 @@ double Calculation::calculation(double x) {
 QPair<QVector<double>, QVector<double>> Calculation::calculation(double x_min, double x_max, double step) {
   QPair<QVector<double>, QVector<double>> XYVector;
   for (double x = x_min, y; x <= x_max; x += step) {
-    if (isfinite(y = calculation(x))) {
+    if (std::isfinite(y = calculation(x))) {
       XYVector.first.push_back(x);
       XYVector.second.push_back(y);
     }

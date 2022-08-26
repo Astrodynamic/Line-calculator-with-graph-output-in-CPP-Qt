@@ -2,6 +2,7 @@
 #define SRC_INCLUDE_CALCULATOR_HPP_
 
 #include <QAbstractButton>
+#include <QCommandLinkButton>
 #include <QInputDialog>
 #include <QMainWindow>
 
