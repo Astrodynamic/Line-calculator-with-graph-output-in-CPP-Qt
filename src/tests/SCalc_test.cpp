@@ -127,3 +127,9 @@ TEST(calculation, expression_3) {
   calc.expression_load("sqrt(cos(sin(3.14))+3.12)^-5.14E-3");
   ASSERT_NEAR(calc.calculation(), 0.9963678, 1e-6);
 }
+
+TEST(calculation, expression_4) {
+  s21::Calculation calc;
+  calc.expression_load("sqrt(cos(sin(3.14))+3.12)^-5.14E-3");
+  ASSERT_NEAR(calc.calculation(), 0.9963678, 1e-6);
+}

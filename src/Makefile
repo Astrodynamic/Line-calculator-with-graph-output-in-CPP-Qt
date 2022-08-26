@@ -1,11 +1,20 @@
 #     These special targets are called phony     #
-.PHONY: dist clean tests style
+.PHONY: dist clean build tests style
 
 #################### Exec file ###################
 EXEC := SmartCalc_v2_0
 
 #################### Test name ###################
 TEST := SmartCalc_v2_test
+
+##################      Path     #################
+P_LINT := ../materials/linters
+P_INC := ./include
+P_SRC := ./source
+P_BLD := ./build
+P_TEST := ./tests
+P_TBLD := ./tests/build
+P_COVERAGE := $(P_TBLD)/CMakeFiles/$(TEST).dir
 
 # Choosing a compiler and setting the main flags #
 STANDART := -std=c++17
@@ -30,20 +39,11 @@ VFLAG := --leak-check=full --show-leak-kinds=all -s
 
 OS := $(shell uname)
 ifeq ($(OS), Darwin)
-LEAKS := leaks --atExit -- ./$(EXEC)
+LEAKS := leaks --atExit -- ./$(P_TBLD)/$(TEST)
 endif
 ifeq ($(OS), Linux)
-LEAKS := valgrind $(VFLAG) ./$(EXEC)
+LEAKS := valgrind $(VFLAG) ./$(P_TBLD)/$(TEST)
 endif
-
-##################      Path     #################
-P_LINT := ../materials/linters
-P_INC := ./include
-P_SRC := ./source
-P_BLD := ./build
-P_TEST := ./tests
-P_TBLD := ./tests/build
-P_COVERAGE := $(P_TBLD)/CMakeFiles/$(TEST).dir
 
 ################# Resource files #################
 CSOURCES :=$(wildcard $(P_SRC)/*.cpp)
@@ -65,19 +65,10 @@ style:
 	-rm -rf CPPLINT.cfg
 	-cppcheck $(CPPCHECKFLAG) $(LINT_INC) $(LINT_SRC)
 
-################## Leaks check ###################
-leaks: $(EXEC)
-	$(LEAKS)
-
 ############ Cleaning up unused files ############
-clean:
-	# -@rm -rf *.o
-	# -@rm -rf *.gch
-	# -@rm -rf *.a
-	# -@rm -rf *.gcno
-	# -@rm -rf *.gcda
-	# -@rm -rf report
-	# -@rm -rf *.info
+clean: unistall
+	-@rm -rf $(P_BLD)
+	-@rm -rf report
 	-@rm -rf *.tgz
 
 ##############  Project archiving   ##############
@@ -90,13 +81,17 @@ tests:
 	cmake --build $(P_TBLD)
 	cd $(P_TBLD); ctest
 
+################## Leaks check ###################
+leaks: tests
+	$(LEAKS)
+
 ##############     gcov report      ##############
 lcov: tests
-	lcov -t "$(TEST)" -o $(TEST).info -c -d $(P_COVERAGE)
-	genhtml -o report $(TEST).info
+	lcov -t "$(TEST)" -o $(P_COVERAGE)/$(TEST).info -c -d $(P_COVERAGE)
+	genhtml -o report $(P_COVERAGE)/$(TEST).info
 
 ##############     Main Assembly    ##############
-instal:
+install:
 	-@cmake -S . -B $(P_BLD)
 	-@cmake --build $(P_BLD)
 
