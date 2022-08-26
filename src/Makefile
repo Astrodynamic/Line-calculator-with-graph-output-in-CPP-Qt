@@ -1,7 +1,3 @@
-#################################################
-##              Makefile template              ##
-#################################################
-
 #     These special targets are called phony     #
 .PHONY: dist clean build tests style
 
@@ -12,11 +8,8 @@ EXEC := SmartCalc_v2_0
 TEST := SmartCalc_v2_test
 
 # Choosing a compiler and setting the main flags #
-CC := g++
-STANDART :=-std=c++17
+STANDART := -std=c++17
 INCLUDE := -I ./include
-CFLAGS := -Wall -Werror -Wextra $(STANDART)
-LKFLAGS := -g -fprofile-arcs -ftest-coverage
 
 # CPPCHECK # - We connect all the rules for checks
 CPPCHECKFLAG := --enable=all
@@ -33,9 +26,7 @@ CPPCHECKFLAG += $(INCLUDE)
 # CPPCHECK # - Error suppression of unused functions
 CPPCHECKFLAG += --suppress=unusedFunction
 
-LDFLAGS := -lgtest
 VFLAG := --leak-check=full --show-leak-kinds=all -s
-TEST_FLAGS = -fprofile-arcs -ftest-coverage
 
 OS := $(shell uname)
 ifeq ($(OS), Darwin)
@@ -43,7 +34,6 @@ LEAKS := leaks --atExit -- ./$(EXEC)
 endif
 ifeq ($(OS), Linux)
 LEAKS := valgrind $(VFLAG) ./$(EXEC)
-LDFLAGS += -lpthread -lgtest_main -L/usr/lib
 endif
 
 ##################      Path     #################
@@ -103,7 +93,7 @@ tests:
 ##############     gcov report      ##############
 lcov: tests
 	lcov -t "$(TEST)" -o $(TEST).info -c -d $(P_COVERAGE)
-	# genhtml -o report $(TEST).info
+	genhtml -o report $(TEST).info
 
 ##############     Main Assembly    ##############
 instal:
