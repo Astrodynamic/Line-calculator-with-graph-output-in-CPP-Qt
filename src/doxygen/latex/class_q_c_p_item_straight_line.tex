@@ -1,0 +1,86 @@
+\hypertarget{class_q_c_p_item_straight_line}{}\doxysection{QCPItem\+Straight\+Line Class Reference}
+\label{class_q_c_p_item_straight_line}\index{QCPItemStraightLine@{QCPItemStraightLine}}
+Inheritance diagram for QCPItem\+Straight\+Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_q_c_p_item_straight_line}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a41fd2e1f006983449eca9830930c3b10}\label{class_q_c_p_item_straight_line_a41fd2e1f006983449eca9830930c3b10}} 
+{\bfseries QCPItem\+Straight\+Line} (\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$parent\+Plot)
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_aa751d46cf36073607c11508763f85ff6}\label{class_q_c_p_item_straight_line_aa751d46cf36073607c11508763f85ff6}} 
+QPen {\bfseries pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_ae4a4607045b1d0594f89eee448a31ff9}\label{class_q_c_p_item_straight_line_ae4a4607045b1d0594f89eee448a31ff9}} 
+QPen {\bfseries selected\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a9f36c9c9e60d7d9ac084c80380ac8601}\label{class_q_c_p_item_straight_line_a9f36c9c9e60d7d9ac084c80380ac8601}} 
+void {\bfseries set\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a5c33559498d33543fa95cf0a36e851ff}\label{class_q_c_p_item_straight_line_a5c33559498d33543fa95cf0a36e851ff}} 
+void {\bfseries set\+Selected\+Pen} (const QPen \&pen)
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_item_straight_line_a3972249ef6b3aa9caf62a6facc3f40c6}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=nullptr) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_ac131a6ffe456f2cc7364dce541fe0120}\label{class_q_c_p_item_straight_line_ac131a6ffe456f2cc7364dce541fe0120}} 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const {\bfseries point1}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_ad26c0a732e471f63f75d481dcd48cfc9}\label{class_q_c_p_item_straight_line_ad26c0a732e471f63f75d481dcd48cfc9}} 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const {\bfseries point2}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_item_straight_line_ae4777141c4514e0e33103bd38b2679a4}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a4dc8f987e0a8e4dfc0c8568923456e0c}\label{class_q_c_p_item_straight_line_a4dc8f987e0a8e4dfc0c8568923456e0c}} 
+QLineF {\bfseries get\+Rect\+Clipped\+Straight\+Line} (const \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} \&base, const \mbox{\hyperlink{class_q_c_p_vector2_d}{QCPVector2D}} \&vec, const QRect \&rect) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a5b1a39cfc54c3e22f65de2958d40eb59}\label{class_q_c_p_item_straight_line_a5b1a39cfc54c3e22f65de2958d40eb59}} 
+QPen {\bfseries main\+Pen} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a15106ddc2ebd73ed5c1bc57aa92bee8f}\label{class_q_c_p_item_straight_line_a15106ddc2ebd73ed5c1bc57aa92bee8f}} 
+QPen {\bfseries m\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a0307a0d56a018656adbf798bc84c2a4b}\label{class_q_c_p_item_straight_line_a0307a0d56a018656adbf798bc84c2a4b}} 
+QPen {\bfseries m\+Selected\+Pen}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_ae4777141c4514e0e33103bd38b2679a4}\label{class_q_c_p_item_straight_line_ae4777141c4514e0e33103bd38b2679a4}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!draw@{draw}}
+\index{draw@{draw}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void QCPItem\+Straight\+Line\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}}.
+
+\mbox{\Hypertarget{class_q_c_p_item_straight_line_a3972249ef6b3aa9caf62a6facc3f40c6}\label{class_q_c_p_item_straight_line_a3972249ef6b3aa9caf62a6facc3f40c6}} 
+\index{QCPItemStraightLine@{QCPItemStraightLine}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPItemStraightLine@{QCPItemStraightLine}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily virtual double QCPItem\+Straight\+Line\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily nullptr} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/qcustomplot.\+hpp\end{DoxyCompactItemize}

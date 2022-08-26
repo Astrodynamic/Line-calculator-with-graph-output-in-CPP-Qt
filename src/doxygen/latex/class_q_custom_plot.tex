@@ -1,0 +1,704 @@
+\hypertarget{class_q_custom_plot}{}\doxysection{QCustom\+Plot Class Reference}
+\label{class_q_custom_plot}\index{QCustomPlot@{QCustomPlot}}
+Inheritance diagram for QCustom\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_custom_plot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7}{Layer\+Insert\+Mode}} \{ \mbox{\hyperlink{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7aee39cf650cd24e68552da0b697ce4a93}{lim\+Below}}
+, \mbox{\hyperlink{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7a062b0b7825650b432a713c0df6742d41}{lim\+Above}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_q_custom_plot_a45d61392d13042e712a956d27762aa39}{Refresh\+Priority}} \{ \mbox{\hyperlink{class_q_custom_plot_a45d61392d13042e712a956d27762aa39aa6eda645ccf1a60635df3e8b71ea6ae2}{rp\+Immediate\+Refresh}}
+, \mbox{\hyperlink{class_q_custom_plot_a45d61392d13042e712a956d27762aa39acd6f1e590ea775d1ddee666428077f3e}{rp\+Queued\+Refresh}}
+, \mbox{\hyperlink{class_q_custom_plot_a45d61392d13042e712a956d27762aa39a49666a5854a68dbcca8b277b03331260}{rp\+Refresh\+Hint}}
+, \mbox{\hyperlink{class_q_custom_plot_a45d61392d13042e712a956d27762aa39a019650c6ddf308f97e811fbfff207a8f}{rp\+Queued\+Replot}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a9b232142c64fcf273a953ee08e5b90e9}\label{class_q_custom_plot_a9b232142c64fcf273a953ee08e5b90e9}} 
+void {\bfseries mouse\+Double\+Click} (QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aca75bf9afb5dd19349c375de2a87a051}\label{class_q_custom_plot_aca75bf9afb5dd19349c375de2a87a051}} 
+void {\bfseries mouse\+Press} (QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a742ca4f94688bed2a685fd8a56ce5704}\label{class_q_custom_plot_a742ca4f94688bed2a685fd8a56ce5704}} 
+void {\bfseries mouse\+Move} (QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac8dc0ee6bb98e923c00b4ebafbe6134d}\label{class_q_custom_plot_ac8dc0ee6bb98e923c00b4ebafbe6134d}} 
+void {\bfseries mouse\+Release} (QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac80a14206f99304a91d2aa55775ec3ff}\label{class_q_custom_plot_ac80a14206f99304a91d2aa55775ec3ff}} 
+void {\bfseries mouse\+Wheel} (QWheel\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_af5fe78b8bc9e4e96df921612837fd4fd}\label{class_q_custom_plot_af5fe78b8bc9e4e96df921612837fd4fd}} 
+void {\bfseries plottable\+Click} (\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$plottable, int data\+Index, QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a86a3ab7263c9c4e008e70d6c5fce9fbd}\label{class_q_custom_plot_a86a3ab7263c9c4e008e70d6c5fce9fbd}} 
+void {\bfseries plottable\+Double\+Click} (\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$plottable, int data\+Index, QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ae16b51f52d2b7aebbc7e3e74e6ff2e4b}\label{class_q_custom_plot_ae16b51f52d2b7aebbc7e3e74e6ff2e4b}} 
+void {\bfseries item\+Click} (\mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$item, QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac83aa9f5a3e9bb3efc9cdc763dcd42a6}\label{class_q_custom_plot_ac83aa9f5a3e9bb3efc9cdc763dcd42a6}} 
+void {\bfseries item\+Double\+Click} (\mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$item, QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_abf635f8b56ab5c16d5de9f358543e82b}\label{class_q_custom_plot_abf635f8b56ab5c16d5de9f358543e82b}} 
+void {\bfseries axis\+Click} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$axis, \mbox{\hyperlink{class_q_c_p_axis_abee4c7a54c468b1385dfce2c898b115f}{QCPAxis\+::\+Selectable\+Part}} part, QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a6df35357460181a72da3e93d600f5256}\label{class_q_custom_plot_a6df35357460181a72da3e93d600f5256}} 
+void {\bfseries axis\+Double\+Click} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$axis, \mbox{\hyperlink{class_q_c_p_axis_abee4c7a54c468b1385dfce2c898b115f}{QCPAxis\+::\+Selectable\+Part}} part, QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a79cff0baafbca10a3aaf694d2d3b9ab3}\label{class_q_custom_plot_a79cff0baafbca10a3aaf694d2d3b9ab3}} 
+void {\bfseries legend\+Click} (\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast$legend, \mbox{\hyperlink{class_q_c_p_abstract_legend_item}{QCPAbstract\+Legend\+Item}} $\ast$item, QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a0250f835c044521df1619b132288bca7}\label{class_q_custom_plot_a0250f835c044521df1619b132288bca7}} 
+void {\bfseries legend\+Double\+Click} (\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast$legend, \mbox{\hyperlink{class_q_c_p_abstract_legend_item}{QCPAbstract\+Legend\+Item}} $\ast$item, QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a500c64a109bc773c973ad274f2fa4190}\label{class_q_custom_plot_a500c64a109bc773c973ad274f2fa4190}} 
+void {\bfseries selection\+Changed\+By\+User} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a0cd30e29b73efd6afe096e44bc5956f5}\label{class_q_custom_plot_a0cd30e29b73efd6afe096e44bc5956f5}} 
+void {\bfseries before\+Replot} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aa3a37a057f64a7587436dabe98c592e9}\label{class_q_custom_plot_aa3a37a057f64a7587436dabe98c592e9}} 
+void {\bfseries after\+Layout} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a6f4fa624af060bc5919c5f266cf426a0}\label{class_q_custom_plot_a6f4fa624af060bc5919c5f266cf426a0}} 
+void {\bfseries after\+Replot} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a3c1c171f620ef0ea4ae3dbb2e6a0209a}\label{class_q_custom_plot_a3c1c171f620ef0ea4ae3dbb2e6a0209a}} 
+{\bfseries QCustom\+Plot} (QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a19842409b18f556b256d05e97fffc670}\label{class_q_custom_plot_a19842409b18f556b256d05e97fffc670}} 
+QRect {\bfseries viewport} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a53d35abe0f576f9838cde5d0bee47657}\label{class_q_custom_plot_a53d35abe0f576f9838cde5d0bee47657}} 
+double {\bfseries buffer\+Device\+Pixel\+Ratio} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a5b9bbc838cb856e31b39c050fad49f9a}\label{class_q_custom_plot_a5b9bbc838cb856e31b39c050fad49f9a}} 
+QPixmap {\bfseries background} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aac96f3a0f5070228ed13602976886b80}\label{class_q_custom_plot_aac96f3a0f5070228ed13602976886b80}} 
+bool {\bfseries background\+Scaled} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_af8f1ebfdbf48d7c49f95136475d55b14}\label{class_q_custom_plot_af8f1ebfdbf48d7c49f95136475d55b14}} 
+Qt\+::\+Aspect\+Ratio\+Mode {\bfseries background\+Scaled\+Mode} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_af1a1f1f571237deb7c2bd34a5e9f018f}\label{class_q_custom_plot_af1a1f1f571237deb7c2bd34a5e9f018f}} 
+\mbox{\hyperlink{class_q_c_p_layout_grid}{QCPLayout\+Grid}} $\ast$ {\bfseries plot\+Layout} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a631762eb183aceecee73d30e108641ee}\label{class_q_custom_plot_a631762eb183aceecee73d30e108641ee}} 
+QCP\+::\+Antialiased\+Elements {\bfseries antialiased\+Elements} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a75571bc5b2167e83def132fc993091b3}\label{class_q_custom_plot_a75571bc5b2167e83def132fc993091b3}} 
+QCP\+::\+Antialiased\+Elements {\bfseries not\+Antialiased\+Elements} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac4b87de13eaceadc8db5a66654197689}\label{class_q_custom_plot_ac4b87de13eaceadc8db5a66654197689}} 
+bool {\bfseries auto\+Add\+Plottable\+To\+Legend} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a2c78c5fd2943c148ab76652801d3f2dc}\label{class_q_custom_plot_a2c78c5fd2943c148ab76652801d3f2dc}} 
+const QCP\+::\+Interactions {\bfseries interactions} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a5441d11013afeaf4b8f2ea06e8624a25}\label{class_q_custom_plot_a5441d11013afeaf4b8f2ea06e8624a25}} 
+int {\bfseries selection\+Tolerance} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aca3f01f903fb250a3dd27104d92830be}\label{class_q_custom_plot_aca3f01f903fb250a3dd27104d92830be}} 
+bool {\bfseries no\+Antialiasing\+On\+Drag} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac724f4075822f74f7b676a790095b877}\label{class_q_custom_plot_ac724f4075822f74f7b676a790095b877}} 
+QCP\+::\+Plotting\+Hints {\bfseries plotting\+Hints} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a28182402ed11609c9a429f0788162d18}\label{class_q_custom_plot_a28182402ed11609c9a429f0788162d18}} 
+Qt\+::\+Keyboard\+Modifier {\bfseries multi\+Select\+Modifier} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a6e53c402de2770a978dffa5584c05b27}\label{class_q_custom_plot_a6e53c402de2770a978dffa5584c05b27}} 
+\mbox{\hyperlink{namespace_q_c_p_ac9aa4d6d81ac76b094f9af9ad2d3aacf}{QCP\+::\+Selection\+Rect\+Mode}} {\bfseries selection\+Rect\+Mode} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad7df2bcbba307e644db383b449e31efd}\label{class_q_custom_plot_ad7df2bcbba307e644db383b449e31efd}} 
+\mbox{\hyperlink{class_q_c_p_selection_rect}{QCPSelection\+Rect}} $\ast$ {\bfseries selection\+Rect} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_abe5556ac80dc0140fd57f2b2f94a1f0e}\label{class_q_custom_plot_abe5556ac80dc0140fd57f2b2f94a1f0e}} 
+bool {\bfseries open\+Gl} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a3f9bc4b939dd8aaba9339fd09f273fc4}\label{class_q_custom_plot_a3f9bc4b939dd8aaba9339fd09f273fc4}} 
+void {\bfseries set\+Viewport} (const QRect \&rect)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a159162653ad6f8b8bf21263ba5787215}\label{class_q_custom_plot_a159162653ad6f8b8bf21263ba5787215}} 
+void {\bfseries set\+Buffer\+Device\+Pixel\+Ratio} (double ratio)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a130358592cfca353ff3cf5571b49fb00}\label{class_q_custom_plot_a130358592cfca353ff3cf5571b49fb00}} 
+void {\bfseries set\+Background} (const QPixmap \&pm)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a8513971d6aa24d8b0d6a68d45b542130}\label{class_q_custom_plot_a8513971d6aa24d8b0d6a68d45b542130}} 
+void {\bfseries set\+Background} (const QPixmap \&pm, bool scaled, Qt\+::\+Aspect\+Ratio\+Mode mode=Qt\+::\+Keep\+Aspect\+Ratio\+By\+Expanding)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a8ed256cf467bfa7ba1f9feaae62c3bd0}\label{class_q_custom_plot_a8ed256cf467bfa7ba1f9feaae62c3bd0}} 
+void {\bfseries set\+Background} (const QBrush \&brush)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a36f0fa1317325dc7b7efea615ee2de1f}\label{class_q_custom_plot_a36f0fa1317325dc7b7efea615ee2de1f}} 
+void {\bfseries set\+Background\+Scaled} (bool scaled)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a4c0eb4865b7949f62e1cb97db04a3de0}\label{class_q_custom_plot_a4c0eb4865b7949f62e1cb97db04a3de0}} 
+void {\bfseries set\+Background\+Scaled\+Mode} (Qt\+::\+Aspect\+Ratio\+Mode mode)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_af6f91e5eab1be85f67c556e98c3745e8}\label{class_q_custom_plot_af6f91e5eab1be85f67c556e98c3745e8}} 
+void {\bfseries set\+Antialiased\+Elements} (const QCP\+::\+Antialiased\+Elements \&antialiased\+Elements)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aeef813bcf7efab8e765f9f87ec454691}\label{class_q_custom_plot_aeef813bcf7efab8e765f9f87ec454691}} 
+void {\bfseries set\+Antialiased\+Element} (\mbox{\hyperlink{namespace_q_c_p_ae55dbe315d41fe80f29ba88100843a0c}{QCP\+::\+Antialiased\+Element}} antialiased\+Element, bool enabled=true)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ae10d685b5eabea2999fb8775ca173c24}\label{class_q_custom_plot_ae10d685b5eabea2999fb8775ca173c24}} 
+void {\bfseries set\+Not\+Antialiased\+Elements} (const QCP\+::\+Antialiased\+Elements \&not\+Antialiased\+Elements)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_afc657938a707c890e449ae89203a076d}\label{class_q_custom_plot_afc657938a707c890e449ae89203a076d}} 
+void {\bfseries set\+Not\+Antialiased\+Element} (\mbox{\hyperlink{namespace_q_c_p_ae55dbe315d41fe80f29ba88100843a0c}{QCP\+::\+Antialiased\+Element}} not\+Antialiased\+Element, bool enabled=true)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad8858410c2db47b7104040a3aa61c3fc}\label{class_q_custom_plot_ad8858410c2db47b7104040a3aa61c3fc}} 
+void {\bfseries set\+Auto\+Add\+Plottable\+To\+Legend} (bool on)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}\label{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}} 
+void {\bfseries set\+Interactions} (const QCP\+::\+Interactions \&interactions)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a422bf1bc6d56dac75a3d805d9a65902c}\label{class_q_custom_plot_a422bf1bc6d56dac75a3d805d9a65902c}} 
+void {\bfseries set\+Interaction} (const \mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037}{QCP\+::\+Interaction}} \&interaction, bool enabled=true)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a4dc31241d7b09680950e19e5f971ed93}\label{class_q_custom_plot_a4dc31241d7b09680950e19e5f971ed93}} 
+void {\bfseries set\+Selection\+Tolerance} (int pixels)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a775bdcb6329d44701aeaa6135b0e5265}\label{class_q_custom_plot_a775bdcb6329d44701aeaa6135b0e5265}} 
+void {\bfseries set\+No\+Antialiasing\+On\+Drag} (bool enabled)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a94a33cbdadbbac5934843508bcfc210d}\label{class_q_custom_plot_a94a33cbdadbbac5934843508bcfc210d}} 
+void {\bfseries set\+Plotting\+Hints} (const QCP\+::\+Plotting\+Hints \&hints)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a3b7c97bb6c16464e9e15190c07abe9a9}\label{class_q_custom_plot_a3b7c97bb6c16464e9e15190c07abe9a9}} 
+void {\bfseries set\+Plotting\+Hint} (\mbox{\hyperlink{namespace_q_c_p_a5400e5fcb9528d92002ddb938c1f4ef4}{QCP\+::\+Plotting\+Hint}} hint, bool enabled=true)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a8fc96e3b5138a06759a2a90c166df516}\label{class_q_custom_plot_a8fc96e3b5138a06759a2a90c166df516}} 
+void {\bfseries set\+Multi\+Select\+Modifier} (Qt\+::\+Keyboard\+Modifier modifier)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a810ef958ebe84db661c7288b526c0deb}\label{class_q_custom_plot_a810ef958ebe84db661c7288b526c0deb}} 
+void {\bfseries set\+Selection\+Rect\+Mode} (\mbox{\hyperlink{namespace_q_c_p_ac9aa4d6d81ac76b094f9af9ad2d3aacf}{QCP\+::\+Selection\+Rect\+Mode}} mode)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a0c09f96df15faa4799ad7051bb16cf33}\label{class_q_custom_plot_a0c09f96df15faa4799ad7051bb16cf33}} 
+void {\bfseries set\+Selection\+Rect} (\mbox{\hyperlink{class_q_c_p_selection_rect}{QCPSelection\+Rect}} $\ast$selection\+Rect)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a7db1adc09016329f3aef7c60da935789}\label{class_q_custom_plot_a7db1adc09016329f3aef7c60da935789}} 
+void {\bfseries set\+Open\+Gl} (bool enabled, int multisampling=16)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a32de81ff53e263e785b83b52ecd99d6f}\label{class_q_custom_plot_a32de81ff53e263e785b83b52ecd99d6f}} 
+\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$ {\bfseries plottable} (int index)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_adea38bdc660da9412ba69fb939031567}\label{class_q_custom_plot_adea38bdc660da9412ba69fb939031567}} 
+\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$ {\bfseries plottable} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_af3dafd56884208474f311d6226513ab2}\label{class_q_custom_plot_af3dafd56884208474f311d6226513ab2}} 
+bool {\bfseries remove\+Plottable} (\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$plottable)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_afc210e0021480f8119bccf37839dbcc8}\label{class_q_custom_plot_afc210e0021480f8119bccf37839dbcc8}} 
+bool {\bfseries remove\+Plottable} (int index)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a9a409bb3201878adb7ffba1c89c4e004}\label{class_q_custom_plot_a9a409bb3201878adb7ffba1c89c4e004}} 
+int {\bfseries clear\+Plottables} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a5f4f15991c14bf9ad659bb2a19dfbed4}\label{class_q_custom_plot_a5f4f15991c14bf9ad659bb2a19dfbed4}} 
+int {\bfseries plottable\+Count} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a747faaab57c56891e901a1e97fa4359a}\label{class_q_custom_plot_a747faaab57c56891e901a1e97fa4359a}} 
+QList$<$ \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$ $>$ {\bfseries selected\+Plottables} () const
+\item 
+{\footnotesize template$<$class Plottable\+Type $>$ }\\Plottable\+Type $\ast$ \mbox{\hyperlink{class_q_custom_plot_a545c0e63e13a4fbac3d5acbd8a03ef6f}{plottable\+At}} (const QPointF \&pos, bool only\+Selectable=false, int $\ast$data\+Index=nullptr) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a37f1ef93533c5b91054dc23998c669e1}\label{class_q_custom_plot_a37f1ef93533c5b91054dc23998c669e1}} 
+\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$ {\bfseries plottable\+At} (const QPointF \&pos, bool only\+Selectable=false, int $\ast$data\+Index=nullptr) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a72cefbfbb9e699940e37be605bd9c51e}\label{class_q_custom_plot_a72cefbfbb9e699940e37be605bd9c51e}} 
+bool {\bfseries has\+Plottable} (\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$plottable) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a6ecae130f684b25276fb47bd3a5875c6}\label{class_q_custom_plot_a6ecae130f684b25276fb47bd3a5875c6}} 
+\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$ {\bfseries graph} (int index) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aac190865a67f19af3fdf2136774997af}\label{class_q_custom_plot_aac190865a67f19af3fdf2136774997af}} 
+\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$ {\bfseries graph} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a2836a46e31d5aee174ae054c0aa6580b}\label{class_q_custom_plot_a2836a46e31d5aee174ae054c0aa6580b}} 
+\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$ {\bfseries add\+Graph} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$key\+Axis=nullptr, \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$value\+Axis=nullptr)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a903561be895fb6528a770d66ac5e6713}\label{class_q_custom_plot_a903561be895fb6528a770d66ac5e6713}} 
+bool {\bfseries remove\+Graph} (\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$graph)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a9554b3d2d5b10c0f884bd4010b6c192c}\label{class_q_custom_plot_a9554b3d2d5b10c0f884bd4010b6c192c}} 
+bool {\bfseries remove\+Graph} (int index)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ab0f3abff2d2f7df3668b5836f39207fa}\label{class_q_custom_plot_ab0f3abff2d2f7df3668b5836f39207fa}} 
+int {\bfseries clear\+Graphs} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a5e1787cdde868c4d3790f9ebc8207d90}\label{class_q_custom_plot_a5e1787cdde868c4d3790f9ebc8207d90}} 
+int {\bfseries graph\+Count} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad3547aded026d8a9ae6ef13a69080d06}\label{class_q_custom_plot_ad3547aded026d8a9ae6ef13a69080d06}} 
+QList$<$ \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$ $>$ {\bfseries selected\+Graphs} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac042f2e78edd228ccf2f26b7fe215239}\label{class_q_custom_plot_ac042f2e78edd228ccf2f26b7fe215239}} 
+\mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$ {\bfseries item} (int index) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a12eb2a283cf10a8a9176c01c0443e83e}\label{class_q_custom_plot_a12eb2a283cf10a8a9176c01c0443e83e}} 
+\mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$ {\bfseries item} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ae04446557292551e8fb6e2c106e1848d}\label{class_q_custom_plot_ae04446557292551e8fb6e2c106e1848d}} 
+bool {\bfseries remove\+Item} (\mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$item)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_abcfdda3d601c0441cab136137d715dea}\label{class_q_custom_plot_abcfdda3d601c0441cab136137d715dea}} 
+bool {\bfseries remove\+Item} (int index)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_abdfd07d4f0591d0cf967f85013fd3645}\label{class_q_custom_plot_abdfd07d4f0591d0cf967f85013fd3645}} 
+int {\bfseries clear\+Items} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a16025daf0341f9362be3080e404424c2}\label{class_q_custom_plot_a16025daf0341f9362be3080e404424c2}} 
+int {\bfseries item\+Count} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_afda487bcf2d6cf1a57173d82495e29ba}\label{class_q_custom_plot_afda487bcf2d6cf1a57173d82495e29ba}} 
+QList$<$ \mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$ $>$ {\bfseries selected\+Items} () const
+\item 
+{\footnotesize template$<$class Item\+Type $>$ }\\Item\+Type $\ast$ \mbox{\hyperlink{class_q_custom_plot_a89f7565773c5d59347a7f2262a737844}{item\+At}} (const QPointF \&pos, bool only\+Selectable=false) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac08578e0e6c059c83a8d340ba0038e8e}\label{class_q_custom_plot_ac08578e0e6c059c83a8d340ba0038e8e}} 
+\mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$ {\bfseries item\+At} (const QPointF \&pos, bool only\+Selectable=false) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_af0b57f35646079f93fa6161a65b36109}\label{class_q_custom_plot_af0b57f35646079f93fa6161a65b36109}} 
+bool {\bfseries has\+Item} (\mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$item) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a0a96244e7773b242ef23c32b7bdfb159}\label{class_q_custom_plot_a0a96244e7773b242ef23c32b7bdfb159}} 
+\mbox{\hyperlink{class_q_c_p_layer}{QCPLayer}} $\ast$ {\bfseries layer} (const QString \&name) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_acbb570f4c24306e7c2324d40bfe157c2}\label{class_q_custom_plot_acbb570f4c24306e7c2324d40bfe157c2}} 
+\mbox{\hyperlink{class_q_c_p_layer}{QCPLayer}} $\ast$ {\bfseries layer} (int index) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a0421d647f420b0b4c57aec1708857af5}\label{class_q_custom_plot_a0421d647f420b0b4c57aec1708857af5}} 
+\mbox{\hyperlink{class_q_c_p_layer}{QCPLayer}} $\ast$ {\bfseries current\+Layer} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a73a6dc47c653bb6f8f030abca5a11852}\label{class_q_custom_plot_a73a6dc47c653bb6f8f030abca5a11852}} 
+bool {\bfseries set\+Current\+Layer} (const QString \&name)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a23a4d3cadad1a0063c5fe19aac5659e6}\label{class_q_custom_plot_a23a4d3cadad1a0063c5fe19aac5659e6}} 
+bool {\bfseries set\+Current\+Layer} (\mbox{\hyperlink{class_q_c_p_layer}{QCPLayer}} $\ast$layer)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_afa45d61e65292026f4c58c9c88c2cef0}\label{class_q_custom_plot_afa45d61e65292026f4c58c9c88c2cef0}} 
+int {\bfseries layer\+Count} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a8f33108881c2e3c2fec50aa321e169af}\label{class_q_custom_plot_a8f33108881c2e3c2fec50aa321e169af}} 
+bool {\bfseries add\+Layer} (const QString \&name, \mbox{\hyperlink{class_q_c_p_layer}{QCPLayer}} $\ast$other\+Layer=nullptr, \mbox{\hyperlink{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7}{Layer\+Insert\+Mode}} insert\+Mode=\mbox{\hyperlink{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7a062b0b7825650b432a713c0df6742d41}{lim\+Above}})
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a40f75e342c5eaab6a86066a42a0e2a94}\label{class_q_custom_plot_a40f75e342c5eaab6a86066a42a0e2a94}} 
+bool {\bfseries remove\+Layer} (\mbox{\hyperlink{class_q_c_p_layer}{QCPLayer}} $\ast$layer)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ae896140beff19424e9e9e02d6e331104}\label{class_q_custom_plot_ae896140beff19424e9e9e02d6e331104}} 
+bool {\bfseries move\+Layer} (\mbox{\hyperlink{class_q_c_p_layer}{QCPLayer}} $\ast$layer, \mbox{\hyperlink{class_q_c_p_layer}{QCPLayer}} $\ast$other\+Layer, \mbox{\hyperlink{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7}{Layer\+Insert\+Mode}} insert\+Mode=\mbox{\hyperlink{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7a062b0b7825650b432a713c0df6742d41}{lim\+Above}})
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a8f85940aaac50efb466287d9d2d04ec6}\label{class_q_custom_plot_a8f85940aaac50efb466287d9d2d04ec6}} 
+int {\bfseries axis\+Rect\+Count} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ae5eefcb5f6ca26689b1fd4f6e25b42f9}\label{class_q_custom_plot_ae5eefcb5f6ca26689b1fd4f6e25b42f9}} 
+\mbox{\hyperlink{class_q_c_p_axis_rect}{QCPAxis\+Rect}} $\ast$ {\bfseries axis\+Rect} (int index=0) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a12af771429e2d7e313c8c5d5fca068fe}\label{class_q_custom_plot_a12af771429e2d7e313c8c5d5fca068fe}} 
+QList$<$ \mbox{\hyperlink{class_q_c_p_axis_rect}{QCPAxis\+Rect}} $\ast$ $>$ {\bfseries axis\+Rects} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_afaa1d304e0287d140fd238e90889ef3c}\label{class_q_custom_plot_afaa1d304e0287d140fd238e90889ef3c}} 
+\mbox{\hyperlink{class_q_c_p_layout_element}{QCPLayout\+Element}} $\ast$ {\bfseries layout\+Element\+At} (const QPointF \&pos) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a4a08842fc3e9ba6bed83aa410c5c5ba5}\label{class_q_custom_plot_a4a08842fc3e9ba6bed83aa410c5c5ba5}} 
+\mbox{\hyperlink{class_q_c_p_axis_rect}{QCPAxis\+Rect}} $\ast$ {\bfseries axis\+Rect\+At} (const QPointF \&pos) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a8898682337c33b27b42b85218a8d4c0b}\label{class_q_custom_plot_a8898682337c33b27b42b85218a8d4c0b}} 
+Q\+\_\+\+SLOT void {\bfseries rescale\+Axes} (bool only\+Visible\+Plottables=false)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a7e6b07792b1cb2c31681596582d14dbe}\label{class_q_custom_plot_a7e6b07792b1cb2c31681596582d14dbe}} 
+QList$<$ \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ $>$ {\bfseries selected\+Axes} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac87624ddff1cbf4064781a8e8ae321c4}\label{class_q_custom_plot_ac87624ddff1cbf4064781a8e8ae321c4}} 
+QList$<$ \mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast$ $>$ {\bfseries selected\+Legends} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a3b2698464e81b0771bdcaeb5bd306886}\label{class_q_custom_plot_a3b2698464e81b0771bdcaeb5bd306886}} 
+Q\+\_\+\+SLOT void {\bfseries deselect\+All} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad5acd34f6b39c3516887d7e54fec2412}\label{class_q_custom_plot_ad5acd34f6b39c3516887d7e54fec2412}} 
+bool {\bfseries save\+Pdf} (const QString \&file\+Name, int width=0, int height=0, \mbox{\hyperlink{namespace_q_c_p_a17844f19e1019693a953e1eb93536d2f}{QCP\+::\+Export\+Pen}} export\+Pen=\mbox{\hyperlink{namespace_q_c_p_a17844f19e1019693a953e1eb93536d2fa50d3657dba3fb90560b93a823cb0a6e8}{QCP\+::ep\+Allow\+Cosmetic}}, const QString \&pdf\+Creator=QString(), const QString \&pdf\+Title=QString())
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac92cc9256d12f354b40a4be4600b5fb9}\label{class_q_custom_plot_ac92cc9256d12f354b40a4be4600b5fb9}} 
+bool {\bfseries save\+Png} (const QString \&file\+Name, int width=0, int height=0, double scale=1.\+0, int quality=-\/1, int resolution=96, \mbox{\hyperlink{namespace_q_c_p_a715d46153da230990aa887d0f0602452}{QCP\+::\+Resolution\+Unit}} resolution\+Unit=\mbox{\hyperlink{namespace_q_c_p_a715d46153da230990aa887d0f0602452affb887d8efe79c39a1aca2acd7002afc}{QCP\+::ru\+Dots\+Per\+Inch}})
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a76f0d278e630a711fa6f48048cfd83e4}\label{class_q_custom_plot_a76f0d278e630a711fa6f48048cfd83e4}} 
+bool {\bfseries save\+Jpg} (const QString \&file\+Name, int width=0, int height=0, double scale=1.\+0, int quality=-\/1, int resolution=96, \mbox{\hyperlink{namespace_q_c_p_a715d46153da230990aa887d0f0602452}{QCP\+::\+Resolution\+Unit}} resolution\+Unit=\mbox{\hyperlink{namespace_q_c_p_a715d46153da230990aa887d0f0602452affb887d8efe79c39a1aca2acd7002afc}{QCP\+::ru\+Dots\+Per\+Inch}})
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ae3a86ed0795670e50afa21759d4fa13d}\label{class_q_custom_plot_ae3a86ed0795670e50afa21759d4fa13d}} 
+bool {\bfseries save\+Bmp} (const QString \&file\+Name, int width=0, int height=0, double scale=1.\+0, int resolution=96, \mbox{\hyperlink{namespace_q_c_p_a715d46153da230990aa887d0f0602452}{QCP\+::\+Resolution\+Unit}} resolution\+Unit=\mbox{\hyperlink{namespace_q_c_p_a715d46153da230990aa887d0f0602452affb887d8efe79c39a1aca2acd7002afc}{QCP\+::ru\+Dots\+Per\+Inch}})
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad7723ce2edfa270632ef42b03a444352}\label{class_q_custom_plot_ad7723ce2edfa270632ef42b03a444352}} 
+bool {\bfseries save\+Rastered} (const QString \&file\+Name, int width, int height, double scale, const char $\ast$format, int quality=-\/1, int resolution=96, \mbox{\hyperlink{namespace_q_c_p_a715d46153da230990aa887d0f0602452}{QCP\+::\+Resolution\+Unit}} resolution\+Unit=\mbox{\hyperlink{namespace_q_c_p_a715d46153da230990aa887d0f0602452affb887d8efe79c39a1aca2acd7002afc}{QCP\+::ru\+Dots\+Per\+Inch}})
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aabb974d71ce96c137dc04eb6eab844fe}\label{class_q_custom_plot_aabb974d71ce96c137dc04eb6eab844fe}} 
+QPixmap {\bfseries to\+Pixmap} (int width=0, int height=0, double scale=1.\+0)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a1be68d5c0f1e086d6374d1340a193fb9}\label{class_q_custom_plot_a1be68d5c0f1e086d6374d1340a193fb9}} 
+void {\bfseries to\+Painter} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, int width=0, int height=0)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a924548f2f315d94811af92704340e15a}\label{class_q_custom_plot_a924548f2f315d94811af92704340e15a}} 
+Q\+\_\+\+SLOT void {\bfseries replot} (\mbox{\hyperlink{class_q_custom_plot_a45d61392d13042e712a956d27762aa39}{QCustom\+Plot\+::\+Refresh\+Priority}} refresh\+Priority=\mbox{\hyperlink{class_q_custom_plot_a45d61392d13042e712a956d27762aa39a49666a5854a68dbcca8b277b03331260}{QCustom\+Plot\+::rp\+Refresh\+Hint}})
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad582e335061a25da006acc58a4009ccc}\label{class_q_custom_plot_ad582e335061a25da006acc58a4009ccc}} 
+double {\bfseries replot\+Time} (bool average=false) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a968b5ac86c181a49bba78c2b62a80cb3}\label{class_q_custom_plot_a968b5ac86c181a49bba78c2b62a80cb3}} 
+\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ {\bfseries x\+Axis}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_af6fea5679725b152c14facd920b19367}\label{class_q_custom_plot_af6fea5679725b152c14facd920b19367}} 
+\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ {\bfseries y\+Axis}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ada41599f22cad901c030f3dcbdd82fd9}\label{class_q_custom_plot_ada41599f22cad901c030f3dcbdd82fd9}} 
+\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ {\bfseries x\+Axis2}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_af13fdc5bce7d0fabd640f13ba805c0b7}\label{class_q_custom_plot_af13fdc5bce7d0fabd640f13ba805c0b7}} 
+\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$ {\bfseries y\+Axis2}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a73da53368aa4c2db3d874cf0db50d140}\label{class_q_custom_plot_a73da53368aa4c2db3d874cf0db50d140}} 
+\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast$ {\bfseries legend}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a4be5390c093302178f9d1481cb5fe7a1}\label{class_q_custom_plot_a4be5390c093302178f9d1481cb5fe7a1}} 
+virtual QSize {\bfseries minimum\+Size\+Hint} () const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a54364e3e6c4022d92e4ea23bd0843cc6}\label{class_q_custom_plot_a54364e3e6c4022d92e4ea23bd0843cc6}} 
+virtual QSize {\bfseries size\+Hint} () const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_acc43b1883cac1bdcd49e589991af4ccb}\label{class_q_custom_plot_acc43b1883cac1bdcd49e589991af4ccb}} 
+virtual void {\bfseries paint\+Event} (QPaint\+Event $\ast$event) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a0b69658ba8042a7e68238604c056d695}\label{class_q_custom_plot_a0b69658ba8042a7e68238604c056d695}} 
+virtual void {\bfseries resize\+Event} (QResize\+Event $\ast$event) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad0be55c9ab8deb433e8f7522897d509e}\label{class_q_custom_plot_ad0be55c9ab8deb433e8f7522897d509e}} 
+virtual void {\bfseries mouse\+Double\+Click\+Event} (QMouse\+Event $\ast$event) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a0fac62370735c4096d5cc57559420f4b}\label{class_q_custom_plot_a0fac62370735c4096d5cc57559420f4b}} 
+virtual void {\bfseries mouse\+Press\+Event} (QMouse\+Event $\ast$event) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a01f74d8d344a6c6671550638345e7183}\label{class_q_custom_plot_a01f74d8d344a6c6671550638345e7183}} 
+virtual void {\bfseries mouse\+Move\+Event} (QMouse\+Event $\ast$event) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a0fd1a6aa33fce10c15432deecae75233}\label{class_q_custom_plot_a0fd1a6aa33fce10c15432deecae75233}} 
+virtual void {\bfseries mouse\+Release\+Event} (QMouse\+Event $\ast$event) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac70648a6f405e37eaba7d244e0b3cfd1}\label{class_q_custom_plot_ac70648a6f405e37eaba7d244e0b3cfd1}} 
+virtual void {\bfseries wheel\+Event} (QWheel\+Event $\ast$event) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a8f21771005776857a1aaeb76a6d3db7e}\label{class_q_custom_plot_a8f21771005776857a1aaeb76a6d3db7e}} 
+virtual void {\bfseries draw} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aeae5e068de2d4c8d19301571f1f0daef}\label{class_q_custom_plot_aeae5e068de2d4c8d19301571f1f0daef}} 
+virtual void {\bfseries update\+Layout} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aca64f782a4b96e12d77836c4a2650ad2}\label{class_q_custom_plot_aca64f782a4b96e12d77836c4a2650ad2}} 
+virtual void {\bfseries axis\+Removed} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$axis)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a281221decdec4a6b5e958d40b77ccef7}\label{class_q_custom_plot_a281221decdec4a6b5e958d40b77ccef7}} 
+virtual void {\bfseries legend\+Removed} (\mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}} $\ast$legend)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a5d9b02d0fa28820fe1f2f34587c3309a}\label{class_q_custom_plot_a5d9b02d0fa28820fe1f2f34587c3309a}} 
+virtual Q\+\_\+\+SLOT void {\bfseries process\+Rect\+Selection} (QRect rect, QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a66ab7c0b04ef3d44fe60818efb823c32}\label{class_q_custom_plot_a66ab7c0b04ef3d44fe60818efb823c32}} 
+virtual Q\+\_\+\+SLOT void {\bfseries process\+Rect\+Zoom} (QRect rect, QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_acbc612f6be151dd52a3f07df38455f9f}\label{class_q_custom_plot_acbc612f6be151dd52a3f07df38455f9f}} 
+virtual Q\+\_\+\+SLOT void {\bfseries process\+Point\+Selection} (QMouse\+Event $\ast$event)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aeba7733bb9fadfb5a375b3f40de9e58a}\label{class_q_custom_plot_aeba7733bb9fadfb5a375b3f40de9e58a}} 
+bool {\bfseries register\+Plottable} (\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$plottable)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_acfc01230bddaea4f1782e4aa7d130af6}\label{class_q_custom_plot_acfc01230bddaea4f1782e4aa7d130af6}} 
+bool {\bfseries register\+Graph} (\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$graph)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_afbd4010b2e3f364c8d512691b2a1640a}\label{class_q_custom_plot_afbd4010b2e3f364c8d512691b2a1640a}} 
+bool {\bfseries register\+Item} (\mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$item)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a7f1ca67a66d37b6d260a0b93de08f3bd}\label{class_q_custom_plot_a7f1ca67a66d37b6d260a0b93de08f3bd}} 
+void {\bfseries update\+Layer\+Indices} () const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a998b3a93d7f08d42ce3ec4eab43afc03}\label{class_q_custom_plot_a998b3a93d7f08d42ce3ec4eab43afc03}} 
+\mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}} $\ast$ {\bfseries layerable\+At} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$selection\+Details=nullptr) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a3f9d0033397b309343a6df8e87fb46c9}\label{class_q_custom_plot_a3f9d0033397b309343a6df8e87fb46c9}} 
+QList$<$ \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}} $\ast$ $>$ {\bfseries layerable\+List\+At} (const QPointF \&pos, bool only\+Selectable, QList$<$ QVariant $>$ $\ast$selection\+Details=nullptr) const
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a05dd52438cee4353b18c1e53a439008d}\label{class_q_custom_plot_a05dd52438cee4353b18c1e53a439008d}} 
+void {\bfseries draw\+Background} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter)
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a2685341f7242c3882f4cc5e379308d71}\label{class_q_custom_plot_a2685341f7242c3882f4cc5e379308d71}} 
+void {\bfseries setup\+Paint\+Buffers} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a943b57596a1adf7f0e75c3b50e407ae6}\label{class_q_custom_plot_a943b57596a1adf7f0e75c3b50e407ae6}} 
+\mbox{\hyperlink{class_q_c_p_abstract_paint_buffer}{QCPAbstract\+Paint\+Buffer}} $\ast$ {\bfseries create\+Paint\+Buffer} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad452b582348c8e99462d83fe1cd0279b}\label{class_q_custom_plot_ad452b582348c8e99462d83fe1cd0279b}} 
+bool {\bfseries has\+Invalidated\+Paint\+Buffers} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a8954c4667c51070ff4e9b02d858fd190}\label{class_q_custom_plot_a8954c4667c51070ff4e9b02d858fd190}} 
+bool {\bfseries setup\+Open\+Gl} ()
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aaa3073362074581a7b5905726b4a0067}\label{class_q_custom_plot_aaa3073362074581a7b5905726b4a0067}} 
+void {\bfseries free\+Open\+Gl} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac0a7c38a715526c257cff95774f83ab6}\label{class_q_custom_plot_ac0a7c38a715526c257cff95774f83ab6}} 
+QRect {\bfseries m\+Viewport}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a63a40c57a2d89eea27b90b62cc4eee1f}\label{class_q_custom_plot_a63a40c57a2d89eea27b90b62cc4eee1f}} 
+double {\bfseries m\+Buffer\+Device\+Pixel\+Ratio}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac97298756882a0eecd98151679850ac1}\label{class_q_custom_plot_ac97298756882a0eecd98151679850ac1}} 
+\mbox{\hyperlink{class_q_c_p_layout_grid}{QCPLayout\+Grid}} $\ast$ {\bfseries m\+Plot\+Layout}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aaf3ea6a4cb04d35a149cc9a0cdac3394}\label{class_q_custom_plot_aaf3ea6a4cb04d35a149cc9a0cdac3394}} 
+bool {\bfseries m\+Auto\+Add\+Plottable\+To\+Legend}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a4b6c694fbdb2f201626f71eff2d1694e}\label{class_q_custom_plot_a4b6c694fbdb2f201626f71eff2d1694e}} 
+QList$<$ \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} $\ast$ $>$ {\bfseries m\+Plottables}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a38676b141ac8005fca4882a73ddfaf59}\label{class_q_custom_plot_a38676b141ac8005fca4882a73ddfaf59}} 
+QList$<$ \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$ $>$ {\bfseries m\+Graphs}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_afa5fd6957169dfef2e4e7815a04c36e0}\label{class_q_custom_plot_afa5fd6957169dfef2e4e7815a04c36e0}} 
+QList$<$ \mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} $\ast$ $>$ {\bfseries m\+Items}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a9685e7ec1ef5e6066dd7d91bb3a698b3}\label{class_q_custom_plot_a9685e7ec1ef5e6066dd7d91bb3a698b3}} 
+QList$<$ \mbox{\hyperlink{class_q_c_p_layer}{QCPLayer}} $\ast$ $>$ {\bfseries m\+Layers}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aa333200629256830e273873b582a5524}\label{class_q_custom_plot_aa333200629256830e273873b582a5524}} 
+QCP\+::\+Antialiased\+Elements {\bfseries m\+Antialiased\+Elements}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a2b6ebcad00a90ba07f146cefcd4293da}\label{class_q_custom_plot_a2b6ebcad00a90ba07f146cefcd4293da}} 
+QCP\+::\+Antialiased\+Elements {\bfseries m\+Not\+Antialiased\+Elements}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad717377ceba7493b4b32f0bcbbdf1895}\label{class_q_custom_plot_ad717377ceba7493b4b32f0bcbbdf1895}} 
+QCP\+::\+Interactions {\bfseries m\+Interactions}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_abc36e12dd0482117ad810a800c847722}\label{class_q_custom_plot_abc36e12dd0482117ad810a800c847722}} 
+int {\bfseries m\+Selection\+Tolerance}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac83df968435f6b8ec79f2993ab9124e8}\label{class_q_custom_plot_ac83df968435f6b8ec79f2993ab9124e8}} 
+bool {\bfseries m\+No\+Antialiasing\+On\+Drag}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a3aef5de4ac012178e3293248e9c63737}\label{class_q_custom_plot_a3aef5de4ac012178e3293248e9c63737}} 
+QBrush {\bfseries m\+Background\+Brush}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ae8f4677399324a78c5f8dbfb95a34f90}\label{class_q_custom_plot_ae8f4677399324a78c5f8dbfb95a34f90}} 
+QPixmap {\bfseries m\+Background\+Pixmap}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a081bf046501d52642dc6d7e3bdb97d57}\label{class_q_custom_plot_a081bf046501d52642dc6d7e3bdb97d57}} 
+QPixmap {\bfseries m\+Scaled\+Background\+Pixmap}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a62fe584b20680b1b2e1c7efb5c5416a5}\label{class_q_custom_plot_a62fe584b20680b1b2e1c7efb5c5416a5}} 
+bool {\bfseries m\+Background\+Scaled}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ab82e8a5e3ad6b486f95d6da8bf49e9aa}\label{class_q_custom_plot_ab82e8a5e3ad6b486f95d6da8bf49e9aa}} 
+Qt\+::\+Aspect\+Ratio\+Mode {\bfseries m\+Background\+Scaled\+Mode}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aa27569c92e74395af10151357d268628}\label{class_q_custom_plot_aa27569c92e74395af10151357d268628}} 
+\mbox{\hyperlink{class_q_c_p_layer}{QCPLayer}} $\ast$ {\bfseries m\+Current\+Layer}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aa184197a6101a9cc5807469e1d006c9e}\label{class_q_custom_plot_aa184197a6101a9cc5807469e1d006c9e}} 
+QCP\+::\+Plotting\+Hints {\bfseries m\+Plotting\+Hints}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a0e97e701c5671e7e463d2ce0211d0f8a}\label{class_q_custom_plot_a0e97e701c5671e7e463d2ce0211d0f8a}} 
+Qt\+::\+Keyboard\+Modifier {\bfseries m\+Multi\+Select\+Modifier}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_abe04c5def373cc4fede8de20542ca3f2}\label{class_q_custom_plot_abe04c5def373cc4fede8de20542ca3f2}} 
+\mbox{\hyperlink{namespace_q_c_p_ac9aa4d6d81ac76b094f9af9ad2d3aacf}{QCP\+::\+Selection\+Rect\+Mode}} {\bfseries m\+Selection\+Rect\+Mode}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a4827bc84ef5ce52dfbf9ff630ed1b276}\label{class_q_custom_plot_a4827bc84ef5ce52dfbf9ff630ed1b276}} 
+\mbox{\hyperlink{class_q_c_p_selection_rect}{QCPSelection\+Rect}} $\ast$ {\bfseries m\+Selection\+Rect}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a0841dbea13bd120d20e3f0cc36767ff9}\label{class_q_custom_plot_a0841dbea13bd120d20e3f0cc36767ff9}} 
+bool {\bfseries m\+Open\+Gl}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a57b270b1e3990e0d1b9fb39b137d5a5d}\label{class_q_custom_plot_a57b270b1e3990e0d1b9fb39b137d5a5d}} 
+QList$<$ QShared\+Pointer$<$ \mbox{\hyperlink{class_q_c_p_abstract_paint_buffer}{QCPAbstract\+Paint\+Buffer}} $>$ $>$ {\bfseries m\+Paint\+Buffers}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ac57090da95056ae4dd67be67adfa85bd}\label{class_q_custom_plot_ac57090da95056ae4dd67be67adfa85bd}} 
+QPoint {\bfseries m\+Mouse\+Press\+Pos}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad2108936f001a8be5974b0b6ff13dae3}\label{class_q_custom_plot_ad2108936f001a8be5974b0b6ff13dae3}} 
+bool {\bfseries m\+Mouse\+Has\+Moved}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a243867f445d2f4e35e00add2f589e1da}\label{class_q_custom_plot_a243867f445d2f4e35e00add2f589e1da}} 
+QPointer$<$ \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}} $>$ {\bfseries m\+Mouse\+Event\+Layerable}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_adf81640dbf365bd4fa22494e3e504e70}\label{class_q_custom_plot_adf81640dbf365bd4fa22494e3e504e70}} 
+QPointer$<$ \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}} $>$ {\bfseries m\+Mouse\+Signal\+Layerable}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad604958ef16fc022c474521a08d88a2d}\label{class_q_custom_plot_ad604958ef16fc022c474521a08d88a2d}} 
+QVariant {\bfseries m\+Mouse\+Event\+Layerable\+Details}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a2f313604bb22781633137915f3c100e6}\label{class_q_custom_plot_a2f313604bb22781633137915f3c100e6}} 
+QVariant {\bfseries m\+Mouse\+Signal\+Layerable\+Details}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ab30daeca6612c3948afd368dce5f1c39}\label{class_q_custom_plot_ab30daeca6612c3948afd368dce5f1c39}} 
+bool {\bfseries m\+Replotting}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_acedeef316dfcde835b8ea0112cec2a77}\label{class_q_custom_plot_acedeef316dfcde835b8ea0112cec2a77}} 
+bool {\bfseries m\+Replot\+Queued}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a0279737e4f10ed92c566968befe98529}\label{class_q_custom_plot_a0279737e4f10ed92c566968befe98529}} 
+double {\bfseries m\+Replot\+Time}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a8e7659163d63e18ba42036d6cb3aa920}\label{class_q_custom_plot_a8e7659163d63e18ba42036d6cb3aa920}} 
+double {\bfseries m\+Replot\+Time\+Average}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_aacafac2b2280b6a868a4b734273a394c}\label{class_q_custom_plot_aacafac2b2280b6a868a4b734273a394c}} 
+int {\bfseries m\+Open\+Gl\+Multisamples}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_adbf005715d5f8550511819a4baf841fb}\label{class_q_custom_plot_adbf005715d5f8550511819a4baf841fb}} 
+QCP\+::\+Antialiased\+Elements {\bfseries m\+Open\+Gl\+Antialiased\+Elements\+Backup}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ab1692469dde841080fa33719533bf2b7}\label{class_q_custom_plot_ab1692469dde841080fa33719533bf2b7}} 
+bool {\bfseries m\+Open\+Gl\+Cache\+Labels\+Backup}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a8429035e7adfbd7f05805a6530ad5e3b}\label{class_q_custom_plot_a8429035e7adfbd7f05805a6530ad5e3b}} 
+class {\bfseries QCPLegend}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_af123edeca169ec7a31958a1d714e1a8a}\label{class_q_custom_plot_af123edeca169ec7a31958a1d714e1a8a}} 
+class {\bfseries QCPAxis}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a5dbf96bf7664c1b6fce49063eeea6eef}\label{class_q_custom_plot_a5dbf96bf7664c1b6fce49063eeea6eef}} 
+class {\bfseries QCPLayer}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_acbf20ecb140f66c5fd1bc64ae0762990}\label{class_q_custom_plot_acbf20ecb140f66c5fd1bc64ae0762990}} 
+class {\bfseries QCPAxis\+Rect}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a53cf0e76aca814550c796fed79e345d6}\label{class_q_custom_plot_a53cf0e76aca814550c796fed79e345d6}} 
+class {\bfseries QCPAbstract\+Plottable}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_ad0c52e327d94c699d415fd61f930700a}\label{class_q_custom_plot_ad0c52e327d94c699d415fd61f930700a}} 
+class {\bfseries QCPGraph}
+\item 
+\mbox{\Hypertarget{class_q_custom_plot_a93e962f2e677e31ecc575bb884e46adf}\label{class_q_custom_plot_a93e962f2e677e31ecc575bb884e46adf}} 
+class {\bfseries QCPAbstract\+Item}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7}\label{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7}} 
+\index{QCustomPlot@{QCustomPlot}!LayerInsertMode@{LayerInsertMode}}
+\index{LayerInsertMode@{LayerInsertMode}!QCustomPlot@{QCustomPlot}}
+\doxysubsubsection{\texorpdfstring{LayerInsertMode}{LayerInsertMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7}{QCustom\+Plot\+::\+Layer\+Insert\+Mode}}}
+
+Defines how a layer should be inserted relative to an other layer.
+
+\begin{DoxySeeAlso}{See also}
+add\+Layer, move\+Layer 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{limBelow@{limBelow}!QCustomPlot@{QCustomPlot}}\index{QCustomPlot@{QCustomPlot}!limBelow@{limBelow}}}\mbox{\Hypertarget{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7aee39cf650cd24e68552da0b697ce4a93}\label{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7aee39cf650cd24e68552da0b697ce4a93}} 
+lim\+Below&Layer is inserted below other layer. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{limAbove@{limAbove}!QCustomPlot@{QCustomPlot}}\index{QCustomPlot@{QCustomPlot}!limAbove@{limAbove}}}\mbox{\Hypertarget{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7a062b0b7825650b432a713c0df6742d41}\label{class_q_custom_plot_a75a8afbe6ef333b1f3d47abb25b9add7a062b0b7825650b432a713c0df6742d41}} 
+lim\+Above&Layer is inserted above other layer. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_q_custom_plot_a45d61392d13042e712a956d27762aa39}\label{class_q_custom_plot_a45d61392d13042e712a956d27762aa39}} 
+\index{QCustomPlot@{QCustomPlot}!RefreshPriority@{RefreshPriority}}
+\index{RefreshPriority@{RefreshPriority}!QCustomPlot@{QCustomPlot}}
+\doxysubsubsection{\texorpdfstring{RefreshPriority}{RefreshPriority}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_custom_plot_a45d61392d13042e712a956d27762aa39}{QCustom\+Plot\+::\+Refresh\+Priority}}}
+
+Defines with what timing the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} surface is refreshed after a replot.
+
+\begin{DoxySeeAlso}{See also}
+replot 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{rpImmediateRefresh@{rpImmediateRefresh}!QCustomPlot@{QCustomPlot}}\index{QCustomPlot@{QCustomPlot}!rpImmediateRefresh@{rpImmediateRefresh}}}\mbox{\Hypertarget{class_q_custom_plot_a45d61392d13042e712a956d27762aa39aa6eda645ccf1a60635df3e8b71ea6ae2}\label{class_q_custom_plot_a45d61392d13042e712a956d27762aa39aa6eda645ccf1a60635df3e8b71ea6ae2}} 
+rp\+Immediate\+Refresh&Replots immediately and repaints the widget immediately by calling QWidget\+::repaint() after the replot \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{rpQueuedRefresh@{rpQueuedRefresh}!QCustomPlot@{QCustomPlot}}\index{QCustomPlot@{QCustomPlot}!rpQueuedRefresh@{rpQueuedRefresh}}}\mbox{\Hypertarget{class_q_custom_plot_a45d61392d13042e712a956d27762aa39acd6f1e590ea775d1ddee666428077f3e}\label{class_q_custom_plot_a45d61392d13042e712a956d27762aa39acd6f1e590ea775d1ddee666428077f3e}} 
+rp\+Queued\+Refresh&Replots immediately, but queues the widget repaint, by calling QWidget\+::update() after the replot. This way multiple redundant widget repaints can be avoided. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{rpRefreshHint@{rpRefreshHint}!QCustomPlot@{QCustomPlot}}\index{QCustomPlot@{QCustomPlot}!rpRefreshHint@{rpRefreshHint}}}\mbox{\Hypertarget{class_q_custom_plot_a45d61392d13042e712a956d27762aa39a49666a5854a68dbcca8b277b03331260}\label{class_q_custom_plot_a45d61392d13042e712a956d27762aa39a49666a5854a68dbcca8b277b03331260}} 
+rp\+Refresh\+Hint&Whether to use immediate or queued refresh depends on whether the plotting hint \mbox{\hyperlink{namespace_q_c_p_a5400e5fcb9528d92002ddb938c1f4ef4a30840fba10eebfa519a92cf5c3d32870}{QCP\+::ph\+Immediate\+Refresh}} is set, see set\+Plotting\+Hints. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{rpQueuedReplot@{rpQueuedReplot}!QCustomPlot@{QCustomPlot}}\index{QCustomPlot@{QCustomPlot}!rpQueuedReplot@{rpQueuedReplot}}}\mbox{\Hypertarget{class_q_custom_plot_a45d61392d13042e712a956d27762aa39a019650c6ddf308f97e811fbfff207a8f}\label{class_q_custom_plot_a45d61392d13042e712a956d27762aa39a019650c6ddf308f97e811fbfff207a8f}} 
+rp\+Queued\+Replot&Queues the entire replot for the next event loop iteration. This way multiple redundant replots can be avoided. The actual replot is then done with \mbox{\hyperlink{class_q_custom_plot_a45d61392d13042e712a956d27762aa39a49666a5854a68dbcca8b277b03331260}{rp\+Refresh\+Hint}} priority. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_custom_plot_a89f7565773c5d59347a7f2262a737844}\label{class_q_custom_plot_a89f7565773c5d59347a7f2262a737844}} 
+\index{QCustomPlot@{QCustomPlot}!itemAt@{itemAt}}
+\index{itemAt@{itemAt}!QCustomPlot@{QCustomPlot}}
+\doxysubsubsection{\texorpdfstring{itemAt()}{itemAt()}}
+{\footnotesize\ttfamily template$<$class Item\+Type $>$ \\
+Item\+Type $\ast$ QCustom\+Plot\+::item\+At (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+Returns the item at the pixel position {\itshape pos}. The item type (a \mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}} subclass) that shall be taken into consideration can be specified via the template parameter. Items that only consist of single lines (e.\+g. \mbox{\hyperlink{class_q_c_p_item_line}{QCPItem\+Line}} or \mbox{\hyperlink{class_q_c_p_item_curve}{QCPItem\+Curve}}) have a tolerance band around them, see set\+Selection\+Tolerance. If multiple items come into consideration, the one closest to {\itshape pos} is returned.
+
+If {\itshape only\+Selectable} is true, only items that are selectable (QCPAbstract\+Item\+::set\+Selectable) are considered.
+
+If there is no item at {\itshape pos}, returns {\ttfamily nullptr}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_custom_plot_a545c0e63e13a4fbac3d5acbd8a03ef6f}{plottable\+At}}, layout\+Element\+At 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_q_custom_plot_a545c0e63e13a4fbac3d5acbd8a03ef6f}\label{class_q_custom_plot_a545c0e63e13a4fbac3d5acbd8a03ef6f}} 
+\index{QCustomPlot@{QCustomPlot}!plottableAt@{plottableAt}}
+\index{plottableAt@{plottableAt}!QCustomPlot@{QCustomPlot}}
+\doxysubsubsection{\texorpdfstring{plottableAt()}{plottableAt()}}
+{\footnotesize\ttfamily template$<$class Plottable\+Type $>$ \\
+Plottable\+Type $\ast$ QCustom\+Plot\+::plottable\+At (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable = {\ttfamily false},  }\item[{int $\ast$}]{data\+Index = {\ttfamily nullptr} }\end{DoxyParamCaption}) const}
+
+Returns the plottable at the pixel position {\itshape pos}. The plottable type (a \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}} subclass) that shall be taken into consideration can be specified via the template parameter.
+
+Plottables that only consist of single lines (like graphs) have a tolerance band around them, see set\+Selection\+Tolerance. If multiple plottables come into consideration, the one closest to {\itshape pos} is returned.
+
+If {\itshape only\+Selectable} is true, only plottables that are selectable (QCPAbstract\+Plottable\+::set\+Selectable) are considered.
+
+if {\itshape data\+Index} is non-\/null, it is set to the index of the plottable\textquotesingle{}s data point that is closest to {\itshape pos}.
+
+If there is no plottable of the specified type at {\itshape pos}, returns {\ttfamily nullptr}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_custom_plot_a89f7565773c5d59347a7f2262a737844}{item\+At}}, layout\+Element\+At 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/qcustomplot.\+hpp\end{DoxyCompactItemize}

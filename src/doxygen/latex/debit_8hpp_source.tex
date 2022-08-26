@@ -1,0 +1,60 @@
+\hypertarget{debit_8hpp_source}{}\doxysection{debit.\+hpp}
+\label{debit_8hpp_source}\index{include/debit.hpp@{include/debit.hpp}}
+\mbox{\hyperlink{debit_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SRC\_INCLUDE\_DEBIT\_HPP\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SRC\_INCLUDE\_DEBIT\_HPP\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QBoxLayout>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QDate>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QHash>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{22 \textcolor{keyword}{class }Debit;}
+\DoxyCodeLine{23 \}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{29 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1_debit}{Debit}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{30   Q\_OBJECT}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32  \textcolor{keyword}{private}:}
+\DoxyCodeLine{36   QHash<QPushButton *, QHBoxLayout *> widgets\_push;}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{41   QHash<QPushButton *, QHBoxLayout *> widgets\_pull;}
+\DoxyCodeLine{42   Ui::Debit *ui;}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44  \textcolor{keyword}{public}:}
+\DoxyCodeLine{50   \textcolor{keyword}{explicit} \mbox{\hyperlink{classs21_1_1_debit_a39fb0b2a8a3fbc65456f8644810f7882}{Debit}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{55   \mbox{\hyperlink{classs21_1_1_debit_abeeccc9c9641c7836db42bde7aa8bae2}{\string~Debit}}();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{62   \textcolor{keywordtype}{void} on\_btn\_push\_clicked();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{67   \textcolor{keywordtype}{void} on\_btn\_pull\_clicked();}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{72   \textcolor{keywordtype}{void} on\_btn\_calculate\_clicked();}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{78   \textcolor{keywordtype}{void} remove\_widget();}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80  \textcolor{keyword}{private}:}
+\DoxyCodeLine{87   QDate calc\_end\_date(QDate \&date);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{95   \textcolor{keywordtype}{void} create\_new\_form(QVBoxLayout *layout, \textcolor{keywordtype}{bool} is\_push);}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{104   QDate set\_payout(QDate \&str\_date, \textcolor{keyword}{const} QDate \&end\_date);}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{114   \textcolor{keywordtype}{bool} is\_payday(\textcolor{keyword}{const} QDate \&date, \textcolor{keyword}{const} QDate \&pay\_day);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{122   \textcolor{keywordtype}{void} fill\_table(QHash<QDate, double> \&table,}
+\DoxyCodeLine{123                   QHash<QPushButton *, QHBoxLayout *> \&widgets);}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{131   \textcolor{keywordtype}{double} calc\_percents(\textcolor{keywordtype}{double} \&amount);}
+\DoxyCodeLine{132 \};}
+\DoxyCodeLine{133 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// SRC\_INCLUDE\_DEBIT\_HPP\_}}
+
+\end{DoxyCode}

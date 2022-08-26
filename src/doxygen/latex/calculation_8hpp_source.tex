@@ -1,0 +1,91 @@
+\hypertarget{calculation_8hpp_source}{}\doxysection{calculation.\+hpp}
+\label{calculation_8hpp_source}\index{include/calculation.hpp@{include/calculation.hpp}}
+\mbox{\hyperlink{calculation_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SRC\_INCLUDE\_CALCULATION\_HPP\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SRC\_INCLUDE\_CALCULATION\_HPP\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QMap>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QRegularExpression>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QStack>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <functional>}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include <variant>}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define lamdas\_f1arg(SIGN) [](double src) -\/> double \{ return SIGN(src); \}}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define lamdas\_f2arg(SIGN) \(\backslash\)}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{  [](double lhs, double rhs) -\/> double \{ return lhs SIGN rhs; \}}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{51 \textcolor{keyword}{template} <\textcolor{keyword}{class}... Ts>}
+\DoxyCodeLine{52 \textcolor{keyword}{struct }\mbox{\hyperlink{structs21_1_1overloaded}{overloaded}} : Ts... \{}
+\DoxyCodeLine{53   \textcolor{keyword}{using }Ts::operator()...;}
+\DoxyCodeLine{54 \};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{60 \textcolor{keyword}{template} <\textcolor{keyword}{class}... Ts>}
+\DoxyCodeLine{61 \mbox{\hyperlink{structs21_1_1overloaded}{overloaded}}(Ts...) -\/> \mbox{\hyperlink{structs21_1_1overloaded}{overloaded}}<Ts...>;}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{67 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1_calculation}{Calculation}} \{}
+\DoxyCodeLine{68  \textcolor{keyword}{private}:}
+\DoxyCodeLine{73   \textcolor{keyword}{enum class} f\_prt\_t \{}
+\DoxyCodeLine{74     DEFAULT,  }
+\DoxyCodeLine{75     L\_PR,   }
+\DoxyCodeLine{76     M\_PR,   }
+\DoxyCodeLine{77     H\_PR,   }
+\DoxyCodeLine{78     UNARY,  }
+\DoxyCodeLine{79     FUNC,   }
+\DoxyCodeLine{80     ALL     }
+\DoxyCodeLine{81   \};}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{87   \textcolor{keyword}{using }fcast\_1arg = double (*)(double);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{93   \textcolor{keyword}{using }fcast\_2arg = double (*)(double, double);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{99   \textcolor{keyword}{using }fp\_1arg = std::function<double(\textcolor{keywordtype}{double})>;}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{105   \textcolor{keyword}{using }fp\_2arg = std::function<double(\textcolor{keywordtype}{double}, \textcolor{keywordtype}{double})>;}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{111   \textcolor{keyword}{using }fp\_variant = std::variant<fp\_1arg, fp\_2arg, nullptr\_t>;}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{117   \textcolor{keyword}{using }fun\_ptr\_t =}
+\DoxyCodeLine{118       \textcolor{keyword}{const} QMap<QChar, QPair<QString, QPair<f\_prt\_t, fp\_variant>>>;}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{124   \textcolor{keyword}{static} fun\_ptr\_t m\_fun\_ptr;}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{130   QVector<std::variant<QChar, double>> m\_rpn;}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132  \textcolor{keyword}{public}:}
+\DoxyCodeLine{141   QPair<QVector<double>, QVector<double>> \mbox{\hyperlink{classs21_1_1_calculation_a473bf67fc5ded378fa5f73fe66efb644}{calculation}}(\textcolor{keywordtype}{double} x\_min,}
+\DoxyCodeLine{142                                                       \textcolor{keywordtype}{double} x\_max,}
+\DoxyCodeLine{143                                                       \textcolor{keywordtype}{double} step);}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{150   \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_calculation_a371da1022586c104082f9f5d536df4d7}{expression\_load}}(QString infix);}
+\DoxyCodeLine{151 }
+\DoxyCodeLine{158   \textcolor{keywordtype}{double} \mbox{\hyperlink{classs21_1_1_calculation_ae63b3c3f0732a7d680fb08ec898292b8}{calculation}}(\textcolor{keywordtype}{double} x = 0);}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{166   \textcolor{keywordtype}{bool} \mbox{\hyperlink{classs21_1_1_calculation_a3f0269ba343e01023b929a33619b57e2}{is\_empty}}();}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168  \textcolor{keyword}{private}:}
+\DoxyCodeLine{173   \textcolor{keyword}{static} \textcolor{keywordtype}{void} expression\_up(QString\& infix);}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{182   \textcolor{keyword}{static} \textcolor{keywordtype}{bool} expression\_validate(QString\& infix);}
+\DoxyCodeLine{183 }
+\DoxyCodeLine{190   \textcolor{keyword}{static} \textcolor{keywordtype}{bool} is\_function(QChar\& lexem);}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{199   \textcolor{keyword}{static} \textcolor{keywordtype}{bool} is\_operation(QChar\& lexem);}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{207   \textcolor{keyword}{static} \textcolor{keyword}{const} f\_prt\_t get\_priority(QChar\& lexem);}
+\DoxyCodeLine{208 }
+\DoxyCodeLine{217   \textcolor{keyword}{static} \textcolor{keywordtype}{bool} is\_priority\_le(QChar\& lhs, QChar\& rhs);}
+\DoxyCodeLine{218 }
+\DoxyCodeLine{224   \textcolor{keywordtype}{void} qstrtod(QString\& src, \textcolor{keywordtype}{size\_t}\& ind);}
+\DoxyCodeLine{225 \};}
+\DoxyCodeLine{226 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{227 }
+\DoxyCodeLine{228 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// SRC\_INCLUDE\_CALCULATION\_HPP\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,170 @@
+\hypertarget{class_q_c_p_polar_grid}{}\doxysection{QCPPolar\+Grid Class Reference}
+\label{class_q_c_p_polar_grid}\index{QCPPolarGrid@{QCPPolarGrid}}
+Inheritance diagram for QCPPolar\+Grid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_q_c_p_polar_grid}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_polar_grid_a58c68f0d47bdf4614dc4017d51876bc2}{Grid\+Type}} \{ {\bfseries gt\+Angular} = 0x01
+, {\bfseries gt\+Radial} = 0x02
+, {\bfseries gt\+All} = 0x\+FF
+, {\bfseries gt\+None} = 0x00
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a013aac4264fd5e00c5c39f2e426d3b31}\label{class_q_c_p_polar_grid_a013aac4264fd5e00c5c39f2e426d3b31}} 
+{\bfseries QCPPolar\+Grid} (\mbox{\hyperlink{class_q_c_p_polar_axis_angular}{QCPPolar\+Axis\+Angular}} $\ast$parent\+Axis)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_ae8af0c2df6b9735f44f2c30015f55225}\label{class_q_c_p_polar_grid_ae8af0c2df6b9735f44f2c30015f55225}} 
+\mbox{\hyperlink{class_q_c_p_polar_axis_radial}{QCPPolar\+Axis\+Radial}} $\ast$ {\bfseries radial\+Axis} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_ae9daa7e166d47187deb6c593fe609f5c}\label{class_q_c_p_polar_grid_ae9daa7e166d47187deb6c593fe609f5c}} 
+Grid\+Types {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a3e379db069630f99254c3463b8d7b2ed}\label{class_q_c_p_polar_grid_a3e379db069630f99254c3463b8d7b2ed}} 
+Grid\+Types {\bfseries sub\+Grid\+Type} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_ad386f37ac78334c50f6868476126f42a}\label{class_q_c_p_polar_grid_ad386f37ac78334c50f6868476126f42a}} 
+bool {\bfseries antialiased\+Sub\+Grid} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a044f807bb7ec647f4448eefb47af5151}\label{class_q_c_p_polar_grid_a044f807bb7ec647f4448eefb47af5151}} 
+bool {\bfseries antialiased\+Zero\+Line} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a548f3e0df5196ce3d762e031772a67d4}\label{class_q_c_p_polar_grid_a548f3e0df5196ce3d762e031772a67d4}} 
+QPen {\bfseries angular\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a75cfe9ac428cdf402e4fc2c9c9c90c1c}\label{class_q_c_p_polar_grid_a75cfe9ac428cdf402e4fc2c9c9c90c1c}} 
+QPen {\bfseries angular\+Sub\+Grid\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_ace2ebea6d02ff6d985f209e47a97225c}\label{class_q_c_p_polar_grid_ace2ebea6d02ff6d985f209e47a97225c}} 
+QPen {\bfseries radial\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_abaa02d7b124a8556d02a17f754f802d8}\label{class_q_c_p_polar_grid_abaa02d7b124a8556d02a17f754f802d8}} 
+QPen {\bfseries radial\+Sub\+Grid\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_ae36491dbd1dfd9005a296bd8d91d5198}\label{class_q_c_p_polar_grid_ae36491dbd1dfd9005a296bd8d91d5198}} 
+QPen {\bfseries radial\+Zero\+Line\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a0f912f1f958d5c58d30797d336efc6f1}\label{class_q_c_p_polar_grid_a0f912f1f958d5c58d30797d336efc6f1}} 
+void {\bfseries set\+Radial\+Axis} (\mbox{\hyperlink{class_q_c_p_polar_axis_radial}{QCPPolar\+Axis\+Radial}} $\ast$axis)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a3cfa8889817de9f5b81b2a478b0b5b99}\label{class_q_c_p_polar_grid_a3cfa8889817de9f5b81b2a478b0b5b99}} 
+void {\bfseries set\+Type} (Grid\+Types type)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a92daeff4ec132b60e5a30ee58dd36c53}\label{class_q_c_p_polar_grid_a92daeff4ec132b60e5a30ee58dd36c53}} 
+void {\bfseries set\+Sub\+Grid\+Type} (Grid\+Types type)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_aaf455c16a110de3595a118959e6ea0a9}\label{class_q_c_p_polar_grid_aaf455c16a110de3595a118959e6ea0a9}} 
+void {\bfseries set\+Antialiased\+Sub\+Grid} (bool enabled)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a9c9b241ecba6d89c494d6ccb9688b84e}\label{class_q_c_p_polar_grid_a9c9b241ecba6d89c494d6ccb9688b84e}} 
+void {\bfseries set\+Antialiased\+Zero\+Line} (bool enabled)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_ae67f25627e160421817cf354a232a528}\label{class_q_c_p_polar_grid_ae67f25627e160421817cf354a232a528}} 
+void {\bfseries set\+Angular\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a0f88a4eb7e890e2c4bf4cfc366bab55d}\label{class_q_c_p_polar_grid_a0f88a4eb7e890e2c4bf4cfc366bab55d}} 
+void {\bfseries set\+Angular\+Sub\+Grid\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a88d242172e84fe6657dd2629fa8397f1}\label{class_q_c_p_polar_grid_a88d242172e84fe6657dd2629fa8397f1}} 
+void {\bfseries set\+Radial\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a944da087c371a15ae54652df6d881135}\label{class_q_c_p_polar_grid_a944da087c371a15ae54652df6d881135}} 
+void {\bfseries set\+Radial\+Sub\+Grid\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_ad9e13e63232986fc6748dafb62970bcf}\label{class_q_c_p_polar_grid_ad9e13e63232986fc6748dafb62970bcf}} 
+void {\bfseries set\+Radial\+Zero\+Line\+Pen} (const QPen \&pen)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_polar_grid_ad59d196fc4feabed9ea0f7344d6ef5ca}{apply\+Default\+Antialiasing\+Hint}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_polar_grid_a9f07c0f97fb936d93a7822b21a11f810}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_aabbd4c9003803dd30f42b4eec8e83346}\label{class_q_c_p_polar_grid_aabbd4c9003803dd30f42b4eec8e83346}} 
+void {\bfseries draw\+Radial\+Grid} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QPointF \&center, const QVector$<$ double $>$ \&coords, const QPen \&pen, const QPen \&zero\+Pen=Qt\+::\+No\+Pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a6beb5d68d3af7d4f69e2b044aa7fedfa}\label{class_q_c_p_polar_grid_a6beb5d68d3af7d4f69e2b044aa7fedfa}} 
+void {\bfseries draw\+Angular\+Grid} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QPointF \&center, double radius, const QVector$<$ QPointF $>$ \&ticks\+Cos\+Sin, const QPen \&pen)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a654c8090e410942f7c0e939c8b4dcfe0}\label{class_q_c_p_polar_grid_a654c8090e410942f7c0e939c8b4dcfe0}} 
+Grid\+Types {\bfseries m\+Type}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a29232977b1ed2d73801f8a9e5018be28}\label{class_q_c_p_polar_grid_a29232977b1ed2d73801f8a9e5018be28}} 
+Grid\+Types {\bfseries m\+Sub\+Grid\+Type}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a128297f31e71060cbed5f0b38028f916}\label{class_q_c_p_polar_grid_a128297f31e71060cbed5f0b38028f916}} 
+bool {\bfseries m\+Antialiased\+Sub\+Grid}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a82d4e316240af6469706c66f798759cd}\label{class_q_c_p_polar_grid_a82d4e316240af6469706c66f798759cd}} 
+bool {\bfseries m\+Antialiased\+Zero\+Line}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_abd5cb0e3d720a75b2bf162a4161a9b43}\label{class_q_c_p_polar_grid_abd5cb0e3d720a75b2bf162a4161a9b43}} 
+QPen {\bfseries m\+Angular\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a867f3193c8f0c6d1ce25ab26798d1aab}\label{class_q_c_p_polar_grid_a867f3193c8f0c6d1ce25ab26798d1aab}} 
+QPen {\bfseries m\+Angular\+Sub\+Grid\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a9e73fd5a66ab128ace43e348e2d57b6f}\label{class_q_c_p_polar_grid_a9e73fd5a66ab128ace43e348e2d57b6f}} 
+QPen {\bfseries m\+Radial\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_af19a3f83b46f885cebd89c86443db157}\label{class_q_c_p_polar_grid_af19a3f83b46f885cebd89c86443db157}} 
+QPen {\bfseries m\+Radial\+Sub\+Grid\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_ad2a466a53fb54aeaafa254f0f6270b7c}\label{class_q_c_p_polar_grid_ad2a466a53fb54aeaafa254f0f6270b7c}} 
+QPen {\bfseries m\+Radial\+Zero\+Line\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a1ddecf521612eee506f54493b34912cf}\label{class_q_c_p_polar_grid_a1ddecf521612eee506f54493b34912cf}} 
+\mbox{\hyperlink{class_q_c_p_polar_axis_angular}{QCPPolar\+Axis\+Angular}} $\ast$ {\bfseries m\+Parent\+Axis}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a11a2115e513a5c4d2650143db97482fd}\label{class_q_c_p_polar_grid_a11a2115e513a5c4d2650143db97482fd}} 
+QPointer$<$ \mbox{\hyperlink{class_q_c_p_polar_axis_radial}{QCPPolar\+Axis\+Radial}} $>$ {\bfseries m\+Radial\+Axis}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a58c68f0d47bdf4614dc4017d51876bc2}\label{class_q_c_p_polar_grid_a58c68f0d47bdf4614dc4017d51876bc2}} 
+\index{QCPPolarGrid@{QCPPolarGrid}!GridType@{GridType}}
+\index{GridType@{GridType}!QCPPolarGrid@{QCPPolarGrid}}
+\doxysubsubsection{\texorpdfstring{GridType}{GridType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_polar_grid_a58c68f0d47bdf4614dc4017d51876bc2}{QCPPolar\+Grid\+::\+Grid\+Type}}}
+
+TODO 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_polar_grid_ad59d196fc4feabed9ea0f7344d6ef5ca}\label{class_q_c_p_polar_grid_ad59d196fc4feabed9ea0f7344d6ef5ca}} 
+\index{QCPPolarGrid@{QCPPolarGrid}!applyDefaultAntialiasingHint@{applyDefaultAntialiasingHint}}
+\index{applyDefaultAntialiasingHint@{applyDefaultAntialiasingHint}!QCPPolarGrid@{QCPPolarGrid}}
+\doxysubsubsection{\texorpdfstring{applyDefaultAntialiasingHint()}{applyDefaultAntialiasingHint()}}
+{\footnotesize\ttfamily virtual void QCPPolar\+Grid\+::apply\+Default\+Antialiasing\+Hint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_polar_grid_a9f07c0f97fb936d93a7822b21a11f810}\label{class_q_c_p_polar_grid_a9f07c0f97fb936d93a7822b21a11f810}} 
+\index{QCPPolarGrid@{QCPPolarGrid}!draw@{draw}}
+\index{draw@{draw}!QCPPolarGrid@{QCPPolarGrid}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void QCPPolar\+Grid\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/qcustomplot.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,42 @@
+\hypertarget{graph_8hpp_source}{}\doxysection{graph.\+hpp}
+\label{graph_8hpp_source}\index{include/graph.hpp@{include/graph.hpp}}
+\mbox{\hyperlink{graph_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SRC\_INCLUDE\_GRAPH\_HPP\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SRC\_INCLUDE\_GRAPH\_HPP\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{19 \textcolor{keyword}{class }Graph;}
+\DoxyCodeLine{20 \}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{27 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1_graph}{Graph}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{28   Q\_OBJECT}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30  \textcolor{keyword}{private}:}
+\DoxyCodeLine{34   QPair<QVector<double>, QVector<double>> XYVector;}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36  \textcolor{keyword}{public}:}
+\DoxyCodeLine{42   \textcolor{keyword}{explicit} \mbox{\hyperlink{classs21_1_1_graph_a915b1255d6ad6acfc7ac5e9c10d6d124}{Graph}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{48   \mbox{\hyperlink{classs21_1_1_graph_aae98d383b5e5eab80319ed9d508019d8}{\string~Graph}}();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{55   \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_graph_a23ff0390ce41f5a8ace9cdcff52cc120}{load\_data}}(\textcolor{keyword}{const} QPair<QVector<double>, QVector<double>> \&data);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57  signals:}
+\DoxyCodeLine{65   \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_graph_a82350716ef878ba753842fb9230728e4}{update\_data}}(\textcolor{keywordtype}{double} x\_min, \textcolor{keywordtype}{double} x\_max, \textcolor{keywordtype}{double} step);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{71   \textcolor{keywordtype}{void} on\_btn\_calculate\_clicked();}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73  \textcolor{keyword}{private}:}
+\DoxyCodeLine{74   Ui::Graph *ui;}
+\DoxyCodeLine{75 \};}
+\DoxyCodeLine{76 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// SRC\_INCLUDE\_GRAPH\_HPP\_}}
+
+\end{DoxyCode}

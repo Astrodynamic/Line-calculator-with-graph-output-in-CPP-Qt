@@ -1,0 +1,156 @@
+\hypertarget{class_q_c_p_range}{}\doxysection{QCPRange Class Reference}
+\label{class_q_c_p_range}\index{QCPRange@{QCPRange}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a1d9d84d084c8f368fdedd42e0978d405}\label{class_q_c_p_range_a1d9d84d084c8f368fdedd42e0978d405}} 
+{\bfseries QCPRange} (double lower, double upper)
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a9f8d1fdcf4b6d19779f1c3d9a14b09c9}\label{class_q_c_p_range_a9f8d1fdcf4b6d19779f1c3d9a14b09c9}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&other) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a4827a37c83b8bb4bf53fcf8f6a257e77}\label{class_q_c_p_range_a4827a37c83b8bb4bf53fcf8f6a257e77}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&other) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_afea7c1aa7d08f061cd9bd8832f957df8}\label{class_q_c_p_range_afea7c1aa7d08f061cd9bd8832f957df8}} 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \& {\bfseries operator+=} (const double \&value)
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a95894bcb15a16a75ca564091374e2191}\label{class_q_c_p_range_a95894bcb15a16a75ca564091374e2191}} 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \& {\bfseries operator-\/=} (const double \&value)
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a6876aa9620ff2f0f7f1873f998372cef}\label{class_q_c_p_range_a6876aa9620ff2f0f7f1873f998372cef}} 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \& {\bfseries operator$\ast$=} (const double \&value)
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a6137d8682b6835ace840730b4c1e2d63}\label{class_q_c_p_range_a6137d8682b6835ace840730b4c1e2d63}} 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \& {\bfseries operator/=} (const double \&value)
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a62326e7cc4316b96df6a60813230e63f}\label{class_q_c_p_range_a62326e7cc4316b96df6a60813230e63f}} 
+double {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_af57d4a37a45d0101177ca30fae5d4ca8}\label{class_q_c_p_range_af57d4a37a45d0101177ca30fae5d4ca8}} 
+double {\bfseries center} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_af914a7740269b0604d0827c634a878a9}\label{class_q_c_p_range_af914a7740269b0604d0827c634a878a9}} 
+void {\bfseries normalize} ()
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a0fa1bc8048be50d52bea93a8caf08305}\label{class_q_c_p_range_a0fa1bc8048be50d52bea93a8caf08305}} 
+void {\bfseries expand} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&other\+Range)
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a5fa977db0a4b7800075c629c62cf5e80}\label{class_q_c_p_range_a5fa977db0a4b7800075c629c62cf5e80}} 
+void {\bfseries expand} (double include\+Coord)
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a9cbfb7cd06eac1839cae981e05c19633}\label{class_q_c_p_range_a9cbfb7cd06eac1839cae981e05c19633}} 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} {\bfseries expanded} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&other\+Range) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_af81d70f1add7233d73a19dcbe5decb2e}\label{class_q_c_p_range_af81d70f1add7233d73a19dcbe5decb2e}} 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} {\bfseries expanded} (double include\+Coord) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a22151e18d961d762d25721211e89c2e5}\label{class_q_c_p_range_a22151e18d961d762d25721211e89c2e5}} 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} {\bfseries bounded} (double lower\+Bound, double upper\+Bound) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a3d66288d66e1d6df3636075eb42502ee}\label{class_q_c_p_range_a3d66288d66e1d6df3636075eb42502ee}} 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} {\bfseries sanitized\+For\+Log\+Scale} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a808751fdd9b17ef52327ba011df2e5f1}\label{class_q_c_p_range_a808751fdd9b17ef52327ba011df2e5f1}} 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} {\bfseries sanitized\+For\+Lin\+Scale} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_ae9842b48b6d38dc5e9607358e3083cc8}\label{class_q_c_p_range_ae9842b48b6d38dc5e9607358e3083cc8}} 
+bool {\bfseries contains} (double value) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a50f6401a622e5bf55a9f5dc11778ec84}\label{class_q_c_p_range_a50f6401a622e5bf55a9f5dc11778ec84}} 
+static bool {\bfseries valid\+Range} (double lower, double upper)
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a34be594ed3425caf7ad99e957f471186}\label{class_q_c_p_range_a34be594ed3425caf7ad99e957f471186}} 
+static bool {\bfseries valid\+Range} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_aa3aca3edb14f7ca0c85d912647b91745}\label{class_q_c_p_range_aa3aca3edb14f7ca0c85d912647b91745}} 
+double {\bfseries lower}
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_ae44eb3aafe1d0e2ed34b499b6d2e074f}\label{class_q_c_p_range_ae44eb3aafe1d0e2ed34b499b6d2e074f}} 
+double {\bfseries upper}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_ab46d3bc95030ee25efda41b89e2b616b}\label{class_q_c_p_range_ab46d3bc95030ee25efda41b89e2b616b}} 
+static const double {\bfseries min\+Range}
+\item 
+\mbox{\Hypertarget{class_q_c_p_range_a5ca51e7a2dc5dc0d49527ab171fe1f4f}\label{class_q_c_p_range_a5ca51e7a2dc5dc0d49527ab171fe1f4f}} 
+static const double {\bfseries max\+Range}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_range_af53ea6fb823a4a5897162b865841de04}{operator+}} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&, double)
+\item 
+const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_range_a9fb2e9941d32001482df670c0d704977}{operator+}} (double, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&)
+\item 
+const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_range_a797f82830b516646da8873f82e39e356}{operator-\/}} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range, double value)
+\item 
+const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_range_a558b1248ff6a9e41fd5b2630555a8acc}{operator$\ast$}} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range, double value)
+\item 
+const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_range_a5cb2332f6957021f47cc768089f4f090}{operator$\ast$}} (double value, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range)
+\item 
+const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_range_a4b366a3a21974c88e09b0d39d4a24a4b}{operator/}} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range, double value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+QDebug \mbox{\hyperlink{class_q_c_p_range_ab4b7d434541ec2e2e00ef3764dde90d8}{operator$<$$<$}} (QDebug d, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_range_a558b1248ff6a9e41fd5b2630555a8acc}\label{class_q_c_p_range_a558b1248ff6a9e41fd5b2630555a8acc}} 
+\index{QCPRange@{QCPRange}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!QCPRange@{QCPRange}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$}{operator*}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Multiplies both boundaries of the range by {\itshape value}. \mbox{\Hypertarget{class_q_c_p_range_a5cb2332f6957021f47cc768089f4f090}\label{class_q_c_p_range_a5cb2332f6957021f47cc768089f4f090}} 
+\index{QCPRange@{QCPRange}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!QCPRange@{QCPRange}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$}{operator*}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} operator$\ast$ (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Multiplies both boundaries of the range by {\itshape value}. \mbox{\Hypertarget{class_q_c_p_range_af53ea6fb823a4a5897162b865841de04}\label{class_q_c_p_range_af53ea6fb823a4a5897162b865841de04}} 
+\index{QCPRange@{QCPRange}!operator+@{operator+}}
+\index{operator+@{operator+}!QCPRange@{QCPRange}}
+\doxysubsubsection{\texorpdfstring{operator+}{operator+}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Adds {\itshape value} to both boundaries of the range. \mbox{\Hypertarget{class_q_c_p_range_a9fb2e9941d32001482df670c0d704977}\label{class_q_c_p_range_a9fb2e9941d32001482df670c0d704977}} 
+\index{QCPRange@{QCPRange}!operator+@{operator+}}
+\index{operator+@{operator+}!QCPRange@{QCPRange}}
+\doxysubsubsection{\texorpdfstring{operator+}{operator+}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} operator+ (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Adds {\itshape value} to both boundaries of the range. \mbox{\Hypertarget{class_q_c_p_range_a797f82830b516646da8873f82e39e356}\label{class_q_c_p_range_a797f82830b516646da8873f82e39e356}} 
+\index{QCPRange@{QCPRange}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!QCPRange@{QCPRange}}
+\doxysubsubsection{\texorpdfstring{operator-\/}{operator-}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Subtracts {\itshape value} from both boundaries of the range. \mbox{\Hypertarget{class_q_c_p_range_a4b366a3a21974c88e09b0d39d4a24a4b}\label{class_q_c_p_range_a4b366a3a21974c88e09b0d39d4a24a4b}} 
+\index{QCPRange@{QCPRange}!operator/@{operator/}}
+\index{operator/@{operator/}!QCPRange@{QCPRange}}
+\doxysubsubsection{\texorpdfstring{operator/}{operator/}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Divides both boundaries of the range by {\itshape value}. \mbox{\Hypertarget{class_q_c_p_range_ab4b7d434541ec2e2e00ef3764dde90d8}\label{class_q_c_p_range_ab4b7d434541ec2e2e00ef3764dde90d8}} 
+\index{QCPRange@{QCPRange}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QCPRange@{QCPRange}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily QDebug operator$<$$<$ (\begin{DoxyParamCaption}\item[{QDebug}]{d,  }\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+Prints {\itshape range} in a human readable format to the q\+Debug output. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/qcustomplot.\+hpp\end{DoxyCompactItemize}

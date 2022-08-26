@@ -1,0 +1,288 @@
+\hypertarget{class_q_c_p_graph}{}\doxysection{QCPGraph Class Reference}
+\label{class_q_c_p_graph}\index{QCPGraph@{QCPGraph}}
+Inheritance diagram for QCPGraph\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_q_c_p_graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859}{Line\+Style}} \{ \newline
+\mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859aea9591b933733cc7b20786b71e60fa04}{ls\+None}}
+, \mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859a3c42a27b15aa3c92d399082fad8b7515}{ls\+Line}}
+, \mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859ae10568bda57836487d9dec5eba1d6c6e}{ls\+Step\+Left}}
+, \mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859a9c37951f7d11aa070100fd16f2935c9e}{ls\+Step\+Right}}
+, \newline
+\mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859a5adf7b04da215a40a764c21294ea7366}{ls\+Step\+Center}}
+, \mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859aa3b358b4ae7cca94aceeb8e529c12ebb}{ls\+Impulse}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a0393a38cf7183cbf46348eb6cf9a5a6c}\label{class_q_c_p_graph_a0393a38cf7183cbf46348eb6cf9a5a6c}} 
+{\bfseries QCPGraph} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$key\+Axis, \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$value\+Axis)
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a141aa31a1f19bbd0ce60f55eaeb9ea60}\label{class_q_c_p_graph_a141aa31a1f19bbd0ce60f55eaeb9ea60}} 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_q_c_p_data_container}{QCPGraph\+Data\+Container}} $>$ {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_ac3e6f4b3387338df45992b47691b2551}\label{class_q_c_p_graph_ac3e6f4b3387338df45992b47691b2551}} 
+\mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859}{Line\+Style}} {\bfseries line\+Style} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a36d5b641db08e27527827c212542bbbd}\label{class_q_c_p_graph_a36d5b641db08e27527827c212542bbbd}} 
+\mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} {\bfseries scatter\+Style} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a44487a3a706605bb9fc97ad5e05d347e}\label{class_q_c_p_graph_a44487a3a706605bb9fc97ad5e05d347e}} 
+int {\bfseries scatter\+Skip} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_aed4515b717d6d97d6482ebc0db6204ed}\label{class_q_c_p_graph_aed4515b717d6d97d6482ebc0db6204ed}} 
+\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$ {\bfseries channel\+Fill\+Graph} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a1ba934b9621270b9a40fcdd2d9ba2adb}\label{class_q_c_p_graph_a1ba934b9621270b9a40fcdd2d9ba2adb}} 
+bool {\bfseries adaptive\+Sampling} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a1eae9429a316b008e2d99b2d65a54395}\label{class_q_c_p_graph_a1eae9429a316b008e2d99b2d65a54395}} 
+void {\bfseries set\+Data} (QShared\+Pointer$<$ \mbox{\hyperlink{class_q_c_p_data_container}{QCPGraph\+Data\+Container}} $>$ data)
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a73578d786532132310a926c3cd529b29}\label{class_q_c_p_graph_a73578d786532132310a926c3cd529b29}} 
+void {\bfseries set\+Data} (const QVector$<$ double $>$ \&keys, const QVector$<$ double $>$ \&values, bool already\+Sorted=false)
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a513fecccff5b2a50ce53f665338c60ff}\label{class_q_c_p_graph_a513fecccff5b2a50ce53f665338c60ff}} 
+void {\bfseries set\+Line\+Style} (\mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859}{Line\+Style}} ls)
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a12bd17a8ba21983163ec5d8f42a9fea5}\label{class_q_c_p_graph_a12bd17a8ba21983163ec5d8f42a9fea5}} 
+void {\bfseries set\+Scatter\+Style} (const \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \&style)
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a17cebd3196f434258abb82ba6dc443f2}\label{class_q_c_p_graph_a17cebd3196f434258abb82ba6dc443f2}} 
+void {\bfseries set\+Scatter\+Skip} (int skip)
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a2d03156df1b64037a2e36cfa50351ca3}\label{class_q_c_p_graph_a2d03156df1b64037a2e36cfa50351ca3}} 
+void {\bfseries set\+Channel\+Fill\+Graph} (\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$target\+Graph)
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_ab468cd600160f327836aa0644291e64c}\label{class_q_c_p_graph_ab468cd600160f327836aa0644291e64c}} 
+void {\bfseries set\+Adaptive\+Sampling} (bool enabled)
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_ae0555c0d3fe0fa7cb8628f88158d420f}\label{class_q_c_p_graph_ae0555c0d3fe0fa7cb8628f88158d420f}} 
+void {\bfseries add\+Data} (const QVector$<$ double $>$ \&keys, const QVector$<$ double $>$ \&values, bool already\+Sorted=false)
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a0bf98b1972286cfb7b1c4b7dd6ae2012}\label{class_q_c_p_graph_a0bf98b1972286cfb7b1c4b7dd6ae2012}} 
+void {\bfseries add\+Data} (double key, double value)
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_graph_a2e7fd7a7d7d1995d898507408a9d637c}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=nullptr) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_graph_a7b332af5ead6a278f4a6a065febeed24}{get\+Key\+Range}} (bool \&found\+Range, \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_graph_a5c5b99a98bf81bc398dd46486eadb8e2}{get\+Value\+Range}} (bool \&found\+Range, \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&in\+Key\+Range=\mbox{\hyperlink{class_q_c_p_range}{QCPRange}}()) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_graph_a96b5797ede88bb067e002bbb2856826b}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_graph_aae25a7748d571580fbefd4cec1444526}{draw\+Legend\+Icon}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QRectF \&rect) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_acdcd960441170d8f2f3d150a2e2aad66}\label{class_q_c_p_graph_acdcd960441170d8f2f3d150a2e2aad66}} 
+virtual void {\bfseries draw\+Fill} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, QVector$<$ QPointF $>$ $\ast$lines) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a8ffa1432da8698c2fecdb9c7bf333c97}\label{class_q_c_p_graph_a8ffa1432da8698c2fecdb9c7bf333c97}} 
+virtual void {\bfseries draw\+Scatter\+Plot} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QVector$<$ QPointF $>$ \&scatters, const \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \&style) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_af5ae23d97ef8c8c329931f04df52c834}\label{class_q_c_p_graph_af5ae23d97ef8c8c329931f04df52c834}} 
+virtual void {\bfseries draw\+Line\+Plot} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QVector$<$ QPointF $>$ \&lines) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_ab75e8076c6ccc250f1c43aec1ea1880e}\label{class_q_c_p_graph_ab75e8076c6ccc250f1c43aec1ea1880e}} 
+virtual void {\bfseries draw\+Impulse\+Plot} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QVector$<$ QPointF $>$ \&lines) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a2ef09b29d8c8096b365d45965502c681}\label{class_q_c_p_graph_a2ef09b29d8c8096b365d45965502c681}} 
+virtual void {\bfseries get\+Optimized\+Line\+Data} (QVector$<$ \mbox{\hyperlink{class_q_c_p_graph_data}{QCPGraph\+Data}} $>$ $\ast$line\+Data, const \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPGraph\+Data\+Container\+::const\+\_\+iterator}} \&begin, const \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPGraph\+Data\+Container\+::const\+\_\+iterator}} \&end) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a7f1fdefe56f61c95e6b4e366dbd4a4ef}\label{class_q_c_p_graph_a7f1fdefe56f61c95e6b4e366dbd4a4ef}} 
+virtual void {\bfseries get\+Optimized\+Scatter\+Data} (QVector$<$ \mbox{\hyperlink{class_q_c_p_graph_data}{QCPGraph\+Data}} $>$ $\ast$scatter\+Data, \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPGraph\+Data\+Container\+::const\+\_\+iterator}} begin, \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPGraph\+Data\+Container\+::const\+\_\+iterator}} end) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a8599447a7f8cbbdcf0b94edcc11df560}\label{class_q_c_p_graph_a8599447a7f8cbbdcf0b94edcc11df560}} 
+void {\bfseries get\+Visible\+Data\+Bounds} (\mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPGraph\+Data\+Container\+::const\+\_\+iterator}} \&begin, \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPGraph\+Data\+Container\+::const\+\_\+iterator}} \&end, const \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} \&range\+Restriction) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a563c6da2126300a4d9d2bdee30dad040}\label{class_q_c_p_graph_a563c6da2126300a4d9d2bdee30dad040}} 
+void {\bfseries get\+Lines} (QVector$<$ QPointF $>$ $\ast$lines, const \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} \&data\+Range) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a9d7ba5904fdcaca413222335d4b283c3}\label{class_q_c_p_graph_a9d7ba5904fdcaca413222335d4b283c3}} 
+void {\bfseries get\+Scatters} (QVector$<$ QPointF $>$ $\ast$scatters, const \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} \&data\+Range) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a0085ee728fdd72a827c1e6ced4476363}\label{class_q_c_p_graph_a0085ee728fdd72a827c1e6ced4476363}} 
+QVector$<$ QPointF $>$ {\bfseries data\+To\+Lines} (const QVector$<$ \mbox{\hyperlink{class_q_c_p_graph_data}{QCPGraph\+Data}} $>$ \&data) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a1f3e9e41fc67538c4940c74665840474}\label{class_q_c_p_graph_a1f3e9e41fc67538c4940c74665840474}} 
+QVector$<$ QPointF $>$ {\bfseries data\+To\+Step\+Left\+Lines} (const QVector$<$ \mbox{\hyperlink{class_q_c_p_graph_data}{QCPGraph\+Data}} $>$ \&data) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_ab1fb6cb91d24a854f85bf54200f6d101}\label{class_q_c_p_graph_ab1fb6cb91d24a854f85bf54200f6d101}} 
+QVector$<$ QPointF $>$ {\bfseries data\+To\+Step\+Right\+Lines} (const QVector$<$ \mbox{\hyperlink{class_q_c_p_graph_data}{QCPGraph\+Data}} $>$ \&data) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a238116f1898c49cb8209d61707b5b367}\label{class_q_c_p_graph_a238116f1898c49cb8209d61707b5b367}} 
+QVector$<$ QPointF $>$ {\bfseries data\+To\+Step\+Center\+Lines} (const QVector$<$ \mbox{\hyperlink{class_q_c_p_graph_data}{QCPGraph\+Data}} $>$ \&data) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a2a958a5c6a6e1e4a03556be88b6fe37e}\label{class_q_c_p_graph_a2a958a5c6a6e1e4a03556be88b6fe37e}} 
+QVector$<$ QPointF $>$ {\bfseries data\+To\+Impulse\+Lines} (const QVector$<$ \mbox{\hyperlink{class_q_c_p_graph_data}{QCPGraph\+Data}} $>$ \&data) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a0e0886b9ec7731d8993bbb104465f3b9}\label{class_q_c_p_graph_a0e0886b9ec7731d8993bbb104465f3b9}} 
+QVector$<$ \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} $>$ {\bfseries get\+Non\+Nan\+Segments} (const QVector$<$ QPointF $>$ $\ast$line\+Data, Qt\+::\+Orientation key\+Orientation) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a334b15c43ee1855bf724daf886e8530e}\label{class_q_c_p_graph_a334b15c43ee1855bf724daf886e8530e}} 
+QVector$<$ QPair$<$ \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}}, \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} $>$ $>$ {\bfseries get\+Overlapping\+Segments} (QVector$<$ \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} $>$ this\+Segments, const QVector$<$ QPointF $>$ $\ast$this\+Data, QVector$<$ \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} $>$ other\+Segments, const QVector$<$ QPointF $>$ $\ast$other\+Data) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_abb9c674b207a1f6df5e083aa9f3e071a}\label{class_q_c_p_graph_abb9c674b207a1f6df5e083aa9f3e071a}} 
+bool {\bfseries segments\+Intersect} (double a\+Lower, double a\+Upper, double b\+Lower, double b\+Upper, int \&b\+Precedence) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a13f2c756f3114703159c2e604783e208}\label{class_q_c_p_graph_a13f2c756f3114703159c2e604783e208}} 
+QPointF {\bfseries get\+Fill\+Base\+Point} (QPointF matching\+Data\+Point) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_af73d5fe97cde966785bfd67201e44391}\label{class_q_c_p_graph_af73d5fe97cde966785bfd67201e44391}} 
+const QPolygonF {\bfseries get\+Fill\+Polygon} (const QVector$<$ QPointF $>$ $\ast$line\+Data, \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} segment) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a27f29ed181e97f29d50384ab611773c1}\label{class_q_c_p_graph_a27f29ed181e97f29d50384ab611773c1}} 
+const QPolygonF {\bfseries get\+Channel\+Fill\+Polygon} (const QVector$<$ QPointF $>$ $\ast$this\+Data, \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} this\+Segment, const QVector$<$ QPointF $>$ $\ast$other\+Data, \mbox{\hyperlink{class_q_c_p_data_range}{QCPData\+Range}} other\+Segment) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a8c3f15dd5a06633011a6ef36016d308b}\label{class_q_c_p_graph_a8c3f15dd5a06633011a6ef36016d308b}} 
+int {\bfseries find\+Index\+BelowX} (const QVector$<$ QPointF $>$ $\ast$data, double x) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_aaabd6c6a7200a2672c44e62bd2a1cafa}\label{class_q_c_p_graph_aaabd6c6a7200a2672c44e62bd2a1cafa}} 
+int {\bfseries find\+Index\+AboveX} (const QVector$<$ QPointF $>$ $\ast$data, double x) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a5b0291f248e8ca8eaa82833ab420dcd0}\label{class_q_c_p_graph_a5b0291f248e8ca8eaa82833ab420dcd0}} 
+int {\bfseries find\+Index\+BelowY} (const QVector$<$ QPointF $>$ $\ast$data, double y) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a8b952a5f937840dc242489585cc8000d}\label{class_q_c_p_graph_a8b952a5f937840dc242489585cc8000d}} 
+int {\bfseries find\+Index\+AboveY} (const QVector$<$ QPointF $>$ $\ast$data, double y) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a89acf99c0b52b8eecb2438adf7ec0170}\label{class_q_c_p_graph_a89acf99c0b52b8eecb2438adf7ec0170}} 
+double {\bfseries point\+Distance} (const QPointF \&pixel\+Point, \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPGraph\+Data\+Container\+::const\+\_\+iterator}} \&closest\+Data) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a8604fd98402035a63375849f7341ee25}\label{class_q_c_p_graph_a8604fd98402035a63375849f7341ee25}} 
+\mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859}{Line\+Style}} {\bfseries m\+Line\+Style}
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a4aa36241f166ccd1f75fc8f24e4a3247}\label{class_q_c_p_graph_a4aa36241f166ccd1f75fc8f24e4a3247}} 
+\mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} {\bfseries m\+Scatter\+Style}
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a4ca1e50fbfe8307022b42a6f6178fae0}\label{class_q_c_p_graph_a4ca1e50fbfe8307022b42a6f6178fae0}} 
+int {\bfseries m\+Scatter\+Skip}
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a2f1777c7accf8244fc640c33f0b04577}\label{class_q_c_p_graph_a2f1777c7accf8244fc640c33f0b04577}} 
+QPointer$<$ \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $>$ {\bfseries m\+Channel\+Fill\+Graph}
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_aa951e78aeba714cf443be6da2e52502e}\label{class_q_c_p_graph_aa951e78aeba714cf443be6da2e52502e}} 
+bool {\bfseries m\+Adaptive\+Sampling}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a1cdf9df76adcfae45261690aa0ca2198}\label{class_q_c_p_graph_a1cdf9df76adcfae45261690aa0ca2198}} 
+class {\bfseries QCustom\+Plot}
+\item 
+\mbox{\Hypertarget{class_q_c_p_graph_a8429035e7adfbd7f05805a6530ad5e3b}\label{class_q_c_p_graph_a8429035e7adfbd7f05805a6530ad5e3b}} 
+class {\bfseries QCPLegend}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859}\label{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859}} 
+\index{QCPGraph@{QCPGraph}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!QCPGraph@{QCPGraph}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859}{QCPGraph\+::\+Line\+Style}}}
+
+Defines how the graph\textquotesingle{}s line is represented visually in the plot. The line is drawn with the current pen of the graph (set\+Pen). \begin{DoxySeeAlso}{See also}
+set\+Line\+Style 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lsNone@{lsNone}!QCPGraph@{QCPGraph}}\index{QCPGraph@{QCPGraph}!lsNone@{lsNone}}}\mbox{\Hypertarget{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859aea9591b933733cc7b20786b71e60fa04}\label{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859aea9591b933733cc7b20786b71e60fa04}} 
+ls\+None&data points are not connected with any lines (e.\+g. data only represented with symbols according to the scatter style, see set\+Scatter\+Style) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lsLine@{lsLine}!QCPGraph@{QCPGraph}}\index{QCPGraph@{QCPGraph}!lsLine@{lsLine}}}\mbox{\Hypertarget{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859a3c42a27b15aa3c92d399082fad8b7515}\label{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859a3c42a27b15aa3c92d399082fad8b7515}} 
+ls\+Line&data points are connected by a straight line \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lsStepLeft@{lsStepLeft}!QCPGraph@{QCPGraph}}\index{QCPGraph@{QCPGraph}!lsStepLeft@{lsStepLeft}}}\mbox{\Hypertarget{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859ae10568bda57836487d9dec5eba1d6c6e}\label{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859ae10568bda57836487d9dec5eba1d6c6e}} 
+ls\+Step\+Left&line is drawn as steps where the step height is the value of the left data point \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lsStepRight@{lsStepRight}!QCPGraph@{QCPGraph}}\index{QCPGraph@{QCPGraph}!lsStepRight@{lsStepRight}}}\mbox{\Hypertarget{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859a9c37951f7d11aa070100fd16f2935c9e}\label{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859a9c37951f7d11aa070100fd16f2935c9e}} 
+ls\+Step\+Right&line is drawn as steps where the step height is the value of the right data point \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lsStepCenter@{lsStepCenter}!QCPGraph@{QCPGraph}}\index{QCPGraph@{QCPGraph}!lsStepCenter@{lsStepCenter}}}\mbox{\Hypertarget{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859a5adf7b04da215a40a764c21294ea7366}\label{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859a5adf7b04da215a40a764c21294ea7366}} 
+ls\+Step\+Center&line is drawn as steps where the step is in between two data points \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lsImpulse@{lsImpulse}!QCPGraph@{QCPGraph}}\index{QCPGraph@{QCPGraph}!lsImpulse@{lsImpulse}}}\mbox{\Hypertarget{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859aa3b358b4ae7cca94aceeb8e529c12ebb}\label{class_q_c_p_graph_ad60175cd9b5cac937c5ee685c32c0859aa3b358b4ae7cca94aceeb8e529c12ebb}} 
+ls\+Impulse&each data point is represented by a line parallel to the value axis, which reaches from the data point to the zero-\/value-\/line \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_graph_a96b5797ede88bb067e002bbb2856826b}\label{class_q_c_p_graph_a96b5797ede88bb067e002bbb2856826b}} 
+\index{QCPGraph@{QCPGraph}!draw@{draw}}
+\index{draw@{draw}!QCPGraph@{QCPGraph}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void QCPGraph\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_graph_aae25a7748d571580fbefd4cec1444526}\label{class_q_c_p_graph_aae25a7748d571580fbefd4cec1444526}} 
+\index{QCPGraph@{QCPGraph}!drawLegendIcon@{drawLegendIcon}}
+\index{drawLegendIcon@{drawLegendIcon}!QCPGraph@{QCPGraph}}
+\doxysubsubsection{\texorpdfstring{drawLegendIcon()}{drawLegendIcon()}}
+{\footnotesize\ttfamily virtual void QCPGraph\+::draw\+Legend\+Icon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter,  }\item[{const QRectF \&}]{rect }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_graph_a7b332af5ead6a278f4a6a065febeed24}\label{class_q_c_p_graph_a7b332af5ead6a278f4a6a065febeed24}} 
+\index{QCPGraph@{QCPGraph}!getKeyRange@{getKeyRange}}
+\index{getKeyRange@{getKeyRange}!QCPGraph@{QCPGraph}}
+\doxysubsubsection{\texorpdfstring{getKeyRange()}{getKeyRange()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} QCPGraph\+::get\+Key\+Range (\begin{DoxyParamCaption}\item[{bool \&}]{found\+Range,  }\item[{\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}}}]{in\+Sign\+Domain = {\ttfamily \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_graph_a5c5b99a98bf81bc398dd46486eadb8e2}\label{class_q_c_p_graph_a5c5b99a98bf81bc398dd46486eadb8e2}} 
+\index{QCPGraph@{QCPGraph}!getValueRange@{getValueRange}}
+\index{getValueRange@{getValueRange}!QCPGraph@{QCPGraph}}
+\doxysubsubsection{\texorpdfstring{getValueRange()}{getValueRange()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} QCPGraph\+::get\+Value\+Range (\begin{DoxyParamCaption}\item[{bool \&}]{found\+Range,  }\item[{\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}}}]{in\+Sign\+Domain = {\ttfamily \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}},  }\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{in\+Key\+Range = {\ttfamily \mbox{\hyperlink{class_q_c_p_range}{QCPRange}}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_graph_a2e7fd7a7d7d1995d898507408a9d637c}\label{class_q_c_p_graph_a2e7fd7a7d7d1995d898507408a9d637c}} 
+\index{QCPGraph@{QCPGraph}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPGraph@{QCPGraph}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily virtual double QCPGraph\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily nullptr} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Implements a point-\/selection algorithm assuming the data (accessed via the 1D data interface) is point-\/like. Most subclasses will want to reimplement this method again, to provide a more accurate hit test based on the true data visualization geometry.
+
+If {\itshape details} is not 0, it will be set to a \mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}}, describing the closest data point to {\itshape pos}.
+
+\textbackslash{}seebaseclassmethod 
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a2f169c3c2989e5d08ec7a9e3eb56a261}{QCPAbstract\+Plottable1\+D$<$ QCPGraph\+Data $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/qcustomplot.\+hpp\end{DoxyCompactItemize}

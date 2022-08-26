@@ -1,0 +1,67 @@
+\hypertarget{class_q_c_p_abstract_paint_buffer}{}\doxysection{QCPAbstract\+Paint\+Buffer Class Reference}
+\label{class_q_c_p_abstract_paint_buffer}\index{QCPAbstractPaintBuffer@{QCPAbstractPaintBuffer}}
+Inheritance diagram for QCPAbstract\+Paint\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_c_p_abstract_paint_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_a3ce532c12f10b81697108835755641e2}\label{class_q_c_p_abstract_paint_buffer_a3ce532c12f10b81697108835755641e2}} 
+{\bfseries QCPAbstract\+Paint\+Buffer} (const QSize \&size, double device\+Pixel\+Ratio)
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_a3ea8284e547985c5d263f26a6adfa11f}\label{class_q_c_p_abstract_paint_buffer_a3ea8284e547985c5d263f26a6adfa11f}} 
+QSize {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_a76bf771cda945a6c602cf9b7d365d92b}\label{class_q_c_p_abstract_paint_buffer_a76bf771cda945a6c602cf9b7d365d92b}} 
+bool {\bfseries invalidated} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_aac1b981f8c1744036610ff1a6b9461f9}\label{class_q_c_p_abstract_paint_buffer_aac1b981f8c1744036610ff1a6b9461f9}} 
+double {\bfseries device\+Pixel\+Ratio} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_a8b68c3cd36533f1a4a23b5ce8cd66f01}\label{class_q_c_p_abstract_paint_buffer_a8b68c3cd36533f1a4a23b5ce8cd66f01}} 
+void {\bfseries set\+Size} (const QSize \&size)
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_ae4c7dc70dfc66be2879ce297b2b3d67f}\label{class_q_c_p_abstract_paint_buffer_ae4c7dc70dfc66be2879ce297b2b3d67f}} 
+void {\bfseries set\+Invalidated} (bool invalidated=true)
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_a555eaad5d5c806420ff35602a1bb68fa}\label{class_q_c_p_abstract_paint_buffer_a555eaad5d5c806420ff35602a1bb68fa}} 
+void {\bfseries set\+Device\+Pixel\+Ratio} (double ratio)
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_ab1329e5e2cfc44a7cef1b5e9b6fab20d}\label{class_q_c_p_abstract_paint_buffer_ab1329e5e2cfc44a7cef1b5e9b6fab20d}} 
+virtual \mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$ {\bfseries start\+Painting} ()=0
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_a996577a718aecb3b9b5351fab797a062}\label{class_q_c_p_abstract_paint_buffer_a996577a718aecb3b9b5351fab797a062}} 
+virtual void {\bfseries done\+Painting} ()
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_a1f92e533105b575951eba5f01d8d129d}\label{class_q_c_p_abstract_paint_buffer_a1f92e533105b575951eba5f01d8d129d}} 
+virtual void {\bfseries draw} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) const =0
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_a7fc69e37c2a8232e8b2eb8b5853aae4c}\label{class_q_c_p_abstract_paint_buffer_a7fc69e37c2a8232e8b2eb8b5853aae4c}} 
+virtual void {\bfseries clear} (const QColor \&color)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_a9bbd9f7520ccfa3e13fc737813f706e4}\label{class_q_c_p_abstract_paint_buffer_a9bbd9f7520ccfa3e13fc737813f706e4}} 
+virtual void {\bfseries reallocate\+Buffer} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_ae246c426222bfa18d5e8797fab73e3ce}\label{class_q_c_p_abstract_paint_buffer_ae246c426222bfa18d5e8797fab73e3ce}} 
+QSize {\bfseries m\+Size}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_a33c1fd784478441fcff9ebf3d69af5b2}\label{class_q_c_p_abstract_paint_buffer_a33c1fd784478441fcff9ebf3d69af5b2}} 
+double {\bfseries m\+Device\+Pixel\+Ratio}
+\item 
+\mbox{\Hypertarget{class_q_c_p_abstract_paint_buffer_a3bc49cc9cf9daaca3a60977f010c08c9}\label{class_q_c_p_abstract_paint_buffer_a3bc49cc9cf9daaca3a60977f010c08c9}} 
+bool {\bfseries m\+Invalidated}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/qcustomplot.\+hpp\end{DoxyCompactItemize}

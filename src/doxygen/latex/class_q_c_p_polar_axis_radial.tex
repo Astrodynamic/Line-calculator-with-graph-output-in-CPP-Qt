@@ -1,0 +1,727 @@
+\hypertarget{class_q_c_p_polar_axis_radial}{}\doxysection{QCPPolar\+Axis\+Radial Class Reference}
+\label{class_q_c_p_polar_axis_radial}\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+Inheritance diagram for QCPPolar\+Axis\+Radial\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_q_c_p_polar_axis_radial}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8f}{Angle\+Reference}} \{ \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8faefeede9b2a4a5b5c98087d91c5298ba9}{ar\+Absolute}}
+, \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8fa5a6f382c9d968d96bd107b75c9a1add0}{ar\+Angular\+Axis}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605}{Scale\+Type}} \{ \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605ac3792de649afed8d8d70894d4e5497e9}{st\+Linear}}
+, \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605a44fa891f769cd677cd2d3e3661ac0c39}{st\+Logarithmic}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908}{Selectable\+Part}} \{ \mbox{\hyperlink{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908a4f6e2acf66dbfb63325f8a54c9da4fe2}{sp\+None}} = 0
+, \mbox{\hyperlink{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908a4f1c9303f84a85dac58d8971de2e96bb}{sp\+Axis}} = 0x001
+, \mbox{\hyperlink{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908a3b8e439b23e3de65635db573adf61cbe}{sp\+Tick\+Labels}} = 0x002
+, \mbox{\hyperlink{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908ab9e1a849edd42955e3c5fb1d57fcddbb}{sp\+Axis\+Label}} = 0x004
+ \}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a232b1fe44fd843d9c0f8798a823e7191}\label{class_q_c_p_polar_axis_radial_a232b1fe44fd843d9c0f8798a823e7191}} 
+enum {\bfseries Label\+Mode} \{ {\bfseries lm\+Upright}
+, {\bfseries lm\+Rotated}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a648fe508359f88424bc40cded6a297a9}\label{class_q_c_p_polar_axis_radial_a648fe508359f88424bc40cded6a297a9}} 
+void {\bfseries range\+Changed} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&new\+Range)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a77bf79ce497ad1a37e1f56acea72cbb1}\label{class_q_c_p_polar_axis_radial_a77bf79ce497ad1a37e1f56acea72cbb1}} 
+void {\bfseries range\+Changed} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&new\+Range, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&old\+Range)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a55de356d043a9ed33da58667144a592d}\label{class_q_c_p_polar_axis_radial_a55de356d043a9ed33da58667144a592d}} 
+void {\bfseries scale\+Type\+Changed} (\mbox{\hyperlink{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605}{QCPPolar\+Axis\+Radial\+::\+Scale\+Type}} scale\+Type)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a5529ef54d68219392e7baa64a9303bf2}\label{class_q_c_p_polar_axis_radial_a5529ef54d68219392e7baa64a9303bf2}} 
+void {\bfseries selection\+Changed} (const QCPPolar\+Axis\+Radial\+::\+Selectable\+Parts \&parts)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ad003adb089e7430fbfb1b71c7ca4b72d}\label{class_q_c_p_polar_axis_radial_ad003adb089e7430fbfb1b71c7ca4b72d}} 
+void {\bfseries selectable\+Changed} (const QCPPolar\+Axis\+Radial\+::\+Selectable\+Parts \&parts)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_acd7247b9f2196e1053f236b950a13b60}\label{class_q_c_p_polar_axis_radial_acd7247b9f2196e1053f236b950a13b60}} 
+{\bfseries QCPPolar\+Axis\+Radial} (\mbox{\hyperlink{class_q_c_p_polar_axis_angular}{QCPPolar\+Axis\+Angular}} $\ast$parent)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a304b9469ba05ee75619f7879aab5b8ff}\label{class_q_c_p_polar_axis_radial_a304b9469ba05ee75619f7879aab5b8ff}} 
+bool {\bfseries range\+Drag} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ac871f9e1bf06743b61cd34c898ee0121}\label{class_q_c_p_polar_axis_radial_ac871f9e1bf06743b61cd34c898ee0121}} 
+bool {\bfseries range\+Zoom} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a190eb6782b22860a6fad40243b661d59}\label{class_q_c_p_polar_axis_radial_a190eb6782b22860a6fad40243b661d59}} 
+double {\bfseries range\+Zoom\+Factor} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a8606e3c75c126a67eb1e1df0e09041c5}\label{class_q_c_p_polar_axis_radial_a8606e3c75c126a67eb1e1df0e09041c5}} 
+\mbox{\hyperlink{class_q_c_p_polar_axis_angular}{QCPPolar\+Axis\+Angular}} $\ast$ {\bfseries angular\+Axis} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a0860a6f537556283f82ea10ce648f41b}\label{class_q_c_p_polar_axis_radial_a0860a6f537556283f82ea10ce648f41b}} 
+\mbox{\hyperlink{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605}{Scale\+Type}} {\bfseries scale\+Type} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a9b61a998e6ef4a46dd26bf0fcfd70640}\label{class_q_c_p_polar_axis_radial_a9b61a998e6ef4a46dd26bf0fcfd70640}} 
+const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} {\bfseries range} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ae25ab4c30a340ddcda642d14316b2de7}\label{class_q_c_p_polar_axis_radial_ae25ab4c30a340ddcda642d14316b2de7}} 
+bool {\bfseries range\+Reversed} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a526aeda6997df685b297a99715fa9ae1}\label{class_q_c_p_polar_axis_radial_a526aeda6997df685b297a99715fa9ae1}} 
+double {\bfseries angle} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a49f6eeed0c87f7dc8107efe0a56c141d}\label{class_q_c_p_polar_axis_radial_a49f6eeed0c87f7dc8107efe0a56c141d}} 
+\mbox{\hyperlink{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8f}{Angle\+Reference}} {\bfseries angle\+Reference} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a0c38b1920e69759bcc733975d5fbe758}\label{class_q_c_p_polar_axis_radial_a0c38b1920e69759bcc733975d5fbe758}} 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_q_c_p_axis_ticker}{QCPAxis\+Ticker}} $>$ {\bfseries ticker} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a7c6b20450eb3118779e92071b24a1506}\label{class_q_c_p_polar_axis_radial_a7c6b20450eb3118779e92071b24a1506}} 
+bool {\bfseries ticks} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a4fbdbf34b5f251ef9ec29ab7de4f6a27}\label{class_q_c_p_polar_axis_radial_a4fbdbf34b5f251ef9ec29ab7de4f6a27}} 
+bool {\bfseries tick\+Labels} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a16b090d6de078c008c8df01a5c121e7d}\label{class_q_c_p_polar_axis_radial_a16b090d6de078c008c8df01a5c121e7d}} 
+int {\bfseries tick\+Label\+Padding} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a010c5af35d5638d16ba4f71a749c0bce}\label{class_q_c_p_polar_axis_radial_a010c5af35d5638d16ba4f71a749c0bce}} 
+QFont {\bfseries tick\+Label\+Font} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ac0d896493199d5d4c0ea111bfa12be22}\label{class_q_c_p_polar_axis_radial_ac0d896493199d5d4c0ea111bfa12be22}} 
+QColor {\bfseries tick\+Label\+Color} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a565f0953b23651a8b891d838dc782c2a}\label{class_q_c_p_polar_axis_radial_a565f0953b23651a8b891d838dc782c2a}} 
+double {\bfseries tick\+Label\+Rotation} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a8c2a5fd62efe3c748a24c5a43df1f64b}\label{class_q_c_p_polar_axis_radial_a8c2a5fd62efe3c748a24c5a43df1f64b}} 
+Label\+Mode {\bfseries tick\+Label\+Mode} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a1ef77b245da003bdac03a9454a8acbaa}\label{class_q_c_p_polar_axis_radial_a1ef77b245da003bdac03a9454a8acbaa}} 
+QString {\bfseries number\+Format} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a200f201bce09c3da15996cafd3cb08d0}\label{class_q_c_p_polar_axis_radial_a200f201bce09c3da15996cafd3cb08d0}} 
+int {\bfseries number\+Precision} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a0e30195a889f9be227a6db3576c8d7f2}\label{class_q_c_p_polar_axis_radial_a0e30195a889f9be227a6db3576c8d7f2}} 
+QVector$<$ double $>$ {\bfseries tick\+Vector} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a0c6074d3c482a37187caffe8e2155f76}\label{class_q_c_p_polar_axis_radial_a0c6074d3c482a37187caffe8e2155f76}} 
+QVector$<$ double $>$ {\bfseries sub\+Tick\+Vector} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a43edbd4a44183e1143d377469126cc9f}\label{class_q_c_p_polar_axis_radial_a43edbd4a44183e1143d377469126cc9f}} 
+QVector$<$ QString $>$ {\bfseries tick\+Vector\+Labels} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ac8b4dc79256ccb9dcbef18c6279b03fe}\label{class_q_c_p_polar_axis_radial_ac8b4dc79256ccb9dcbef18c6279b03fe}} 
+int {\bfseries tick\+Length\+In} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a4431a09eab46ea57d7d6efbf9e3b961e}\label{class_q_c_p_polar_axis_radial_a4431a09eab46ea57d7d6efbf9e3b961e}} 
+int {\bfseries tick\+Length\+Out} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ae33968938fb8c3d595bb8fabb001c568}\label{class_q_c_p_polar_axis_radial_ae33968938fb8c3d595bb8fabb001c568}} 
+bool {\bfseries sub\+Ticks} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a2de71f4263dfed77d741015b9f49dcdb}\label{class_q_c_p_polar_axis_radial_a2de71f4263dfed77d741015b9f49dcdb}} 
+int {\bfseries sub\+Tick\+Length\+In} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a4b7d72302af405b8d161e81b70099e96}\label{class_q_c_p_polar_axis_radial_a4b7d72302af405b8d161e81b70099e96}} 
+int {\bfseries sub\+Tick\+Length\+Out} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_adbd352af16d047630430667751290a70}\label{class_q_c_p_polar_axis_radial_adbd352af16d047630430667751290a70}} 
+QPen {\bfseries base\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ab8f88e050d6079fecd5a780be2ce45d4}\label{class_q_c_p_polar_axis_radial_ab8f88e050d6079fecd5a780be2ce45d4}} 
+QPen {\bfseries tick\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_abcf56c2bc057c4210a30d05a71b14f8c}\label{class_q_c_p_polar_axis_radial_abcf56c2bc057c4210a30d05a71b14f8c}} 
+QPen {\bfseries sub\+Tick\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a53c1d9b626b165d986afd02a3d5d02b9}\label{class_q_c_p_polar_axis_radial_a53c1d9b626b165d986afd02a3d5d02b9}} 
+QFont {\bfseries label\+Font} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ac3c840fb5809d083e1896599f3d55b05}\label{class_q_c_p_polar_axis_radial_ac3c840fb5809d083e1896599f3d55b05}} 
+QColor {\bfseries label\+Color} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a80db2e9633621c86aebff62cfb1d6dd1}\label{class_q_c_p_polar_axis_radial_a80db2e9633621c86aebff62cfb1d6dd1}} 
+QString {\bfseries label} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a89dbf51714e70b9754402f9d06a2f7b2}\label{class_q_c_p_polar_axis_radial_a89dbf51714e70b9754402f9d06a2f7b2}} 
+int {\bfseries label\+Padding} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ae1a24333dd5050e21ef6b038793db045}\label{class_q_c_p_polar_axis_radial_ae1a24333dd5050e21ef6b038793db045}} 
+Selectable\+Parts {\bfseries selected\+Parts} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a2a3c24decd2c3280f9972db41d24e105}\label{class_q_c_p_polar_axis_radial_a2a3c24decd2c3280f9972db41d24e105}} 
+Selectable\+Parts {\bfseries selectable\+Parts} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a6fd193ca3c0ef3d58fe5d93f3ddc190b}\label{class_q_c_p_polar_axis_radial_a6fd193ca3c0ef3d58fe5d93f3ddc190b}} 
+QFont {\bfseries selected\+Tick\+Label\+Font} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a5adb1035f42502b677f5a6bf5358f799}\label{class_q_c_p_polar_axis_radial_a5adb1035f42502b677f5a6bf5358f799}} 
+QFont {\bfseries selected\+Label\+Font} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a207031c6e80c4def44c734f8a89f1f7a}\label{class_q_c_p_polar_axis_radial_a207031c6e80c4def44c734f8a89f1f7a}} 
+QColor {\bfseries selected\+Tick\+Label\+Color} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a4b4749405b30e830276fd577a73a9b32}\label{class_q_c_p_polar_axis_radial_a4b4749405b30e830276fd577a73a9b32}} 
+QColor {\bfseries selected\+Label\+Color} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a732186d82ea2e527683670896fbf1818}\label{class_q_c_p_polar_axis_radial_a732186d82ea2e527683670896fbf1818}} 
+QPen {\bfseries selected\+Base\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a7468243b39947b6547d46ab782e21041}\label{class_q_c_p_polar_axis_radial_a7468243b39947b6547d46ab782e21041}} 
+QPen {\bfseries selected\+Tick\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_af4c77e25c2d678cd7a1202fabd3030a4}\label{class_q_c_p_polar_axis_radial_af4c77e25c2d678cd7a1202fabd3030a4}} 
+QPen {\bfseries selected\+Sub\+Tick\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a07029e8928d19714e46b1f0e301ab549}\label{class_q_c_p_polar_axis_radial_a07029e8928d19714e46b1f0e301ab549}} 
+void {\bfseries set\+Range\+Drag} (bool enabled)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a19cbc7c8e246db4d958f6507db7ed370}\label{class_q_c_p_polar_axis_radial_a19cbc7c8e246db4d958f6507db7ed370}} 
+void {\bfseries set\+Range\+Zoom} (bool enabled)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aaf3e68ca8f7e4605375a571a3039f47b}\label{class_q_c_p_polar_axis_radial_aaf3e68ca8f7e4605375a571a3039f47b}} 
+void {\bfseries set\+Range\+Zoom\+Factor} (double factor)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a48176d75273cd69b1fb49d559eefa744}\label{class_q_c_p_polar_axis_radial_a48176d75273cd69b1fb49d559eefa744}} 
+Q\+\_\+\+SLOT void {\bfseries set\+Scale\+Type} (\mbox{\hyperlink{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605}{QCPPolar\+Axis\+Radial\+::\+Scale\+Type}} type)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_af265b01d105761b27a75d5e9ddb2039e}\label{class_q_c_p_polar_axis_radial_af265b01d105761b27a75d5e9ddb2039e}} 
+Q\+\_\+\+SLOT void {\bfseries set\+Range} (const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_afff5e4f1b99b450c7c7384ad71aac07e}\label{class_q_c_p_polar_axis_radial_afff5e4f1b99b450c7c7384ad71aac07e}} 
+void {\bfseries set\+Range} (double lower, double upper)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a9091e0cace8500840c1cf06c92487ac1}\label{class_q_c_p_polar_axis_radial_a9091e0cace8500840c1cf06c92487ac1}} 
+void {\bfseries set\+Range} (double position, double size, Qt\+::\+Alignment\+Flag alignment)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ad39c3668573846080ef4f92903bc8c56}\label{class_q_c_p_polar_axis_radial_ad39c3668573846080ef4f92903bc8c56}} 
+void {\bfseries set\+Range\+Lower} (double lower)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ad7fea6680a0c0d0e7fddab06b5e03869}\label{class_q_c_p_polar_axis_radial_ad7fea6680a0c0d0e7fddab06b5e03869}} 
+void {\bfseries set\+Range\+Upper} (double upper)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ad4fb4fb3d7f042267a32414c60cb0b78}\label{class_q_c_p_polar_axis_radial_ad4fb4fb3d7f042267a32414c60cb0b78}} 
+void {\bfseries set\+Range\+Reversed} (bool reversed)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a5ff4916db164b4508e2d483ca17867c2}\label{class_q_c_p_polar_axis_radial_a5ff4916db164b4508e2d483ca17867c2}} 
+void {\bfseries set\+Angle} (double degrees)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ac8ab569c873739aa0726e2d147b3b954}\label{class_q_c_p_polar_axis_radial_ac8ab569c873739aa0726e2d147b3b954}} 
+void {\bfseries set\+Angle\+Reference} (\mbox{\hyperlink{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8f}{Angle\+Reference}} reference)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_abaf4c7f55113ccacfb0db2154add4811}\label{class_q_c_p_polar_axis_radial_abaf4c7f55113ccacfb0db2154add4811}} 
+void {\bfseries set\+Ticker} (QShared\+Pointer$<$ \mbox{\hyperlink{class_q_c_p_axis_ticker}{QCPAxis\+Ticker}} $>$ ticker)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a846d9220b5dd37072bd0ff89dab8e893}\label{class_q_c_p_polar_axis_radial_a846d9220b5dd37072bd0ff89dab8e893}} 
+void {\bfseries set\+Ticks} (bool show)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a8f1158443f05367926fa24a56014a778}\label{class_q_c_p_polar_axis_radial_a8f1158443f05367926fa24a56014a778}} 
+void {\bfseries set\+Tick\+Labels} (bool show)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a9df8e97dd9a57cc40f06bc2e6023171f}\label{class_q_c_p_polar_axis_radial_a9df8e97dd9a57cc40f06bc2e6023171f}} 
+void {\bfseries set\+Tick\+Label\+Padding} (int padding)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ad34c158db7a11352bd099ff057d1b669}\label{class_q_c_p_polar_axis_radial_ad34c158db7a11352bd099ff057d1b669}} 
+void {\bfseries set\+Tick\+Label\+Font} (const QFont \&font)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a7305b81163ca7c8e048c0656ec736808}\label{class_q_c_p_polar_axis_radial_a7305b81163ca7c8e048c0656ec736808}} 
+void {\bfseries set\+Tick\+Label\+Color} (const QColor \&color)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a68a064e85b5a807f8205e1996a50ebab}\label{class_q_c_p_polar_axis_radial_a68a064e85b5a807f8205e1996a50ebab}} 
+void {\bfseries set\+Tick\+Label\+Rotation} (double degrees)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aa9ababd2f94e5dab93ff2cca5e3bce5d}\label{class_q_c_p_polar_axis_radial_aa9ababd2f94e5dab93ff2cca5e3bce5d}} 
+void {\bfseries set\+Tick\+Label\+Mode} (Label\+Mode mode)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a1466025a71161cba79964aa8ad34f3c4}\label{class_q_c_p_polar_axis_radial_a1466025a71161cba79964aa8ad34f3c4}} 
+void {\bfseries set\+Number\+Format} (const QString \&format\+Code)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aac3e2e6ced552068bee653a92d976b2c}\label{class_q_c_p_polar_axis_radial_aac3e2e6ced552068bee653a92d976b2c}} 
+void {\bfseries set\+Number\+Precision} (int precision)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a773447fe8c0031ee64ca6c5257778e11}\label{class_q_c_p_polar_axis_radial_a773447fe8c0031ee64ca6c5257778e11}} 
+void {\bfseries set\+Tick\+Length} (int inside, int outside=0)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a460a91f274b511b8c0b3678dc621aa0d}\label{class_q_c_p_polar_axis_radial_a460a91f274b511b8c0b3678dc621aa0d}} 
+void {\bfseries set\+Tick\+Length\+In} (int inside)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ae12085bd8c5f8e828939cc5dd8a7bbbb}\label{class_q_c_p_polar_axis_radial_ae12085bd8c5f8e828939cc5dd8a7bbbb}} 
+void {\bfseries set\+Tick\+Length\+Out} (int outside)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a3a5628a92f5fe217c36afb2e9d0aaa7a}\label{class_q_c_p_polar_axis_radial_a3a5628a92f5fe217c36afb2e9d0aaa7a}} 
+void {\bfseries set\+Sub\+Ticks} (bool show)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ae3de39f6d88318769698aa035b1e194f}\label{class_q_c_p_polar_axis_radial_ae3de39f6d88318769698aa035b1e194f}} 
+void {\bfseries set\+Sub\+Tick\+Length} (int inside, int outside=0)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a0b4576a075a30904e6eecf82fdbfc314}\label{class_q_c_p_polar_axis_radial_a0b4576a075a30904e6eecf82fdbfc314}} 
+void {\bfseries set\+Sub\+Tick\+Length\+In} (int inside)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a7fe956212f00baa07ce52d2108fa7c16}\label{class_q_c_p_polar_axis_radial_a7fe956212f00baa07ce52d2108fa7c16}} 
+void {\bfseries set\+Sub\+Tick\+Length\+Out} (int outside)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a87eb972f832cdb4709b8d56559403268}\label{class_q_c_p_polar_axis_radial_a87eb972f832cdb4709b8d56559403268}} 
+void {\bfseries set\+Base\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a618054b1b14d17d0c16b52c61bbfc196}\label{class_q_c_p_polar_axis_radial_a618054b1b14d17d0c16b52c61bbfc196}} 
+void {\bfseries set\+Tick\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a20de455571e71c035394f759aefd6ed1}\label{class_q_c_p_polar_axis_radial_a20de455571e71c035394f759aefd6ed1}} 
+void {\bfseries set\+Sub\+Tick\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a89f79a0db13ecc902ba629987dccdbd6}\label{class_q_c_p_polar_axis_radial_a89f79a0db13ecc902ba629987dccdbd6}} 
+void {\bfseries set\+Label\+Font} (const QFont \&font)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aa5c989d0a9736ace39f4dd0bf17f9a7b}\label{class_q_c_p_polar_axis_radial_aa5c989d0a9736ace39f4dd0bf17f9a7b}} 
+void {\bfseries set\+Label\+Color} (const QColor \&color)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a872d1a9ff74ea556514cef2f7cdc7bdf}\label{class_q_c_p_polar_axis_radial_a872d1a9ff74ea556514cef2f7cdc7bdf}} 
+void {\bfseries set\+Label} (const QString \&str)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ac54ed14d1678ac933dc7e0cd0c44c685}\label{class_q_c_p_polar_axis_radial_ac54ed14d1678ac933dc7e0cd0c44c685}} 
+void {\bfseries set\+Label\+Padding} (int padding)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aae10b4f60c95b1947c788a76f0f02440}\label{class_q_c_p_polar_axis_radial_aae10b4f60c95b1947c788a76f0f02440}} 
+void {\bfseries set\+Selected\+Tick\+Label\+Font} (const QFont \&font)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a7fcc1b77876a11fd61f1cc2f860b76a9}\label{class_q_c_p_polar_axis_radial_a7fcc1b77876a11fd61f1cc2f860b76a9}} 
+void {\bfseries set\+Selected\+Label\+Font} (const QFont \&font)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a2bf9241528414cf7e95af572a5deadd1}\label{class_q_c_p_polar_axis_radial_a2bf9241528414cf7e95af572a5deadd1}} 
+void {\bfseries set\+Selected\+Tick\+Label\+Color} (const QColor \&color)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a682db020c2886a3ffc0b897da760c6c1}\label{class_q_c_p_polar_axis_radial_a682db020c2886a3ffc0b897da760c6c1}} 
+void {\bfseries set\+Selected\+Label\+Color} (const QColor \&color)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_adb237328aa8b9fc8df6cb261b4b7572d}\label{class_q_c_p_polar_axis_radial_adb237328aa8b9fc8df6cb261b4b7572d}} 
+void {\bfseries set\+Selected\+Base\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aabb97490db2fe069601efbd115948c78}\label{class_q_c_p_polar_axis_radial_aabb97490db2fe069601efbd115948c78}} 
+void {\bfseries set\+Selected\+Tick\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aa3c92ad8b25b70fb65ec66228602ab0f}\label{class_q_c_p_polar_axis_radial_aa3c92ad8b25b70fb65ec66228602ab0f}} 
+void {\bfseries set\+Selected\+Sub\+Tick\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a933badaba2f9131bf55347f7f8b8dbb0}\label{class_q_c_p_polar_axis_radial_a933badaba2f9131bf55347f7f8b8dbb0}} 
+Q\+\_\+\+SLOT void {\bfseries set\+Selectable\+Parts} (const QCPPolar\+Axis\+Radial\+::\+Selectable\+Parts \&selectable\+Parts)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a136a23b5f339530982febf592303ae2b}\label{class_q_c_p_polar_axis_radial_a136a23b5f339530982febf592303ae2b}} 
+Q\+\_\+\+SLOT void {\bfseries set\+Selected\+Parts} (const QCPPolar\+Axis\+Radial\+::\+Selectable\+Parts \&selected\+Parts)
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a554e229caa6c50898ce9e3f9bdd63ab3}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=0) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_accd47f3d0906649c04ec16b52f8f68bd}\label{class_q_c_p_polar_axis_radial_accd47f3d0906649c04ec16b52f8f68bd}} 
+void {\bfseries move\+Range} (double diff)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a4448749008af786d15e806c956d022ee}\label{class_q_c_p_polar_axis_radial_a4448749008af786d15e806c956d022ee}} 
+void {\bfseries scale\+Range} (double factor)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aea527409448c9d000aa5de3d7eebd76a}\label{class_q_c_p_polar_axis_radial_aea527409448c9d000aa5de3d7eebd76a}} 
+void {\bfseries scale\+Range} (double factor, double center)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ae0c05ddcb45b61b1e5c7ea2fa9384d3f}\label{class_q_c_p_polar_axis_radial_ae0c05ddcb45b61b1e5c7ea2fa9384d3f}} 
+void {\bfseries rescale} (bool only\+Visible\+Plottables=false)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ab459aff0627855ea45daa703efd3ba61}\label{class_q_c_p_polar_axis_radial_ab459aff0627855ea45daa703efd3ba61}} 
+void {\bfseries pixel\+To\+Coord} (QPointF pixel\+Pos, double \&angle\+Coord, double \&radius\+Coord) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aefdabcfe67456fad76fdf9733e8d444e}\label{class_q_c_p_polar_axis_radial_aefdabcfe67456fad76fdf9733e8d444e}} 
+QPointF {\bfseries coord\+To\+Pixel} (double angle\+Coord, double radius\+Coord) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a1e36010478515adb6dd245ef74060868}\label{class_q_c_p_polar_axis_radial_a1e36010478515adb6dd245ef74060868}} 
+double {\bfseries coord\+To\+Radius} (double coord) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a63f7e3aa1aaad57a1f9bee56fb8209a1}\label{class_q_c_p_polar_axis_radial_a63f7e3aa1aaad57a1f9bee56fb8209a1}} 
+double {\bfseries radius\+To\+Coord} (double radius) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a2a444eccb45fea4bb10f17f28fe6f145}\label{class_q_c_p_polar_axis_radial_a2a444eccb45fea4bb10f17f28fe6f145}} 
+\mbox{\hyperlink{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908}{Selectable\+Part}} {\bfseries get\+Part\+At} (const QPointF \&pos) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a4bc26dd3f7929df2229733c64e52a5f9}{apply\+Default\+Antialiasing\+Hint}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a5d9df9102209560579fb6bcf6288dda7}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual \mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037}{QCP\+::\+Interaction}} \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a1b8f85b44ef94148c067d5e89ea3de73}{selection\+Category}} () const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a32d168714dd3bc130daacf2d56365669}{select\+Event}} (QMouse\+Event $\ast$event, bool additive, const QVariant \&details, bool $\ast$selection\+State\+Changed) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a72a6df0ea0ee320e756efdfeb780e91b}{deselect\+Event}} (bool $\ast$selection\+State\+Changed) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a2f752aa446f9c6ee7f409e9faf7cf27b}{mouse\+Press\+Event}} (QMouse\+Event $\ast$event, const QVariant \&details) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a6328fcfaf6c54f867070ef91d727d8de}{mouse\+Move\+Event}} (QMouse\+Event $\ast$event, const QPointF \&start\+Pos) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a22561e927e8426f2aeb50c0f18efb53c}{mouse\+Release\+Event}} (QMouse\+Event $\ast$event, const QPointF \&start\+Pos) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a4afafee2246982a2190e2acdd43eac32}{wheel\+Event}} (QWheel\+Event $\ast$event) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ae17b77cbed229e46fc9b94782d889639}\label{class_q_c_p_polar_axis_radial_ae17b77cbed229e46fc9b94782d889639}} 
+void {\bfseries update\+Geometry} (const QPointF \&center, double radius)
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ade84096bf50e08c145948338ebbb821c}\label{class_q_c_p_polar_axis_radial_ade84096bf50e08c145948338ebbb821c}} 
+void {\bfseries setup\+Tick\+Vectors} ()
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ae4f33236bbe9ee2aec63dfca90b3b33e}\label{class_q_c_p_polar_axis_radial_ae4f33236bbe9ee2aec63dfca90b3b33e}} 
+QPen {\bfseries get\+Base\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a5823ff936700df164ce59e1958070bd6}\label{class_q_c_p_polar_axis_radial_a5823ff936700df164ce59e1958070bd6}} 
+QPen {\bfseries get\+Tick\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a5e6eb6bc05903dec434838f63739c30f}\label{class_q_c_p_polar_axis_radial_a5e6eb6bc05903dec434838f63739c30f}} 
+QPen {\bfseries get\+Sub\+Tick\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a65f04cd8c585991137c319fdaf026d0d}\label{class_q_c_p_polar_axis_radial_a65f04cd8c585991137c319fdaf026d0d}} 
+QFont {\bfseries get\+Tick\+Label\+Font} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a6300ea36a65c84d24f8ebc159ccc4faf}\label{class_q_c_p_polar_axis_radial_a6300ea36a65c84d24f8ebc159ccc4faf}} 
+QFont {\bfseries get\+Label\+Font} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ab03f75c267ea6695748cd039f6e02474}\label{class_q_c_p_polar_axis_radial_ab03f75c267ea6695748cd039f6e02474}} 
+QColor {\bfseries get\+Tick\+Label\+Color} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a910c789a9b97bc4ab211dadad2ac391d}\label{class_q_c_p_polar_axis_radial_a910c789a9b97bc4ab211dadad2ac391d}} 
+QColor {\bfseries get\+Label\+Color} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aea89060485bd5bd6e852ec4139bac2ee}\label{class_q_c_p_polar_axis_radial_aea89060485bd5bd6e852ec4139bac2ee}} 
+bool {\bfseries m\+Range\+Drag}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a34afdad9bce0d37a1f7728cbbc86d530}\label{class_q_c_p_polar_axis_radial_a34afdad9bce0d37a1f7728cbbc86d530}} 
+bool {\bfseries m\+Range\+Zoom}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a698c1c06890377d26f89f87073c31970}\label{class_q_c_p_polar_axis_radial_a698c1c06890377d26f89f87073c31970}} 
+double {\bfseries m\+Range\+Zoom\+Factor}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a0c160a49a21753064aba528d83eccf9e}\label{class_q_c_p_polar_axis_radial_a0c160a49a21753064aba528d83eccf9e}} 
+\mbox{\hyperlink{class_q_c_p_polar_axis_angular}{QCPPolar\+Axis\+Angular}} $\ast$ {\bfseries m\+Angular\+Axis}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a395716a047b4043c7ad2d2485ed7ba7c}\label{class_q_c_p_polar_axis_radial_a395716a047b4043c7ad2d2485ed7ba7c}} 
+double {\bfseries m\+Angle}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a2f9fa31f3126346dbccbb8514138cfc0}\label{class_q_c_p_polar_axis_radial_a2f9fa31f3126346dbccbb8514138cfc0}} 
+\mbox{\hyperlink{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8f}{Angle\+Reference}} {\bfseries m\+Angle\+Reference}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a0fb2622797a56cede9825d774ed29abc}\label{class_q_c_p_polar_axis_radial_a0fb2622797a56cede9825d774ed29abc}} 
+Selectable\+Parts {\bfseries m\+Selectable\+Parts}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ae574dddca1fe500b8a5116c6b57b5f8b}\label{class_q_c_p_polar_axis_radial_ae574dddca1fe500b8a5116c6b57b5f8b}} 
+Selectable\+Parts {\bfseries m\+Selected\+Parts}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ae6c9b6f3b012fabc9e028540f439ff1b}\label{class_q_c_p_polar_axis_radial_ae6c9b6f3b012fabc9e028540f439ff1b}} 
+QPen {\bfseries m\+Base\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aca886d7e1031ee0dadeb93bae4fea6c3}\label{class_q_c_p_polar_axis_radial_aca886d7e1031ee0dadeb93bae4fea6c3}} 
+QPen {\bfseries m\+Selected\+Base\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a8e8dfc7e03fa0a4b0d59e8b57a96d6b6}\label{class_q_c_p_polar_axis_radial_a8e8dfc7e03fa0a4b0d59e8b57a96d6b6}} 
+int {\bfseries m\+Label\+Padding}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a93a702ac29d2ee5298dd52bc687d183e}\label{class_q_c_p_polar_axis_radial_a93a702ac29d2ee5298dd52bc687d183e}} 
+QString {\bfseries m\+Label}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a32806fe0f3a9e830367a2a7e47fd0c27}\label{class_q_c_p_polar_axis_radial_a32806fe0f3a9e830367a2a7e47fd0c27}} 
+QFont {\bfseries m\+Label\+Font}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ac01604e4972e86c2868118d2a8461a55}\label{class_q_c_p_polar_axis_radial_ac01604e4972e86c2868118d2a8461a55}} 
+QFont {\bfseries m\+Selected\+Label\+Font}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a4ed376acf7d8a439894dab24a924eb32}\label{class_q_c_p_polar_axis_radial_a4ed376acf7d8a439894dab24a924eb32}} 
+QColor {\bfseries m\+Label\+Color}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_af18d7cfa887186473d45b248ad763f3f}\label{class_q_c_p_polar_axis_radial_af18d7cfa887186473d45b248ad763f3f}} 
+QColor {\bfseries m\+Selected\+Label\+Color}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a49c3bbe385092d408159f3e27260986f}\label{class_q_c_p_polar_axis_radial_a49c3bbe385092d408159f3e27260986f}} 
+bool {\bfseries m\+Tick\+Labels}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ac30d3d055ade881ea03c55b479cea7c8}\label{class_q_c_p_polar_axis_radial_ac30d3d055ade881ea03c55b479cea7c8}} 
+QFont {\bfseries m\+Tick\+Label\+Font}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ab86892271ba4afb8f6a43a1fb8615ddb}\label{class_q_c_p_polar_axis_radial_ab86892271ba4afb8f6a43a1fb8615ddb}} 
+QFont {\bfseries m\+Selected\+Tick\+Label\+Font}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a46c14c04b8202803429762b6d3c61bc9}\label{class_q_c_p_polar_axis_radial_a46c14c04b8202803429762b6d3c61bc9}} 
+QColor {\bfseries m\+Tick\+Label\+Color}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ae580230484aae6105c5e7e5dc09de8bd}\label{class_q_c_p_polar_axis_radial_ae580230484aae6105c5e7e5dc09de8bd}} 
+QColor {\bfseries m\+Selected\+Tick\+Label\+Color}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a18e48a629736ed29a7704027e54368b0}\label{class_q_c_p_polar_axis_radial_a18e48a629736ed29a7704027e54368b0}} 
+int {\bfseries m\+Number\+Precision}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a5a67e514d650016c038ee5eec428339e}\label{class_q_c_p_polar_axis_radial_a5a67e514d650016c038ee5eec428339e}} 
+QLatin1\+Char {\bfseries m\+Number\+Format\+Char}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a0d23331185ba15d6b39cd3c38566be7b}\label{class_q_c_p_polar_axis_radial_a0d23331185ba15d6b39cd3c38566be7b}} 
+bool {\bfseries m\+Number\+Beautiful\+Powers}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_acf70215100c1fe34623c5fc263335c17}\label{class_q_c_p_polar_axis_radial_acf70215100c1fe34623c5fc263335c17}} 
+bool {\bfseries m\+Number\+Multiply\+Cross}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ac81036fcd826c7f5558ef6b7427b7711}\label{class_q_c_p_polar_axis_radial_ac81036fcd826c7f5558ef6b7427b7711}} 
+bool {\bfseries m\+Ticks}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a1fdc9870867c0334549e064b915a01f5}\label{class_q_c_p_polar_axis_radial_a1fdc9870867c0334549e064b915a01f5}} 
+bool {\bfseries m\+Sub\+Ticks}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a7ad6d20a41f9fa7e4280e72beab1a214}\label{class_q_c_p_polar_axis_radial_a7ad6d20a41f9fa7e4280e72beab1a214}} 
+int {\bfseries m\+Tick\+Length\+In}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a16f5e46dcebbf66f39dd1543880a21d8}\label{class_q_c_p_polar_axis_radial_a16f5e46dcebbf66f39dd1543880a21d8}} 
+int {\bfseries m\+Tick\+Length\+Out}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a3aa369b7a9f8747face92488c5cf7835}\label{class_q_c_p_polar_axis_radial_a3aa369b7a9f8747face92488c5cf7835}} 
+int {\bfseries m\+Sub\+Tick\+Length\+In}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aa93032836d22060ebb48b19f3ed4530e}\label{class_q_c_p_polar_axis_radial_aa93032836d22060ebb48b19f3ed4530e}} 
+int {\bfseries m\+Sub\+Tick\+Length\+Out}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ade82c2b2f147e4303d647fe21189fc83}\label{class_q_c_p_polar_axis_radial_ade82c2b2f147e4303d647fe21189fc83}} 
+QPen {\bfseries m\+Tick\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aeaaecf7755113a665267f6be0df8655c}\label{class_q_c_p_polar_axis_radial_aeaaecf7755113a665267f6be0df8655c}} 
+QPen {\bfseries m\+Selected\+Tick\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a6eb1a93de22c6a10398304126127bf34}\label{class_q_c_p_polar_axis_radial_a6eb1a93de22c6a10398304126127bf34}} 
+QPen {\bfseries m\+Sub\+Tick\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a5017d289db89e6ccf29e0e86ac56be48}\label{class_q_c_p_polar_axis_radial_a5017d289db89e6ccf29e0e86ac56be48}} 
+QPen {\bfseries m\+Selected\+Sub\+Tick\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a5813c42edbb6db12ac0b0c2f0e1e77a7}\label{class_q_c_p_polar_axis_radial_a5813c42edbb6db12ac0b0c2f0e1e77a7}} 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} {\bfseries m\+Range}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a9ba880a474afd546805de53104da70ba}\label{class_q_c_p_polar_axis_radial_a9ba880a474afd546805de53104da70ba}} 
+bool {\bfseries m\+Range\+Reversed}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a87094255cc4116ad692b5d7c301828b8}\label{class_q_c_p_polar_axis_radial_a87094255cc4116ad692b5d7c301828b8}} 
+\mbox{\hyperlink{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605}{Scale\+Type}} {\bfseries m\+Scale\+Type}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a7424381fd943d3d4b24febabf3a4edd3}\label{class_q_c_p_polar_axis_radial_a7424381fd943d3d4b24febabf3a4edd3}} 
+QPointF {\bfseries m\+Center}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a8eb72fb0b0542d5b91620bf56d3f4a8b}\label{class_q_c_p_polar_axis_radial_a8eb72fb0b0542d5b91620bf56d3f4a8b}} 
+double {\bfseries m\+Radius}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a858380e088d0d8cc017aa28bfc142206}\label{class_q_c_p_polar_axis_radial_a858380e088d0d8cc017aa28bfc142206}} 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_q_c_p_axis_ticker}{QCPAxis\+Ticker}} $>$ {\bfseries m\+Ticker}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a51ef581df1c2ace2a5b4b52e4ac67063}\label{class_q_c_p_polar_axis_radial_a51ef581df1c2ace2a5b4b52e4ac67063}} 
+QVector$<$ double $>$ {\bfseries m\+Tick\+Vector}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a3ebe71553581fe726a7f5108686655ca}\label{class_q_c_p_polar_axis_radial_a3ebe71553581fe726a7f5108686655ca}} 
+QVector$<$ QString $>$ {\bfseries m\+Tick\+Vector\+Labels}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a658bbe0b0df9799832794c64c6044fda}\label{class_q_c_p_polar_axis_radial_a658bbe0b0df9799832794c64c6044fda}} 
+QVector$<$ double $>$ {\bfseries m\+Sub\+Tick\+Vector}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a435db028c05a14b19a8ed7cd0ba32777}\label{class_q_c_p_polar_axis_radial_a435db028c05a14b19a8ed7cd0ba32777}} 
+bool {\bfseries m\+Dragging}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a57dc4a7c9a93fcfbd7126350f8343f86}\label{class_q_c_p_polar_axis_radial_a57dc4a7c9a93fcfbd7126350f8343f86}} 
+\mbox{\hyperlink{class_q_c_p_range}{QCPRange}} {\bfseries m\+Drag\+Start\+Range}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a3a7a323bacc89ed09b8ba8df03af9849}\label{class_q_c_p_polar_axis_radial_a3a7a323bacc89ed09b8ba8df03af9849}} 
+QCP\+::\+Antialiased\+Elements {\bfseries m\+AADrag\+Backup}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aa934661f3ffb02622adc30435b7b5446}\label{class_q_c_p_polar_axis_radial_aa934661f3ffb02622adc30435b7b5446}} 
+QCP\+::\+Antialiased\+Elements {\bfseries m\+Not\+AADrag\+Backup}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ad5aeecc381ba16ee3c64ead9c05b942c}\label{class_q_c_p_polar_axis_radial_ad5aeecc381ba16ee3c64ead9c05b942c}} 
+\mbox{\hyperlink{class_q_c_p_label_painter_private}{QCPLabel\+Painter\+Private}} {\bfseries m\+Label\+Painter}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a1cdf9df76adcfae45261690aa0ca2198}\label{class_q_c_p_polar_axis_radial_a1cdf9df76adcfae45261690aa0ca2198}} 
+class {\bfseries QCustom\+Plot}
+\item 
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_aa244002768af333ada868424b4c51ecd}\label{class_q_c_p_polar_axis_radial_aa244002768af333ada868424b4c51ecd}} 
+class {\bfseries QCPPolar\+Axis\+Angular}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8f}\label{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8f}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!AngleReference@{AngleReference}}
+\index{AngleReference@{AngleReference}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{AngleReference}{AngleReference}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8f}{QCPPolar\+Axis\+Radial\+::\+Angle\+Reference}}}
+
+Defines the reference of the angle at which a radial axis is tilted (set\+Angle). \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{arAbsolute@{arAbsolute}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!arAbsolute@{arAbsolute}}}\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8faefeede9b2a4a5b5c98087d91c5298ba9}\label{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8faefeede9b2a4a5b5c98087d91c5298ba9}} 
+ar\+Absolute&The axis tilt is given in absolute degrees. The zero is to the right and positive angles are measured counter-\/clockwise. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{arAngularAxis@{arAngularAxis}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!arAngularAxis@{arAngularAxis}}}\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8fa5a6f382c9d968d96bd107b75c9a1add0}\label{class_q_c_p_polar_axis_radial_a4d8fb5dd2c412b2e3b4d23940698fc8fa5a6f382c9d968d96bd107b75c9a1add0}} 
+ar\+Angular\+Axis&The axis tilt is measured in the angular coordinate system given by the parent angular axis. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605}\label{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!ScaleType@{ScaleType}}
+\index{ScaleType@{ScaleType}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{ScaleType}{ScaleType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605}{QCPPolar\+Axis\+Radial\+::\+Scale\+Type}}}
+
+Defines the scale of an axis. \begin{DoxySeeAlso}{See also}
+set\+Scale\+Type 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stLinear@{stLinear}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!stLinear@{stLinear}}}\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605ac3792de649afed8d8d70894d4e5497e9}\label{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605ac3792de649afed8d8d70894d4e5497e9}} 
+st\+Linear&Linear scaling. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stLogarithmic@{stLogarithmic}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!stLogarithmic@{stLogarithmic}}}\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605a44fa891f769cd677cd2d3e3661ac0c39}\label{class_q_c_p_polar_axis_radial_a2e208d6eac26cd5abecc075ff2e5e605a44fa891f769cd677cd2d3e3661ac0c39}} 
+st\+Logarithmic&Logarithmic scaling with correspondingly transformed axis coordinates (possibly also set\+Ticker to a \mbox{\hyperlink{class_q_c_p_axis_ticker_log}{QCPAxis\+Ticker\+Log}} instance). \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908}\label{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!SelectablePart@{SelectablePart}}
+\index{SelectablePart@{SelectablePart}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{SelectablePart}{SelectablePart}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908}{QCPPolar\+Axis\+Radial\+::\+Selectable\+Part}}}
+
+Defines the selectable parts of an axis. \begin{DoxySeeAlso}{See also}
+set\+Selectable\+Parts, set\+Selected\+Parts 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{spNone@{spNone}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!spNone@{spNone}}}\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908a4f6e2acf66dbfb63325f8a54c9da4fe2}\label{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908a4f6e2acf66dbfb63325f8a54c9da4fe2}} 
+sp\+None&None of the selectable parts. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{spAxis@{spAxis}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!spAxis@{spAxis}}}\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908a4f1c9303f84a85dac58d8971de2e96bb}\label{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908a4f1c9303f84a85dac58d8971de2e96bb}} 
+sp\+Axis&The axis backbone and tick marks. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{spTickLabels@{spTickLabels}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!spTickLabels@{spTickLabels}}}\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908a3b8e439b23e3de65635db573adf61cbe}\label{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908a3b8e439b23e3de65635db573adf61cbe}} 
+sp\+Tick\+Labels&Tick labels (numbers) of this axis (as a whole, not individually) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{spAxisLabel@{spAxisLabel}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!spAxisLabel@{spAxisLabel}}}\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908ab9e1a849edd42955e3c5fb1d57fcddbb}\label{class_q_c_p_polar_axis_radial_ad022e747b5fc6aeaa6ff3587eee22908ab9e1a849edd42955e3c5fb1d57fcddbb}} 
+sp\+Axis\+Label&The axis label. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a4bc26dd3f7929df2229733c64e52a5f9}\label{class_q_c_p_polar_axis_radial_a4bc26dd3f7929df2229733c64e52a5f9}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!applyDefaultAntialiasingHint@{applyDefaultAntialiasingHint}}
+\index{applyDefaultAntialiasingHint@{applyDefaultAntialiasingHint}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{applyDefaultAntialiasingHint()}{applyDefaultAntialiasingHint()}}
+{\footnotesize\ttfamily virtual void QCPPolar\+Axis\+Radial\+::apply\+Default\+Antialiasing\+Hint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a72a6df0ea0ee320e756efdfeb780e91b}\label{class_q_c_p_polar_axis_radial_a72a6df0ea0ee320e756efdfeb780e91b}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!deselectEvent@{deselectEvent}}
+\index{deselectEvent@{deselectEvent}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{deselectEvent()}{deselectEvent()}}
+{\footnotesize\ttfamily virtual void QCPPolar\+Axis\+Radial\+::deselect\+Event (\begin{DoxyParamCaption}\item[{bool $\ast$}]{selection\+State\+Changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a5d9df9102209560579fb6bcf6288dda7}\label{class_q_c_p_polar_axis_radial_a5d9df9102209560579fb6bcf6288dda7}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!draw@{draw}}
+\index{draw@{draw}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void QCPPolar\+Axis\+Radial\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a6328fcfaf6c54f867070ef91d727d8de}\label{class_q_c_p_polar_axis_radial_a6328fcfaf6c54f867070ef91d727d8de}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!mouseMoveEvent@{mouseMoveEvent}}
+\index{mouseMoveEvent@{mouseMoveEvent}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{mouseMoveEvent()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily virtual void QCPPolar\+Axis\+Radial\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event,  }\item[{const QPointF \&}]{start\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a2f752aa446f9c6ee7f409e9faf7cf27b}\label{class_q_c_p_polar_axis_radial_a2f752aa446f9c6ee7f409e9faf7cf27b}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily virtual void QCPPolar\+Axis\+Radial\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event,  }\item[{const QVariant \&}]{details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a22561e927e8426f2aeb50c0f18efb53c}\label{class_q_c_p_polar_axis_radial_a22561e927e8426f2aeb50c0f18efb53c}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!mouseReleaseEvent@{mouseReleaseEvent}}
+\index{mouseReleaseEvent@{mouseReleaseEvent}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{mouseReleaseEvent()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily virtual void QCPPolar\+Axis\+Radial\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event,  }\item[{const QPointF \&}]{start\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a32d168714dd3bc130daacf2d56365669}\label{class_q_c_p_polar_axis_radial_a32d168714dd3bc130daacf2d56365669}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!selectEvent@{selectEvent}}
+\index{selectEvent@{selectEvent}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{selectEvent()}{selectEvent()}}
+{\footnotesize\ttfamily virtual void QCPPolar\+Axis\+Radial\+::select\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event $\ast$}]{event,  }\item[{bool}]{additive,  }\item[{const QVariant \&}]{details,  }\item[{bool $\ast$}]{selection\+State\+Changed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a1b8f85b44ef94148c067d5e89ea3de73}\label{class_q_c_p_polar_axis_radial_a1b8f85b44ef94148c067d5e89ea3de73}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!selectionCategory@{selectionCategory}}
+\index{selectionCategory@{selectionCategory}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{selectionCategory()}{selectionCategory()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_q_c_p_a2ad6bb6281c7c2d593d4277b44c2b037}{QCP\+::\+Interaction}} QCPPolar\+Axis\+Radial\+::selection\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a554e229caa6c50898ce9e3f9bdd63ab3}\label{class_q_c_p_polar_axis_radial_a554e229caa6c50898ce9e3f9bdd63ab3}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily virtual double QCPPolar\+Axis\+Radial\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+\mbox{\Hypertarget{class_q_c_p_polar_axis_radial_a4afafee2246982a2190e2acdd43eac32}\label{class_q_c_p_polar_axis_radial_a4afafee2246982a2190e2acdd43eac32}} 
+\index{QCPPolarAxisRadial@{QCPPolarAxisRadial}!wheelEvent@{wheelEvent}}
+\index{wheelEvent@{wheelEvent}!QCPPolarAxisRadial@{QCPPolarAxisRadial}}
+\doxysubsubsection{\texorpdfstring{wheelEvent()}{wheelEvent()}}
+{\footnotesize\ttfamily virtual void QCPPolar\+Axis\+Radial\+::wheel\+Event (\begin{DoxyParamCaption}\item[{QWheel\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_layerable}{QCPLayerable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/qcustomplot.\+hpp\end{DoxyCompactItemize}

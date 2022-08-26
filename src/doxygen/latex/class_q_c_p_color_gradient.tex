@@ -1,0 +1,258 @@
+\hypertarget{class_q_c_p_color_gradient}{}\doxysection{QCPColor\+Gradient Class Reference}
+\label{class_q_c_p_color_gradient}\index{QCPColorGradient@{QCPColorGradient}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1}{Color\+Interpolation}} \{ \mbox{\hyperlink{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1a5e30f725c9cfe93999e268a9f92afbe7}{ci\+RGB}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1af14ae62fcae11ecc07234eeaec5856cb}{ci\+HSV}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7e}{Nan\+Handling}} \{ \newline
+\mbox{\hyperlink{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea997c2713f8ffe470834e6ccdb45576f8}{nh\+None}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea8a0f1857151baf1aab0f1bc5c8a2b73f}{nh\+Lowest\+Color}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea1f1fec8678f690bdb2a437661beba24e}{nh\+Highest\+Color}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea6abad803991346258fe0270ba24c2172}{nh\+Transparent}}
+, \newline
+\mbox{\hyperlink{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7eab2eff641b22417f165f4c1f5973aaf9b}{nh\+Nan\+Color}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072}{Gradient\+Preset}} \{ \newline
+\mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072add11ae369a86f3b1b6205ec72e5021fb}{gp\+Grayscale}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a4f42e534cf6cff5a29a5388094d099b5}{gp\+Hot}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072aec8c001f62c0d5cb853db5fd85309557}{gp\+Cold}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a1bb89351b6def7d220973443fe059c62}{gp\+Night}}
+, \newline
+\mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a9e72663bf6b94b65945f7843f24e0721}{gp\+Candy}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a382f0b07cec1a59d8a533438aea815d2}{gp\+Geography}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a4297f4f9e212a819cd65e8e34567182b}{gp\+Ion}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072af1676b129f9f458ace453f280c731cf7}{gp\+Thermal}}
+, \newline
+\mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072ab7414ce4e36dc3e82e0132a7f0f41b52}{gp\+Polar}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072ad63adc100ef46f6b4a8a6deacec4642f}{gp\+Spectrum}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a5f8a9e67b64c17ddfe4f069fe2b9fb02}{gp\+Jet}}
+, \mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a30efe58407acfb67939032f70213a130}{gp\+Hues}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a4e570b4004fd60bd135e52d685ed2b66}\label{class_q_c_p_color_gradient_a4e570b4004fd60bd135e52d685ed2b66}} 
+{\bfseries QCPColor\+Gradient} (\mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072}{Gradient\+Preset}} preset)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a7f3478c33c59aa3c03b9ea1f809877fa}\label{class_q_c_p_color_gradient_a7f3478c33c59aa3c03b9ea1f809877fa}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_q_c_p_color_gradient}{QCPColor\+Gradient}} \&other) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_ad26a10e3beaef4fc6f2553d1a9756087}\label{class_q_c_p_color_gradient_ad26a10e3beaef4fc6f2553d1a9756087}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_q_c_p_color_gradient}{QCPColor\+Gradient}} \&other) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_ac4b9d7034fc3b6c76318b05075367090}\label{class_q_c_p_color_gradient_ac4b9d7034fc3b6c76318b05075367090}} 
+int {\bfseries level\+Count} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a62e423a8012169dfe1234df1f7463bd1}\label{class_q_c_p_color_gradient_a62e423a8012169dfe1234df1f7463bd1}} 
+QMap$<$ double, QColor $>$ {\bfseries color\+Stops} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_abad5002858db8cf75ecb045200881de6}\label{class_q_c_p_color_gradient_abad5002858db8cf75ecb045200881de6}} 
+\mbox{\hyperlink{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1}{Color\+Interpolation}} {\bfseries color\+Interpolation} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a9db4d379cc88e61f881cdbc5b63da0cd}\label{class_q_c_p_color_gradient_a9db4d379cc88e61f881cdbc5b63da0cd}} 
+\mbox{\hyperlink{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7e}{Nan\+Handling}} {\bfseries nan\+Handling} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a057a02669d4f9977e7299e74f439715b}\label{class_q_c_p_color_gradient_a057a02669d4f9977e7299e74f439715b}} 
+QColor {\bfseries nan\+Color} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a22a1d2b17f203caf0dcec833507fb9e0}\label{class_q_c_p_color_gradient_a22a1d2b17f203caf0dcec833507fb9e0}} 
+bool {\bfseries periodic} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a18da587eb4f7fc788ea28ba15b6a12de}\label{class_q_c_p_color_gradient_a18da587eb4f7fc788ea28ba15b6a12de}} 
+void {\bfseries set\+Level\+Count} (int n)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a724e828aa6f0ba5011a9392477c35d3a}\label{class_q_c_p_color_gradient_a724e828aa6f0ba5011a9392477c35d3a}} 
+void {\bfseries set\+Color\+Stops} (const QMap$<$ double, QColor $>$ \&color\+Stops)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a3b48be5e78079db1bb2a1188a4c3390e}\label{class_q_c_p_color_gradient_a3b48be5e78079db1bb2a1188a4c3390e}} 
+void {\bfseries set\+Color\+Stop\+At} (double position, const QColor \&color)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_aa13fda86406e1d896a465a409ae63b38}\label{class_q_c_p_color_gradient_aa13fda86406e1d896a465a409ae63b38}} 
+void {\bfseries set\+Color\+Interpolation} (\mbox{\hyperlink{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1}{Color\+Interpolation}} interpolation)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a0ba44c2c0af3ffe917a68eef1678b71f}\label{class_q_c_p_color_gradient_a0ba44c2c0af3ffe917a68eef1678b71f}} 
+void {\bfseries set\+Nan\+Handling} (\mbox{\hyperlink{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7e}{Nan\+Handling}} handling)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_abb1c11bdd1701c66e573aaff593c5c2d}\label{class_q_c_p_color_gradient_abb1c11bdd1701c66e573aaff593c5c2d}} 
+void {\bfseries set\+Nan\+Color} (const QColor \&color)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a39d6448155fc00a219f239220d14bb39}\label{class_q_c_p_color_gradient_a39d6448155fc00a219f239220d14bb39}} 
+void {\bfseries set\+Periodic} (bool enabled)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_aaf423ceb943e177b0ed2c48c811d83dc}\label{class_q_c_p_color_gradient_aaf423ceb943e177b0ed2c48c811d83dc}} 
+void {\bfseries colorize} (const double $\ast$data, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range, QRgb $\ast$scan\+Line, int n, int data\+Index\+Factor=1, bool logarithmic=false)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_acf0cc7fba83ef21f7b8d5d5258519db3}\label{class_q_c_p_color_gradient_acf0cc7fba83ef21f7b8d5d5258519db3}} 
+void {\bfseries colorize} (const double $\ast$data, const unsigned char $\ast$alpha, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range, QRgb $\ast$scan\+Line, int n, int data\+Index\+Factor=1, bool logarithmic=false)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a0599545c859268b025d2060dea741cea}\label{class_q_c_p_color_gradient_a0599545c859268b025d2060dea741cea}} 
+QRgb {\bfseries color} (double position, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range, bool logarithmic=false)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_aa0aeec1528241728b9671bf8e60b1622}\label{class_q_c_p_color_gradient_aa0aeec1528241728b9671bf8e60b1622}} 
+void {\bfseries load\+Preset} (\mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072}{Gradient\+Preset}} preset)
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a939213e85f0d1279519d555c5fcfb6ad}\label{class_q_c_p_color_gradient_a939213e85f0d1279519d555c5fcfb6ad}} 
+void {\bfseries clear\+Color\+Stops} ()
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a9f72f501de429829ec446333316decda}\label{class_q_c_p_color_gradient_a9f72f501de429829ec446333316decda}} 
+\mbox{\hyperlink{class_q_c_p_color_gradient}{QCPColor\+Gradient}} {\bfseries inverted} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a137b368ea8829a871974add6e4883c71}\label{class_q_c_p_color_gradient_a137b368ea8829a871974add6e4883c71}} 
+bool {\bfseries stops\+Use\+Alpha} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a353f15ab3ab586eebf1f6b58c3e2707b}\label{class_q_c_p_color_gradient_a353f15ab3ab586eebf1f6b58c3e2707b}} 
+void {\bfseries update\+Color\+Buffer} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a98fb68e359904b2c991fcae3e38a211a}\label{class_q_c_p_color_gradient_a98fb68e359904b2c991fcae3e38a211a}} 
+int {\bfseries m\+Level\+Count}
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a9e11a2b0974ef289d12c324822bc3a3e}\label{class_q_c_p_color_gradient_a9e11a2b0974ef289d12c324822bc3a3e}} 
+QMap$<$ double, QColor $>$ {\bfseries m\+Color\+Stops}
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a028cef73d863800a9ee93ffd641cce01}\label{class_q_c_p_color_gradient_a028cef73d863800a9ee93ffd641cce01}} 
+\mbox{\hyperlink{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1}{Color\+Interpolation}} {\bfseries m\+Color\+Interpolation}
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a0be33364dbf6226cc231f56fdf341f12}\label{class_q_c_p_color_gradient_a0be33364dbf6226cc231f56fdf341f12}} 
+\mbox{\hyperlink{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7e}{Nan\+Handling}} {\bfseries m\+Nan\+Handling}
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a719b2c3edff4b0e38271edb909b81490}\label{class_q_c_p_color_gradient_a719b2c3edff4b0e38271edb909b81490}} 
+QColor {\bfseries m\+Nan\+Color}
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_a4b07deeb20ca1ee2d5ea7e01bf0420af}\label{class_q_c_p_color_gradient_a4b07deeb20ca1ee2d5ea7e01bf0420af}} 
+bool {\bfseries m\+Periodic}
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_af8b5f0739faa5f8295154d47ce38ecff}\label{class_q_c_p_color_gradient_af8b5f0739faa5f8295154d47ce38ecff}} 
+QVector$<$ QRgb $>$ {\bfseries m\+Color\+Buffer}
+\item 
+\mbox{\Hypertarget{class_q_c_p_color_gradient_abacf55e11f67d6722a687af1bb2687bd}\label{class_q_c_p_color_gradient_abacf55e11f67d6722a687af1bb2687bd}} 
+bool {\bfseries m\+Color\+Buffer\+Invalidated}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1}\label{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1}} 
+\index{QCPColorGradient@{QCPColorGradient}!ColorInterpolation@{ColorInterpolation}}
+\index{ColorInterpolation@{ColorInterpolation}!QCPColorGradient@{QCPColorGradient}}
+\doxysubsubsection{\texorpdfstring{ColorInterpolation}{ColorInterpolation}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1}{QCPColor\+Gradient\+::\+Color\+Interpolation}}}
+
+Defines the color spaces in which color interpolation between gradient stops can be performed.
+
+\begin{DoxySeeAlso}{See also}
+set\+Color\+Interpolation 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ciRGB@{ciRGB}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!ciRGB@{ciRGB}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1a5e30f725c9cfe93999e268a9f92afbe7}\label{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1a5e30f725c9cfe93999e268a9f92afbe7}} 
+ci\+RGB&Color channels red, green and blue are linearly interpolated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ciHSV@{ciHSV}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!ciHSV@{ciHSV}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1af14ae62fcae11ecc07234eeaec5856cb}\label{class_q_c_p_color_gradient_ac5dca17cc24336e6ca176610e7f77fc1af14ae62fcae11ecc07234eeaec5856cb}} 
+ci\+HSV&Color channels hue, saturation and value are linearly interpolated (The hue is interpolated over the shortest angle distance) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072}} 
+\index{QCPColorGradient@{QCPColorGradient}!GradientPreset@{GradientPreset}}
+\index{GradientPreset@{GradientPreset}!QCPColorGradient@{QCPColorGradient}}
+\doxysubsubsection{\texorpdfstring{GradientPreset}{GradientPreset}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072}{QCPColor\+Gradient\+::\+Gradient\+Preset}}}
+
+Defines the available presets that can be loaded with load\+Preset. See the documentation there for an image of the presets. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpGrayscale@{gpGrayscale}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpGrayscale@{gpGrayscale}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072add11ae369a86f3b1b6205ec72e5021fb}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072add11ae369a86f3b1b6205ec72e5021fb}} 
+gp\+Grayscale&Continuous lightness from black to white (suited for non-\/biased data representation) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpHot@{gpHot}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpHot@{gpHot}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a4f42e534cf6cff5a29a5388094d099b5}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a4f42e534cf6cff5a29a5388094d099b5}} 
+gp\+Hot&Continuous lightness from black over firey colors to white (suited for non-\/biased data representation) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpCold@{gpCold}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpCold@{gpCold}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072aec8c001f62c0d5cb853db5fd85309557}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072aec8c001f62c0d5cb853db5fd85309557}} 
+gp\+Cold&Continuous lightness from black over icey colors to white (suited for non-\/biased data representation) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpNight@{gpNight}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpNight@{gpNight}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a1bb89351b6def7d220973443fe059c62}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a1bb89351b6def7d220973443fe059c62}} 
+gp\+Night&Continuous lightness from black over weak blueish colors to white (suited for non-\/biased data representation) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpCandy@{gpCandy}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpCandy@{gpCandy}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a9e72663bf6b94b65945f7843f24e0721}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a9e72663bf6b94b65945f7843f24e0721}} 
+gp\+Candy&Blue over pink to white. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpGeography@{gpGeography}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpGeography@{gpGeography}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a382f0b07cec1a59d8a533438aea815d2}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a382f0b07cec1a59d8a533438aea815d2}} 
+gp\+Geography&Colors suitable to represent different elevations on geographical maps \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpIon@{gpIon}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpIon@{gpIon}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a4297f4f9e212a819cd65e8e34567182b}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a4297f4f9e212a819cd65e8e34567182b}} 
+gp\+Ion&Half hue spectrum from black over purple to blue and finally green (creates banding illusion but allows more precise magnitude estimates) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpThermal@{gpThermal}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpThermal@{gpThermal}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072af1676b129f9f458ace453f280c731cf7}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072af1676b129f9f458ace453f280c731cf7}} 
+gp\+Thermal&Colors suitable for thermal imaging, ranging from dark blue over purple to orange, yellow and white \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpPolar@{gpPolar}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpPolar@{gpPolar}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072ab7414ce4e36dc3e82e0132a7f0f41b52}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072ab7414ce4e36dc3e82e0132a7f0f41b52}} 
+gp\+Polar&Colors suitable to emphasize polarity around the center, with blue for negative, black in the middle and red for positive values \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpSpectrum@{gpSpectrum}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpSpectrum@{gpSpectrum}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072ad63adc100ef46f6b4a8a6deacec4642f}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072ad63adc100ef46f6b4a8a6deacec4642f}} 
+gp\+Spectrum&An approximation of the visible light spectrum (creates banding illusion but allows more precise magnitude estimates) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpJet@{gpJet}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpJet@{gpJet}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a5f8a9e67b64c17ddfe4f069fe2b9fb02}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a5f8a9e67b64c17ddfe4f069fe2b9fb02}} 
+gp\+Jet&Hue variation similar to a spectrum, often used in numerical visualization (creates banding illusion but allows more precise magnitude estimates) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gpHues@{gpHues}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!gpHues@{gpHues}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a30efe58407acfb67939032f70213a130}\label{class_q_c_p_color_gradient_aed6569828fee337023670272910c9072a30efe58407acfb67939032f70213a130}} 
+gp\+Hues&Full hue cycle, with highest and lowest color red (suitable for periodic data, such as angles and phases, see set\+Periodic) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7e}\label{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7e}} 
+\index{QCPColorGradient@{QCPColorGradient}!NanHandling@{NanHandling}}
+\index{NanHandling@{NanHandling}!QCPColorGradient@{QCPColorGradient}}
+\doxysubsubsection{\texorpdfstring{NanHandling}{NanHandling}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7e}{QCPColor\+Gradient\+::\+Nan\+Handling}}}
+
+Defines how NaN data points shall appear in the plot.
+
+\begin{DoxySeeAlso}{See also}
+set\+Nan\+Handling, set\+Nan\+Color 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nhNone@{nhNone}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!nhNone@{nhNone}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea997c2713f8ffe470834e6ccdb45576f8}\label{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea997c2713f8ffe470834e6ccdb45576f8}} 
+nh\+None&NaN data points are not explicitly handled and shouldn\textquotesingle{}t occur in the data (this gives slight performance improvement) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nhLowestColor@{nhLowestColor}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!nhLowestColor@{nhLowestColor}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea8a0f1857151baf1aab0f1bc5c8a2b73f}\label{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea8a0f1857151baf1aab0f1bc5c8a2b73f}} 
+nh\+Lowest\+Color&NaN data points appear as the lowest color defined in this \mbox{\hyperlink{class_q_c_p_color_gradient}{QCPColor\+Gradient}} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nhHighestColor@{nhHighestColor}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!nhHighestColor@{nhHighestColor}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea1f1fec8678f690bdb2a437661beba24e}\label{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea1f1fec8678f690bdb2a437661beba24e}} 
+nh\+Highest\+Color&NaN data points appear as the highest color defined in this \mbox{\hyperlink{class_q_c_p_color_gradient}{QCPColor\+Gradient}} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nhTransparent@{nhTransparent}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!nhTransparent@{nhTransparent}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea6abad803991346258fe0270ba24c2172}\label{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7ea6abad803991346258fe0270ba24c2172}} 
+nh\+Transparent&NaN data points appear transparent. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nhNanColor@{nhNanColor}!QCPColorGradient@{QCPColorGradient}}\index{QCPColorGradient@{QCPColorGradient}!nhNanColor@{nhNanColor}}}\mbox{\Hypertarget{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7eab2eff641b22417f165f4c1f5973aaf9b}\label{class_q_c_p_color_gradient_afd38ab8d2cceef9cd98eef88408ccb7eab2eff641b22417f165f4c1f5973aaf9b}} 
+nh\+Nan\+Color&NaN data points appear as the color defined with set\+Nan\+Color \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/qcustomplot.\+hpp\end{DoxyCompactItemize}

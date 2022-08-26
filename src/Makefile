@@ -15,6 +15,7 @@ P_BLD := ./build
 P_TEST := ./tests
 P_TBLD := ./tests/build
 P_COVERAGE := $(P_TBLD)/CMakeFiles/$(TEST).dir
+P_RUN := ./build/SmartCalc_v2_0
 
 # Choosing a compiler and setting the main flags #
 STANDART := -std=c++17
@@ -67,7 +68,7 @@ style:
 
 ############ Cleaning up unused files ############
 clean: unistall
-	-@rm -rf $(P_BLD)
+	-@rm -rf $(P_TBLD)
 	-@rm -rf report
 	-@rm -rf *.tgz
 
@@ -98,3 +99,12 @@ install:
 ##############       Unistall       ##############
 unistall:
 	-@rm -rf $(P_BLD)
+
+##############         dvi          ##############
+dvi:
+	-@doxygen
+	open doxygen/html/index.html
+
+##############         run          ##############
+run:
+	-@$(P_RUN)

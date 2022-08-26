@@ -1,0 +1,71 @@
+\hypertarget{class_q_c_p_axis_ticker_log}{}\doxysection{QCPAxis\+Ticker\+Log Class Reference}
+\label{class_q_c_p_axis_ticker_log}\index{QCPAxisTickerLog@{QCPAxisTickerLog}}
+Inheritance diagram for QCPAxis\+Ticker\+Log\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_q_c_p_axis_ticker_log}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_log_a841a97f2b6850ff1ef3aa73e89d94775}\label{class_q_c_p_axis_ticker_log_a841a97f2b6850ff1ef3aa73e89d94775}} 
+double {\bfseries log\+Base} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_log_aebe43661977364fc1fd220fa1ae36a10}\label{class_q_c_p_axis_ticker_log_aebe43661977364fc1fd220fa1ae36a10}} 
+int {\bfseries sub\+Tick\+Count} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_log_ac6e3b4e03baea3816f898869ab9751ef}\label{class_q_c_p_axis_ticker_log_ac6e3b4e03baea3816f898869ab9751ef}} 
+void {\bfseries set\+Log\+Base} (double base)
+\item 
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_log_ad51989c798c0cfd50936d77aac57c56a}\label{class_q_c_p_axis_ticker_log_ad51989c798c0cfd50936d77aac57c56a}} 
+void {\bfseries set\+Sub\+Tick\+Count} (int sub\+Ticks)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_q_c_p_axis_ticker_log_aca64621d1a341538bc1afe67e90d85f7}{get\+Sub\+Tick\+Count}} (double tick\+Step) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual QVector$<$ double $>$ \mbox{\hyperlink{class_q_c_p_axis_ticker_log_aa9a82484429e68a199b8a59e3690497e}{create\+Tick\+Vector}} (double tick\+Step, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&range) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_log_a4108bcc1cd68dcec54dc75667440d328}\label{class_q_c_p_axis_ticker_log_a4108bcc1cd68dcec54dc75667440d328}} 
+double {\bfseries m\+Log\+Base}
+\item 
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_log_a3d92b729bedbbbd34ee5f74565defd95}\label{class_q_c_p_axis_ticker_log_a3d92b729bedbbbd34ee5f74565defd95}} 
+int {\bfseries m\+Sub\+Tick\+Count}
+\item 
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_log_aeba719bbeec39957f475ef89d6ae2fe7}\label{class_q_c_p_axis_ticker_log_aeba719bbeec39957f475ef89d6ae2fe7}} 
+double {\bfseries m\+Log\+Base\+Ln\+Inv}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_log_aa9a82484429e68a199b8a59e3690497e}\label{class_q_c_p_axis_ticker_log_aa9a82484429e68a199b8a59e3690497e}} 
+\index{QCPAxisTickerLog@{QCPAxisTickerLog}!createTickVector@{createTickVector}}
+\index{createTickVector@{createTickVector}!QCPAxisTickerLog@{QCPAxisTickerLog}}
+\doxysubsubsection{\texorpdfstring{createTickVector()}{createTickVector()}}
+{\footnotesize\ttfamily virtual QVector$<$ double $>$ QCPAxis\+Ticker\+Log\+::create\+Tick\+Vector (\begin{DoxyParamCaption}\item[{double}]{tick\+Step,  }\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_axis_ticker}{QCPAxis\+Ticker}}.
+
+\mbox{\Hypertarget{class_q_c_p_axis_ticker_log_aca64621d1a341538bc1afe67e90d85f7}\label{class_q_c_p_axis_ticker_log_aca64621d1a341538bc1afe67e90d85f7}} 
+\index{QCPAxisTickerLog@{QCPAxisTickerLog}!getSubTickCount@{getSubTickCount}}
+\index{getSubTickCount@{getSubTickCount}!QCPAxisTickerLog@{QCPAxisTickerLog}}
+\doxysubsubsection{\texorpdfstring{getSubTickCount()}{getSubTickCount()}}
+{\footnotesize\ttfamily virtual int QCPAxis\+Ticker\+Log\+::get\+Sub\+Tick\+Count (\begin{DoxyParamCaption}\item[{double}]{tick\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_axis_ticker}{QCPAxis\+Ticker}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/qcustomplot.\+hpp\end{DoxyCompactItemize}

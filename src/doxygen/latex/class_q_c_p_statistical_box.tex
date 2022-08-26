@@ -1,0 +1,209 @@
+\hypertarget{class_q_c_p_statistical_box}{}\doxysection{QCPStatistical\+Box Class Reference}
+\label{class_q_c_p_statistical_box}\index{QCPStatisticalBox@{QCPStatisticalBox}}
+Inheritance diagram for QCPStatistical\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.530744cm]{class_q_c_p_statistical_box}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a75c2b3e7fcd0741cc981693a2ba63b27}\label{class_q_c_p_statistical_box_a75c2b3e7fcd0741cc981693a2ba63b27}} 
+{\bfseries QCPStatistical\+Box} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$key\+Axis, \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$value\+Axis)
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a728e501413eaf191544014173d52dfbc}\label{class_q_c_p_statistical_box_a728e501413eaf191544014173d52dfbc}} 
+QShared\+Pointer$<$ \mbox{\hyperlink{class_q_c_p_data_container}{QCPStatistical\+Box\+Data\+Container}} $>$ {\bfseries data} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_ae589b7481dec6ef8e50ebb6492d296f1}\label{class_q_c_p_statistical_box_ae589b7481dec6ef8e50ebb6492d296f1}} 
+double {\bfseries width} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_aacfa6686c7cf4af18794ec02354f4782}\label{class_q_c_p_statistical_box_aacfa6686c7cf4af18794ec02354f4782}} 
+double {\bfseries whisker\+Width} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a67e5144f07645fe25c31001c460817fc}\label{class_q_c_p_statistical_box_a67e5144f07645fe25c31001c460817fc}} 
+QPen {\bfseries whisker\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a47ed9ad9d2ca65640319a2f071982ed4}\label{class_q_c_p_statistical_box_a47ed9ad9d2ca65640319a2f071982ed4}} 
+QPen {\bfseries whisker\+Bar\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a2015a8ea758cf65a41d4a6c52a20696b}\label{class_q_c_p_statistical_box_a2015a8ea758cf65a41d4a6c52a20696b}} 
+bool {\bfseries whisker\+Antialiased} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_af767bc7b6b477d005535314b35aca683}\label{class_q_c_p_statistical_box_af767bc7b6b477d005535314b35aca683}} 
+QPen {\bfseries median\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_aef92e38fcb8e5041a44c2e01886e3b66}\label{class_q_c_p_statistical_box_aef92e38fcb8e5041a44c2e01886e3b66}} 
+\mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} {\bfseries outlier\+Style} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a08a6da55822bad825ee25a8069b9b52f}\label{class_q_c_p_statistical_box_a08a6da55822bad825ee25a8069b9b52f}} 
+void {\bfseries set\+Data} (QShared\+Pointer$<$ \mbox{\hyperlink{class_q_c_p_data_container}{QCPStatistical\+Box\+Data\+Container}} $>$ data)
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a4ae198e66243d8cc57ad8893c37bf9d4}\label{class_q_c_p_statistical_box_a4ae198e66243d8cc57ad8893c37bf9d4}} 
+void {\bfseries set\+Data} (const QVector$<$ double $>$ \&keys, const QVector$<$ double $>$ \&minimum, const QVector$<$ double $>$ \&lower\+Quartile, const QVector$<$ double $>$ \&median, const QVector$<$ double $>$ \&upper\+Quartile, const QVector$<$ double $>$ \&maximum, bool already\+Sorted=false)
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a0b62775bd67301b1eba5c785f2b26f14}\label{class_q_c_p_statistical_box_a0b62775bd67301b1eba5c785f2b26f14}} 
+void {\bfseries set\+Width} (double width)
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_adf378812446bd66f34d1f7f293d991cd}\label{class_q_c_p_statistical_box_adf378812446bd66f34d1f7f293d991cd}} 
+void {\bfseries set\+Whisker\+Width} (double width)
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a4a5034cb3b9b040444df05ab1684620b}\label{class_q_c_p_statistical_box_a4a5034cb3b9b040444df05ab1684620b}} 
+void {\bfseries set\+Whisker\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_aa8d3e503897788e1abf68dc74b5f147f}\label{class_q_c_p_statistical_box_aa8d3e503897788e1abf68dc74b5f147f}} 
+void {\bfseries set\+Whisker\+Bar\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a61bcd458fba002f72304d11319051843}\label{class_q_c_p_statistical_box_a61bcd458fba002f72304d11319051843}} 
+void {\bfseries set\+Whisker\+Antialiased} (bool enabled)
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a7260ac55b669f5d0a74f16d5ca84c52c}\label{class_q_c_p_statistical_box_a7260ac55b669f5d0a74f16d5ca84c52c}} 
+void {\bfseries set\+Median\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_ad5241943422eb8e58360a97e99ad6aa7}\label{class_q_c_p_statistical_box_ad5241943422eb8e58360a97e99ad6aa7}} 
+void {\bfseries set\+Outlier\+Style} (const \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \&style)
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a9a8739c5b8291db8fd839e892fc8f478}\label{class_q_c_p_statistical_box_a9a8739c5b8291db8fd839e892fc8f478}} 
+void {\bfseries add\+Data} (const QVector$<$ double $>$ \&keys, const QVector$<$ double $>$ \&minimum, const QVector$<$ double $>$ \&lower\+Quartile, const QVector$<$ double $>$ \&median, const QVector$<$ double $>$ \&upper\+Quartile, const QVector$<$ double $>$ \&maximum, bool already\+Sorted=false)
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a026f2790b530d6f29312254ecb1e7c1e}\label{class_q_c_p_statistical_box_a026f2790b530d6f29312254ecb1e7c1e}} 
+void {\bfseries add\+Data} (double key, double minimum, double lower\+Quartile, double median, double upper\+Quartile, double maximum, const QVector$<$ double $>$ \&outliers=QVector$<$ double $>$())
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}} \mbox{\hyperlink{class_q_c_p_statistical_box_a7047863d59673d8d049bf26cfdd9912c}{select\+Test\+Rect}} (const QRectF \&rect, bool only\+Selectable) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_statistical_box_a9f371c840cbc6b0fcf313808410cd882}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=nullptr) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_statistical_box_ae44dd2e135ebf2a53eb6e4bfe7343211}{get\+Key\+Range}} (bool \&found\+Range, \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_statistical_box_a377e0cd27c7301949778c3f27620bf89}{get\+Value\+Range}} (bool \&found\+Range, \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}, const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&in\+Key\+Range=\mbox{\hyperlink{class_q_c_p_range}{QCPRange}}()) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_statistical_box_abd117b6a1a29a0160728b75d48cffd8b}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_statistical_box_adffd972086797d416a5e3bb974fd45d7}{draw\+Legend\+Icon}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QRectF \&rect) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a2f9f8283f69124fd004ecccb7a62691a}\label{class_q_c_p_statistical_box_a2f9f8283f69124fd004ecccb7a62691a}} 
+virtual void {\bfseries draw\+Statistical\+Box} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPStatistical\+Box\+Data\+Container\+::const\+\_\+iterator}} it, const \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \&outlier\+Style) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a1c24e86384a4aced91d5216fce86b175}\label{class_q_c_p_statistical_box_a1c24e86384a4aced91d5216fce86b175}} 
+void {\bfseries get\+Visible\+Data\+Bounds} (\mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPStatistical\+Box\+Data\+Container\+::const\+\_\+iterator}} \&begin, \mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPStatistical\+Box\+Data\+Container\+::const\+\_\+iterator}} \&end) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_aa44482bf991ceca74602294dd9977243}\label{class_q_c_p_statistical_box_aa44482bf991ceca74602294dd9977243}} 
+QRectF {\bfseries get\+Quartile\+Box} (\mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPStatistical\+Box\+Data\+Container\+::const\+\_\+iterator}} it) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a233c28f8c2464ed104a4d580eedd4c64}\label{class_q_c_p_statistical_box_a233c28f8c2464ed104a4d580eedd4c64}} 
+QVector$<$ QLineF $>$ {\bfseries get\+Whisker\+Backbone\+Lines} (\mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPStatistical\+Box\+Data\+Container\+::const\+\_\+iterator}} it) const
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_af478f6e8a5e9ca2f1bbac10a6b73319a}\label{class_q_c_p_statistical_box_af478f6e8a5e9ca2f1bbac10a6b73319a}} 
+QVector$<$ QLineF $>$ {\bfseries get\+Whisker\+Bar\+Lines} (\mbox{\hyperlink{class_q_c_p_data_container_a1cd3412b067579f66f4a252e5b2b3e22}{QCPStatistical\+Box\+Data\+Container\+::const\+\_\+iterator}} it) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_af365e40b0f706c3d76f857c7957f629d}\label{class_q_c_p_statistical_box_af365e40b0f706c3d76f857c7957f629d}} 
+double {\bfseries m\+Width}
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a4d166474f845d5db626e8b11a0815a6f}\label{class_q_c_p_statistical_box_a4d166474f845d5db626e8b11a0815a6f}} 
+double {\bfseries m\+Whisker\+Width}
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a25b7552499f0f090fcff02858b2265a5}\label{class_q_c_p_statistical_box_a25b7552499f0f090fcff02858b2265a5}} 
+QPen {\bfseries m\+Whisker\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_aa719b1d722a9f82364df1497a6dc1da8}\label{class_q_c_p_statistical_box_aa719b1d722a9f82364df1497a6dc1da8}} 
+QPen {\bfseries m\+Whisker\+Bar\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a714bb91efb423c7b7ec3a6a50c2910b9}\label{class_q_c_p_statistical_box_a714bb91efb423c7b7ec3a6a50c2910b9}} 
+bool {\bfseries m\+Whisker\+Antialiased}
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a1af5b601049c575f778ae270f40c9443}\label{class_q_c_p_statistical_box_a1af5b601049c575f778ae270f40c9443}} 
+QPen {\bfseries m\+Median\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_ae102e4187e1e6ba1f2df0f622b5171a4}\label{class_q_c_p_statistical_box_ae102e4187e1e6ba1f2df0f622b5171a4}} 
+\mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} {\bfseries m\+Outlier\+Style}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a1cdf9df76adcfae45261690aa0ca2198}\label{class_q_c_p_statistical_box_a1cdf9df76adcfae45261690aa0ca2198}} 
+class {\bfseries QCustom\+Plot}
+\item 
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a8429035e7adfbd7f05805a6530ad5e3b}\label{class_q_c_p_statistical_box_a8429035e7adfbd7f05805a6530ad5e3b}} 
+class {\bfseries QCPLegend}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_statistical_box_abd117b6a1a29a0160728b75d48cffd8b}\label{class_q_c_p_statistical_box_abd117b6a1a29a0160728b75d48cffd8b}} 
+\index{QCPStatisticalBox@{QCPStatisticalBox}!draw@{draw}}
+\index{draw@{draw}!QCPStatisticalBox@{QCPStatisticalBox}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void QCPStatistical\+Box\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_statistical_box_adffd972086797d416a5e3bb974fd45d7}\label{class_q_c_p_statistical_box_adffd972086797d416a5e3bb974fd45d7}} 
+\index{QCPStatisticalBox@{QCPStatisticalBox}!drawLegendIcon@{drawLegendIcon}}
+\index{drawLegendIcon@{drawLegendIcon}!QCPStatisticalBox@{QCPStatisticalBox}}
+\doxysubsubsection{\texorpdfstring{drawLegendIcon()}{drawLegendIcon()}}
+{\footnotesize\ttfamily virtual void QCPStatistical\+Box\+::draw\+Legend\+Icon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter,  }\item[{const QRectF \&}]{rect }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_statistical_box_ae44dd2e135ebf2a53eb6e4bfe7343211}\label{class_q_c_p_statistical_box_ae44dd2e135ebf2a53eb6e4bfe7343211}} 
+\index{QCPStatisticalBox@{QCPStatisticalBox}!getKeyRange@{getKeyRange}}
+\index{getKeyRange@{getKeyRange}!QCPStatisticalBox@{QCPStatisticalBox}}
+\doxysubsubsection{\texorpdfstring{getKeyRange()}{getKeyRange()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} QCPStatistical\+Box\+::get\+Key\+Range (\begin{DoxyParamCaption}\item[{bool \&}]{found\+Range,  }\item[{\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}}}]{in\+Sign\+Domain = {\ttfamily \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a377e0cd27c7301949778c3f27620bf89}\label{class_q_c_p_statistical_box_a377e0cd27c7301949778c3f27620bf89}} 
+\index{QCPStatisticalBox@{QCPStatisticalBox}!getValueRange@{getValueRange}}
+\index{getValueRange@{getValueRange}!QCPStatisticalBox@{QCPStatisticalBox}}
+\doxysubsubsection{\texorpdfstring{getValueRange()}{getValueRange()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} QCPStatistical\+Box\+::get\+Value\+Range (\begin{DoxyParamCaption}\item[{bool \&}]{found\+Range,  }\item[{\mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9}{QCP\+::\+Sign\+Domain}}}]{in\+Sign\+Domain = {\ttfamily \mbox{\hyperlink{namespace_q_c_p_afd50e7cf431af385614987d8553ff8a9aa38352ef02d51ddfa4399d9551566e24}{QCP\+::sd\+Both}}},  }\item[{const \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \&}]{in\+Key\+Range = {\ttfamily \mbox{\hyperlink{class_q_c_p_range}{QCPRange}}()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}}.
+
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a9f371c840cbc6b0fcf313808410cd882}\label{class_q_c_p_statistical_box_a9f371c840cbc6b0fcf313808410cd882}} 
+\index{QCPStatisticalBox@{QCPStatisticalBox}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPStatisticalBox@{QCPStatisticalBox}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily virtual double QCPStatistical\+Box\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily nullptr} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Implements a point-\/selection algorithm assuming the data (accessed via the 1D data interface) is point-\/like. Most subclasses will want to reimplement this method again, to provide a more accurate hit test based on the true data visualization geometry.
+
+If {\itshape details} is not 0, it will be set to a \mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}}, describing the closest data point to {\itshape pos}.
+
+\textbackslash{}seebaseclassmethod 
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a2f169c3c2989e5d08ec7a9e3eb56a261}{QCPAbstract\+Plottable1\+D$<$ QCPStatistical\+Box\+Data $>$}}.
+
+\mbox{\Hypertarget{class_q_c_p_statistical_box_a7047863d59673d8d049bf26cfdd9912c}\label{class_q_c_p_statistical_box_a7047863d59673d8d049bf26cfdd9912c}} 
+\index{QCPStatisticalBox@{QCPStatisticalBox}!selectTestRect@{selectTestRect}}
+\index{selectTestRect@{selectTestRect}!QCPStatisticalBox@{QCPStatisticalBox}}
+\doxysubsubsection{\texorpdfstring{selectTestRect()}{selectTestRect()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_q_c_p_data_selection}{QCPData\+Selection}} QCPStatistical\+Box\+::select\+Test\+Rect (\begin{DoxyParamCaption}\item[{const QRectF \&}]{rect,  }\item[{bool}]{only\+Selectable }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Implements a rect-\/selection algorithm assuming the data (accessed via the 1D data interface) is point-\/like. Most subclasses will want to reimplement this method again, to provide a more accurate hit test based on the true data visualization geometry.
+
+\textbackslash{}seebaseclassmethod 
+
+Reimplemented from \mbox{\hyperlink{class_q_c_p_abstract_plottable1_d_a22377bf6e57ab7eedbc9e489250c6ded}{QCPAbstract\+Plottable1\+D$<$ QCPStatistical\+Box\+Data $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/qcustomplot.\+hpp\end{DoxyCompactItemize}

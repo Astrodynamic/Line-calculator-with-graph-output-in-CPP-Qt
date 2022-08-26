@@ -1,0 +1,107 @@
+\hypertarget{class_q_c_p_item_curve}{}\doxysection{QCPItem\+Curve Class Reference}
+\label{class_q_c_p_item_curve}\index{QCPItemCurve@{QCPItemCurve}}
+Inheritance diagram for QCPItem\+Curve\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_q_c_p_item_curve}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_ac9b7508bb5c8827e1a7a6199f8c82bec}\label{class_q_c_p_item_curve_ac9b7508bb5c8827e1a7a6199f8c82bec}} 
+{\bfseries QCPItem\+Curve} (\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$parent\+Plot)
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_aefe2e9affaa9c70f434a076def4a7ea5}\label{class_q_c_p_item_curve_aefe2e9affaa9c70f434a076def4a7ea5}} 
+QPen {\bfseries pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_a4827e5f89e8fb3b2760871c4e5315322}\label{class_q_c_p_item_curve_a4827e5f89e8fb3b2760871c4e5315322}} 
+QPen {\bfseries selected\+Pen} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_a86467ff1dc9cbcefead6333bd5e27393}\label{class_q_c_p_item_curve_a86467ff1dc9cbcefead6333bd5e27393}} 
+\mbox{\hyperlink{class_q_c_p_line_ending}{QCPLine\+Ending}} {\bfseries head} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_aaef82aa581f6996444028027d6829acc}\label{class_q_c_p_item_curve_aaef82aa581f6996444028027d6829acc}} 
+\mbox{\hyperlink{class_q_c_p_line_ending}{QCPLine\+Ending}} {\bfseries tail} () const
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_a034be908440aec785c34b92843461221}\label{class_q_c_p_item_curve_a034be908440aec785c34b92843461221}} 
+void {\bfseries set\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_a375b917669f868c5a106bf2f1ab7c26d}\label{class_q_c_p_item_curve_a375b917669f868c5a106bf2f1ab7c26d}} 
+void {\bfseries set\+Selected\+Pen} (const QPen \&pen)
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_a08a30d9cdd63995deea3d9e20430676f}\label{class_q_c_p_item_curve_a08a30d9cdd63995deea3d9e20430676f}} 
+void {\bfseries set\+Head} (const \mbox{\hyperlink{class_q_c_p_line_ending}{QCPLine\+Ending}} \&head)
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_ac3488d8b1a6489c845dc5bff3ef71124}\label{class_q_c_p_item_curve_ac3488d8b1a6489c845dc5bff3ef71124}} 
+void {\bfseries set\+Tail} (const \mbox{\hyperlink{class_q_c_p_line_ending}{QCPLine\+Ending}} \&tail)
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_item_curve_a1afa7b51fc8ff56bc36e79833fc98c0c}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=nullptr) const Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_a20c3b5ea31c33764f4f30c2ec7ae518b}\label{class_q_c_p_item_curve_a20c3b5ea31c33764f4f30c2ec7ae518b}} 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const {\bfseries start}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_aa124bf66c09cc51c627fb49db8bf8a7b}\label{class_q_c_p_item_curve_aa124bf66c09cc51c627fb49db8bf8a7b}} 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const {\bfseries start\+Dir}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_a28181a9dee9cc3c3da83a883221bd2d0}\label{class_q_c_p_item_curve_a28181a9dee9cc3c3da83a883221bd2d0}} 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const {\bfseries end\+Dir}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_a24ecbb195b32a08b42b61c2cf08a1b4d}\label{class_q_c_p_item_curve_a24ecbb195b32a08b42b61c2cf08a1b4d}} 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const {\bfseries end}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_item_curve_a0c702ef5d0b7858e2da20c01f98c9981}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter) Q\+\_\+\+DECL\+\_\+\+OVERRIDE
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_a3a3a84518e8701211c8c5a40bf3c911f}\label{class_q_c_p_item_curve_a3a3a84518e8701211c8c5a40bf3c911f}} 
+QPen {\bfseries main\+Pen} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_a7ef92988d1db2e4d0311e34c0a57fe42}\label{class_q_c_p_item_curve_a7ef92988d1db2e4d0311e34c0a57fe42}} 
+QPen {\bfseries m\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_ab22cbab261b20be5aa8e4ca252149246}\label{class_q_c_p_item_curve_ab22cbab261b20be5aa8e4ca252149246}} 
+QPen {\bfseries m\+Selected\+Pen}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_af2cc26ff199570940dc96f5ec19a13f8}\label{class_q_c_p_item_curve_af2cc26ff199570940dc96f5ec19a13f8}} 
+\mbox{\hyperlink{class_q_c_p_line_ending}{QCPLine\+Ending}} {\bfseries m\+Head}
+\item 
+\mbox{\Hypertarget{class_q_c_p_item_curve_af1dca285b97e3f5b892dab827a79f327}\label{class_q_c_p_item_curve_af1dca285b97e3f5b892dab827a79f327}} 
+\mbox{\hyperlink{class_q_c_p_line_ending}{QCPLine\+Ending}} {\bfseries m\+Tail}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_item_curve_a0c702ef5d0b7858e2da20c01f98c9981}\label{class_q_c_p_item_curve_a0c702ef5d0b7858e2da20c01f98c9981}} 
+\index{QCPItemCurve@{QCPItemCurve}!draw@{draw}}
+\index{draw@{draw}!QCPItemCurve@{QCPItemCurve}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void QCPItem\+Curve\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}}.
+
+\mbox{\Hypertarget{class_q_c_p_item_curve_a1afa7b51fc8ff56bc36e79833fc98c0c}\label{class_q_c_p_item_curve_a1afa7b51fc8ff56bc36e79833fc98c0c}} 
+\index{QCPItemCurve@{QCPItemCurve}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPItemCurve@{QCPItemCurve}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily virtual double QCPItem\+Curve\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily nullptr} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_item}{QCPAbstract\+Item}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/qcustomplot.\+hpp\end{DoxyCompactItemize}

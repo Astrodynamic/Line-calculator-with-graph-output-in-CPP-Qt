@@ -1,0 +1,62 @@
+\hypertarget{calculator_8hpp_source}{}\doxysection{calculator.\+hpp}
+\label{calculator_8hpp_source}\index{include/calculator.hpp@{include/calculator.hpp}}
+\mbox{\hyperlink{calculator_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SRC\_INCLUDE\_CALCULATOR\_HPP\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SRC\_INCLUDE\_CALCULATOR\_HPP\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QAbstractButton>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QCommandLinkButton>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QInputDialog>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{calculation_8hpp}{calculation.hpp}}"{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{credit_8hpp}{credit.hpp}}"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{debit_8hpp}{debit.hpp}}"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{graph_8hpp}{graph.hpp}}"{}}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{26 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{27 \textcolor{keyword}{class }Calculator;}
+\DoxyCodeLine{28 \}}
+\DoxyCodeLine{29 QT\_END\_NAMESPACE}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{namespace }s21 \{}
+\DoxyCodeLine{36 \textcolor{keyword}{class }\mbox{\hyperlink{classs21_1_1_calculator}{Calculator}} : \textcolor{keyword}{public} QMainWindow \{}
+\DoxyCodeLine{37   Q\_OBJECT}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39  \textcolor{keyword}{private}:}
+\DoxyCodeLine{40   Ui::Calculator *ui;  }
+\DoxyCodeLine{41   \mbox{\hyperlink{classs21_1_1_calculation}{Calculation}} *model;  }
+\DoxyCodeLine{42   \mbox{\hyperlink{classs21_1_1_graph}{Graph}} *graph;  }
+\DoxyCodeLine{43   \mbox{\hyperlink{classs21_1_1_credit}{Credit}} *credit;  }
+\DoxyCodeLine{44   \mbox{\hyperlink{classs21_1_1_debit}{Debit}} *debit;  }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46  \textcolor{keyword}{public}:}
+\DoxyCodeLine{52   \textcolor{keyword}{explicit} \mbox{\hyperlink{classs21_1_1_calculator_a6fb6bc5e713fd68782f63d2fa101f1d3}{Calculator}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{58   \mbox{\hyperlink{classs21_1_1_calculator_a066e7d20afe3770e19d8891d81559b3b}{\string~Calculator}}();}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60  \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{68   \textcolor{keywordtype}{void} \mbox{\hyperlink{classs21_1_1_calculator_ab4fa89310b98db6d498a9a312464b8e4}{update\_graph}}(\textcolor{keywordtype}{double} x\_min, \textcolor{keywordtype}{double} x\_max, \textcolor{keywordtype}{double} step);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70  \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{76   \textcolor{keywordtype}{void} print\_lexeme(QAbstractButton *btn);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{81   \textcolor{keywordtype}{void} on\_btn\_clean\_clicked();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{86   \textcolor{keywordtype}{void} on\_btn\_equal\_clicked();}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{91   \textcolor{keywordtype}{void} on\_btn\_function\_clicked();}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{97   \textcolor{keywordtype}{void} on\_action\_basic\_triggered();}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{103   \textcolor{keywordtype}{void} on\_action\_credit\_triggered();}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{109   \textcolor{keywordtype}{void} on\_action\_debit\_triggered();}
+\DoxyCodeLine{110 \};}
+\DoxyCodeLine{111 \}  \textcolor{comment}{// namespace s21}}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// SRC\_INCLUDE\_CALCULATOR\_HPP\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,110 @@
+\hypertarget{calculation_8hpp}{}\doxysection{include/calculation.hpp File Reference}
+\label{calculation_8hpp}\index{include/calculation.hpp@{include/calculation.hpp}}
+
+
+Class предствляющий Model в MVC.  
+
+
+{\ttfamily \#include $<$QMap$>$}\newline
+{\ttfamily \#include $<$QRegular\+Expression$>$}\newline
+{\ttfamily \#include $<$QStack$>$}\newline
+{\ttfamily \#include $<$QString$>$}\newline
+{\ttfamily \#include $<$QVector$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$variant$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structs21_1_1overloaded}{s21\+::overloaded$<$ Ts $>$}}
+\begin{DoxyCompactList}\small\item\em Шаблонный класс для переопределения лямда-\/выражений в std\+::visit. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1_calculation}{s21\+::\+Calculation}}
+\begin{DoxyCompactList}\small\item\em (Model) предоставляет данные и реагирует на команды контроллера, изменяя своё состояние \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{calculation_8hpp_a1d2f332c04fdbb0271467529fa0c8b58}{lamdas\+\_\+f1arg}}(SIGN)~\mbox{[}$\,$\mbox{]}(double src) -\/$>$ double \{ return SIGN(src); \}
+\begin{DoxyCompactList}\small\item\em Макрос для определения основных арифметических функций с одним аргументом в таблице fun\+\_\+ptr\+\_\+t. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{calculation_8hpp_ac05fd61980a4a99e096bebafc3d8cb9b}{lamdas\+\_\+f2arg}}(SIGN)~  \mbox{[}$\,$\mbox{]}(double lhs, double rhs) -\/$>$ double \{ return lhs SIGN rhs; \}
+\begin{DoxyCompactList}\small\item\em Макрос для определения основных арифметических функций с двумя аргументом в таблице fun\+\_\+ptr\+\_\+t. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Ts$>$ }\\\mbox{\hyperlink{calculation_8hpp_a9767509a0992b3367244fe5f8e08f081}{s21\+::overloaded}} (Ts...) -\/$>$ overloaded$<$ Ts... $>$
+\begin{DoxyCompactList}\small\item\em Метод переопределения списка агрументов метода overloaded в классы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class предствляющий Model в MVC. 
+
+\begin{DoxyAuthor}{Author}
+werewolf
+\end{DoxyAuthor}
+Класс, который предоставляет интерфейс для основных арифмитических расчётов строкового калькулятора \begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/08-\/26
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{calculation_8hpp_a1d2f332c04fdbb0271467529fa0c8b58}\label{calculation_8hpp_a1d2f332c04fdbb0271467529fa0c8b58}} 
+\index{calculation.hpp@{calculation.hpp}!lamdas\_f1arg@{lamdas\_f1arg}}
+\index{lamdas\_f1arg@{lamdas\_f1arg}!calculation.hpp@{calculation.hpp}}
+\doxysubsubsection{\texorpdfstring{lamdas\_f1arg}{lamdas\_f1arg}}
+{\footnotesize\ttfamily \#define lamdas\+\_\+f1arg(\begin{DoxyParamCaption}\item[{}]{SIGN }\end{DoxyParamCaption})~\mbox{[}$\,$\mbox{]}(double src) -\/$>$ double \{ return SIGN(src); \}}
+
+
+
+Макрос для определения основных арифметических функций с одним аргументом в таблице fun\+\_\+ptr\+\_\+t. 
+
+lamdas function with one argument 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em SIGN} & operator простых унарных арифметических выражений \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возращает указатель на унарную функцию 
+\end{DoxyReturn}
+\mbox{\Hypertarget{calculation_8hpp_ac05fd61980a4a99e096bebafc3d8cb9b}\label{calculation_8hpp_ac05fd61980a4a99e096bebafc3d8cb9b}} 
+\index{calculation.hpp@{calculation.hpp}!lamdas\_f2arg@{lamdas\_f2arg}}
+\index{lamdas\_f2arg@{lamdas\_f2arg}!calculation.hpp@{calculation.hpp}}
+\doxysubsubsection{\texorpdfstring{lamdas\_f2arg}{lamdas\_f2arg}}
+{\footnotesize\ttfamily \#define lamdas\+\_\+f2arg(\begin{DoxyParamCaption}\item[{}]{SIGN }\end{DoxyParamCaption})~  \mbox{[}$\,$\mbox{]}(double lhs, double rhs) -\/$>$ double \{ return lhs SIGN rhs; \}}
+
+
+
+Макрос для определения основных арифметических функций с двумя аргументом в таблице fun\+\_\+ptr\+\_\+t. 
+
+lamdas function with two arguments 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em SIGN} & operator простых бинарных арифметических выражений \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возращает указатель на бинарную функцию 
+\end{DoxyReturn}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{calculation_8hpp_a9767509a0992b3367244fe5f8e08f081}\label{calculation_8hpp_a9767509a0992b3367244fe5f8e08f081}} 
+\index{calculation.hpp@{calculation.hpp}!overloaded@{overloaded}}
+\index{overloaded@{overloaded}!calculation.hpp@{calculation.hpp}}
+\doxysubsubsection{\texorpdfstring{overloaded()}{overloaded()}}
+{\footnotesize\ttfamily template$<$class... Ts$>$ \\
+\mbox{\hyperlink{structs21_1_1overloaded}{s21\+::overloaded}} (\begin{DoxyParamCaption}\item[{Ts...}]{ }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{structs21_1_1overloaded}{overloaded}}$<$ Ts... $>$}
+
+
+
+Метод переопределения списка агрументов метода overloaded в классы 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Ts} & -\/ принемаемый тип лямда-\/выражения \\
+\hline
+\end{DoxyTemplParams}

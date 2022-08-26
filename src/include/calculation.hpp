@@ -6,7 +6,7 @@
  * @author werewolf
  * @brief Class предствляющий Model в MVC
  * @details Класс, который предоставляет интерфейс для основных арифмитических
- * расчётов строкового каркулятора
+ * расчётов строкового калькулятора
  * @version 0.1
  * @date 2022-08-26
  *
@@ -66,7 +66,7 @@ overloaded(Ts...) -> overloaded<Ts...>;
  */
 class Calculation {
  private:
-  /**
+  /** \enum s21::f_prt_t
    * @brief Приоритеты операций
    * @details function priority type
    */
