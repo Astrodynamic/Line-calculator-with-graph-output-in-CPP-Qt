@@ -19,7 +19,7 @@ namespace Ui {
 class Graph;
 }
 
-namespace s21 {
+namespace SmartCalc {
 /**
  * @brief (View) отвечает за отображение данных модели пользователю, реагируя на
  * изменения модели
@@ -73,6 +73,6 @@ class Graph : public QMainWindow {
  private:
   Ui::Graph *ui;
 };
-}  // namespace s21
+}  // namespace SmartCalc
 
 #endif  // SRC_INCLUDE_GRAPH_HPP_

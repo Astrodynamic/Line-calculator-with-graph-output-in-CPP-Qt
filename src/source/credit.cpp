@@ -2,7 +2,7 @@
 
 #include "ui_credit.h"
 
-namespace s21 {
+namespace SmartCalc {
 Credit::Credit(QWidget *parent) : QMainWindow(parent), ui(new Ui::Credit) {
   ui->setupUi(this);
 }
@@ -60,4 +60,4 @@ void Credit::annuity_calculation(const double &rate, const double &loan, const d
   ui->lbl_percent->setText(QString::number(profit, 'g', 9));
 }
 
-}  // namespace s21
+}  // namespace SmartCalc

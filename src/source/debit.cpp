@@ -2,7 +2,7 @@
 
 #include "ui_debit.h"
 
-namespace s21 {
+namespace SmartCalc {
 Debit::Debit(QWidget *parent) : QMainWindow(parent), ui(new Ui::Debit) {
   ui->setupUi(this);
 }
@@ -168,4 +168,4 @@ void Debit::create_new_form(QVBoxLayout *layout, bool is_push) {
     widgets_pull.insert(del, hlo);
   }
 }
-}  // namespace s21
+}  // namespace SmartCalc

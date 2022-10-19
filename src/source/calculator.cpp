@@ -1,7 +1,7 @@
 #include "calculator.hpp"
 
 #include "ui_calculator.h"
-namespace s21 {
+namespace SmartCalc {
 Calculator::Calculator(QWidget* parent)
     : QMainWindow(parent),
       ui(new Ui::Calculator),
@@ -82,4 +82,4 @@ void Calculator::on_action_debit_triggered() {
   graph->hide();
 }
 
-}  // namespace s21
+}  // namespace SmartCalc

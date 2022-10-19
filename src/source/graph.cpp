@@ -2,7 +2,7 @@
 
 #include "ui_graph.h"
 
-namespace s21 {
+namespace SmartCalc {
 Graph::Graph(QWidget *parent) : QMainWindow(parent), ui(new Ui::Graph) {
   ui->setupUi(this);
   ui->wgt_graph->setInteraction(QCP::iRangeZoom, true);
@@ -24,4 +24,4 @@ void Graph::on_btn_calculate_clicked() {
   ui->wgt_graph->graph(0)->addData(XYVector.first, XYVector.second);
   ui->wgt_graph->replot();
 }
-}  // namespace s21
+}  // namespace SmartCalc

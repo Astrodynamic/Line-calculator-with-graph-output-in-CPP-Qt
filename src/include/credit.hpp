@@ -19,7 +19,7 @@ namespace Ui {
 class Credit;
 }
 
-namespace s21 {
+namespace SmartCalc {
 /**
  * @brief Class представляющий отдельный модуль программы для расчёта по кредиту
  */
@@ -68,6 +68,6 @@ class Credit : public QMainWindow {
    */
   void differentiated_calculation(double &rate, double &loan, double term);
 };
-}  // namespace s21
+}  // namespace SmartCalc
 
 #endif  // SRC_INCLUDE_CREDIT_HPP_

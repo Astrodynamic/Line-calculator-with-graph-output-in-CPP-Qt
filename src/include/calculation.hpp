@@ -43,7 +43,7 @@
 #define lamdas_f2arg(SIGN) \
   [](double lhs, double rhs) -> double { return lhs SIGN rhs; }
 
-namespace s21 {
+namespace SmartCalc {
 /**
  * @brief Шаблонный класс для переопределения лямда-выражений в std::visit
  * @tparam Ts - принемаемый тип лямда-выражения
@@ -66,7 +66,7 @@ overloaded(Ts...) -> overloaded<Ts...>;
  */
 class Calculation {
  private:
-  /** \enum s21::f_prt_t
+  /** \enum SmartCalc::f_prt_t
    * @brief Приоритеты операций
    * @details function priority type
    */
@@ -223,6 +223,6 @@ class Calculation {
    */
   void qstrtod(QString& src, size_t& ind);
 };
-}  // namespace s21
+}  // namespace SmartCalc
 
 #endif  // SRC_INCLUDE_CALCULATION_HPP_

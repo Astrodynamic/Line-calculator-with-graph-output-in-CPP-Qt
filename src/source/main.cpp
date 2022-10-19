@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]) {
   QApplication a(argc, argv);
-  s21::Calculator w;
+  SmartCalc::Calculator w;
   w.show();
   return a.exec();
 }

@@ -1,6 +1,6 @@
 #include "calculation.hpp"
 
-namespace s21 {
+namespace SmartCalc {
 Calculation::fun_ptr_t Calculation::m_fun_ptr = {
     {'(', {"(", {f_prt_t::DEFAULT, nullptr}}},
     {'+', {"+", {f_prt_t::L_PR, lamdas_f2arg(+)}}},
@@ -178,4 +178,4 @@ void Calculation::qstrtod(QString& src, size_t& ind) {
 bool Calculation::is_empty() {
   return m_rpn.empty();
 }
-}  // namespace s21
+}  // namespace SmartCalc

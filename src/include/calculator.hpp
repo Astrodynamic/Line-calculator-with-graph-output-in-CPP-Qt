@@ -28,7 +28,7 @@ class Calculator;
 }
 QT_END_NAMESPACE
 
-namespace s21 {
+namespace SmartCalc {
 /**
  * @brief  (Controller) интерпретирует действия пользователя, оповещая модель о
  * необходимости изменений
@@ -108,6 +108,6 @@ class Calculator : public QMainWindow {
    */
   void on_action_debit_triggered();
 };
-}  // namespace s21
+}  // namespace SmartCalc
 
 #endif  // SRC_INCLUDE_CALCULATOR_HPP_

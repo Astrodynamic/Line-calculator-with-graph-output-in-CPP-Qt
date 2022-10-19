@@ -22,7 +22,7 @@ namespace Ui {
 class Debit;
 }
 
-namespace s21 {
+namespace SmartCalc {
 /**
  * @brief Class представляющий отдельный модуль программы для расчёта по вкладу
  */
@@ -130,6 +130,6 @@ class Debit : public QMainWindow {
    */
   double calc_percents(double &amount);
 };
-}  // namespace s21
+}  // namespace SmartCalc
 
 #endif  // SRC_INCLUDE_DEBIT_HPP_
