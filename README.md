@@ -52,7 +52,7 @@ Provide a special mode "credit calculator" (you can take banki.ru and calcus.ru 
 - Input: total credit amount, term, interest rate, type (annuity, differentiated)
 - Output: monthly payment, overpayment on credit, total payment
 
-## Deposit calculator
+## Part 3. Deposit calculator
 
 Provide a special mode "deposit profitability calculator" (you can take banki.ru and calcus.ru as an example):
 - Input: deposit amount, deposit term, interest rate, tax rate, periodicity of payments, capitalization of interest, replenishments list, partial withdrawals list
