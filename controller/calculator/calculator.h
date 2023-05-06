@@ -1,11 +1,11 @@
-#ifndef SRC_INCLUDE_CALCULATOR_HPP_
-#define SRC_INCLUDE_CALCULATOR_HPP_
+#ifndef CALCULATOR_CONTROLLER_CALCULATOR_CALCULATOR_H_
+#define CALCULATOR_CONTROLLER_CALCULATOR_CALCULATOR_H_
 
 /**
- * @file calculator.hpp
+ * @file calculator.h
  * @author werewolf
  * @brief Class предствляющий Controler в MVC
- * @version 0.1
+ * @version 1.0
  * @date 2022-08-26
  *
  * @copyright Copyright (c) 2022
@@ -110,4 +110,4 @@ class Calculator : public QMainWindow {
 };
 }  // namespace SmartCalc
 
-#endif  // SRC_INCLUDE_CALCULATOR_HPP_
+#endif  // CALCULATOR_CONTROLLER_CALCULATOR_CALCULATOR_H_

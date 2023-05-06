@@ -1,11 +1,11 @@
-#ifndef SRC_INCLUDE_DEBIT_HPP_
-#define SRC_INCLUDE_DEBIT_HPP_
+#ifndef CALCULATOR_MODEL_DEBIT_DEBIT_H_
+#define CALCULATOR_MODEL_DEBIT_DEBIT_H_
 
 /**
- * @file debit.hpp
+ * @file debit.h
  * @author werewolf
  * @brief Отдельный модуль програмы для дебетового калькулятора
- * @version 0.1
+ * @version 1.0
  * @date 2022-08-26
  *
  * @copyright Copyright (c) 2022
@@ -132,4 +132,4 @@ class Debit : public QMainWindow {
 };
 }  // namespace SmartCalc
 
-#endif  // SRC_INCLUDE_DEBIT_HPP_
+#endif  // CALCULATOR_MODEL_DEBIT_DEBIT_H_

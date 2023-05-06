@@ -1,11 +1,11 @@
-#ifndef SRC_INCLUDE_GRAPH_HPP_
-#define SRC_INCLUDE_GRAPH_HPP_
+#ifndef CALCULATOR_CONTROLLER_GRAPH_GRAPH_H_
+#define CALCULATOR_CONTROLLER_GRAPH_GRAPH_H_
 
 /**
- * @file graph.hpp
+ * @file graph.h
  * @author werewolf
  * @brief
- * @version 0.1
+ * @version 1.0
  * @date 2022-08-26
  *
  * @copyright Copyright (c) 2022
@@ -75,4 +75,4 @@ class Graph : public QMainWindow {
 };
 }  // namespace SmartCalc
 
-#endif  // SRC_INCLUDE_GRAPH_HPP_
+#endif  // CALCULATOR_CONTROLLER_GRAPH_GRAPH_H_

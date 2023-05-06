@@ -1,13 +1,13 @@
-#ifndef SRC_INCLUDE_CALCULATION_HPP_
-#define SRC_INCLUDE_CALCULATION_HPP_
+#ifndef CALCULATOR_MODEL_CALCULATION_CALCULATION_H_
+#define CALCULATOR_MODEL_CALCULATION_CALCULATION_H_
 
 /**
- * @file calculation.hpp
+ * @file calculation.h
  * @author werewolf
  * @brief Class предствляющий Model в MVC
  * @details Класс, который предоставляет интерфейс для основных арифмитических
  * расчётов строкового калькулятора
- * @version 0.1
+ * @version 1.0
  * @date 2022-08-26
  *
  * @copyright Copyright (c) 2022
@@ -23,25 +23,6 @@
 #include <functional>
 #include <string>
 #include <variant>
-
-/**
- * @brief Макрос для определения основных арифметических функций с одним
- * аргументом в таблице fun_ptr_t
- * @details lamdas function with one argument
- * @param[in] SIGN operator простых унарных арифметических выражений
- * @return Возращает указатель на унарную функцию
- */
-#define lamdas_f1arg(SIGN) [](double src) -> double { return SIGN(src); }
-
-/**
- * @brief Макрос для определения основных арифметических функций с двумя
- * аргументом в таблице fun_ptr_t
- * @details lamdas function with two arguments
- * @param[in] SIGN operator простых бинарных арифметических выражений
- * @return Возращает указатель на бинарную функцию
- */
-#define lamdas_f2arg(SIGN) \
-  [](double lhs, double rhs) -> double { return lhs SIGN rhs; }
 
 namespace SmartCalc {
 /**
@@ -225,4 +206,4 @@ class Calculation {
 };
 }  // namespace SmartCalc
 
-#endif  // SRC_INCLUDE_CALCULATION_HPP_
+#endif  // CALCULATOR_MODEL_CALCULATION_CALCULATION_H_

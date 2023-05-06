@@ -1,11 +1,11 @@
-#ifndef SRC_INCLUDE_CREDIT_HPP_
-#define SRC_INCLUDE_CREDIT_HPP_
+#ifndef CALCULATOR_MODEL_CREDIT_CREDIT_H_
+#define CALCULATOR_MODEL_CREDIT_CREDIT_H_
 
 /**
- * @file credit.hpp
+ * @file credit.h
  * @author werewolf
  * @brief Отдельный модуль програмы для кредитного калькулятора
- * @version 0.1
+ * @version 1.0
  * @date 2022-08-26
  *
  * @copyright Copyright (c) 2022
@@ -70,4 +70,4 @@ class Credit : public QMainWindow {
 };
 }  // namespace SmartCalc
 
-#endif  // SRC_INCLUDE_CREDIT_HPP_
+#endif  // CALCULATOR_MODEL_CREDIT_CREDIT_H_
