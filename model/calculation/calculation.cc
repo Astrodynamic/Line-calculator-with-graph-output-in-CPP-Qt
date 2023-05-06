@@ -1,4 +1,4 @@
-#include "calculation.hpp"
+#include "calculation.h"
 
 namespace SmartCalc {
 Calculation::fun_ptr_t Calculation::m_fun_ptr = {

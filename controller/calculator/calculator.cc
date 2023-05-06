@@ -1,4 +1,4 @@
-#include "calculator.hpp"
+#include "calculator.h"
 
 #include "ui_calculator.h"
 namespace SmartCalc {

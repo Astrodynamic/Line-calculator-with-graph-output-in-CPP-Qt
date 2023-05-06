@@ -17,10 +17,10 @@
 #include <QInputDialog>
 #include <QMainWindow>
 
-#include "calculation.hpp"
-#include "credit.hpp"
-#include "debit.hpp"
-#include "graph.hpp"
+#include "calculation.h"
+#include "credit.h"
+#include "debit.h"
+#include "graph.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

@@ -1,4 +1,4 @@
-#include "graph.hpp"
+#include "graph.h"
 
 #include "ui_graph.h"
 

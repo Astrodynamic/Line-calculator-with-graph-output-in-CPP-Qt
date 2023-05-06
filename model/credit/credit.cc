@@ -1,4 +1,4 @@
-#include "credit.hpp"
+#include "credit.h"
 
 #include "ui_credit.h"
 
