@@ -185,7 +185,7 @@ class Calculation {
    * @param lexem Токен
    * @return const f_prt_t
    */
-  static const f_prt_t get_priority(QChar& lexem);
+  static f_prt_t get_priority(QChar& lexem);
 
   /**
    * @brief Сравнение приоритетов операторов
@@ -202,7 +202,7 @@ class Calculation {
    * @param src Входная строка
    * @param ind Индекс начала поиска числа
    */
-  void qstrtod(QString& src, size_t& ind);
+  void qstrtod(QString& src, qsizetype& ind);
 };
 }  // namespace SmartCalc
 

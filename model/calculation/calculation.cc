@@ -26,7 +26,7 @@ void Calculation::expression_load(QString infix) {
   if (expression_validate(infix)) {
     expression_up(infix);
     QStack<QChar> stack;
-    for (size_t i = 0; i < infix.size(); ++i) {
+    for (qsizetype i = 0; i < infix.size(); ++i) {
       if (infix[i] == 'x') {
         m_rpn.push_back(infix[i]);
       } else if (infix[i] == 'p') {
@@ -75,7 +75,7 @@ double Calculation::calculation(double x) {
             double lhs = stack.pop();
             stack.push(fn(lhs, rhs));
           },
-          [](auto fn) {}
+          []([[maybe_unused]] auto fn) {}
         }, m_fun_ptr.value(arg).second.second);
       }
     }, [&](double& arg) { stack.push(arg); }}, it);
@@ -154,7 +154,7 @@ bool Calculation::is_operation(QChar& lexem) {
   return flag;
 }
 
-const Calculation::f_prt_t Calculation::get_priority(QChar& lexem) {
+Calculation::f_prt_t Calculation::get_priority(QChar& lexem) {
   return m_fun_ptr.value(lexem).second.first;
 }
 
@@ -166,7 +166,7 @@ bool Calculation::is_priority_le(QChar& lhs, QChar& rhs) {
   return flag;
 }
 
-void Calculation::qstrtod(QString& src, size_t& ind) {
+void Calculation::qstrtod(QString& src, qsizetype& ind) {
   static const QRegularExpression regex("\\d+(([.]\\d+)?(E[+-]\\d+)?)?");
   QRegularExpressionMatch match = regex.match(src, ind);
   if (match.capturedStart(0) == ind) {

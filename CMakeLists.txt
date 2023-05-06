@@ -13,9 +13,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_AUTOUIC_SEARCH_PATHS form)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
-find_package(Qt6 REQUIRED COMPONENTS PrintSupport)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS
+    Widgets
+    PrintSupport
+)
+
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS
+    Widgets
+    PrintSupport
+)
 
 include_directories(
     ${PROJECT_SOURCE_DIR}/controller/calculator
@@ -63,5 +69,20 @@ qt_add_executable(${PROJECT_NAME}
     ${PROJECT_SOURCES}
 )
 
-target_link_libraries(${PROJECT_NAME} PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::PrintSupport)
+target_compile_options(
+  ${PROJECT_NAME}
+  PRIVATE
+  -Wall
+  -Werror
+  -Wextra
+  -Wpedantic
+  -fsanitize=address
+)
+
+target_link_libraries(
+    ${PROJECT_NAME}
+    PRIVATE
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::PrintSupport
+    -fsanitize=address
+)
