@@ -85,10 +85,18 @@ bool Debit::is_payday(const QDate &date, const QDate &pay_day) {
 QDate Debit::set_payout(QDate &str_date, const QDate &end_date) {
   QDate pay_date;
   switch (ui->cmb_period->currentIndex()) {
-    case 0: pay_date = str_date.addMonths(1); break;
-    case 1: pay_date = str_date.addMonths(3); break;
-    case 2: pay_date = str_date.addYears(1); break;
-    default: pay_date = end_date; break;
+    case 0:
+      pay_date = str_date.addMonths(1);
+      break;
+    case 1:
+      pay_date = str_date.addMonths(3);
+      break;
+    case 2:
+      pay_date = str_date.addYears(1);
+      break;
+    default:
+      pay_date = end_date;
+      break;
   }
   return pay_date;
 }
@@ -97,9 +105,15 @@ QDate Debit::calc_end_date(QDate &date) {
   QDate end_date;
   int term = ui->spn_limit->value();
   switch (ui->cmb_limit->currentIndex()) {
-    case 0: end_date = date.addDays(term); break;
-    case 1: end_date = date.addMonths(term); break;
-    case 2: end_date = date.addYears(term); break;
+    case 0:
+      end_date = date.addDays(term);
+      break;
+    case 1:
+      end_date = date.addMonths(term);
+      break;
+    case 2:
+      end_date = date.addYears(term);
+      break;
   }
   return end_date;
 }

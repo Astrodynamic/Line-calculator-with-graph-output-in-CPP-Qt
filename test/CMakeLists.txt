@@ -1,14 +1,11 @@
-cmake_minimum_required(VERSION 3.5)
-project(SCalc_v2 VERSION 0.1 LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.11)
+project(TEST VERSION 1.0 LANGUAGES CXX)
 
 #=============================================================== Setup CMake
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-set(CMAKE_CXX_FLAGS --coverage)
-set(CMAKE_EXE_LINKER_FLAGS --coverage)
 
 include(FetchContent)
 FetchContent_Declare(
@@ -24,22 +21,22 @@ FetchContent_MakeAvailable(googletest)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 
 include_directories(
-  ${PROJECT_SOURCE_DIR}/../include
+  ${PROJECT_SOURCE_DIR}/../model/calculation
 )
 
 enable_testing()
 
 add_executable(
-  SmartCalc_v2_test
-  SCalc_test.cpp
-  ../source/calculation.cpp
-  ../include/calculation.hpp
+  ${PROJECT_NAME}
+  ../model/calculation/calculation.cc
+  ../model/calculation/calculation.h
+  tests.cc
 )
 
-target_link_libraries(SmartCalc_v2_test
+target_link_libraries(${PROJECT_NAME}
   Qt6::Core
   GTest::gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(SmartCalc_v2_test)
+gtest_discover_tests(${PROJECT_NAME})

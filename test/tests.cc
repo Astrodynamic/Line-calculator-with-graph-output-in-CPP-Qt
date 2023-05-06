@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "calculation.hpp"
+#include "calculation.h"
 #include <cmath>
 
 TEST(calculation, add) {

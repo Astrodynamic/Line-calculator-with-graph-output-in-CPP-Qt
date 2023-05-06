@@ -11,7 +11,8 @@ Calculator::Calculator(QWidget* parent)
       credit(new Credit(this)),
       debit(new Debit(this)) {
   ui->setupUi(this);
-  connect(ui->btn_print_group, SIGNAL(buttonClicked(QAbstractButton*)), this, SLOT(print_lexeme(QAbstractButton*)));
+  connect(ui->btn_print_group, SIGNAL(buttonClicked(QAbstractButton*)), this,
+          SLOT(print_lexeme(QAbstractButton*)));
   connect(graph, &Graph::update_data, this, &Calculator::update_graph);
 }
 
@@ -46,9 +47,12 @@ void Calculator::on_btn_equal_clicked() {
   if (!model->is_empty()) {
     if (ui->display->text().contains('x')) {
       bool flag;
-      double t_num = QInputDialog::getDouble(this, tr("Enter value"), tr("Value of the x:"), 0.0, -2147483647, 2147483647, 1, &flag);
+      double t_num = QInputDialog::getDouble(this, tr("Enter value"),
+                                             tr("Value of the x:"), 0.0,
+                                             -2147483647, 2147483647, 1, &flag);
       if (flag) {
-        ui->display->setText(QString::number(model->calculation(t_num), 'g', 15));
+        ui->display->setText(
+            QString::number(model->calculation(t_num), 'g', 15));
       }
     } else {
       ui->display->setText(QString::number(model->calculation(), 'g', 15));

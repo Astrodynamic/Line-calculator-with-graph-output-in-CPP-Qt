@@ -7,19 +7,19 @@ Calculation::fun_ptr_t Calculation::m_fun_ptr = {
     {'-', {"-", {f_prt_t::L_PR, std::minus<double>()}}},
     {'*', {"*", {f_prt_t::M_PR, std::multiplies<double>()}}},
     {'/', {"/", {f_prt_t::M_PR, std::divides<double>()}}},
-    {'A', {"mod", {f_prt_t::M_PR, (fcast_2arg)&std::fmod}}},
-    {'^', {"^", {f_prt_t::H_PR, (fcast_2arg)&std::pow}}},
+    {'A', {"mod", {f_prt_t::M_PR, static_cast<fcast_2arg>(&std::fmod)}}},
+    {'^', {"^", {f_prt_t::H_PR, static_cast<fcast_2arg>(&std::pow)}}},
     {'B', {"B", {f_prt_t::UNARY, nullptr}}},
     {'C', {"C", {f_prt_t::UNARY, std::negate<double>()}}},
-    {'D', {"acos", {f_prt_t::FUNC, (fcast_1arg)&std::acos}}},
-    {'E', {"asin", {f_prt_t::FUNC, (fcast_1arg)&std::asin}}},
-    {'F', {"atan", {f_prt_t::FUNC, (fcast_1arg)&std::atan}}},
-    {'G', {"cos", {f_prt_t::FUNC, (fcast_1arg)&std::cos}}},
-    {'H', {"sin", {f_prt_t::FUNC, (fcast_1arg)&std::sin}}},
-    {'I', {"tan", {f_prt_t::FUNC, (fcast_1arg)&std::tan}}},
-    {'J', {"sqrt", {f_prt_t::FUNC, (fcast_1arg)&std::sqrt}}},
-    {'K', {"ln", {f_prt_t::FUNC, (fcast_1arg)&std::log}}},
-    {'L', {"log", {f_prt_t::FUNC, (fcast_1arg)&std::log10}}}};
+    {'D', {"acos", {f_prt_t::FUNC, static_cast<fcast_1arg>(&std::acos)}}},
+    {'E', {"asin", {f_prt_t::FUNC, static_cast<fcast_1arg>(&std::asin)}}},
+    {'F', {"atan", {f_prt_t::FUNC, static_cast<fcast_1arg>(&std::atan)}}},
+    {'G', {"cos", {f_prt_t::FUNC, static_cast<fcast_1arg>(&std::cos)}}},
+    {'H', {"sin", {f_prt_t::FUNC, static_cast<fcast_1arg>(&std::sin)}}},
+    {'I', {"tan", {f_prt_t::FUNC, static_cast<fcast_1arg>(&std::tan)}}},
+    {'J', {"sqrt", {f_prt_t::FUNC, static_cast<fcast_1arg>(&std::sqrt)}}},
+    {'K', {"ln", {f_prt_t::FUNC, static_cast<fcast_1arg>(&std::log)}}},
+    {'L', {"log", {f_prt_t::FUNC, static_cast<fcast_1arg>(&std::log10)}}}};
 
 void Calculation::expression_load(QString infix) {
   m_rpn.clear();
@@ -65,25 +65,31 @@ double Calculation::calculation(double x) {
   QStack<double> stack;
   for (auto it : m_rpn) {
     std::visit(overloaded{[&](QChar& arg) {
-      if (arg == 'x') {
-        stack.push(x);
-      } else {
-        std::visit(overloaded{
-          [&](fp_1arg fn) { stack.push(fn(stack.pop())); },
-          [&](fp_2arg fn) {
-            double rhs = stack.pop();
-            double lhs = stack.pop();
-            stack.push(fn(lhs, rhs));
-          },
-          []([[maybe_unused]] auto fn) {}
-        }, m_fun_ptr.value(arg).second.second);
-      }
-    }, [&](double& arg) { stack.push(arg); }}, it);
+                            if (arg == 'x') {
+                              stack.push(x);
+                            } else {
+                              std::visit(
+                                  overloaded{[&](fp_1arg fn) {
+                                               stack.push(fn(stack.pop()));
+                                             },
+                                             [&](fp_2arg fn) {
+                                               double rhs = stack.pop();
+                                               double lhs = stack.pop();
+                                               stack.push(fn(lhs, rhs));
+                                             },
+                                             []([[maybe_unused]] auto fn) {}},
+                                  m_fun_ptr.value(arg).second.second);
+                            }
+                          },
+                          [&](double& arg) { stack.push(arg); }},
+               it);
   }
   return stack.pop();
 }
 
-QPair<QVector<double>, QVector<double>> Calculation::calculation(double x_min, double x_max, double step) {
+QPair<QVector<double>, QVector<double>> Calculation::calculation(double x_min,
+                                                                 double x_max,
+                                                                 double step) {
   QPair<QVector<double>, QVector<double>> XYVector;
   for (double x = x_min, y; x <= x_max; x += step) {
     if (std::isfinite(y = calculation(x))) {
@@ -115,7 +121,8 @@ bool Calculation::expression_validate(QString& infix) {
       QRegularExpression("(?<![)xpe]|\\d)([\\*\\/^]|mod)"),
       QRegularExpression("(?<![)xpe]|\\d)([+\\-\\*\\/^]|mod)([+-])"),
       QRegularExpression(".(?<![())xpe+\\-\\*\\/^E]|\\d|mod)([+-])"),
-      QRegularExpression("(?<=^|[-+*\\/^(]|mod)(ln|log|sqrt|a?(cos|sin|tan))(*SKIP)(*F)|(?1)"),
+      QRegularExpression(
+          "(?<=^|[-+*\\/^(]|mod)(ln|log|sqrt|a?(cos|sin|tan))(*SKIP)(*F)|(?1)"),
       QRegularExpression("(\\((?>[^()\n]|(?1))*+\\))(*SKIP)(*F)|[()]"),
       QRegularExpression(".(?<![+\\-*\\/^(sntgd])[(]"),
       QRegularExpression("(?<!\\d|[)xpe])[)]"),
@@ -175,7 +182,5 @@ void Calculation::qstrtod(QString& src, qsizetype& ind) {
   }
 }
 
-bool Calculation::is_empty() {
-  return m_rpn.empty();
-}
+bool Calculation::is_empty() { return m_rpn.empty(); }
 }  // namespace SmartCalc

@@ -86,3 +86,46 @@ target_link_libraries(
     Qt${QT_VERSION_MAJOR}::PrintSupport
     -fsanitize=address
 )
+
+# Add cppcheck
+find_program(CPPCHECK cppcheck)
+if(CPPCHECK)
+  message(STATUS "cppcheck found: ${CPPCHECK}")
+  list(
+    APPEND CPPCHECK_ARGS
+    "--enable=all"
+    "--inconclusive"
+    "--quiet"
+    "--language=c++"
+    "--std=c++17"
+    "--suppress=missingIncludeSystem"
+    "--suppress=unusedFunction"
+    "--suppress=missingInclude"
+    "--suppress=unusedStructMember"
+    "--suppress=variableScope"
+    "--suppress=*:${PROJECT_SOURCE_DIR}/qcustomplot/*"
+  )
+  add_custom_target(
+    cppcheck
+    COMMAND ${CPPCHECK} ${CPPCHECK_ARGS} ${HEADERS} ${SOURCES}
+  )
+else()
+  message(STATUS "cppcheck not found")
+endif()
+
+# Add clang-format
+find_program(CLANG_FORMAT clang-format)
+if(CLANG_FORMAT)
+  message(STATUS "clang-format found: ${CLANG_FORMAT}")
+  list(
+    APPEND CLANG_ARGS
+    "-i"
+    "-style=Google"
+  )
+  add_custom_target(
+    clang-format
+    COMMAND ${CLANG_FORMAT} ${CLANG_ARGS} ${HEADERS} ${SOURCES}
+  )
+else()
+  message(STATUS "clang-format not found")
+endif()
